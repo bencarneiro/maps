@@ -42,7 +42,7 @@ class Tract(gismodels.Model):
     # shape = models.MultiPolygonField()
 
     # GeoDjango-specific: a geometry field (MultiPolygonField)
-    shape = gismodels.PolygonField()
+    shape = gismodels.PolygonField(geography=True)
 
     class Meta:
         db_table="tract"
