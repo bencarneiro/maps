@@ -58,7 +58,7 @@ class Command(BaseCommand):
                 shape = feat.geom.wkt
             )
             new_census_tract.save()
-            break
+            # break
             
         
 
