@@ -3,6 +3,9 @@ from django.db import models
 # Create your models here.
 
 from django.contrib.gis.db import models as gismodels
+from django.core import serializers
+
+
 
 
 class State(models.Model):
@@ -47,3 +50,55 @@ class Tract(gismodels.Model):
     class Meta:
         db_table="tract"
         managed=True
+
+class ACSVariable(models.Model):
+
+    acs_code = models.CharField(max_length=64)
+    label = models.CharField(max_length = 1024)
+    concept = models.CharField(max_length = 1024)
+    group = models.CharField(max_length = 64)
+    required = models.BooleanField(default=False)
+    predicate_type = models.CharField(max_length=64)
+
+    class Meta:
+        db_table = "acs_variable"
+        managed=True
+
+class ACS1ValueByTract(models.Model):
+    acs_variable = models.ForeignKey(ACSVariable, on_delete = models.DO_NOTHING)
+    year = models.IntegerField(null=False, blank=False)
+    tract = models.ForeignKey(Tract, on_delete = models.DO_NOTHING)
+    value = models.IntegerField(default=0, null=True, blank=True)
+
+    class Meta:
+        db_table = "acs1_value_by_tract"
+        managed=True
+
+class ACS5ValueByTract(models.Model):
+
+    acs_variable = models.ForeignKey(ACSVariable, on_delete = models.DO_NOTHING)
+    year = models.IntegerField(null=False, blank=False)
+    tract = models.ForeignKey(Tract, on_delete = models.DO_NOTHING)
+    value = models.IntegerField(default=0, null=True, blank=True)
+
+    @property
+    def name(self):
+        return self.tract.name
+    
+    @property
+    def name_lsad(self):
+        return self.tract.name_lsad
+    
+    @property
+    def shape(self):
+        return self.tract.shape
+
+    class Meta:
+        db_table = "acs5_value_by_tract"
+        managed=True
+
+
+# class CodeInfoSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = ACS5ValueByTract
+#         fields = '__all__'
