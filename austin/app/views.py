@@ -8,31 +8,68 @@ import requests
 from django.core.serializers import serialize
 import json
 
-# from django.contrib.gis.serializers.geojson import Serializer 
 
-# class CustomSerializer(Serializer):
+def efficient_home(request):
+    counties = County.objects.filter(fips__in=[48453, 48055, 48209, 48491, 48021])
+    ids = []
+    for county in counties:
+        ids += [county.id]
 
-#     def end_object(self, obj):
-#         for field in self.selected_fields:
-#             if field == 'pk':
-#                 continue
-#             elif field in self._current.keys():
-#                 continue
-#             else:
-#                 try:
-#                     if '__' in field:
-#                         fields = field.split('__')
-#                         value = obj
-#                         for f in fields:
-#                             value = getattr(value, f)
-#                         if value != obj:
-#                             self._current[field] = value
+    tract_shapes = Tract.objects.filter(county_id__in=ids)
+    tract_shapes = serialize("geojson", tract_shapes)
+    shapes_gdf = gpd.read_file(tract_shapes)
 
-#                 except AttributeError:
-#                     pass
-#         super(CustomSerializer, self).end_object(obj)
+    census_data_to_df = []
+    census_variable = ACSVariable.objects.get(acs_code="B01001_001E")
 
-# Create your views here.
+    tract_values = ACS5ValueByTract.objects.filter(acs_variable=census_variable, tract_id__county_id__in=ids)
+    for tv in tract_values:
+        try:
+            pop_dens = float(tv.value) / (float(tv.tract.aland) * (0.000000386102))
+        except:
+            pop_dens = 0
+        census_data_to_df += [{
+            "acs_code": tv.acs_variable.acs_code,
+            "label": tv.acs_variable.label,
+            "concept": tv.acs_variable.concept,
+            "population": tv.value,
+            "pop_dens": pop_dens,
+            "year": tv.year,
+            "tract_id": tv.tract.tract_id,
+            "county": tv.tract.county.name,
+            "land_area": tv.tract.aland
+        }]
+    df = pd.DataFrame(census_data_to_df)
+
+    # shapes_gdf = gpd.GeoDataFrame(data=shapes_df, geometry=shapes_df['shape'])
+    us_data_gdf = pd.merge(
+        left = shapes_gdf,
+        right = df,
+        how = "right", 
+        left_on = ["tract_id"],
+        right_on = ["tract_id"]
+    )
+
+    m = folium.Map(location=(30.269122995392824, -97.74242563746505))
+
+    cp = folium.Choropleth(
+        geo_data=us_data_gdf,
+        data=us_data_gdf,
+        name="choropleth",
+        columns= ["tract_id", "pop_dens"],
+        key_on="feature.properties.tract_id",
+        fill_color="RdYlGn",
+        bins=[0,500,1000,2000,4000,6000,10000,15000, 25000, 50000, 100000],
+        fill_opacity=.8,
+        line_opacity=0.2,
+        legend_name="Total Population By State, 2021").add_to(m)
+
+
+    m = m._repr_html_()
+    context = {"map": m}
+    return render(request, "home.html", context)
+
+
 
 def home(request):
     counties = County.objects.filter(fips__in=[48453, 48055, 48209, 48491, 48021])

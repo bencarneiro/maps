@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import home
+from app.views import home, efficient_home
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", home, name="home")
+    path("", home, name="home"),
+    path("hi", efficient_home, name="efficient_home")
 ]
