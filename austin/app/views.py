@@ -7,7 +7,7 @@ import geopandas as gpd
 import requests
 from django.core.serializers import serialize
 import json
-
+from django.http import JsonResponse
 
 def efficient_home(request):
     counties = County.objects.filter(fips__in=[48453, 48055, 48209, 48491, 48021])
@@ -230,3 +230,71 @@ def home(request):
     m = m._repr_html_()
     context = {"map": m}
     return render(request, "home.html", context)
+
+
+
+def population_density_geojson(request):
+    counties = County.objects.filter(fips__in=[48453, 48055, 48209, 48491, 48021])
+    ids = []
+    for county in counties:
+        ids += [county.id]
+
+    # tract_shapes = Tract.objects.filter(county_id__in=ids)
+    # print(len(tract_shapes))
+
+    # tract_shapes = serialize("geojson", tract_shapes)
+    # print(tract_shapes[:1000])
+    # print(tract_shapes)
+    # gdf = gpd.read_file(tract_shapes)
+    # tracts = Tract.objects.filter(county_id__in=ids)
+    census_variable = ACSVariable.objects.get(acs_code="B01001_001E")
+
+
+    tract_values = ACS5ValueByTract.objects.filter(acs_variable=census_variable, tract_id__county_id__in=ids)
+    json_str = '{"type": "FeatureCollection", "crs": {"type": "name", "properties": {"name": "EPSG:4326"}}, "features": ['
+    for tv in tract_values:
+        feature_str = '{"type": "Feature", "properties": {'
+        try:
+            pop_dens = str(round(float(tv.value) / (float(tv.tract.aland) * (0.000000386102))))
+        except:
+            pop_dens = "0"
+        feature_str += f'"tract_id": {tv.tract.tract_id}, '
+        feature_str += f'"acs_code": "{tv.acs_variable.acs_code}", '
+        feature_str += f'"label": "{tv.acs_variable.label}", '
+        feature_str += f'"concept": "{tv.acs_variable.concept}", '
+        feature_str += f'"population": {tv.value}, '
+        feature_str += f'"population_density": {pop_dens}, '
+        feature_str += f'"year": {tv.year}, '
+        feature_str += f'"county": "{tv.tract.county.name}", '
+        feature_str += f'"land_area": {tv.tract.aland}'
+        feature_str += '}, "geometry": '
+        feature_str += tv.tract.shape.geojson
+
+        feature_str += '}, '
+        # print(feature_str)
+        print("FEATURE GEOJSON STRING")
+        # print(tv.tract.shape.geojson)
+        json_str += feature_str
+
+        # break
+    json_str = json_str[:-2]
+    json_str += ']}'
+    # print(json_str)
+        # serialize(tv.tract.shape, "geojson")
+
+
+        # census_data_to_df += [{
+        #     "acs_code": tv.acs_variable.acs_code,
+        #     "label": tv.acs_variable.label,
+        #     "concept": tv.acs_variable.concept,
+        #     "population": tv.value,
+        #     "pop_dens": pop_dens,
+        #     "year": tv.year,
+        #     "tract_id": tv.tract.tract_id,
+        #     "county": tv.tract.county.name,
+        #     "land_area": tv.tract.aland
+        # }]
+    print(json_str)
+    loads = json.loads(json_str)
+
+    return JsonResponse(loads, safe=False)
