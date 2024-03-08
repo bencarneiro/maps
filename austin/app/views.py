@@ -6,6 +6,7 @@ import pandas as pd
 import geopandas as gpd
 import requests
 from django.core.serializers import serialize
+import json
 
 # from django.contrib.gis.serializers.geojson import Serializer 
 
@@ -43,6 +44,7 @@ def home(request):
     print(len(tract_shapes))
 
     tract_shapes = serialize("geojson", tract_shapes)
+    print(tract_shapes[:1000])
     # print(tract_shapes)
     # gdf = gpd.read_file(tract_shapes)
     # tracts = Tract.objects.filter(county_id__in=ids)
@@ -50,10 +52,32 @@ def home(request):
 
 
     tract_values = ACS5ValueByTract.objects.filter(acs_variable=census_variable, tract_id__county_id__in=ids)
+    shapes_json = json.loads(tract_shapes)
+    for shape in shapes_json['features']:
+        shape['properties']['test'] = "DUMMY DATA"
+        try:
+            tv = tract_values.get(tract_id__tract_id=int(shape['properties']['tract_id']))
+            pop_dens = tv.value / (int(shape['properties']['aland']) * (0.000000386102))
+            shape['properties']['group'] = tv.acs_variable.group
+            shape['properties']['concept'] = tv.acs_variable.concept
+            shape['properties']['label'] = tv.acs_variable.label
+            shape['properties']['population'] = tv.value
+            shape['properties']['pop_dens'] = pop_dens
+        except Exception as e:
+            print(e)
+            shape['properties']['group'] = ""
+            shape['properties']['concept'] = ""
+            shape['properties']['label'] = ""
+            shape['properties']['population'] = ""
+            shape['properties']['pop_dens'] = ""
+            continue
+
+    tract_shapes = json.dumps(shapes_json)
+    print(tract_shapes[:1000])
     census_data_to_df = []
     for tv in tract_values:
         try:
-            pop_dens = float(tv.value) / float(tv.tract.aland)
+            pop_dens = float(tv.value) / (float(tv.tract.aland) * (0.000000386102))
         except:
             pop_dens = 0
         census_data_to_df += [{
@@ -109,8 +133,9 @@ def home(request):
     m = folium.Map(location=(30.269122995392824, -97.74242563746505))
 
     tooltip = folium.GeoJsonTooltip(
-        fields=["tract_id", "pop_dens"],
-        aliases=["tract_id", "Population Density"],
+        geo_data=tract_shapes,
+        fields=["name_lsad", "pop_dens"],
+        aliases=["Census Tract", "Population Density"],
         localize=True,
         sticky=False,
         labels=True,
@@ -122,6 +147,26 @@ def home(request):
         """,
         max_width=800,
     )
+    #Create style_function
+    style_function = lambda x: {'fillColor': '#ffffff', 
+                                'color':'#000000', 
+                                'fillOpacity': 0.1, 
+                                'weight': 0.1}
+
+    #Create highlight_function
+    highlight_function = lambda x: {'fillColor': '#000000', 
+                                    'color':'#000000', 
+                                    'fillOpacity': 0.50, 
+                                    'weight': 0.1}
+
+    #Create popup tooltip object
+    NIL = folium.features.GeoJson(
+        tract_shapes,
+        style_function=style_function, 
+        control=False,
+        highlight_function=highlight_function, 
+        tooltip=tooltip)
+
     cp = folium.Choropleth(
         geo_data=tract_shapes,
         data=df,
@@ -129,12 +174,15 @@ def home(request):
         columns= ["tract_id", "pop_dens"],
         key_on="feature.properties.tract_id",
         fill_color="RdYlGn",
-        bins=12,
+        bins=15,
         fill_opacity=.8,
         line_opacity=0.2,
         legend_name="Total Population By State, 2021").add_to(m)
 
+    m.add_child(NIL)
+    m.keep_in_front(NIL)
     folium.LayerControl().add_to(m)
+    # tooltip.add_to
 
     # folium.GeoJsonTooltip(['name', 'unemployment']).add_to(cp.geojson)
     # for t in tracts:
