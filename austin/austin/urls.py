@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import home, efficient_home, population_density_geojson
+from app.views import home, efficient_home, population_density_geojson, map_page
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", home, name="home"),
     path("hi", efficient_home, name="efficient_home"),
-    path("population_density_geojson", population_density_geojson, name="population_density_geojson")
-]
+    path("population_density_geojson", population_density_geojson, name="population_density_geojson"),
+    path("map/", map_page, name="map")
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
