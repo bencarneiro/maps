@@ -8,6 +8,7 @@ import requests
 from django.core.serializers import serialize
 import json
 from django.http import JsonResponse
+from keplergl import KeplerGl
 
 
 
@@ -48,55 +49,19 @@ def efficient_home(request):
         ids += [county.id]
 
     tract_shapes = Tract.objects.filter(county_id__in=ids)
-    tract_shapes = serialize("geojson", tract_shapes)
-    shapes_gdf = gpd.read_file(tract_shapes)
+    print(len(tract_shapes))
 
-    census_data_to_df = []
+    tract_shapes = serialize("geojson", tract_shapes)
+    print(tract_shapes[:1000])
     census_variable = ACSVariable.objects.get(acs_code="B01001_001E")
 
+
     tract_values = ACS5ValueByTract.objects.filter(acs_variable=census_variable, tract_id__county_id__in=ids)
-    for tv in tract_values:
-        try:
-            pop_dens = float(tv.value) / (float(tv.tract.aland) * (0.000000386102))
-        except:
-            pop_dens = 0
-        census_data_to_df += [{
-            "acs_code": tv.acs_variable.acs_code,
-            "label": tv.acs_variable.label,
-            "concept": tv.acs_variable.concept,
-            "population": tv.value,
-            "pop_dens": pop_dens,
-            "year": tv.year,
-            "tract_id": tv.tract.tract_id,
-            "county": tv.tract.county.name,
-            "land_area": tv.tract.aland
-        }]
-    df = pd.DataFrame(census_data_to_df)
-
-    # shapes_gdf = gpd.GeoDataFrame(data=shapes_df, geometry=shapes_df['shape'])
-    us_data_gdf = pd.merge(
-        left = shapes_gdf,
-        right = df,
-        how = "right", 
-        left_on = ["tract_id"],
-        right_on = ["tract_id"]
-    )
-
-    m = folium.Map(location=(30.269122995392824, -97.74242563746505))
-
-    cp = folium.Choropleth(
-        geo_data=us_data_gdf,
-        data=us_data_gdf,
-        name="choropleth",
-        columns= ["tract_id", "pop_dens"],
-        key_on="feature.properties.tract_id",
-        fill_color="RdYlGn",
-        bins=[0,500,1000,2000,4000,6000,10000,15000, 25000, 50000, 100000],
-        fill_opacity=.8,
-        line_opacity=0.2,
-        legend_name="Total Population By State, 2021").add_to(m)
-
-
+    tract_shapes = geojsonify(tract_values)
+    gdf = gpd.read_file(tract_shapes)
+    # Load a map with data and config and height
+    m = KeplerGl(height=1000)
+    m.add_data(data=gdf, name="tracts")
     m = m._repr_html_()
     context = {"map": m}
     return render(request, "home.html", context)
