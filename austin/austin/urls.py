@@ -23,6 +23,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", home, name="home"),
     path("hi", efficient_home, name="efficient_home"),
-    path("population_density_geojson", population_density_geojson, name="population_density_geojson"),
+    path("population_density_geojson.json", population_density_geojson, name="population_density_geojson"),
     path("map/", map_page, name="map")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
