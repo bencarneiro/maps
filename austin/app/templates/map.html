@@ -25,11 +25,25 @@
     'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_admin_0_scale_rank.geojson'; //eslint-disable-line
   const AIR_PORTS =
     'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_airports.geojson';
-  
-  
+    
+  function getColor(density) {
+    if (density > 12750) {
+      return [0,255,0,255]
+    } else {
+      var z = density / 50 
+      var y = 255-z
+      return [y,z,0,255]
+    }
+  }
+
+  function getTooltip({object}) {
+    return object && `${object.properties.name_lsad}
+      ${object.properties.population_density} People / Square Mile`;
+  }
+
   const deckgl = new deck.DeckGL({
     container: 'container',
-    mapStyle: 'https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json',
+    mapStyle: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
     initialViewState: {
       latitude: 30.277914, 
       longitude: -97.739747,
@@ -38,6 +52,7 @@
       pitch: 30
     },
     controller: true,
+    getTooltip: getTooltip,
   
     layers: [
       // new deck.GeoJsonLayer({
@@ -59,13 +74,13 @@
         pointRadiusMinPixels: 2,
         pointRadiusScale: 2000,
         getPointRadius: f => (11 - f.properties.scalerank),
-        getFillColor: [200, 0, 80, 180],
+        getFillColor: f => getColor(f.properties.population_density),
         // Interactive props
         pickable: true,
         autoHighlight: true,
         extruded: true, 
         wireframe: true,
-        getElevation: f => (f.properties.population_density)
+        getElevation: f => (f.properties.population_density),
         // onClick: info => info.object && alert(`${info.object.properties.name} (${info.object.properties.abbrev})`)
       }),
       // new deck.GeoJsonLayer({
