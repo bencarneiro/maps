@@ -53,7 +53,7 @@ class Tract(gismodels.Model):
 
 class ACSVariable(models.Model):
 
-    acs_code = models.CharField(max_length=64)
+    acs_code = models.CharField(max_length=64, primary_key=True)
     label = models.CharField(max_length = 1024)
     concept = models.CharField(max_length = 1024)
     group = models.CharField(max_length = 64)

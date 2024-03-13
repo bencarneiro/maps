@@ -11,7 +11,7 @@ class Command(BaseCommand):
         for county in counties:
             ids += [county.id]
         census_api_key="db87451d2114e8ee87f1fc8d516119219cae4699"
-        url = f"https://api.census.gov/data/2022/acs/acs5?get=NAME,B01001_001E&for=tract:*&in=state:48&in=county:453,209,21,55,491&key={census_api_key}"
+        url = f"https://api.census.gov/data/2022/acs/acs5?get=NAME,B01001_001E&for=tract:*&in=state:48&in=county:453,209,021,055,491&key={census_api_key}"
         r = requests.get(url)
         pop = r.json()
         columns = [
