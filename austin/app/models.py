@@ -16,8 +16,8 @@ class State(models.Model):
         managed=True
 
 class County(models.Model):
+    id = models.PositiveIntegerField(primary_key=True)
     state = models.ForeignKey(State, null=False, on_delete=models.DO_NOTHING)
-    fips = models.IntegerField(null=False)
     name = models.CharField(max_length=512)
 
     class Meta:
@@ -65,9 +65,9 @@ class CountyToCBSA(models.Model):
 class Tract(gismodels.Model):
     # Regular Django fields corresponding to the attributes in the
     # world borders shapefile.
+    id = models.PositiveBigIntegerField(primary_key=True)
     state = models.ForeignKey(State, on_delete=models.DO_NOTHING)
     county = models.ForeignKey(County, on_delete=models.DO_NOTHING)
-    tract_id = models.IntegerField(null=False)
     name = models.CharField(max_length=128)
     name_lsad = models.CharField(max_length=512)
     mtfcc = models.CharField(max_length=128)
