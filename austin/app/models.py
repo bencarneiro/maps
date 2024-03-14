@@ -14,17 +14,7 @@ class State(models.Model):
     class Meta:
         db_table="state"
         managed=True
-
-class County(models.Model):
-    id = models.PositiveIntegerField(primary_key=True)
-    state = models.ForeignKey(State, null=False, on_delete=models.DO_NOTHING)
-    name = models.CharField(max_length=512)
-
-    class Meta:
-        db_table="county"
-        managed=True
-
-
+        
 class CombinedStatisticalArea(models.Model):
 
     id = models.PositiveIntegerField(primary_key=True)
@@ -35,31 +25,28 @@ class CombinedStatisticalArea(models.Model):
         managed=True
 
 
-class CoreBasedStatisticalArea(models.Model):
+class CoreBaseStatisticalArea(models.Model):
 
     id = models.PositiveIntegerField(primary_key=True)
     name = models.CharField(max_length=512)
+    csa = models.ForeignKey(CombinedStatisticalArea, null=True, on_delete=models.DO_NOTHING)
 
     class Meta:
         db_table="cbsa"
         managed=True
 
-class CBSAToCSA(models.Model):
-    cbsa = models.ForeignKey(CoreBasedStatisticalArea, on_delete=models.DO_NOTHING)
-    csa = models.ForeignKey(CombinedStatisticalArea, on_delete=models.DO_NOTHING)
+
+class County(models.Model):
+
+    id = models.PositiveIntegerField(primary_key=True)
+    state = models.ForeignKey(State, null=False, on_delete=models.DO_NOTHING)
+    name = models.CharField(max_length=512)
+    cbsa = models.ForeignKey(CoreBaseStatisticalArea, null=True, on_delete=models.DO_NOTHING)
 
     class Meta:
-        db_table="cbsa_to_csa"
+        db_table="county"
         managed=True
 
-class CountyToCBSA(models.Model):
-
-    cbsa = models.ForeignKey(CoreBasedStatisticalArea, on_delete=models.DO_NOTHING)
-    county = models.ForeignKey(County, on_delete=models.DO_NOTHING)
-
-    class Meta:
-        db_table="county_to_cbsa"
-        managed=True
 
 
 class Tract(gismodels.Model):
