@@ -8,7 +8,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1001,
             state_id = 1,
-            name = "Autauga County"
+            name = "Autauga County",
+            cbsa_id = 33860
         )
         new_county.save()
     
@@ -16,7 +17,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1003,
             state_id = 1,
-            name = "Baldwin County"
+            name = "Baldwin County",
+            cbsa_id = 19300
         )
         new_county.save()
     
@@ -24,7 +26,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1005,
             state_id = 1,
-            name = "Barbour County"
+            name = "Barbour County",
+            cbsa_id = 21640
         )
         new_county.save()
     
@@ -32,7 +35,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1007,
             state_id = 1,
-            name = "Bibb County"
+            name = "Bibb County",
+            cbsa_id = 13820
         )
         new_county.save()
     
@@ -40,7 +44,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1009,
             state_id = 1,
-            name = "Blount County"
+            name = "Blount County",
+            cbsa_id = 13820
         )
         new_county.save()
     
@@ -64,7 +69,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1015,
             state_id = 1,
-            name = "Calhoun County"
+            name = "Calhoun County",
+            cbsa_id = 11500
         )
         new_county.save()
     
@@ -72,7 +78,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1017,
             state_id = 1,
-            name = "Chambers County"
+            name = "Chambers County",
+            cbsa_id = 29300
         )
         new_county.save()
     
@@ -88,7 +95,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1021,
             state_id = 1,
-            name = "Chilton County"
+            name = "Chilton County",
+            cbsa_id = 13820
         )
         new_county.save()
     
@@ -128,7 +136,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1031,
             state_id = 1,
-            name = "Coffee County"
+            name = "Coffee County",
+            cbsa_id = 21460
         )
         new_county.save()
     
@@ -136,7 +145,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1033,
             state_id = 1,
-            name = "Colbert County"
+            name = "Colbert County",
+            cbsa_id = 22520
         )
         new_county.save()
     
@@ -152,7 +162,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1037,
             state_id = 1,
-            name = "Coosa County"
+            name = "Coosa County",
+            cbsa_id = 45180
         )
         new_county.save()
     
@@ -176,7 +187,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1043,
             state_id = 1,
-            name = "Cullman County"
+            name = "Cullman County",
+            cbsa_id = 18980
         )
         new_county.save()
     
@@ -184,7 +196,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1045,
             state_id = 1,
-            name = "Dale County"
+            name = "Dale County",
+            cbsa_id = 37120
         )
         new_county.save()
     
@@ -192,7 +205,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1047,
             state_id = 1,
-            name = "Dallas County"
+            name = "Dallas County",
+            cbsa_id = 42820
         )
         new_county.save()
     
@@ -200,7 +214,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1049,
             state_id = 1,
-            name = "DeKalb County"
+            name = "DeKalb County",
+            cbsa_id = 22840
         )
         new_county.save()
     
@@ -208,7 +223,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1051,
             state_id = 1,
-            name = "Elmore County"
+            name = "Elmore County",
+            cbsa_id = 33860
         )
         new_county.save()
     
@@ -224,7 +240,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1055,
             state_id = 1,
-            name = "Etowah County"
+            name = "Etowah County",
+            cbsa_id = 23460
         )
         new_county.save()
     
@@ -240,7 +257,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1059,
             state_id = 1,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 40770
         )
         new_county.save()
     
@@ -248,7 +266,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1061,
             state_id = 1,
-            name = "Geneva County"
+            name = "Geneva County",
+            cbsa_id = 20020
         )
         new_county.save()
     
@@ -256,7 +275,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1063,
             state_id = 1,
-            name = "Greene County"
+            name = "Greene County",
+            cbsa_id = 46220
         )
         new_county.save()
     
@@ -264,7 +284,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1065,
             state_id = 1,
-            name = "Hale County"
+            name = "Hale County",
+            cbsa_id = 46220
         )
         new_county.save()
     
@@ -272,7 +293,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1067,
             state_id = 1,
-            name = "Henry County"
+            name = "Henry County",
+            cbsa_id = 20020
         )
         new_county.save()
     
@@ -280,7 +302,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1069,
             state_id = 1,
-            name = "Houston County"
+            name = "Houston County",
+            cbsa_id = 20020
         )
         new_county.save()
     
@@ -288,7 +311,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1071,
             state_id = 1,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 42460
         )
         new_county.save()
     
@@ -296,7 +320,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1073,
             state_id = 1,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 13820
         )
         new_county.save()
     
@@ -312,7 +337,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1077,
             state_id = 1,
-            name = "Lauderdale County"
+            name = "Lauderdale County",
+            cbsa_id = 22520
         )
         new_county.save()
     
@@ -320,7 +346,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1079,
             state_id = 1,
-            name = "Lawrence County"
+            name = "Lawrence County",
+            cbsa_id = 19460
         )
         new_county.save()
     
@@ -328,7 +355,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1081,
             state_id = 1,
-            name = "Lee County"
+            name = "Lee County",
+            cbsa_id = 12220
         )
         new_county.save()
     
@@ -336,7 +364,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1083,
             state_id = 1,
-            name = "Limestone County"
+            name = "Limestone County",
+            cbsa_id = 26620
         )
         new_county.save()
     
@@ -344,7 +373,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1085,
             state_id = 1,
-            name = "Lowndes County"
+            name = "Lowndes County",
+            cbsa_id = 33860
         )
         new_county.save()
     
@@ -352,7 +382,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1087,
             state_id = 1,
-            name = "Macon County"
+            name = "Macon County",
+            cbsa_id = 12220
         )
         new_county.save()
     
@@ -360,7 +391,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1089,
             state_id = 1,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 26620
         )
         new_county.save()
     
@@ -384,7 +416,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1095,
             state_id = 1,
-            name = "Marshall County"
+            name = "Marshall County",
+            cbsa_id = 10700
         )
         new_county.save()
     
@@ -392,7 +425,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1097,
             state_id = 1,
-            name = "Mobile County"
+            name = "Mobile County",
+            cbsa_id = 33660
         )
         new_county.save()
     
@@ -408,7 +442,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1101,
             state_id = 1,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 33860
         )
         new_county.save()
     
@@ -416,7 +451,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1103,
             state_id = 1,
-            name = "Morgan County"
+            name = "Morgan County",
+            cbsa_id = 19460
         )
         new_county.save()
     
@@ -432,7 +468,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1107,
             state_id = 1,
-            name = "Pickens County"
+            name = "Pickens County",
+            cbsa_id = 46220
         )
         new_county.save()
     
@@ -440,7 +477,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1109,
             state_id = 1,
-            name = "Pike County"
+            name = "Pike County",
+            cbsa_id = 45980
         )
         new_county.save()
     
@@ -456,7 +494,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1113,
             state_id = 1,
-            name = "Russell County"
+            name = "Russell County",
+            cbsa_id = 17980
         )
         new_county.save()
     
@@ -464,7 +503,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1115,
             state_id = 1,
-            name = "St. Clair County"
+            name = "St. Clair County",
+            cbsa_id = 13820
         )
         new_county.save()
     
@@ -472,7 +512,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1117,
             state_id = 1,
-            name = "Shelby County"
+            name = "Shelby County",
+            cbsa_id = 13820
         )
         new_county.save()
     
@@ -488,7 +529,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1121,
             state_id = 1,
-            name = "Talladega County"
+            name = "Talladega County",
+            cbsa_id = 45180
         )
         new_county.save()
     
@@ -496,7 +538,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1123,
             state_id = 1,
-            name = "Tallapoosa County"
+            name = "Tallapoosa County",
+            cbsa_id = 10760
         )
         new_county.save()
     
@@ -504,7 +547,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1125,
             state_id = 1,
-            name = "Tuscaloosa County"
+            name = "Tuscaloosa County",
+            cbsa_id = 46220
         )
         new_county.save()
     
@@ -512,7 +556,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 1127,
             state_id = 1,
-            name = "Walker County"
+            name = "Walker County",
+            cbsa_id = 13820
         )
         new_county.save()
     
@@ -560,7 +605,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 2020,
             state_id = 2,
-            name = "Anchorage, Municipality of"
+            name = "Anchorage, Municipality of",
+            cbsa_id = 11260
         )
         new_county.save()
     
@@ -616,7 +662,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 2090,
             state_id = 2,
-            name = "Fairbanks North Star Borough"
+            name = "Fairbanks North Star Borough",
+            cbsa_id = 21820
         )
         new_county.save()
     
@@ -640,7 +687,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 2110,
             state_id = 2,
-            name = "Juneau, City and Borough of"
+            name = "Juneau, City and Borough of",
+            cbsa_id = 27940
         )
         new_county.save()
     
@@ -656,7 +704,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 2130,
             state_id = 2,
-            name = "Ketchikan Gateway Borough"
+            name = "Ketchikan Gateway Borough",
+            cbsa_id = 28540
         )
         new_county.save()
     
@@ -688,7 +737,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 2170,
             state_id = 2,
-            name = "Matanuska-Susitna Borough"
+            name = "Matanuska-Susitna Borough",
+            cbsa_id = 11260
         )
         new_county.save()
     
@@ -832,7 +882,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4003,
             state_id = 4,
-            name = "Cochise County"
+            name = "Cochise County",
+            cbsa_id = 43420
         )
         new_county.save()
     
@@ -840,7 +891,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4005,
             state_id = 4,
-            name = "Coconino County"
+            name = "Coconino County",
+            cbsa_id = 22380
         )
         new_county.save()
     
@@ -848,7 +900,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4007,
             state_id = 4,
-            name = "Gila County"
+            name = "Gila County",
+            cbsa_id = 37740
         )
         new_county.save()
     
@@ -856,7 +909,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4009,
             state_id = 4,
-            name = "Graham County"
+            name = "Graham County",
+            cbsa_id = 40940
         )
         new_county.save()
     
@@ -880,7 +934,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4013,
             state_id = 4,
-            name = "Maricopa County"
+            name = "Maricopa County",
+            cbsa_id = 38060
         )
         new_county.save()
     
@@ -888,7 +943,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4015,
             state_id = 4,
-            name = "Mohave County"
+            name = "Mohave County",
+            cbsa_id = 29420
         )
         new_county.save()
     
@@ -896,7 +952,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4017,
             state_id = 4,
-            name = "Navajo County"
+            name = "Navajo County",
+            cbsa_id = 43320
         )
         new_county.save()
     
@@ -904,7 +961,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4019,
             state_id = 4,
-            name = "Pima County"
+            name = "Pima County",
+            cbsa_id = 46060
         )
         new_county.save()
     
@@ -912,7 +970,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4021,
             state_id = 4,
-            name = "Pinal County"
+            name = "Pinal County",
+            cbsa_id = 38060
         )
         new_county.save()
     
@@ -920,7 +979,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4023,
             state_id = 4,
-            name = "Santa Cruz County"
+            name = "Santa Cruz County",
+            cbsa_id = 35700
         )
         new_county.save()
     
@@ -928,7 +988,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4025,
             state_id = 4,
-            name = "Yavapai County"
+            name = "Yavapai County",
+            cbsa_id = 39150
         )
         new_county.save()
     
@@ -936,7 +997,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 4027,
             state_id = 4,
-            name = "Yuma County"
+            name = "Yuma County",
+            cbsa_id = 49740
         )
         new_county.save()
     
@@ -960,7 +1022,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5005,
             state_id = 5,
-            name = "Baxter County"
+            name = "Baxter County",
+            cbsa_id = 34260
         )
         new_county.save()
     
@@ -968,7 +1031,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5007,
             state_id = 5,
-            name = "Benton County"
+            name = "Benton County",
+            cbsa_id = 22220
         )
         new_county.save()
     
@@ -976,7 +1040,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5009,
             state_id = 5,
-            name = "Boone County"
+            name = "Boone County",
+            cbsa_id = 25460
         )
         new_county.save()
     
@@ -992,7 +1057,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5013,
             state_id = 5,
-            name = "Calhoun County"
+            name = "Calhoun County",
+            cbsa_id = 15780
         )
         new_county.save()
     
@@ -1016,7 +1082,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5019,
             state_id = 5,
-            name = "Clark County"
+            name = "Clark County",
+            cbsa_id = 11660
         )
         new_county.save()
     
@@ -1040,7 +1107,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5025,
             state_id = 5,
-            name = "Cleveland County"
+            name = "Cleveland County",
+            cbsa_id = 38220
         )
         new_county.save()
     
@@ -1048,7 +1116,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5027,
             state_id = 5,
-            name = "Columbia County"
+            name = "Columbia County",
+            cbsa_id = 31620
         )
         new_county.save()
     
@@ -1064,7 +1133,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5031,
             state_id = 5,
-            name = "Craighead County"
+            name = "Craighead County",
+            cbsa_id = 27860
         )
         new_county.save()
     
@@ -1072,7 +1142,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5033,
             state_id = 5,
-            name = "Crawford County"
+            name = "Crawford County",
+            cbsa_id = 22900
         )
         new_county.save()
     
@@ -1080,7 +1151,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5035,
             state_id = 5,
-            name = "Crittenden County"
+            name = "Crittenden County",
+            cbsa_id = 32820
         )
         new_county.save()
     
@@ -1120,7 +1192,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5045,
             state_id = 5,
-            name = "Faulkner County"
+            name = "Faulkner County",
+            cbsa_id = 30780
         )
         new_county.save()
     
@@ -1144,7 +1217,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5051,
             state_id = 5,
-            name = "Garland County"
+            name = "Garland County",
+            cbsa_id = 26300
         )
         new_county.save()
     
@@ -1152,7 +1226,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5053,
             state_id = 5,
-            name = "Grant County"
+            name = "Grant County",
+            cbsa_id = 30780
         )
         new_county.save()
     
@@ -1160,7 +1235,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5055,
             state_id = 5,
-            name = "Greene County"
+            name = "Greene County",
+            cbsa_id = 37500
         )
         new_county.save()
     
@@ -1176,7 +1252,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5059,
             state_id = 5,
-            name = "Hot Spring County"
+            name = "Hot Spring County",
+            cbsa_id = 31680
         )
         new_county.save()
     
@@ -1192,7 +1269,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5063,
             state_id = 5,
-            name = "Independence County"
+            name = "Independence County",
+            cbsa_id = 12900
         )
         new_county.save()
     
@@ -1216,7 +1294,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5069,
             state_id = 5,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 38220
         )
         new_county.save()
     
@@ -1264,7 +1343,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5081,
             state_id = 5,
-            name = "Little River County"
+            name = "Little River County",
+            cbsa_id = 45500
         )
         new_county.save()
     
@@ -1280,7 +1360,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5085,
             state_id = 5,
-            name = "Lonoke County"
+            name = "Lonoke County",
+            cbsa_id = 30780
         )
         new_county.save()
     
@@ -1288,7 +1369,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5087,
             state_id = 5,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 22220
         )
         new_county.save()
     
@@ -1304,7 +1386,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5091,
             state_id = 5,
-            name = "Miller County"
+            name = "Miller County",
+            cbsa_id = 45500
         )
         new_county.save()
     
@@ -1312,7 +1395,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5093,
             state_id = 5,
-            name = "Mississippi County"
+            name = "Mississippi County",
+            cbsa_id = 14180
         )
         new_county.save()
     
@@ -1344,7 +1428,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5101,
             state_id = 5,
-            name = "Newton County"
+            name = "Newton County",
+            cbsa_id = 25460
         )
         new_county.save()
     
@@ -1352,7 +1437,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5103,
             state_id = 5,
-            name = "Ouachita County"
+            name = "Ouachita County",
+            cbsa_id = 15780
         )
         new_county.save()
     
@@ -1360,7 +1446,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5105,
             state_id = 5,
-            name = "Perry County"
+            name = "Perry County",
+            cbsa_id = 30780
         )
         new_county.save()
     
@@ -1384,7 +1471,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5111,
             state_id = 5,
-            name = "Poinsett County"
+            name = "Poinsett County",
+            cbsa_id = 27860
         )
         new_county.save()
     
@@ -1400,7 +1488,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5115,
             state_id = 5,
-            name = "Pope County"
+            name = "Pope County",
+            cbsa_id = 40780
         )
         new_county.save()
     
@@ -1416,7 +1505,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5119,
             state_id = 5,
-            name = "Pulaski County"
+            name = "Pulaski County",
+            cbsa_id = 30780
         )
         new_county.save()
     
@@ -1432,7 +1522,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5123,
             state_id = 5,
-            name = "St. Francis County"
+            name = "St. Francis County",
+            cbsa_id = 22620
         )
         new_county.save()
     
@@ -1440,7 +1531,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5125,
             state_id = 5,
-            name = "Saline County"
+            name = "Saline County",
+            cbsa_id = 30780
         )
         new_county.save()
     
@@ -1464,7 +1556,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5131,
             state_id = 5,
-            name = "Sebastian County"
+            name = "Sebastian County",
+            cbsa_id = 22900
         )
         new_county.save()
     
@@ -1496,7 +1589,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5139,
             state_id = 5,
-            name = "Union County"
+            name = "Union County",
+            cbsa_id = 20980
         )
         new_county.save()
     
@@ -1512,7 +1606,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5143,
             state_id = 5,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 22220
         )
         new_county.save()
     
@@ -1520,7 +1615,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5145,
             state_id = 5,
-            name = "White County"
+            name = "White County",
+            cbsa_id = 42620
         )
         new_county.save()
     
@@ -1536,7 +1632,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 5149,
             state_id = 5,
-            name = "Yell County"
+            name = "Yell County",
+            cbsa_id = 40780
         )
         new_county.save()
     
@@ -1544,7 +1641,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6001,
             state_id = 6,
-            name = "Alameda County"
+            name = "Alameda County",
+            cbsa_id = 41860
         )
         new_county.save()
     
@@ -1552,7 +1650,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6003,
             state_id = 6,
-            name = "Alpine County"
+            name = "Alpine County",
+            cbsa_id = 23820
         )
         new_county.save()
     
@@ -1568,7 +1667,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6007,
             state_id = 6,
-            name = "Butte County"
+            name = "Butte County",
+            cbsa_id = 17020
         )
         new_county.save()
     
@@ -1592,7 +1692,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6013,
             state_id = 6,
-            name = "Contra Costa County"
+            name = "Contra Costa County",
+            cbsa_id = 41860
         )
         new_county.save()
     
@@ -1600,7 +1701,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6015,
             state_id = 6,
-            name = "Del Norte County"
+            name = "Del Norte County",
+            cbsa_id = 18860
         )
         new_county.save()
     
@@ -1608,7 +1710,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6017,
             state_id = 6,
-            name = "El Dorado County"
+            name = "El Dorado County",
+            cbsa_id = 40900
         )
         new_county.save()
     
@@ -1616,7 +1719,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6019,
             state_id = 6,
-            name = "Fresno County"
+            name = "Fresno County",
+            cbsa_id = 23420
         )
         new_county.save()
     
@@ -1632,7 +1736,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6023,
             state_id = 6,
-            name = "Humboldt County"
+            name = "Humboldt County",
+            cbsa_id = 21700
         )
         new_county.save()
     
@@ -1640,7 +1745,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6025,
             state_id = 6,
-            name = "Imperial County"
+            name = "Imperial County",
+            cbsa_id = 20940
         )
         new_county.save()
     
@@ -1648,7 +1754,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6027,
             state_id = 6,
-            name = "Inyo County"
+            name = "Inyo County",
+            cbsa_id = 13860
         )
         new_county.save()
     
@@ -1656,7 +1763,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6029,
             state_id = 6,
-            name = "Kern County"
+            name = "Kern County",
+            cbsa_id = 12540
         )
         new_county.save()
     
@@ -1664,7 +1772,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6031,
             state_id = 6,
-            name = "Kings County"
+            name = "Kings County",
+            cbsa_id = 25260
         )
         new_county.save()
     
@@ -1672,7 +1781,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6033,
             state_id = 6,
-            name = "Lake County"
+            name = "Lake County",
+            cbsa_id = 17340
         )
         new_county.save()
     
@@ -1680,7 +1790,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6035,
             state_id = 6,
-            name = "Lassen County"
+            name = "Lassen County",
+            cbsa_id = 45000
         )
         new_county.save()
     
@@ -1688,7 +1799,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6037,
             state_id = 6,
-            name = "Los Angeles County"
+            name = "Los Angeles County",
+            cbsa_id = 31080
         )
         new_county.save()
     
@@ -1696,7 +1808,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6039,
             state_id = 6,
-            name = "Madera County"
+            name = "Madera County",
+            cbsa_id = 23420
         )
         new_county.save()
     
@@ -1704,7 +1817,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6041,
             state_id = 6,
-            name = "Marin County"
+            name = "Marin County",
+            cbsa_id = 41860
         )
         new_county.save()
     
@@ -1720,7 +1834,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6045,
             state_id = 6,
-            name = "Mendocino County"
+            name = "Mendocino County",
+            cbsa_id = 46380
         )
         new_county.save()
     
@@ -1728,7 +1843,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6047,
             state_id = 6,
-            name = "Merced County"
+            name = "Merced County",
+            cbsa_id = 32900
         )
         new_county.save()
     
@@ -1752,7 +1868,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6053,
             state_id = 6,
-            name = "Monterey County"
+            name = "Monterey County",
+            cbsa_id = 41500
         )
         new_county.save()
     
@@ -1760,7 +1877,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6055,
             state_id = 6,
-            name = "Napa County"
+            name = "Napa County",
+            cbsa_id = 34900
         )
         new_county.save()
     
@@ -1768,7 +1886,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6057,
             state_id = 6,
-            name = "Nevada County"
+            name = "Nevada County",
+            cbsa_id = 46020
         )
         new_county.save()
     
@@ -1776,7 +1895,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6059,
             state_id = 6,
-            name = "Orange County"
+            name = "Orange County",
+            cbsa_id = 31080
         )
         new_county.save()
     
@@ -1784,7 +1904,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6061,
             state_id = 6,
-            name = "Placer County"
+            name = "Placer County",
+            cbsa_id = 40900
         )
         new_county.save()
     
@@ -1800,7 +1921,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6065,
             state_id = 6,
-            name = "Riverside County"
+            name = "Riverside County",
+            cbsa_id = 40140
         )
         new_county.save()
     
@@ -1808,7 +1930,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6067,
             state_id = 6,
-            name = "Sacramento County"
+            name = "Sacramento County",
+            cbsa_id = 40900
         )
         new_county.save()
     
@@ -1816,7 +1939,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6069,
             state_id = 6,
-            name = "San Benito County"
+            name = "San Benito County",
+            cbsa_id = 41940
         )
         new_county.save()
     
@@ -1824,7 +1948,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6071,
             state_id = 6,
-            name = "San Bernardino County"
+            name = "San Bernardino County",
+            cbsa_id = 40140
         )
         new_county.save()
     
@@ -1832,7 +1957,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6073,
             state_id = 6,
-            name = "San Diego County"
+            name = "San Diego County",
+            cbsa_id = 41740
         )
         new_county.save()
     
@@ -1840,7 +1966,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6075,
             state_id = 6,
-            name = "San Francisco, City and County of"
+            name = "San Francisco, City and County of",
+            cbsa_id = 41860
         )
         new_county.save()
     
@@ -1848,7 +1975,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6077,
             state_id = 6,
-            name = "San Joaquin County"
+            name = "San Joaquin County",
+            cbsa_id = 44700
         )
         new_county.save()
     
@@ -1856,7 +1984,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6079,
             state_id = 6,
-            name = "San Luis Obispo County"
+            name = "San Luis Obispo County",
+            cbsa_id = 42020
         )
         new_county.save()
     
@@ -1864,7 +1993,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6081,
             state_id = 6,
-            name = "San Mateo County"
+            name = "San Mateo County",
+            cbsa_id = 41860
         )
         new_county.save()
     
@@ -1872,7 +2002,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6083,
             state_id = 6,
-            name = "Santa Barbara County"
+            name = "Santa Barbara County",
+            cbsa_id = 42200
         )
         new_county.save()
     
@@ -1880,7 +2011,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6085,
             state_id = 6,
-            name = "Santa Clara County"
+            name = "Santa Clara County",
+            cbsa_id = 41940
         )
         new_county.save()
     
@@ -1888,7 +2020,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6087,
             state_id = 6,
-            name = "Santa Cruz County"
+            name = "Santa Cruz County",
+            cbsa_id = 42100
         )
         new_county.save()
     
@@ -1896,7 +2029,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6089,
             state_id = 6,
-            name = "Shasta County"
+            name = "Shasta County",
+            cbsa_id = 39820
         )
         new_county.save()
     
@@ -1920,7 +2054,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6095,
             state_id = 6,
-            name = "Solano County"
+            name = "Solano County",
+            cbsa_id = 46700
         )
         new_county.save()
     
@@ -1928,7 +2063,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6097,
             state_id = 6,
-            name = "Sonoma County"
+            name = "Sonoma County",
+            cbsa_id = 42220
         )
         new_county.save()
     
@@ -1936,7 +2072,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6099,
             state_id = 6,
-            name = "Stanislaus County"
+            name = "Stanislaus County",
+            cbsa_id = 33700
         )
         new_county.save()
     
@@ -1944,7 +2081,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6101,
             state_id = 6,
-            name = "Sutter County"
+            name = "Sutter County",
+            cbsa_id = 49700
         )
         new_county.save()
     
@@ -1952,7 +2090,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6103,
             state_id = 6,
-            name = "Tehama County"
+            name = "Tehama County",
+            cbsa_id = 39780
         )
         new_county.save()
     
@@ -1968,7 +2107,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6107,
             state_id = 6,
-            name = "Tulare County"
+            name = "Tulare County",
+            cbsa_id = 47300
         )
         new_county.save()
     
@@ -1976,7 +2116,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6109,
             state_id = 6,
-            name = "Tuolumne County"
+            name = "Tuolumne County",
+            cbsa_id = 43760
         )
         new_county.save()
     
@@ -1984,7 +2125,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6111,
             state_id = 6,
-            name = "Ventura County"
+            name = "Ventura County",
+            cbsa_id = 37100
         )
         new_county.save()
     
@@ -1992,7 +2134,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6113,
             state_id = 6,
-            name = "Yolo County"
+            name = "Yolo County",
+            cbsa_id = 40900
         )
         new_county.save()
     
@@ -2000,7 +2143,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 6115,
             state_id = 6,
-            name = "Yuba County"
+            name = "Yuba County",
+            cbsa_id = 49700
         )
         new_county.save()
     
@@ -2008,7 +2152,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8001,
             state_id = 8,
-            name = "Adams County"
+            name = "Adams County",
+            cbsa_id = 19740
         )
         new_county.save()
     
@@ -2016,7 +2161,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8003,
             state_id = 8,
-            name = "Alamosa County"
+            name = "Alamosa County",
+            cbsa_id = 10480
         )
         new_county.save()
     
@@ -2024,7 +2170,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8005,
             state_id = 8,
-            name = "Arapahoe County"
+            name = "Arapahoe County",
+            cbsa_id = 19740
         )
         new_county.save()
     
@@ -2056,7 +2203,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8013,
             state_id = 8,
-            name = "Boulder County"
+            name = "Boulder County",
+            cbsa_id = 14500
         )
         new_county.save()
     
@@ -2064,7 +2212,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8014,
             state_id = 8,
-            name = "Broomfield, City and County of"
+            name = "Broomfield, City and County of",
+            cbsa_id = 19740
         )
         new_county.save()
     
@@ -2088,7 +2237,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8019,
             state_id = 8,
-            name = "Clear Creek County"
+            name = "Clear Creek County",
+            cbsa_id = 19740
         )
         new_county.save()
     
@@ -2096,7 +2246,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8021,
             state_id = 8,
-            name = "Conejos County"
+            name = "Conejos County",
+            cbsa_id = 10480
         )
         new_county.save()
     
@@ -2104,7 +2255,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8023,
             state_id = 8,
-            name = "Costilla County"
+            name = "Costilla County",
+            cbsa_id = 10480
         )
         new_county.save()
     
@@ -2136,7 +2288,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8031,
             state_id = 8,
-            name = "Denver, City and County of"
+            name = "Denver, City and County of",
+            cbsa_id = 19740
         )
         new_county.save()
     
@@ -2152,7 +2305,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8035,
             state_id = 8,
-            name = "Douglas County"
+            name = "Douglas County",
+            cbsa_id = 19740
         )
         new_county.save()
     
@@ -2160,7 +2314,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8037,
             state_id = 8,
-            name = "Eagle County"
+            name = "Eagle County",
+            cbsa_id = 20780
         )
         new_county.save()
     
@@ -2168,7 +2323,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8039,
             state_id = 8,
-            name = "Elbert County"
+            name = "Elbert County",
+            cbsa_id = 19740
         )
         new_county.save()
     
@@ -2176,7 +2332,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8041,
             state_id = 8,
-            name = "El Paso County"
+            name = "El Paso County",
+            cbsa_id = 17820
         )
         new_county.save()
     
@@ -2184,7 +2341,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8043,
             state_id = 8,
-            name = "Fremont County"
+            name = "Fremont County",
+            cbsa_id = 15860
         )
         new_county.save()
     
@@ -2192,7 +2350,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8045,
             state_id = 8,
-            name = "Garfield County"
+            name = "Garfield County",
+            cbsa_id = 40090
         )
         new_county.save()
     
@@ -2200,7 +2359,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8047,
             state_id = 8,
-            name = "Gilpin County"
+            name = "Gilpin County",
+            cbsa_id = 19740
         )
         new_county.save()
     
@@ -2248,7 +2408,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8059,
             state_id = 8,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 19740
         )
         new_county.save()
     
@@ -2272,7 +2433,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8065,
             state_id = 8,
-            name = "Lake County"
+            name = "Lake County",
+            cbsa_id = 14720
         )
         new_county.save()
     
@@ -2280,7 +2442,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8067,
             state_id = 8,
-            name = "La Plata County"
+            name = "La Plata County",
+            cbsa_id = 20420
         )
         new_county.save()
     
@@ -2288,7 +2451,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8069,
             state_id = 8,
-            name = "Larimer County"
+            name = "Larimer County",
+            cbsa_id = 22660
         )
         new_county.save()
     
@@ -2312,7 +2476,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8075,
             state_id = 8,
-            name = "Logan County"
+            name = "Logan County",
+            cbsa_id = 44540
         )
         new_county.save()
     
@@ -2320,7 +2485,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8077,
             state_id = 8,
-            name = "Mesa County"
+            name = "Mesa County",
+            cbsa_id = 24300
         )
         new_county.save()
     
@@ -2336,7 +2502,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8081,
             state_id = 8,
-            name = "Moffat County"
+            name = "Moffat County",
+            cbsa_id = 44460
         )
         new_county.save()
     
@@ -2352,7 +2519,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8085,
             state_id = 8,
-            name = "Montrose County"
+            name = "Montrose County",
+            cbsa_id = 33940
         )
         new_county.save()
     
@@ -2360,7 +2528,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8087,
             state_id = 8,
-            name = "Morgan County"
+            name = "Morgan County",
+            cbsa_id = 22820
         )
         new_county.save()
     
@@ -2384,7 +2553,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8093,
             state_id = 8,
-            name = "Park County"
+            name = "Park County",
+            cbsa_id = 19740
         )
         new_county.save()
     
@@ -2400,7 +2570,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8097,
             state_id = 8,
-            name = "Pitkin County"
+            name = "Pitkin County",
+            cbsa_id = 40090
         )
         new_county.save()
     
@@ -2416,7 +2587,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8101,
             state_id = 8,
-            name = "Pueblo County"
+            name = "Pueblo County",
+            cbsa_id = 39380
         )
         new_county.save()
     
@@ -2440,7 +2612,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8107,
             state_id = 8,
-            name = "Routt County"
+            name = "Routt County",
+            cbsa_id = 44460
         )
         new_county.save()
     
@@ -2480,7 +2653,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8117,
             state_id = 8,
-            name = "Summit County"
+            name = "Summit County",
+            cbsa_id = 14720
         )
         new_county.save()
     
@@ -2488,7 +2662,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8119,
             state_id = 8,
-            name = "Teller County"
+            name = "Teller County",
+            cbsa_id = 17820
         )
         new_county.save()
     
@@ -2504,7 +2679,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 8123,
             state_id = 8,
-            name = "Weld County"
+            name = "Weld County",
+            cbsa_id = 24540
         )
         new_county.save()
     
@@ -2584,7 +2760,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 10001,
             state_id = 10,
-            name = "Kent County"
+            name = "Kent County",
+            cbsa_id = 20100
         )
         new_county.save()
     
@@ -2592,7 +2769,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 10003,
             state_id = 10,
-            name = "New Castle County"
+            name = "New Castle County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -2600,7 +2778,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 10005,
             state_id = 10,
-            name = "Sussex County"
+            name = "Sussex County",
+            cbsa_id = 42580
         )
         new_county.save()
     
@@ -2608,7 +2787,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 11001,
             state_id = 11,
-            name = "District of Columbia"
+            name = "District of Columbia",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -2616,7 +2796,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12001,
             state_id = 12,
-            name = "Alachua County"
+            name = "Alachua County",
+            cbsa_id = 23540
         )
         new_county.save()
     
@@ -2624,7 +2805,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12003,
             state_id = 12,
-            name = "Baker County"
+            name = "Baker County",
+            cbsa_id = 27260
         )
         new_county.save()
     
@@ -2632,7 +2814,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12005,
             state_id = 12,
-            name = "Bay County"
+            name = "Bay County",
+            cbsa_id = 37460
         )
         new_county.save()
     
@@ -2648,7 +2831,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12009,
             state_id = 12,
-            name = "Brevard County"
+            name = "Brevard County",
+            cbsa_id = 37340
         )
         new_county.save()
     
@@ -2656,7 +2840,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12011,
             state_id = 12,
-            name = "Broward County"
+            name = "Broward County",
+            cbsa_id = 33100
         )
         new_county.save()
     
@@ -2672,7 +2857,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12015,
             state_id = 12,
-            name = "Charlotte County"
+            name = "Charlotte County",
+            cbsa_id = 39460
         )
         new_county.save()
     
@@ -2680,7 +2866,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12017,
             state_id = 12,
-            name = "Citrus County"
+            name = "Citrus County",
+            cbsa_id = 26140
         )
         new_county.save()
     
@@ -2688,7 +2875,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12019,
             state_id = 12,
-            name = "Clay County"
+            name = "Clay County",
+            cbsa_id = 27260
         )
         new_county.save()
     
@@ -2696,7 +2884,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12021,
             state_id = 12,
-            name = "Collier County"
+            name = "Collier County",
+            cbsa_id = 34940
         )
         new_county.save()
     
@@ -2704,7 +2893,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12023,
             state_id = 12,
-            name = "Columbia County"
+            name = "Columbia County",
+            cbsa_id = 29380
         )
         new_county.save()
     
@@ -2712,7 +2902,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12027,
             state_id = 12,
-            name = "DeSoto County"
+            name = "DeSoto County",
+            cbsa_id = 11580
         )
         new_county.save()
     
@@ -2728,7 +2919,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12031,
             state_id = 12,
-            name = "Duval County"
+            name = "Duval County",
+            cbsa_id = 27260
         )
         new_county.save()
     
@@ -2736,7 +2928,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12033,
             state_id = 12,
-            name = "Escambia County"
+            name = "Escambia County",
+            cbsa_id = 37860
         )
         new_county.save()
     
@@ -2744,7 +2937,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12035,
             state_id = 12,
-            name = "Flagler County"
+            name = "Flagler County",
+            cbsa_id = 19660
         )
         new_county.save()
     
@@ -2760,7 +2954,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12039,
             state_id = 12,
-            name = "Gadsden County"
+            name = "Gadsden County",
+            cbsa_id = 45220
         )
         new_county.save()
     
@@ -2768,7 +2963,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12041,
             state_id = 12,
-            name = "Gilchrist County"
+            name = "Gilchrist County",
+            cbsa_id = 23540
         )
         new_county.save()
     
@@ -2776,7 +2972,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12043,
             state_id = 12,
-            name = "Glades County"
+            name = "Glades County",
+            cbsa_id = 17500
         )
         new_county.save()
     
@@ -2808,7 +3005,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12051,
             state_id = 12,
-            name = "Hendry County"
+            name = "Hendry County",
+            cbsa_id = 17500
         )
         new_county.save()
     
@@ -2816,7 +3014,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12053,
             state_id = 12,
-            name = "Hernando County"
+            name = "Hernando County",
+            cbsa_id = 45300
         )
         new_county.save()
     
@@ -2824,7 +3023,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12055,
             state_id = 12,
-            name = "Highlands County"
+            name = "Highlands County",
+            cbsa_id = 42700
         )
         new_county.save()
     
@@ -2832,7 +3032,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12057,
             state_id = 12,
-            name = "Hillsborough County"
+            name = "Hillsborough County",
+            cbsa_id = 45300
         )
         new_county.save()
     
@@ -2848,7 +3049,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12061,
             state_id = 12,
-            name = "Indian River County"
+            name = "Indian River County",
+            cbsa_id = 42680
         )
         new_county.save()
     
@@ -2864,7 +3066,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12065,
             state_id = 12,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 45220
         )
         new_county.save()
     
@@ -2880,7 +3083,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12069,
             state_id = 12,
-            name = "Lake County"
+            name = "Lake County",
+            cbsa_id = 36740
         )
         new_county.save()
     
@@ -2888,7 +3092,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12071,
             state_id = 12,
-            name = "Lee County"
+            name = "Lee County",
+            cbsa_id = 15980
         )
         new_county.save()
     
@@ -2896,7 +3101,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12073,
             state_id = 12,
-            name = "Leon County"
+            name = "Leon County",
+            cbsa_id = 45220
         )
         new_county.save()
     
@@ -2904,7 +3110,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12075,
             state_id = 12,
-            name = "Levy County"
+            name = "Levy County",
+            cbsa_id = 23540
         )
         new_county.save()
     
@@ -2928,7 +3135,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12081,
             state_id = 12,
-            name = "Manatee County"
+            name = "Manatee County",
+            cbsa_id = 35840
         )
         new_county.save()
     
@@ -2936,7 +3144,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12083,
             state_id = 12,
-            name = "Marion County"
+            name = "Marion County",
+            cbsa_id = 36100
         )
         new_county.save()
     
@@ -2944,7 +3153,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12085,
             state_id = 12,
-            name = "Martin County"
+            name = "Martin County",
+            cbsa_id = 38940
         )
         new_county.save()
     
@@ -2952,7 +3162,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12086,
             state_id = 12,
-            name = "Miami-Dade County"
+            name = "Miami-Dade County",
+            cbsa_id = 33100
         )
         new_county.save()
     
@@ -2960,7 +3171,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12087,
             state_id = 12,
-            name = "Monroe County"
+            name = "Monroe County",
+            cbsa_id = 28580
         )
         new_county.save()
     
@@ -2968,7 +3180,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12089,
             state_id = 12,
-            name = "Nassau County"
+            name = "Nassau County",
+            cbsa_id = 27260
         )
         new_county.save()
     
@@ -2976,7 +3189,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12091,
             state_id = 12,
-            name = "Okaloosa County"
+            name = "Okaloosa County",
+            cbsa_id = 18880
         )
         new_county.save()
     
@@ -2984,7 +3198,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12093,
             state_id = 12,
-            name = "Okeechobee County"
+            name = "Okeechobee County",
+            cbsa_id = 36380
         )
         new_county.save()
     
@@ -2992,7 +3207,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12095,
             state_id = 12,
-            name = "Orange County"
+            name = "Orange County",
+            cbsa_id = 36740
         )
         new_county.save()
     
@@ -3000,7 +3216,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12097,
             state_id = 12,
-            name = "Osceola County"
+            name = "Osceola County",
+            cbsa_id = 36740
         )
         new_county.save()
     
@@ -3008,7 +3225,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12099,
             state_id = 12,
-            name = "Palm Beach County"
+            name = "Palm Beach County",
+            cbsa_id = 33100
         )
         new_county.save()
     
@@ -3016,7 +3234,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12101,
             state_id = 12,
-            name = "Pasco County"
+            name = "Pasco County",
+            cbsa_id = 45300
         )
         new_county.save()
     
@@ -3024,7 +3243,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12103,
             state_id = 12,
-            name = "Pinellas County"
+            name = "Pinellas County",
+            cbsa_id = 45300
         )
         new_county.save()
     
@@ -3032,7 +3252,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12105,
             state_id = 12,
-            name = "Polk County"
+            name = "Polk County",
+            cbsa_id = 29460
         )
         new_county.save()
     
@@ -3040,7 +3261,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12107,
             state_id = 12,
-            name = "Putnam County"
+            name = "Putnam County",
+            cbsa_id = 37260
         )
         new_county.save()
     
@@ -3048,7 +3270,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12109,
             state_id = 12,
-            name = "St. Johns County"
+            name = "St. Johns County",
+            cbsa_id = 27260
         )
         new_county.save()
     
@@ -3056,7 +3279,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12111,
             state_id = 12,
-            name = "St. Lucie County"
+            name = "St. Lucie County",
+            cbsa_id = 38940
         )
         new_county.save()
     
@@ -3064,7 +3288,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12113,
             state_id = 12,
-            name = "Santa Rosa County"
+            name = "Santa Rosa County",
+            cbsa_id = 37860
         )
         new_county.save()
     
@@ -3072,7 +3297,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12115,
             state_id = 12,
-            name = "Sarasota County"
+            name = "Sarasota County",
+            cbsa_id = 35840
         )
         new_county.save()
     
@@ -3080,7 +3306,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12117,
             state_id = 12,
-            name = "Seminole County"
+            name = "Seminole County",
+            cbsa_id = 36740
         )
         new_county.save()
     
@@ -3088,7 +3315,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12119,
             state_id = 12,
-            name = "Sumter County"
+            name = "Sumter County",
+            cbsa_id = 48680
         )
         new_county.save()
     
@@ -3120,7 +3348,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12127,
             state_id = 12,
-            name = "Volusia County"
+            name = "Volusia County",
+            cbsa_id = 19660
         )
         new_county.save()
     
@@ -3128,7 +3357,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12129,
             state_id = 12,
-            name = "Wakulla County"
+            name = "Wakulla County",
+            cbsa_id = 45220
         )
         new_county.save()
     
@@ -3136,7 +3366,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12131,
             state_id = 12,
-            name = "Walton County"
+            name = "Walton County",
+            cbsa_id = 18880
         )
         new_county.save()
     
@@ -3144,7 +3375,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 12133,
             state_id = 12,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 37460
         )
         new_county.save()
     
@@ -3160,7 +3392,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13003,
             state_id = 13,
-            name = "Atkinson County"
+            name = "Atkinson County",
+            cbsa_id = 20060
         )
         new_county.save()
     
@@ -3184,7 +3417,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13009,
             state_id = 13,
-            name = "Baldwin County"
+            name = "Baldwin County",
+            cbsa_id = 33300
         )
         new_county.save()
     
@@ -3200,7 +3434,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13013,
             state_id = 13,
-            name = "Barrow County"
+            name = "Barrow County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3208,7 +3443,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13015,
             state_id = 13,
-            name = "Bartow County"
+            name = "Bartow County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3216,7 +3452,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13017,
             state_id = 13,
-            name = "Ben Hill County"
+            name = "Ben Hill County",
+            cbsa_id = 22340
         )
         new_county.save()
     
@@ -3232,7 +3469,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13021,
             state_id = 13,
-            name = "Bibb County"
+            name = "Bibb County",
+            cbsa_id = 31420
         )
         new_county.save()
     
@@ -3248,7 +3486,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13025,
             state_id = 13,
-            name = "Brantley County"
+            name = "Brantley County",
+            cbsa_id = 15260
         )
         new_county.save()
     
@@ -3256,7 +3495,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13027,
             state_id = 13,
-            name = "Brooks County"
+            name = "Brooks County",
+            cbsa_id = 46660
         )
         new_county.save()
     
@@ -3264,7 +3504,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13029,
             state_id = 13,
-            name = "Bryan County"
+            name = "Bryan County",
+            cbsa_id = 42340
         )
         new_county.save()
     
@@ -3272,7 +3513,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13031,
             state_id = 13,
-            name = "Bulloch County"
+            name = "Bulloch County",
+            cbsa_id = 44340
         )
         new_county.save()
     
@@ -3280,7 +3522,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13033,
             state_id = 13,
-            name = "Burke County"
+            name = "Burke County",
+            cbsa_id = 12260
         )
         new_county.save()
     
@@ -3288,7 +3531,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13035,
             state_id = 13,
-            name = "Butts County"
+            name = "Butts County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3304,7 +3548,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13039,
             state_id = 13,
-            name = "Camden County"
+            name = "Camden County",
+            cbsa_id = 28680
         )
         new_county.save()
     
@@ -3320,7 +3565,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13045,
             state_id = 13,
-            name = "Carroll County"
+            name = "Carroll County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3328,7 +3574,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13047,
             state_id = 13,
-            name = "Catoosa County"
+            name = "Catoosa County",
+            cbsa_id = 16860
         )
         new_county.save()
     
@@ -3344,7 +3591,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13051,
             state_id = 13,
-            name = "Chatham County"
+            name = "Chatham County",
+            cbsa_id = 42340
         )
         new_county.save()
     
@@ -3352,7 +3600,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13053,
             state_id = 13,
-            name = "Chattahoochee County"
+            name = "Chattahoochee County",
+            cbsa_id = 17980
         )
         new_county.save()
     
@@ -3360,7 +3609,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13055,
             state_id = 13,
-            name = "Chattooga County"
+            name = "Chattooga County",
+            cbsa_id = 44900
         )
         new_county.save()
     
@@ -3368,7 +3618,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13057,
             state_id = 13,
-            name = "Cherokee County"
+            name = "Cherokee County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3376,7 +3627,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13059,
             state_id = 13,
-            name = "Clarke County"
+            name = "Clarke County",
+            cbsa_id = 12020
         )
         new_county.save()
     
@@ -3392,7 +3644,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13063,
             state_id = 13,
-            name = "Clayton County"
+            name = "Clayton County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3408,7 +3661,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13067,
             state_id = 13,
-            name = "Cobb County"
+            name = "Cobb County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3416,7 +3670,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13069,
             state_id = 13,
-            name = "Coffee County"
+            name = "Coffee County",
+            cbsa_id = 20060
         )
         new_county.save()
     
@@ -3424,7 +3679,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13071,
             state_id = 13,
-            name = "Colquitt County"
+            name = "Colquitt County",
+            cbsa_id = 34220
         )
         new_county.save()
     
@@ -3432,7 +3688,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13073,
             state_id = 13,
-            name = "Columbia County"
+            name = "Columbia County",
+            cbsa_id = 12260
         )
         new_county.save()
     
@@ -3448,7 +3705,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13077,
             state_id = 13,
-            name = "Coweta County"
+            name = "Coweta County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3456,7 +3714,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13079,
             state_id = 13,
-            name = "Crawford County"
+            name = "Crawford County",
+            cbsa_id = 31420
         )
         new_county.save()
     
@@ -3464,7 +3723,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13081,
             state_id = 13,
-            name = "Crisp County"
+            name = "Crisp County",
+            cbsa_id = 18380
         )
         new_county.save()
     
@@ -3472,7 +3732,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13083,
             state_id = 13,
-            name = "Dade County"
+            name = "Dade County",
+            cbsa_id = 16860
         )
         new_county.save()
     
@@ -3480,7 +3741,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13085,
             state_id = 13,
-            name = "Dawson County"
+            name = "Dawson County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3488,7 +3750,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13087,
             state_id = 13,
-            name = "Decatur County"
+            name = "Decatur County",
+            cbsa_id = 12460
         )
         new_county.save()
     
@@ -3496,7 +3759,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13089,
             state_id = 13,
-            name = "DeKalb County"
+            name = "DeKalb County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3520,7 +3784,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13095,
             state_id = 13,
-            name = "Dougherty County"
+            name = "Dougherty County",
+            cbsa_id = 10500
         )
         new_county.save()
     
@@ -3528,7 +3793,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13097,
             state_id = 13,
-            name = "Douglas County"
+            name = "Douglas County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3544,7 +3810,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13101,
             state_id = 13,
-            name = "Echols County"
+            name = "Echols County",
+            cbsa_id = 46660
         )
         new_county.save()
     
@@ -3552,7 +3819,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13103,
             state_id = 13,
-            name = "Effingham County"
+            name = "Effingham County",
+            cbsa_id = 42340
         )
         new_county.save()
     
@@ -3576,7 +3844,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13109,
             state_id = 13,
-            name = "Evans County"
+            name = "Evans County",
+            cbsa_id = 44340
         )
         new_county.save()
     
@@ -3592,7 +3861,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13113,
             state_id = 13,
-            name = "Fayette County"
+            name = "Fayette County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3600,7 +3870,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13115,
             state_id = 13,
-            name = "Floyd County"
+            name = "Floyd County",
+            cbsa_id = 40660
         )
         new_county.save()
     
@@ -3608,7 +3879,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13117,
             state_id = 13,
-            name = "Forsyth County"
+            name = "Forsyth County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3624,7 +3896,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13121,
             state_id = 13,
-            name = "Fulton County"
+            name = "Fulton County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3648,7 +3921,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13127,
             state_id = 13,
-            name = "Glynn County"
+            name = "Glynn County",
+            cbsa_id = 15260
         )
         new_county.save()
     
@@ -3656,7 +3930,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13129,
             state_id = 13,
-            name = "Gordon County"
+            name = "Gordon County",
+            cbsa_id = 15660
         )
         new_county.save()
     
@@ -3664,7 +3939,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13131,
             state_id = 13,
-            name = "Grady County"
+            name = "Grady County",
+            cbsa_id = 45620
         )
         new_county.save()
     
@@ -3680,7 +3956,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13135,
             state_id = 13,
-            name = "Gwinnett County"
+            name = "Gwinnett County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3688,7 +3965,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13137,
             state_id = 13,
-            name = "Habersham County"
+            name = "Habersham County",
+            cbsa_id = 18460
         )
         new_county.save()
     
@@ -3696,7 +3974,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13139,
             state_id = 13,
-            name = "Hall County"
+            name = "Hall County",
+            cbsa_id = 23580
         )
         new_county.save()
     
@@ -3712,7 +3991,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13143,
             state_id = 13,
-            name = "Haralson County"
+            name = "Haralson County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3720,7 +4000,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13145,
             state_id = 13,
-            name = "Harris County"
+            name = "Harris County",
+            cbsa_id = 17980
         )
         new_county.save()
     
@@ -3736,7 +4017,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13149,
             state_id = 13,
-            name = "Heard County"
+            name = "Heard County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3744,7 +4026,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13151,
             state_id = 13,
-            name = "Henry County"
+            name = "Henry County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3752,7 +4035,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13153,
             state_id = 13,
-            name = "Houston County"
+            name = "Houston County",
+            cbsa_id = 47580
         )
         new_county.save()
     
@@ -3768,7 +4052,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13157,
             state_id = 13,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 27600
         )
         new_county.save()
     
@@ -3776,7 +4061,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13159,
             state_id = 13,
-            name = "Jasper County"
+            name = "Jasper County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3808,7 +4094,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13167,
             state_id = 13,
-            name = "Johnson County"
+            name = "Johnson County",
+            cbsa_id = 20140
         )
         new_county.save()
     
@@ -3816,7 +4103,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13169,
             state_id = 13,
-            name = "Jones County"
+            name = "Jones County",
+            cbsa_id = 31420
         )
         new_county.save()
     
@@ -3832,7 +4120,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13173,
             state_id = 13,
-            name = "Lanier County"
+            name = "Lanier County",
+            cbsa_id = 46660
         )
         new_county.save()
     
@@ -3840,7 +4129,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13175,
             state_id = 13,
-            name = "Laurens County"
+            name = "Laurens County",
+            cbsa_id = 20140
         )
         new_county.save()
     
@@ -3848,7 +4138,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13177,
             state_id = 13,
-            name = "Lee County"
+            name = "Lee County",
+            cbsa_id = 10500
         )
         new_county.save()
     
@@ -3856,7 +4147,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13179,
             state_id = 13,
-            name = "Liberty County"
+            name = "Liberty County",
+            cbsa_id = 25980
         )
         new_county.save()
     
@@ -3864,7 +4156,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13181,
             state_id = 13,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 12260
         )
         new_county.save()
     
@@ -3872,7 +4165,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13183,
             state_id = 13,
-            name = "Long County"
+            name = "Long County",
+            cbsa_id = 25980
         )
         new_county.save()
     
@@ -3880,7 +4174,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13185,
             state_id = 13,
-            name = "Lowndes County"
+            name = "Lowndes County",
+            cbsa_id = 46660
         )
         new_county.save()
     
@@ -3888,7 +4183,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13187,
             state_id = 13,
-            name = "Lumpkin County"
+            name = "Lumpkin County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3896,7 +4192,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13189,
             state_id = 13,
-            name = "McDuffie County"
+            name = "McDuffie County",
+            cbsa_id = 12260
         )
         new_county.save()
     
@@ -3904,7 +4201,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13191,
             state_id = 13,
-            name = "McIntosh County"
+            name = "McIntosh County",
+            cbsa_id = 15260
         )
         new_county.save()
     
@@ -3920,7 +4218,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13195,
             state_id = 13,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 12020
         )
         new_county.save()
     
@@ -3928,7 +4227,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13197,
             state_id = 13,
-            name = "Marion County"
+            name = "Marion County",
+            cbsa_id = 17980
         )
         new_county.save()
     
@@ -3936,7 +4236,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13199,
             state_id = 13,
-            name = "Meriwether County"
+            name = "Meriwether County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3960,7 +4261,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13207,
             state_id = 13,
-            name = "Monroe County"
+            name = "Monroe County",
+            cbsa_id = 31420
         )
         new_county.save()
     
@@ -3968,7 +4270,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13209,
             state_id = 13,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 47080
         )
         new_county.save()
     
@@ -3976,7 +4279,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13211,
             state_id = 13,
-            name = "Morgan County"
+            name = "Morgan County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -3984,7 +4288,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13213,
             state_id = 13,
-            name = "Murray County"
+            name = "Murray County",
+            cbsa_id = 19140
         )
         new_county.save()
     
@@ -3992,7 +4297,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13215,
             state_id = 13,
-            name = "Muscogee County"
+            name = "Muscogee County",
+            cbsa_id = 17980
         )
         new_county.save()
     
@@ -4000,7 +4306,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13217,
             state_id = 13,
-            name = "Newton County"
+            name = "Newton County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -4008,7 +4315,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13219,
             state_id = 13,
-            name = "Oconee County"
+            name = "Oconee County",
+            cbsa_id = 12020
         )
         new_county.save()
     
@@ -4016,7 +4324,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13221,
             state_id = 13,
-            name = "Oglethorpe County"
+            name = "Oglethorpe County",
+            cbsa_id = 12020
         )
         new_county.save()
     
@@ -4024,7 +4333,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13223,
             state_id = 13,
-            name = "Paulding County"
+            name = "Paulding County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -4032,7 +4342,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13225,
             state_id = 13,
-            name = "Peach County"
+            name = "Peach County",
+            cbsa_id = 47580
         )
         new_county.save()
     
@@ -4040,7 +4351,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13227,
             state_id = 13,
-            name = "Pickens County"
+            name = "Pickens County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -4048,7 +4360,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13229,
             state_id = 13,
-            name = "Pierce County"
+            name = "Pierce County",
+            cbsa_id = 48180
         )
         new_county.save()
     
@@ -4056,7 +4369,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13231,
             state_id = 13,
-            name = "Pike County"
+            name = "Pike County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -4064,7 +4378,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13233,
             state_id = 13,
-            name = "Polk County"
+            name = "Polk County",
+            cbsa_id = 16340
         )
         new_county.save()
     
@@ -4088,7 +4403,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13239,
             state_id = 13,
-            name = "Quitman County"
+            name = "Quitman County",
+            cbsa_id = 21640
         )
         new_county.save()
     
@@ -4112,7 +4428,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13245,
             state_id = 13,
-            name = "Richmond County"
+            name = "Richmond County",
+            cbsa_id = 12260
         )
         new_county.save()
     
@@ -4120,7 +4437,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13247,
             state_id = 13,
-            name = "Rockdale County"
+            name = "Rockdale County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -4128,7 +4446,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13249,
             state_id = 13,
-            name = "Schley County"
+            name = "Schley County",
+            cbsa_id = 11140
         )
         new_county.save()
     
@@ -4152,7 +4471,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13255,
             state_id = 13,
-            name = "Spalding County"
+            name = "Spalding County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -4160,7 +4480,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13257,
             state_id = 13,
-            name = "Stephens County"
+            name = "Stephens County",
+            cbsa_id = 45740
         )
         new_county.save()
     
@@ -4168,7 +4489,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13259,
             state_id = 13,
-            name = "Stewart County"
+            name = "Stewart County",
+            cbsa_id = 17980
         )
         new_county.save()
     
@@ -4176,7 +4498,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13261,
             state_id = 13,
-            name = "Sumter County"
+            name = "Sumter County",
+            cbsa_id = 11140
         )
         new_county.save()
     
@@ -4184,7 +4507,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13263,
             state_id = 13,
-            name = "Talbot County"
+            name = "Talbot County",
+            cbsa_id = 17980
         )
         new_county.save()
     
@@ -4224,7 +4548,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13273,
             state_id = 13,
-            name = "Terrell County"
+            name = "Terrell County",
+            cbsa_id = 10500
         )
         new_county.save()
     
@@ -4232,7 +4557,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13275,
             state_id = 13,
-            name = "Thomas County"
+            name = "Thomas County",
+            cbsa_id = 45620
         )
         new_county.save()
     
@@ -4240,7 +4566,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13277,
             state_id = 13,
-            name = "Tift County"
+            name = "Tift County",
+            cbsa_id = 45700
         )
         new_county.save()
     
@@ -4248,7 +4575,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13279,
             state_id = 13,
-            name = "Toombs County"
+            name = "Toombs County",
+            cbsa_id = 47080
         )
         new_county.save()
     
@@ -4272,7 +4600,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13285,
             state_id = 13,
-            name = "Troup County"
+            name = "Troup County",
+            cbsa_id = 29300
         )
         new_county.save()
     
@@ -4280,7 +4609,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13287,
             state_id = 13,
-            name = "Turner County"
+            name = "Turner County",
+            cbsa_id = 45700
         )
         new_county.save()
     
@@ -4288,7 +4618,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13289,
             state_id = 13,
-            name = "Twiggs County"
+            name = "Twiggs County",
+            cbsa_id = 31420
         )
         new_county.save()
     
@@ -4304,7 +4635,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13293,
             state_id = 13,
-            name = "Upson County"
+            name = "Upson County",
+            cbsa_id = 45580
         )
         new_county.save()
     
@@ -4312,7 +4644,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13295,
             state_id = 13,
-            name = "Walker County"
+            name = "Walker County",
+            cbsa_id = 16860
         )
         new_county.save()
     
@@ -4320,7 +4653,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13297,
             state_id = 13,
-            name = "Walton County"
+            name = "Walton County",
+            cbsa_id = 12060
         )
         new_county.save()
     
@@ -4328,7 +4662,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13299,
             state_id = 13,
-            name = "Ware County"
+            name = "Ware County",
+            cbsa_id = 48180
         )
         new_county.save()
     
@@ -4352,7 +4687,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13305,
             state_id = 13,
-            name = "Wayne County"
+            name = "Wayne County",
+            cbsa_id = 27700
         )
         new_county.save()
     
@@ -4384,7 +4720,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13313,
             state_id = 13,
-            name = "Whitfield County"
+            name = "Whitfield County",
+            cbsa_id = 19140
         )
         new_county.save()
     
@@ -4416,7 +4753,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 13321,
             state_id = 13,
-            name = "Worth County"
+            name = "Worth County",
+            cbsa_id = 10500
         )
         new_county.save()
     
@@ -4432,7 +4770,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 15001,
             state_id = 15,
-            name = "Hawaii County"
+            name = "Hawaii County",
+            cbsa_id = 25900
         )
         new_county.save()
     
@@ -4440,7 +4779,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 15003,
             state_id = 15,
-            name = "Honolulu, City and County of"
+            name = "Honolulu, City and County of",
+            cbsa_id = 46520
         )
         new_county.save()
     
@@ -4448,7 +4788,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 15005,
             state_id = 15,
-            name = "Kalawao County"
+            name = "Kalawao County",
+            cbsa_id = 27980
         )
         new_county.save()
     
@@ -4456,7 +4797,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 15007,
             state_id = 15,
-            name = "Kauai County"
+            name = "Kauai County",
+            cbsa_id = 28180
         )
         new_county.save()
     
@@ -4464,7 +4806,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 15009,
             state_id = 15,
-            name = "Maui County"
+            name = "Maui County",
+            cbsa_id = 27980
         )
         new_county.save()
     
@@ -4472,7 +4815,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16001,
             state_id = 16,
-            name = "Ada County"
+            name = "Ada County",
+            cbsa_id = 14260
         )
         new_county.save()
     
@@ -4488,7 +4832,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16005,
             state_id = 16,
-            name = "Bannock County"
+            name = "Bannock County",
+            cbsa_id = 38540
         )
         new_county.save()
     
@@ -4512,7 +4857,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16011,
             state_id = 16,
-            name = "Bingham County"
+            name = "Bingham County",
+            cbsa_id = 13940
         )
         new_county.save()
     
@@ -4520,7 +4866,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16013,
             state_id = 16,
-            name = "Blaine County"
+            name = "Blaine County",
+            cbsa_id = 25200
         )
         new_county.save()
     
@@ -4528,7 +4875,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16015,
             state_id = 16,
-            name = "Boise County"
+            name = "Boise County",
+            cbsa_id = 14260
         )
         new_county.save()
     
@@ -4536,7 +4884,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16017,
             state_id = 16,
-            name = "Bonner County"
+            name = "Bonner County",
+            cbsa_id = 41760
         )
         new_county.save()
     
@@ -4544,7 +4893,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16019,
             state_id = 16,
-            name = "Bonneville County"
+            name = "Bonneville County",
+            cbsa_id = 26820
         )
         new_county.save()
     
@@ -4560,7 +4910,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16023,
             state_id = 16,
-            name = "Butte County"
+            name = "Butte County",
+            cbsa_id = 26820
         )
         new_county.save()
     
@@ -4568,7 +4919,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16025,
             state_id = 16,
-            name = "Camas County"
+            name = "Camas County",
+            cbsa_id = 25200
         )
         new_county.save()
     
@@ -4576,7 +4928,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16027,
             state_id = 16,
-            name = "Canyon County"
+            name = "Canyon County",
+            cbsa_id = 14260
         )
         new_county.save()
     
@@ -4592,7 +4945,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16031,
             state_id = 16,
-            name = "Cassia County"
+            name = "Cassia County",
+            cbsa_id = 15420
         )
         new_county.save()
     
@@ -4624,7 +4978,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16039,
             state_id = 16,
-            name = "Elmore County"
+            name = "Elmore County",
+            cbsa_id = 34300
         )
         new_county.save()
     
@@ -4632,7 +4987,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16041,
             state_id = 16,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 30860
         )
         new_county.save()
     
@@ -4640,7 +4996,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16043,
             state_id = 16,
-            name = "Fremont County"
+            name = "Fremont County",
+            cbsa_id = 39940
         )
         new_county.save()
     
@@ -4648,7 +5005,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16045,
             state_id = 16,
-            name = "Gem County"
+            name = "Gem County",
+            cbsa_id = 14260
         )
         new_county.save()
     
@@ -4672,7 +5030,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16051,
             state_id = 16,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 26820
         )
         new_county.save()
     
@@ -4680,7 +5039,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16053,
             state_id = 16,
-            name = "Jerome County"
+            name = "Jerome County",
+            cbsa_id = 46300
         )
         new_county.save()
     
@@ -4688,7 +5048,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16055,
             state_id = 16,
-            name = "Kootenai County"
+            name = "Kootenai County",
+            cbsa_id = 17660
         )
         new_county.save()
     
@@ -4696,7 +5057,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16057,
             state_id = 16,
-            name = "Latah County"
+            name = "Latah County",
+            cbsa_id = 34140
         )
         new_county.save()
     
@@ -4720,7 +5082,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16063,
             state_id = 16,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 25200
         )
         new_county.save()
     
@@ -4728,7 +5091,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16065,
             state_id = 16,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 39940
         )
         new_county.save()
     
@@ -4736,7 +5100,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16067,
             state_id = 16,
-            name = "Minidoka County"
+            name = "Minidoka County",
+            cbsa_id = 15420
         )
         new_county.save()
     
@@ -4744,7 +5109,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16069,
             state_id = 16,
-            name = "Nez Perce County"
+            name = "Nez Perce County",
+            cbsa_id = 30300
         )
         new_county.save()
     
@@ -4752,7 +5118,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16071,
             state_id = 16,
-            name = "Oneida County"
+            name = "Oneida County",
+            cbsa_id = 14940
         )
         new_county.save()
     
@@ -4760,7 +5127,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16073,
             state_id = 16,
-            name = "Owyhee County"
+            name = "Owyhee County",
+            cbsa_id = 14260
         )
         new_county.save()
     
@@ -4768,7 +5136,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16075,
             state_id = 16,
-            name = "Payette County"
+            name = "Payette County",
+            cbsa_id = 36620
         )
         new_county.save()
     
@@ -4792,7 +5161,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16081,
             state_id = 16,
-            name = "Teton County"
+            name = "Teton County",
+            cbsa_id = 27220
         )
         new_county.save()
     
@@ -4800,7 +5170,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 16083,
             state_id = 16,
-            name = "Twin Falls County"
+            name = "Twin Falls County",
+            cbsa_id = 46300
         )
         new_county.save()
     
@@ -4824,7 +5195,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17001,
             state_id = 17,
-            name = "Adams County"
+            name = "Adams County",
+            cbsa_id = 39500
         )
         new_county.save()
     
@@ -4832,7 +5204,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17003,
             state_id = 17,
-            name = "Alexander County"
+            name = "Alexander County",
+            cbsa_id = 16020
         )
         new_county.save()
     
@@ -4840,7 +5213,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17005,
             state_id = 17,
-            name = "Bond County"
+            name = "Bond County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -4848,7 +5222,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17007,
             state_id = 17,
-            name = "Boone County"
+            name = "Boone County",
+            cbsa_id = 40420
         )
         new_county.save()
     
@@ -4864,7 +5239,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17011,
             state_id = 17,
-            name = "Bureau County"
+            name = "Bureau County",
+            cbsa_id = 36837
         )
         new_county.save()
     
@@ -4872,7 +5248,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17013,
             state_id = 17,
-            name = "Calhoun County"
+            name = "Calhoun County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -4896,7 +5273,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17019,
             state_id = 17,
-            name = "Champaign County"
+            name = "Champaign County",
+            cbsa_id = 16580
         )
         new_county.save()
     
@@ -4904,7 +5282,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17021,
             state_id = 17,
-            name = "Christian County"
+            name = "Christian County",
+            cbsa_id = 45380
         )
         new_county.save()
     
@@ -4928,7 +5307,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17027,
             state_id = 17,
-            name = "Clinton County"
+            name = "Clinton County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -4936,7 +5316,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17029,
             state_id = 17,
-            name = "Coles County"
+            name = "Coles County",
+            cbsa_id = 16660
         )
         new_county.save()
     
@@ -4944,7 +5325,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17031,
             state_id = 17,
-            name = "Cook County"
+            name = "Cook County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -4960,7 +5342,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17035,
             state_id = 17,
-            name = "Cumberland County"
+            name = "Cumberland County",
+            cbsa_id = 20820
         )
         new_county.save()
     
@@ -4968,7 +5351,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17037,
             state_id = 17,
-            name = "DeKalb County"
+            name = "DeKalb County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -4992,7 +5376,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17043,
             state_id = 17,
-            name = "DuPage County"
+            name = "DuPage County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -5016,7 +5401,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17049,
             state_id = 17,
-            name = "Effingham County"
+            name = "Effingham County",
+            cbsa_id = 20820
         )
         new_county.save()
     
@@ -5032,7 +5418,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17053,
             state_id = 17,
-            name = "Ford County"
+            name = "Ford County",
+            cbsa_id = 16580
         )
         new_county.save()
     
@@ -5048,7 +5435,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17057,
             state_id = 17,
-            name = "Fulton County"
+            name = "Fulton County",
+            cbsa_id = 15900
         )
         new_county.save()
     
@@ -5072,7 +5460,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17063,
             state_id = 17,
-            name = "Grundy County"
+            name = "Grundy County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -5104,7 +5493,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17071,
             state_id = 17,
-            name = "Henderson County"
+            name = "Henderson County",
+            cbsa_id = 15460
         )
         new_county.save()
     
@@ -5112,7 +5502,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17073,
             state_id = 17,
-            name = "Henry County"
+            name = "Henry County",
+            cbsa_id = 19340
         )
         new_county.save()
     
@@ -5128,7 +5519,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17077,
             state_id = 17,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 16060
         )
         new_county.save()
     
@@ -5144,7 +5536,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17081,
             state_id = 17,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 34500
         )
         new_county.save()
     
@@ -5152,7 +5545,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17083,
             state_id = 17,
-            name = "Jersey County"
+            name = "Jersey County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -5176,7 +5570,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17089,
             state_id = 17,
-            name = "Kane County"
+            name = "Kane County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -5184,7 +5579,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17091,
             state_id = 17,
-            name = "Kankakee County"
+            name = "Kankakee County",
+            cbsa_id = 28100
         )
         new_county.save()
     
@@ -5192,7 +5588,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17093,
             state_id = 17,
-            name = "Kendall County"
+            name = "Kendall County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -5200,7 +5597,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17095,
             state_id = 17,
-            name = "Knox County"
+            name = "Knox County",
+            cbsa_id = 23660
         )
         new_county.save()
     
@@ -5208,7 +5606,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17097,
             state_id = 17,
-            name = "Lake County"
+            name = "Lake County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -5216,7 +5615,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17099,
             state_id = 17,
-            name = "LaSalle County"
+            name = "LaSalle County",
+            cbsa_id = 36837
         )
         new_county.save()
     
@@ -5232,7 +5632,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17103,
             state_id = 17,
-            name = "Lee County"
+            name = "Lee County",
+            cbsa_id = 19940
         )
         new_county.save()
     
@@ -5240,7 +5641,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17105,
             state_id = 17,
-            name = "Livingston County"
+            name = "Livingston County",
+            cbsa_id = 38700
         )
         new_county.save()
     
@@ -5248,7 +5650,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17107,
             state_id = 17,
-            name = "Logan County"
+            name = "Logan County",
+            cbsa_id = 30660
         )
         new_county.save()
     
@@ -5256,7 +5659,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17109,
             state_id = 17,
-            name = "McDonough County"
+            name = "McDonough County",
+            cbsa_id = 31380
         )
         new_county.save()
     
@@ -5264,7 +5668,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17111,
             state_id = 17,
-            name = "McHenry County"
+            name = "McHenry County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -5272,7 +5677,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17113,
             state_id = 17,
-            name = "McLean County"
+            name = "McLean County",
+            cbsa_id = 14010
         )
         new_county.save()
     
@@ -5280,7 +5686,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17115,
             state_id = 17,
-            name = "Macon County"
+            name = "Macon County",
+            cbsa_id = 19500
         )
         new_county.save()
     
@@ -5288,7 +5695,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17117,
             state_id = 17,
-            name = "Macoupin County"
+            name = "Macoupin County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -5296,7 +5704,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17119,
             state_id = 17,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -5304,7 +5713,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17121,
             state_id = 17,
-            name = "Marion County"
+            name = "Marion County",
+            cbsa_id = 16460
         )
         new_county.save()
     
@@ -5312,7 +5722,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17123,
             state_id = 17,
-            name = "Marshall County"
+            name = "Marshall County",
+            cbsa_id = 37900
         )
         new_county.save()
     
@@ -5328,7 +5739,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17127,
             state_id = 17,
-            name = "Massac County"
+            name = "Massac County",
+            cbsa_id = 37140
         )
         new_county.save()
     
@@ -5336,7 +5748,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17129,
             state_id = 17,
-            name = "Menard County"
+            name = "Menard County",
+            cbsa_id = 44100
         )
         new_county.save()
     
@@ -5344,7 +5757,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17131,
             state_id = 17,
-            name = "Mercer County"
+            name = "Mercer County",
+            cbsa_id = 19340
         )
         new_county.save()
     
@@ -5352,7 +5766,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17133,
             state_id = 17,
-            name = "Monroe County"
+            name = "Monroe County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -5368,7 +5783,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17137,
             state_id = 17,
-            name = "Morgan County"
+            name = "Morgan County",
+            cbsa_id = 27300
         )
         new_county.save()
     
@@ -5384,7 +5800,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17141,
             state_id = 17,
-            name = "Ogle County"
+            name = "Ogle County",
+            cbsa_id = 40300
         )
         new_county.save()
     
@@ -5392,7 +5809,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17143,
             state_id = 17,
-            name = "Peoria County"
+            name = "Peoria County",
+            cbsa_id = 37900
         )
         new_county.save()
     
@@ -5408,7 +5826,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17147,
             state_id = 17,
-            name = "Piatt County"
+            name = "Piatt County",
+            cbsa_id = 16580
         )
         new_county.save()
     
@@ -5440,7 +5859,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17155,
             state_id = 17,
-            name = "Putnam County"
+            name = "Putnam County",
+            cbsa_id = 36837
         )
         new_county.save()
     
@@ -5464,7 +5884,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17161,
             state_id = 17,
-            name = "Rock Island County"
+            name = "Rock Island County",
+            cbsa_id = 19340
         )
         new_county.save()
     
@@ -5472,7 +5893,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17163,
             state_id = 17,
-            name = "St. Clair County"
+            name = "St. Clair County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -5488,7 +5910,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17167,
             state_id = 17,
-            name = "Sangamon County"
+            name = "Sangamon County",
+            cbsa_id = 44100
         )
         new_county.save()
     
@@ -5504,7 +5927,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17171,
             state_id = 17,
-            name = "Scott County"
+            name = "Scott County",
+            cbsa_id = 27300
         )
         new_county.save()
     
@@ -5520,7 +5944,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17175,
             state_id = 17,
-            name = "Stark County"
+            name = "Stark County",
+            cbsa_id = 37900
         )
         new_county.save()
     
@@ -5528,7 +5953,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17177,
             state_id = 17,
-            name = "Stephenson County"
+            name = "Stephenson County",
+            cbsa_id = 23300
         )
         new_county.save()
     
@@ -5536,7 +5962,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17179,
             state_id = 17,
-            name = "Tazewell County"
+            name = "Tazewell County",
+            cbsa_id = 37900
         )
         new_county.save()
     
@@ -5552,7 +5979,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17183,
             state_id = 17,
-            name = "Vermilion County"
+            name = "Vermilion County",
+            cbsa_id = 19180
         )
         new_county.save()
     
@@ -5600,7 +6028,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17195,
             state_id = 17,
-            name = "Whiteside County"
+            name = "Whiteside County",
+            cbsa_id = 44580
         )
         new_county.save()
     
@@ -5608,7 +6037,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17197,
             state_id = 17,
-            name = "Will County"
+            name = "Will County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -5616,7 +6046,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17199,
             state_id = 17,
-            name = "Williamson County"
+            name = "Williamson County",
+            cbsa_id = 32060
         )
         new_county.save()
     
@@ -5624,7 +6055,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17201,
             state_id = 17,
-            name = "Winnebago County"
+            name = "Winnebago County",
+            cbsa_id = 40420
         )
         new_county.save()
     
@@ -5632,7 +6064,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 17203,
             state_id = 17,
-            name = "Woodford County"
+            name = "Woodford County",
+            cbsa_id = 37900
         )
         new_county.save()
     
@@ -5640,7 +6073,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18001,
             state_id = 18,
-            name = "Adams County"
+            name = "Adams County",
+            cbsa_id = 19540
         )
         new_county.save()
     
@@ -5648,7 +6082,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18003,
             state_id = 18,
-            name = "Allen County"
+            name = "Allen County",
+            cbsa_id = 23060
         )
         new_county.save()
     
@@ -5656,7 +6091,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18005,
             state_id = 18,
-            name = "Bartholomew County"
+            name = "Bartholomew County",
+            cbsa_id = 18020
         )
         new_county.save()
     
@@ -5664,7 +6100,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18007,
             state_id = 18,
-            name = "Benton County"
+            name = "Benton County",
+            cbsa_id = 29200
         )
         new_county.save()
     
@@ -5680,7 +6117,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18011,
             state_id = 18,
-            name = "Boone County"
+            name = "Boone County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -5688,7 +6126,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18013,
             state_id = 18,
-            name = "Brown County"
+            name = "Brown County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -5696,7 +6135,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18015,
             state_id = 18,
-            name = "Carroll County"
+            name = "Carroll County",
+            cbsa_id = 29200
         )
         new_county.save()
     
@@ -5704,7 +6144,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18017,
             state_id = 18,
-            name = "Cass County"
+            name = "Cass County",
+            cbsa_id = 30900
         )
         new_county.save()
     
@@ -5712,7 +6153,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18019,
             state_id = 18,
-            name = "Clark County"
+            name = "Clark County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -5720,7 +6162,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18021,
             state_id = 18,
-            name = "Clay County"
+            name = "Clay County",
+            cbsa_id = 45460
         )
         new_county.save()
     
@@ -5728,7 +6171,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18023,
             state_id = 18,
-            name = "Clinton County"
+            name = "Clinton County",
+            cbsa_id = 23140
         )
         new_county.save()
     
@@ -5744,7 +6188,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18027,
             state_id = 18,
-            name = "Daviess County"
+            name = "Daviess County",
+            cbsa_id = 47780
         )
         new_county.save()
     
@@ -5752,7 +6197,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18029,
             state_id = 18,
-            name = "Dearborn County"
+            name = "Dearborn County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -5760,7 +6206,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18031,
             state_id = 18,
-            name = "Decatur County"
+            name = "Decatur County",
+            cbsa_id = 24700
         )
         new_county.save()
     
@@ -5768,7 +6215,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18033,
             state_id = 18,
-            name = "DeKalb County"
+            name = "DeKalb County",
+            cbsa_id = 12140
         )
         new_county.save()
     
@@ -5776,7 +6224,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18035,
             state_id = 18,
-            name = "Delaware County"
+            name = "Delaware County",
+            cbsa_id = 34620
         )
         new_county.save()
     
@@ -5784,7 +6233,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18037,
             state_id = 18,
-            name = "Dubois County"
+            name = "Dubois County",
+            cbsa_id = 27540
         )
         new_county.save()
     
@@ -5792,7 +6242,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18039,
             state_id = 18,
-            name = "Elkhart County"
+            name = "Elkhart County",
+            cbsa_id = 21140
         )
         new_county.save()
     
@@ -5800,7 +6251,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18041,
             state_id = 18,
-            name = "Fayette County"
+            name = "Fayette County",
+            cbsa_id = 18220
         )
         new_county.save()
     
@@ -5808,7 +6260,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18043,
             state_id = 18,
-            name = "Floyd County"
+            name = "Floyd County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -5824,7 +6277,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18047,
             state_id = 18,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -5848,7 +6302,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18053,
             state_id = 18,
-            name = "Grant County"
+            name = "Grant County",
+            cbsa_id = 31980
         )
         new_county.save()
     
@@ -5864,7 +6319,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18057,
             state_id = 18,
-            name = "Hamilton County"
+            name = "Hamilton County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -5872,7 +6328,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18059,
             state_id = 18,
-            name = "Hancock County"
+            name = "Hancock County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -5880,7 +6337,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18061,
             state_id = 18,
-            name = "Harrison County"
+            name = "Harrison County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -5888,7 +6346,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18063,
             state_id = 18,
-            name = "Hendricks County"
+            name = "Hendricks County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -5896,7 +6355,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18065,
             state_id = 18,
-            name = "Henry County"
+            name = "Henry County",
+            cbsa_id = 35220
         )
         new_county.save()
     
@@ -5904,7 +6364,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18067,
             state_id = 18,
-            name = "Howard County"
+            name = "Howard County",
+            cbsa_id = 29020
         )
         new_county.save()
     
@@ -5912,7 +6373,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18069,
             state_id = 18,
-            name = "Huntington County"
+            name = "Huntington County",
+            cbsa_id = 26540
         )
         new_county.save()
     
@@ -5920,7 +6382,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18071,
             state_id = 18,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 42980
         )
         new_county.save()
     
@@ -5928,7 +6391,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18073,
             state_id = 18,
-            name = "Jasper County"
+            name = "Jasper County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -5944,7 +6408,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18077,
             state_id = 18,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 31500
         )
         new_county.save()
     
@@ -5960,7 +6425,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18081,
             state_id = 18,
-            name = "Johnson County"
+            name = "Johnson County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -5968,7 +6434,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18083,
             state_id = 18,
-            name = "Knox County"
+            name = "Knox County",
+            cbsa_id = 47180
         )
         new_county.save()
     
@@ -5976,7 +6443,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18085,
             state_id = 18,
-            name = "Kosciusko County"
+            name = "Kosciusko County",
+            cbsa_id = 47700
         )
         new_county.save()
     
@@ -5992,7 +6460,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18089,
             state_id = 18,
-            name = "Lake County"
+            name = "Lake County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -6000,7 +6469,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18091,
             state_id = 18,
-            name = "LaPorte County"
+            name = "LaPorte County",
+            cbsa_id = 33140
         )
         new_county.save()
     
@@ -6008,7 +6478,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18093,
             state_id = 18,
-            name = "Lawrence County"
+            name = "Lawrence County",
+            cbsa_id = 13260
         )
         new_county.save()
     
@@ -6016,7 +6487,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18095,
             state_id = 18,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -6024,7 +6496,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18097,
             state_id = 18,
-            name = "Marion County"
+            name = "Marion County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -6032,7 +6505,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18099,
             state_id = 18,
-            name = "Marshall County"
+            name = "Marshall County",
+            cbsa_id = 38500
         )
         new_county.save()
     
@@ -6048,7 +6522,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18103,
             state_id = 18,
-            name = "Miami County"
+            name = "Miami County",
+            cbsa_id = 37940
         )
         new_county.save()
     
@@ -6056,7 +6531,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18105,
             state_id = 18,
-            name = "Monroe County"
+            name = "Monroe County",
+            cbsa_id = 14020
         )
         new_county.save()
     
@@ -6064,7 +6540,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18107,
             state_id = 18,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 18820
         )
         new_county.save()
     
@@ -6072,7 +6549,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18109,
             state_id = 18,
-            name = "Morgan County"
+            name = "Morgan County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -6080,7 +6558,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18111,
             state_id = 18,
-            name = "Newton County"
+            name = "Newton County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -6088,7 +6567,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18113,
             state_id = 18,
-            name = "Noble County"
+            name = "Noble County",
+            cbsa_id = 28340
         )
         new_county.save()
     
@@ -6096,7 +6576,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18115,
             state_id = 18,
-            name = "Ohio County"
+            name = "Ohio County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -6112,7 +6593,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18119,
             state_id = 18,
-            name = "Owen County"
+            name = "Owen County",
+            cbsa_id = 14020
         )
         new_county.save()
     
@@ -6144,7 +6626,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18127,
             state_id = 18,
-            name = "Porter County"
+            name = "Porter County",
+            cbsa_id = 16980
         )
         new_county.save()
     
@@ -6152,7 +6635,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18129,
             state_id = 18,
-            name = "Posey County"
+            name = "Posey County",
+            cbsa_id = 21780
         )
         new_county.save()
     
@@ -6168,7 +6652,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18133,
             state_id = 18,
-            name = "Putnam County"
+            name = "Putnam County",
+            cbsa_id = 24600
         )
         new_county.save()
     
@@ -6200,7 +6685,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18141,
             state_id = 18,
-            name = "St. Joseph County"
+            name = "St. Joseph County",
+            cbsa_id = 43780
         )
         new_county.save()
     
@@ -6216,7 +6702,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18145,
             state_id = 18,
-            name = "Shelby County"
+            name = "Shelby County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -6240,7 +6727,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18151,
             state_id = 18,
-            name = "Steuben County"
+            name = "Steuben County",
+            cbsa_id = 11420
         )
         new_county.save()
     
@@ -6248,7 +6736,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18153,
             state_id = 18,
-            name = "Sullivan County"
+            name = "Sullivan County",
+            cbsa_id = 45460
         )
         new_county.save()
     
@@ -6264,7 +6753,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18157,
             state_id = 18,
-            name = "Tippecanoe County"
+            name = "Tippecanoe County",
+            cbsa_id = 29200
         )
         new_county.save()
     
@@ -6272,7 +6762,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18159,
             state_id = 18,
-            name = "Tipton County"
+            name = "Tipton County",
+            cbsa_id = 26900
         )
         new_county.save()
     
@@ -6288,7 +6779,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18163,
             state_id = 18,
-            name = "Vanderburgh County"
+            name = "Vanderburgh County",
+            cbsa_id = 21780
         )
         new_county.save()
     
@@ -6296,7 +6788,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18165,
             state_id = 18,
-            name = "Vermillion County"
+            name = "Vermillion County",
+            cbsa_id = 45460
         )
         new_county.save()
     
@@ -6304,7 +6797,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18167,
             state_id = 18,
-            name = "Vigo County"
+            name = "Vigo County",
+            cbsa_id = 45460
         )
         new_county.save()
     
@@ -6312,7 +6806,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18169,
             state_id = 18,
-            name = "Wabash County"
+            name = "Wabash County",
+            cbsa_id = 47340
         )
         new_county.save()
     
@@ -6320,7 +6815,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18171,
             state_id = 18,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 29200
         )
         new_county.save()
     
@@ -6328,7 +6824,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18173,
             state_id = 18,
-            name = "Warrick County"
+            name = "Warrick County",
+            cbsa_id = 21780
         )
         new_county.save()
     
@@ -6336,7 +6833,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18175,
             state_id = 18,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -6344,7 +6842,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18177,
             state_id = 18,
-            name = "Wayne County"
+            name = "Wayne County",
+            cbsa_id = 39980
         )
         new_county.save()
     
@@ -6352,7 +6851,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18179,
             state_id = 18,
-            name = "Wells County"
+            name = "Wells County",
+            cbsa_id = 23060
         )
         new_county.save()
     
@@ -6360,7 +6860,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18181,
             state_id = 18,
-            name = "White County"
+            name = "White County",
+            cbsa_id = 33900
         )
         new_county.save()
     
@@ -6368,7 +6869,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 18183,
             state_id = 18,
-            name = "Whitley County"
+            name = "Whitley County",
+            cbsa_id = 23060
         )
         new_county.save()
     
@@ -6416,7 +6918,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19011,
             state_id = 19,
-            name = "Benton County"
+            name = "Benton County",
+            cbsa_id = 16300
         )
         new_county.save()
     
@@ -6424,7 +6927,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19013,
             state_id = 19,
-            name = "Black Hawk County"
+            name = "Black Hawk County",
+            cbsa_id = 47940
         )
         new_county.save()
     
@@ -6432,7 +6936,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19015,
             state_id = 19,
-            name = "Boone County"
+            name = "Boone County",
+            cbsa_id = 11180
         )
         new_county.save()
     
@@ -6440,7 +6945,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19017,
             state_id = 19,
-            name = "Bremer County"
+            name = "Bremer County",
+            cbsa_id = 47940
         )
         new_county.save()
     
@@ -6456,7 +6962,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19021,
             state_id = 19,
-            name = "Buena Vista County"
+            name = "Buena Vista County",
+            cbsa_id = 44740
         )
         new_county.save()
     
@@ -6480,7 +6987,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19027,
             state_id = 19,
-            name = "Carroll County"
+            name = "Carroll County",
+            cbsa_id = 16140
         )
         new_county.save()
     
@@ -6504,7 +7012,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19033,
             state_id = 19,
-            name = "Cerro Gordo County"
+            name = "Cerro Gordo County",
+            cbsa_id = 32380
         )
         new_county.save()
     
@@ -6536,7 +7045,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19041,
             state_id = 19,
-            name = "Clay County"
+            name = "Clay County",
+            cbsa_id = 43980
         )
         new_county.save()
     
@@ -6552,7 +7062,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19045,
             state_id = 19,
-            name = "Clinton County"
+            name = "Clinton County",
+            cbsa_id = 17540
         )
         new_county.save()
     
@@ -6568,7 +7079,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19049,
             state_id = 19,
-            name = "Dallas County"
+            name = "Dallas County",
+            cbsa_id = 19780
         )
         new_county.save()
     
@@ -6600,7 +7112,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19057,
             state_id = 19,
-            name = "Des Moines County"
+            name = "Des Moines County",
+            cbsa_id = 15460
         )
         new_county.save()
     
@@ -6608,7 +7121,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19059,
             state_id = 19,
-            name = "Dickinson County"
+            name = "Dickinson County",
+            cbsa_id = 44020
         )
         new_county.save()
     
@@ -6616,7 +7130,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19061,
             state_id = 19,
-            name = "Dubuque County"
+            name = "Dubuque County",
+            cbsa_id = 20220
         )
         new_county.save()
     
@@ -6672,7 +7187,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19075,
             state_id = 19,
-            name = "Grundy County"
+            name = "Grundy County",
+            cbsa_id = 47940
         )
         new_county.save()
     
@@ -6680,7 +7196,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19077,
             state_id = 19,
-            name = "Guthrie County"
+            name = "Guthrie County",
+            cbsa_id = 19780
         )
         new_county.save()
     
@@ -6712,7 +7229,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19085,
             state_id = 19,
-            name = "Harrison County"
+            name = "Harrison County",
+            cbsa_id = 36540
         )
         new_county.save()
     
@@ -6768,7 +7286,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19099,
             state_id = 19,
-            name = "Jasper County"
+            name = "Jasper County",
+            cbsa_id = 19780
         )
         new_county.save()
     
@@ -6784,7 +7303,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19103,
             state_id = 19,
-            name = "Johnson County"
+            name = "Johnson County",
+            cbsa_id = 26980
         )
         new_county.save()
     
@@ -6792,7 +7312,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19105,
             state_id = 19,
-            name = "Jones County"
+            name = "Jones County",
+            cbsa_id = 16300
         )
         new_county.save()
     
@@ -6816,7 +7337,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19111,
             state_id = 19,
-            name = "Lee County"
+            name = "Lee County",
+            cbsa_id = 22800
         )
         new_county.save()
     
@@ -6824,7 +7346,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19113,
             state_id = 19,
-            name = "Linn County"
+            name = "Linn County",
+            cbsa_id = 16300
         )
         new_county.save()
     
@@ -6856,7 +7379,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19121,
             state_id = 19,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 19780
         )
         new_county.save()
     
@@ -6864,7 +7388,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19123,
             state_id = 19,
-            name = "Mahaska County"
+            name = "Mahaska County",
+            cbsa_id = 36820
         )
         new_county.save()
     
@@ -6872,7 +7397,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19125,
             state_id = 19,
-            name = "Marion County"
+            name = "Marion County",
+            cbsa_id = 37800
         )
         new_county.save()
     
@@ -6880,7 +7406,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19127,
             state_id = 19,
-            name = "Marshall County"
+            name = "Marshall County",
+            cbsa_id = 32260
         )
         new_county.save()
     
@@ -6888,7 +7415,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19129,
             state_id = 19,
-            name = "Mills County"
+            name = "Mills County",
+            cbsa_id = 36540
         )
         new_county.save()
     
@@ -6928,7 +7456,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19139,
             state_id = 19,
-            name = "Muscatine County"
+            name = "Muscatine County",
+            cbsa_id = 34700
         )
         new_county.save()
     
@@ -6968,7 +7497,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19149,
             state_id = 19,
-            name = "Plymouth County"
+            name = "Plymouth County",
+            cbsa_id = 30180
         )
         new_county.save()
     
@@ -6984,7 +7514,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19153,
             state_id = 19,
-            name = "Polk County"
+            name = "Polk County",
+            cbsa_id = 19780
         )
         new_county.save()
     
@@ -6992,7 +7523,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19155,
             state_id = 19,
-            name = "Pottawattamie County"
+            name = "Pottawattamie County",
+            cbsa_id = 36540
         )
         new_county.save()
     
@@ -7024,7 +7556,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19163,
             state_id = 19,
-            name = "Scott County"
+            name = "Scott County",
+            cbsa_id = 19340
         )
         new_county.save()
     
@@ -7048,7 +7581,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19169,
             state_id = 19,
-            name = "Story County"
+            name = "Story County",
+            cbsa_id = 11180
         )
         new_county.save()
     
@@ -7088,7 +7622,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19179,
             state_id = 19,
-            name = "Wapello County"
+            name = "Wapello County",
+            cbsa_id = 36900
         )
         new_county.save()
     
@@ -7096,7 +7631,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19181,
             state_id = 19,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 19780
         )
         new_county.save()
     
@@ -7104,7 +7640,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19183,
             state_id = 19,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 26980
         )
         new_county.save()
     
@@ -7120,7 +7657,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19187,
             state_id = 19,
-            name = "Webster County"
+            name = "Webster County",
+            cbsa_id = 22700
         )
         new_county.save()
     
@@ -7144,7 +7682,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19193,
             state_id = 19,
-            name = "Woodbury County"
+            name = "Woodbury County",
+            cbsa_id = 43580
         )
         new_county.save()
     
@@ -7152,7 +7691,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 19195,
             state_id = 19,
-            name = "Worth County"
+            name = "Worth County",
+            cbsa_id = 32380
         )
         new_county.save()
     
@@ -7184,7 +7724,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20005,
             state_id = 20,
-            name = "Atchison County"
+            name = "Atchison County",
+            cbsa_id = 11860
         )
         new_county.save()
     
@@ -7200,7 +7741,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20009,
             state_id = 20,
-            name = "Barton County"
+            name = "Barton County",
+            cbsa_id = 24460
         )
         new_county.save()
     
@@ -7224,7 +7766,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20015,
             state_id = 20,
-            name = "Butler County"
+            name = "Butler County",
+            cbsa_id = 48620
         )
         new_county.save()
     
@@ -7232,7 +7775,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20017,
             state_id = 20,
-            name = "Chase County"
+            name = "Chase County",
+            cbsa_id = 21380
         )
         new_county.save()
     
@@ -7248,7 +7792,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20021,
             state_id = 20,
-            name = "Cherokee County"
+            name = "Cherokee County",
+            cbsa_id = 27900
         )
         new_county.save()
     
@@ -7304,7 +7849,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20035,
             state_id = 20,
-            name = "Cowley County"
+            name = "Cowley County",
+            cbsa_id = 11680
         )
         new_county.save()
     
@@ -7312,7 +7858,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20037,
             state_id = 20,
-            name = "Crawford County"
+            name = "Crawford County",
+            cbsa_id = 38260
         )
         new_county.save()
     
@@ -7336,7 +7883,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20043,
             state_id = 20,
-            name = "Doniphan County"
+            name = "Doniphan County",
+            cbsa_id = 41140
         )
         new_county.save()
     
@@ -7344,7 +7892,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20045,
             state_id = 20,
-            name = "Douglas County"
+            name = "Douglas County",
+            cbsa_id = 29940
         )
         new_county.save()
     
@@ -7368,7 +7917,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20051,
             state_id = 20,
-            name = "Ellis County"
+            name = "Ellis County",
+            cbsa_id = 25700
         )
         new_county.save()
     
@@ -7384,7 +7934,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20055,
             state_id = 20,
-            name = "Finney County"
+            name = "Finney County",
+            cbsa_id = 23780
         )
         new_county.save()
     
@@ -7392,7 +7943,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20057,
             state_id = 20,
-            name = "Ford County"
+            name = "Ford County",
+            cbsa_id = 19980
         )
         new_county.save()
     
@@ -7400,7 +7952,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20059,
             state_id = 20,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 36840
         )
         new_county.save()
     
@@ -7408,7 +7961,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20061,
             state_id = 20,
-            name = "Geary County"
+            name = "Geary County",
+            cbsa_id = 31740
         )
         new_county.save()
     
@@ -7480,7 +8034,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20079,
             state_id = 20,
-            name = "Harvey County"
+            name = "Harvey County",
+            cbsa_id = 48620
         )
         new_county.save()
     
@@ -7504,7 +8059,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20085,
             state_id = 20,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 45820
         )
         new_county.save()
     
@@ -7512,7 +8068,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20087,
             state_id = 20,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 45820
         )
         new_county.save()
     
@@ -7528,7 +8085,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20091,
             state_id = 20,
-            name = "Johnson County"
+            name = "Johnson County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -7576,7 +8134,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20103,
             state_id = 20,
-            name = "Leavenworth County"
+            name = "Leavenworth County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -7592,7 +8151,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20107,
             state_id = 20,
-            name = "Linn County"
+            name = "Linn County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -7608,7 +8168,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20111,
             state_id = 20,
-            name = "Lyon County"
+            name = "Lyon County",
+            cbsa_id = 21380
         )
         new_county.save()
     
@@ -7616,7 +8177,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20113,
             state_id = 20,
-            name = "McPherson County"
+            name = "McPherson County",
+            cbsa_id = 32700
         )
         new_county.save()
     
@@ -7648,7 +8210,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20121,
             state_id = 20,
-            name = "Miami County"
+            name = "Miami County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -7720,7 +8283,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20139,
             state_id = 20,
-            name = "Osage County"
+            name = "Osage County",
+            cbsa_id = 45820
         )
         new_county.save()
     
@@ -7736,7 +8300,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20143,
             state_id = 20,
-            name = "Ottawa County"
+            name = "Ottawa County",
+            cbsa_id = 41460
         )
         new_county.save()
     
@@ -7760,7 +8325,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20149,
             state_id = 20,
-            name = "Pottawatomie County"
+            name = "Pottawatomie County",
+            cbsa_id = 31740
         )
         new_county.save()
     
@@ -7784,7 +8350,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20155,
             state_id = 20,
-            name = "Reno County"
+            name = "Reno County",
+            cbsa_id = 26740
         )
         new_county.save()
     
@@ -7808,7 +8375,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20161,
             state_id = 20,
-            name = "Riley County"
+            name = "Riley County",
+            cbsa_id = 31740
         )
         new_county.save()
     
@@ -7840,7 +8408,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20169,
             state_id = 20,
-            name = "Saline County"
+            name = "Saline County",
+            cbsa_id = 41460
         )
         new_county.save()
     
@@ -7856,7 +8425,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20173,
             state_id = 20,
-            name = "Sedgwick County"
+            name = "Sedgwick County",
+            cbsa_id = 48620
         )
         new_county.save()
     
@@ -7864,7 +8434,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20175,
             state_id = 20,
-            name = "Seward County"
+            name = "Seward County",
+            cbsa_id = 30580
         )
         new_county.save()
     
@@ -7872,7 +8443,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20177,
             state_id = 20,
-            name = "Shawnee County"
+            name = "Shawnee County",
+            cbsa_id = 45820
         )
         new_county.save()
     
@@ -7928,7 +8500,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20191,
             state_id = 20,
-            name = "Sumner County"
+            name = "Sumner County",
+            cbsa_id = 48620
         )
         new_county.save()
     
@@ -7952,7 +8525,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20197,
             state_id = 20,
-            name = "Wabaunsee County"
+            name = "Wabaunsee County",
+            cbsa_id = 45820
         )
         new_county.save()
     
@@ -8000,7 +8574,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 20209,
             state_id = 20,
-            name = "Wyandotte County"
+            name = "Wyandotte County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -8016,7 +8591,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21003,
             state_id = 21,
-            name = "Allen County"
+            name = "Allen County",
+            cbsa_id = 14540
         )
         new_county.save()
     
@@ -8024,7 +8600,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21005,
             state_id = 21,
-            name = "Anderson County"
+            name = "Anderson County",
+            cbsa_id = 23180
         )
         new_county.save()
     
@@ -8032,7 +8609,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21007,
             state_id = 21,
-            name = "Ballard County"
+            name = "Ballard County",
+            cbsa_id = 37140
         )
         new_county.save()
     
@@ -8040,7 +8618,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21009,
             state_id = 21,
-            name = "Barren County"
+            name = "Barren County",
+            cbsa_id = 23980
         )
         new_county.save()
     
@@ -8048,7 +8627,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21011,
             state_id = 21,
-            name = "Bath County"
+            name = "Bath County",
+            cbsa_id = 34460
         )
         new_county.save()
     
@@ -8056,7 +8636,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21013,
             state_id = 21,
-            name = "Bell County"
+            name = "Bell County",
+            cbsa_id = 33180
         )
         new_county.save()
     
@@ -8064,7 +8645,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21015,
             state_id = 21,
-            name = "Boone County"
+            name = "Boone County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -8072,7 +8654,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21017,
             state_id = 21,
-            name = "Bourbon County"
+            name = "Bourbon County",
+            cbsa_id = 30460
         )
         new_county.save()
     
@@ -8080,7 +8663,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21019,
             state_id = 21,
-            name = "Boyd County"
+            name = "Boyd County",
+            cbsa_id = 26580
         )
         new_county.save()
     
@@ -8088,7 +8672,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21021,
             state_id = 21,
-            name = "Boyle County"
+            name = "Boyle County",
+            cbsa_id = 19220
         )
         new_county.save()
     
@@ -8096,7 +8681,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21023,
             state_id = 21,
-            name = "Bracken County"
+            name = "Bracken County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -8120,7 +8706,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21029,
             state_id = 21,
-            name = "Bullitt County"
+            name = "Bullitt County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -8128,7 +8715,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21031,
             state_id = 21,
-            name = "Butler County"
+            name = "Butler County",
+            cbsa_id = 14540
         )
         new_county.save()
     
@@ -8144,7 +8732,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21035,
             state_id = 21,
-            name = "Calloway County"
+            name = "Calloway County",
+            cbsa_id = 34660
         )
         new_county.save()
     
@@ -8152,7 +8741,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21037,
             state_id = 21,
-            name = "Campbell County"
+            name = "Campbell County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -8160,7 +8750,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21039,
             state_id = 21,
-            name = "Carlisle County"
+            name = "Carlisle County",
+            cbsa_id = 37140
         )
         new_county.save()
     
@@ -8176,7 +8767,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21043,
             state_id = 21,
-            name = "Carter County"
+            name = "Carter County",
+            cbsa_id = 26580
         )
         new_county.save()
     
@@ -8192,7 +8784,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21047,
             state_id = 21,
-            name = "Christian County"
+            name = "Christian County",
+            cbsa_id = 17300
         )
         new_county.save()
     
@@ -8200,7 +8793,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21049,
             state_id = 21,
-            name = "Clark County"
+            name = "Clark County",
+            cbsa_id = 30460
         )
         new_county.save()
     
@@ -8208,7 +8802,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21051,
             state_id = 21,
-            name = "Clay County"
+            name = "Clay County",
+            cbsa_id = 18340
         )
         new_county.save()
     
@@ -8240,7 +8835,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21059,
             state_id = 21,
-            name = "Daviess County"
+            name = "Daviess County",
+            cbsa_id = 36980
         )
         new_county.save()
     
@@ -8248,7 +8844,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21061,
             state_id = 21,
-            name = "Edmonson County"
+            name = "Edmonson County",
+            cbsa_id = 14540
         )
         new_county.save()
     
@@ -8264,7 +8861,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21065,
             state_id = 21,
-            name = "Estill County"
+            name = "Estill County",
+            cbsa_id = 40080
         )
         new_county.save()
     
@@ -8272,7 +8870,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21067,
             state_id = 21,
-            name = "Fayette County"
+            name = "Fayette County",
+            cbsa_id = 30460
         )
         new_county.save()
     
@@ -8288,7 +8887,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21071,
             state_id = 21,
-            name = "Floyd County"
+            name = "Floyd County",
+            cbsa_id = 38210
         )
         new_county.save()
     
@@ -8296,7 +8896,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21073,
             state_id = 21,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 23180
         )
         new_county.save()
     
@@ -8312,7 +8913,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21077,
             state_id = 21,
-            name = "Gallatin County"
+            name = "Gallatin County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -8328,7 +8930,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21081,
             state_id = 21,
-            name = "Grant County"
+            name = "Grant County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -8336,7 +8939,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21083,
             state_id = 21,
-            name = "Graves County"
+            name = "Graves County",
+            cbsa_id = 32460
         )
         new_county.save()
     
@@ -8352,7 +8956,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21087,
             state_id = 21,
-            name = "Green County"
+            name = "Green County",
+            cbsa_id = 15820
         )
         new_county.save()
     
@@ -8360,7 +8965,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21089,
             state_id = 21,
-            name = "Greenup County"
+            name = "Greenup County",
+            cbsa_id = 26580
         )
         new_county.save()
     
@@ -8376,7 +8982,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21093,
             state_id = 21,
-            name = "Hardin County"
+            name = "Hardin County",
+            cbsa_id = 21060
         )
         new_county.save()
     
@@ -8408,7 +9015,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21101,
             state_id = 21,
-            name = "Henderson County"
+            name = "Henderson County",
+            cbsa_id = 25775
         )
         new_county.save()
     
@@ -8416,7 +9024,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21103,
             state_id = 21,
-            name = "Henry County"
+            name = "Henry County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -8432,7 +9041,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21107,
             state_id = 21,
-            name = "Hopkins County"
+            name = "Hopkins County",
+            cbsa_id = 31580
         )
         new_county.save()
     
@@ -8448,7 +9058,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21111,
             state_id = 21,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -8456,7 +9067,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21113,
             state_id = 21,
-            name = "Jessamine County"
+            name = "Jessamine County",
+            cbsa_id = 30460
         )
         new_county.save()
     
@@ -8472,7 +9084,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21117,
             state_id = 21,
-            name = "Kenton County"
+            name = "Kenton County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -8488,7 +9101,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21121,
             state_id = 21,
-            name = "Knox County"
+            name = "Knox County",
+            cbsa_id = 18340
         )
         new_county.save()
     
@@ -8496,7 +9110,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21123,
             state_id = 21,
-            name = "LaRue County"
+            name = "LaRue County",
+            cbsa_id = 21060
         )
         new_county.save()
     
@@ -8504,7 +9119,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21125,
             state_id = 21,
-            name = "Laurel County"
+            name = "Laurel County",
+            cbsa_id = 18340
         )
         new_county.save()
     
@@ -8512,7 +9128,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21127,
             state_id = 21,
-            name = "Lawrence County"
+            name = "Lawrence County",
+            cbsa_id = 26580
         )
         new_county.save()
     
@@ -8552,7 +9169,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21137,
             state_id = 21,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 19220
         )
         new_county.save()
     
@@ -8560,7 +9178,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21139,
             state_id = 21,
-            name = "Livingston County"
+            name = "Livingston County",
+            cbsa_id = 37140
         )
         new_county.save()
     
@@ -8584,7 +9203,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21145,
             state_id = 21,
-            name = "McCracken County"
+            name = "McCracken County",
+            cbsa_id = 37140
         )
         new_county.save()
     
@@ -8600,7 +9220,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21149,
             state_id = 21,
-            name = "McLean County"
+            name = "McLean County",
+            cbsa_id = 36980
         )
         new_county.save()
     
@@ -8608,7 +9229,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21151,
             state_id = 21,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 40080
         )
         new_county.save()
     
@@ -8656,7 +9278,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21163,
             state_id = 21,
-            name = "Meade County"
+            name = "Meade County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -8664,7 +9287,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21165,
             state_id = 21,
-            name = "Menifee County"
+            name = "Menifee County",
+            cbsa_id = 34460
         )
         new_county.save()
     
@@ -8680,7 +9304,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21169,
             state_id = 21,
-            name = "Metcalfe County"
+            name = "Metcalfe County",
+            cbsa_id = 23980
         )
         new_county.save()
     
@@ -8696,7 +9321,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21173,
             state_id = 21,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 34460
         )
         new_county.save()
     
@@ -8720,7 +9346,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21179,
             state_id = 21,
-            name = "Nelson County"
+            name = "Nelson County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -8744,7 +9371,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21185,
             state_id = 21,
-            name = "Oldham County"
+            name = "Oldham County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -8768,7 +9396,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21191,
             state_id = 21,
-            name = "Pendleton County"
+            name = "Pendleton County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -8784,7 +9413,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21195,
             state_id = 21,
-            name = "Pike County"
+            name = "Pike County",
+            cbsa_id = 38210
         )
         new_county.save()
     
@@ -8800,7 +9430,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21199,
             state_id = 21,
-            name = "Pulaski County"
+            name = "Pulaski County",
+            cbsa_id = 43700
         )
         new_county.save()
     
@@ -8816,7 +9447,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21203,
             state_id = 21,
-            name = "Rockcastle County"
+            name = "Rockcastle County",
+            cbsa_id = 40080
         )
         new_county.save()
     
@@ -8840,7 +9472,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21209,
             state_id = 21,
-            name = "Scott County"
+            name = "Scott County",
+            cbsa_id = 30460
         )
         new_county.save()
     
@@ -8848,7 +9481,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21211,
             state_id = 21,
-            name = "Shelby County"
+            name = "Shelby County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -8856,7 +9490,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21213,
             state_id = 21,
-            name = "Simpson County"
+            name = "Simpson County",
+            cbsa_id = 23190
         )
         new_county.save()
     
@@ -8864,7 +9499,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21215,
             state_id = 21,
-            name = "Spencer County"
+            name = "Spencer County",
+            cbsa_id = 31140
         )
         new_county.save()
     
@@ -8872,7 +9508,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21217,
             state_id = 21,
-            name = "Taylor County"
+            name = "Taylor County",
+            cbsa_id = 15820
         )
         new_county.save()
     
@@ -8888,7 +9525,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21221,
             state_id = 21,
-            name = "Trigg County"
+            name = "Trigg County",
+            cbsa_id = 17300
         )
         new_county.save()
     
@@ -8912,7 +9550,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21227,
             state_id = 21,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 14540
         )
         new_county.save()
     
@@ -8936,7 +9575,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21233,
             state_id = 21,
-            name = "Webster County"
+            name = "Webster County",
+            cbsa_id = 25775
         )
         new_county.save()
     
@@ -8944,7 +9584,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21235,
             state_id = 21,
-            name = "Whitley County"
+            name = "Whitley County",
+            cbsa_id = 18340
         )
         new_county.save()
     
@@ -8960,7 +9601,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 21239,
             state_id = 21,
-            name = "Woodford County"
+            name = "Woodford County",
+            cbsa_id = 30460
         )
         new_county.save()
     
@@ -8968,7 +9610,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22001,
             state_id = 22,
-            name = "Acadia Parish"
+            name = "Acadia Parish",
+            cbsa_id = 29180
         )
         new_county.save()
     
@@ -8984,7 +9627,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22005,
             state_id = 22,
-            name = "Ascension Parish"
+            name = "Ascension Parish",
+            cbsa_id = 12940
         )
         new_county.save()
     
@@ -8992,7 +9636,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22007,
             state_id = 22,
-            name = "Assumption Parish"
+            name = "Assumption Parish",
+            cbsa_id = 12940
         )
         new_county.save()
     
@@ -9008,7 +9653,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22011,
             state_id = 22,
-            name = "Beauregard Parish"
+            name = "Beauregard Parish",
+            cbsa_id = 19760
         )
         new_county.save()
     
@@ -9024,7 +9670,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22015,
             state_id = 22,
-            name = "Bossier Parish"
+            name = "Bossier Parish",
+            cbsa_id = 43340
         )
         new_county.save()
     
@@ -9032,7 +9679,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22017,
             state_id = 22,
-            name = "Caddo Parish"
+            name = "Caddo Parish",
+            cbsa_id = 43340
         )
         new_county.save()
     
@@ -9040,7 +9688,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22019,
             state_id = 22,
-            name = "Calcasieu Parish"
+            name = "Calcasieu Parish",
+            cbsa_id = 29340
         )
         new_county.save()
     
@@ -9056,7 +9705,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22023,
             state_id = 22,
-            name = "Cameron Parish"
+            name = "Cameron Parish",
+            cbsa_id = 29340
         )
         new_county.save()
     
@@ -9080,7 +9730,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22029,
             state_id = 22,
-            name = "Concordia Parish"
+            name = "Concordia Parish",
+            cbsa_id = 35020
         )
         new_county.save()
     
@@ -9088,7 +9739,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22031,
             state_id = 22,
-            name = "De Soto Parish"
+            name = "De Soto Parish",
+            cbsa_id = 43340
         )
         new_county.save()
     
@@ -9096,7 +9748,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22033,
             state_id = 22,
-            name = "East Baton Rouge Parish"
+            name = "East Baton Rouge Parish",
+            cbsa_id = 12940
         )
         new_county.save()
     
@@ -9112,7 +9765,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22037,
             state_id = 22,
-            name = "East Feliciana Parish"
+            name = "East Feliciana Parish",
+            cbsa_id = 12940
         )
         new_county.save()
     
@@ -9136,7 +9790,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22043,
             state_id = 22,
-            name = "Grant Parish"
+            name = "Grant Parish",
+            cbsa_id = 10780
         )
         new_county.save()
     
@@ -9144,7 +9799,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22045,
             state_id = 22,
-            name = "Iberia Parish"
+            name = "Iberia Parish",
+            cbsa_id = 35340
         )
         new_county.save()
     
@@ -9152,7 +9808,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22047,
             state_id = 22,
-            name = "Iberville Parish"
+            name = "Iberville Parish",
+            cbsa_id = 12940
         )
         new_county.save()
     
@@ -9168,7 +9825,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22051,
             state_id = 22,
-            name = "Jefferson Parish"
+            name = "Jefferson Parish",
+            cbsa_id = 35380
         )
         new_county.save()
     
@@ -9176,7 +9834,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22053,
             state_id = 22,
-            name = "Jefferson Davis Parish"
+            name = "Jefferson Davis Parish",
+            cbsa_id = 29340
         )
         new_county.save()
     
@@ -9184,7 +9843,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22055,
             state_id = 22,
-            name = "Lafayette Parish"
+            name = "Lafayette Parish",
+            cbsa_id = 29180
         )
         new_county.save()
     
@@ -9192,7 +9852,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22057,
             state_id = 22,
-            name = "Lafourche Parish"
+            name = "Lafourche Parish",
+            cbsa_id = 26380
         )
         new_county.save()
     
@@ -9208,7 +9869,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22061,
             state_id = 22,
-            name = "Lincoln Parish"
+            name = "Lincoln Parish",
+            cbsa_id = 40820
         )
         new_county.save()
     
@@ -9216,7 +9878,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22063,
             state_id = 22,
-            name = "Livingston Parish"
+            name = "Livingston Parish",
+            cbsa_id = 12940
         )
         new_county.save()
     
@@ -9232,7 +9895,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22067,
             state_id = 22,
-            name = "Morehouse Parish"
+            name = "Morehouse Parish",
+            cbsa_id = 33740
         )
         new_county.save()
     
@@ -9240,7 +9904,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22069,
             state_id = 22,
-            name = "Natchitoches Parish"
+            name = "Natchitoches Parish",
+            cbsa_id = 35060
         )
         new_county.save()
     
@@ -9248,7 +9913,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22071,
             state_id = 22,
-            name = "Orleans Parish"
+            name = "Orleans Parish",
+            cbsa_id = 35380
         )
         new_county.save()
     
@@ -9256,7 +9922,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22073,
             state_id = 22,
-            name = "Ouachita Parish"
+            name = "Ouachita Parish",
+            cbsa_id = 33740
         )
         new_county.save()
     
@@ -9264,7 +9931,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22075,
             state_id = 22,
-            name = "Plaquemines Parish"
+            name = "Plaquemines Parish",
+            cbsa_id = 35380
         )
         new_county.save()
     
@@ -9272,7 +9940,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22077,
             state_id = 22,
-            name = "Pointe Coupee Parish"
+            name = "Pointe Coupee Parish",
+            cbsa_id = 12940
         )
         new_county.save()
     
@@ -9280,7 +9949,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22079,
             state_id = 22,
-            name = "Rapides Parish"
+            name = "Rapides Parish",
+            cbsa_id = 10780
         )
         new_county.save()
     
@@ -9296,7 +9966,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22083,
             state_id = 22,
-            name = "Richland Parish"
+            name = "Richland Parish",
+            cbsa_id = 33740
         )
         new_county.save()
     
@@ -9312,7 +9983,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22087,
             state_id = 22,
-            name = "St. Bernard Parish"
+            name = "St. Bernard Parish",
+            cbsa_id = 35380
         )
         new_county.save()
     
@@ -9320,7 +9992,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22089,
             state_id = 22,
-            name = "St. Charles Parish"
+            name = "St. Charles Parish",
+            cbsa_id = 35380
         )
         new_county.save()
     
@@ -9328,7 +10001,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22091,
             state_id = 22,
-            name = "St. Helena Parish"
+            name = "St. Helena Parish",
+            cbsa_id = 12940
         )
         new_county.save()
     
@@ -9336,7 +10010,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22093,
             state_id = 22,
-            name = "St. James Parish"
+            name = "St. James Parish",
+            cbsa_id = 35380
         )
         new_county.save()
     
@@ -9344,7 +10019,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22095,
             state_id = 22,
-            name = "St. John the Baptist Parish"
+            name = "St. John the Baptist Parish",
+            cbsa_id = 35380
         )
         new_county.save()
     
@@ -9352,7 +10028,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22097,
             state_id = 22,
-            name = "St. Landry Parish"
+            name = "St. Landry Parish",
+            cbsa_id = 36660
         )
         new_county.save()
     
@@ -9360,7 +10037,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22099,
             state_id = 22,
-            name = "St. Martin Parish"
+            name = "St. Martin Parish",
+            cbsa_id = 29180
         )
         new_county.save()
     
@@ -9368,7 +10046,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22101,
             state_id = 22,
-            name = "St. Mary Parish"
+            name = "St. Mary Parish",
+            cbsa_id = 34020
         )
         new_county.save()
     
@@ -9376,7 +10055,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22103,
             state_id = 22,
-            name = "St. Tammany Parish"
+            name = "St. Tammany Parish",
+            cbsa_id = 43640
         )
         new_county.save()
     
@@ -9384,7 +10064,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22105,
             state_id = 22,
-            name = "Tangipahoa Parish"
+            name = "Tangipahoa Parish",
+            cbsa_id = 25220
         )
         new_county.save()
     
@@ -9400,7 +10081,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22109,
             state_id = 22,
-            name = "Terrebonne Parish"
+            name = "Terrebonne Parish",
+            cbsa_id = 26380
         )
         new_county.save()
     
@@ -9408,7 +10090,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22111,
             state_id = 22,
-            name = "Union Parish"
+            name = "Union Parish",
+            cbsa_id = 33740
         )
         new_county.save()
     
@@ -9416,7 +10099,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22113,
             state_id = 22,
-            name = "Vermilion Parish"
+            name = "Vermilion Parish",
+            cbsa_id = 29180
         )
         new_county.save()
     
@@ -9432,7 +10116,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22117,
             state_id = 22,
-            name = "Washington Parish"
+            name = "Washington Parish",
+            cbsa_id = 14220
         )
         new_county.save()
     
@@ -9440,7 +10125,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22119,
             state_id = 22,
-            name = "Webster Parish"
+            name = "Webster Parish",
+            cbsa_id = 33380
         )
         new_county.save()
     
@@ -9448,7 +10134,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22121,
             state_id = 22,
-            name = "West Baton Rouge Parish"
+            name = "West Baton Rouge Parish",
+            cbsa_id = 12940
         )
         new_county.save()
     
@@ -9464,7 +10151,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 22125,
             state_id = 22,
-            name = "West Feliciana Parish"
+            name = "West Feliciana Parish",
+            cbsa_id = 12940
         )
         new_county.save()
     
@@ -9480,7 +10168,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 23001,
             state_id = 23,
-            name = "Androscoggin County"
+            name = "Androscoggin County",
+            cbsa_id = 30340
         )
         new_county.save()
     
@@ -9496,7 +10185,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 23005,
             state_id = 23,
-            name = "Cumberland County"
+            name = "Cumberland County",
+            cbsa_id = 38860
         )
         new_county.save()
     
@@ -9520,7 +10210,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 23011,
             state_id = 23,
-            name = "Kennebec County"
+            name = "Kennebec County",
+            cbsa_id = 12300
         )
         new_county.save()
     
@@ -9552,7 +10243,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 23019,
             state_id = 23,
-            name = "Penobscot County"
+            name = "Penobscot County",
+            cbsa_id = 12620
         )
         new_county.save()
     
@@ -9568,7 +10260,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 23023,
             state_id = 23,
-            name = "Sagadahoc County"
+            name = "Sagadahoc County",
+            cbsa_id = 38860
         )
         new_county.save()
     
@@ -9600,7 +10293,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 23031,
             state_id = 23,
-            name = "York County"
+            name = "York County",
+            cbsa_id = 38860
         )
         new_county.save()
     
@@ -9608,7 +10302,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24001,
             state_id = 24,
-            name = "Allegany County"
+            name = "Allegany County",
+            cbsa_id = 19060
         )
         new_county.save()
     
@@ -9616,7 +10311,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24003,
             state_id = 24,
-            name = "Anne Arundel County"
+            name = "Anne Arundel County",
+            cbsa_id = 12580
         )
         new_county.save()
     
@@ -9624,7 +10320,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24005,
             state_id = 24,
-            name = "Baltimore County"
+            name = "Baltimore County",
+            cbsa_id = 12580
         )
         new_county.save()
     
@@ -9632,7 +10329,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24009,
             state_id = 24,
-            name = "Calvert County"
+            name = "Calvert County",
+            cbsa_id = 30500
         )
         new_county.save()
     
@@ -9648,7 +10346,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24013,
             state_id = 24,
-            name = "Carroll County"
+            name = "Carroll County",
+            cbsa_id = 12580
         )
         new_county.save()
     
@@ -9656,7 +10355,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24015,
             state_id = 24,
-            name = "Cecil County"
+            name = "Cecil County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -9664,7 +10364,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24017,
             state_id = 24,
-            name = "Charles County"
+            name = "Charles County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -9672,7 +10373,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24019,
             state_id = 24,
-            name = "Dorchester County"
+            name = "Dorchester County",
+            cbsa_id = 15700
         )
         new_county.save()
     
@@ -9680,7 +10382,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24021,
             state_id = 24,
-            name = "Frederick County"
+            name = "Frederick County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -9696,7 +10399,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24025,
             state_id = 24,
-            name = "Harford County"
+            name = "Harford County",
+            cbsa_id = 12580
         )
         new_county.save()
     
@@ -9704,7 +10408,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24027,
             state_id = 24,
-            name = "Howard County"
+            name = "Howard County",
+            cbsa_id = 12580
         )
         new_county.save()
     
@@ -9720,7 +10425,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24031,
             state_id = 24,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -9728,7 +10434,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24033,
             state_id = 24,
-            name = "Prince George's County"
+            name = "Prince George's County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -9736,7 +10443,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24035,
             state_id = 24,
-            name = "Queen Anne's County"
+            name = "Queen Anne's County",
+            cbsa_id = 12580
         )
         new_county.save()
     
@@ -9744,7 +10452,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24037,
             state_id = 24,
-            name = "St. Mary's County"
+            name = "St. Mary's County",
+            cbsa_id = 30500
         )
         new_county.save()
     
@@ -9752,7 +10461,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24039,
             state_id = 24,
-            name = "Somerset County"
+            name = "Somerset County",
+            cbsa_id = 41540
         )
         new_county.save()
     
@@ -9760,7 +10470,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24041,
             state_id = 24,
-            name = "Talbot County"
+            name = "Talbot County",
+            cbsa_id = 20660
         )
         new_county.save()
     
@@ -9768,7 +10479,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24043,
             state_id = 24,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 25180
         )
         new_county.save()
     
@@ -9776,7 +10488,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24045,
             state_id = 24,
-            name = "Wicomico County"
+            name = "Wicomico County",
+            cbsa_id = 41540
         )
         new_county.save()
     
@@ -9784,7 +10497,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24047,
             state_id = 24,
-            name = "Worcester County"
+            name = "Worcester County",
+            cbsa_id = 36180
         )
         new_county.save()
     
@@ -9792,7 +10506,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 24510,
             state_id = 24,
-            name = "Baltimore City"
+            name = "Baltimore City",
+            cbsa_id = 12580
         )
         new_county.save()
     
@@ -9800,7 +10515,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25001,
             state_id = 25,
-            name = "Barnstable County"
+            name = "Barnstable County",
+            cbsa_id = 12700
         )
         new_county.save()
     
@@ -9808,7 +10524,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25003,
             state_id = 25,
-            name = "Berkshire County"
+            name = "Berkshire County",
+            cbsa_id = 38340
         )
         new_county.save()
     
@@ -9816,7 +10533,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25005,
             state_id = 25,
-            name = "Bristol County"
+            name = "Bristol County",
+            cbsa_id = 39300
         )
         new_county.save()
     
@@ -9824,7 +10542,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25007,
             state_id = 25,
-            name = "Dukes County"
+            name = "Dukes County",
+            cbsa_id = 47240
         )
         new_county.save()
     
@@ -9832,7 +10551,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25009,
             state_id = 25,
-            name = "Essex County"
+            name = "Essex County",
+            cbsa_id = 14460
         )
         new_county.save()
     
@@ -9840,7 +10560,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25011,
             state_id = 25,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 24640
         )
         new_county.save()
     
@@ -9848,7 +10569,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25013,
             state_id = 25,
-            name = "Hampden County"
+            name = "Hampden County",
+            cbsa_id = 44140
         )
         new_county.save()
     
@@ -9856,7 +10578,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25015,
             state_id = 25,
-            name = "Hampshire County"
+            name = "Hampshire County",
+            cbsa_id = 11200
         )
         new_county.save()
     
@@ -9864,7 +10587,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25017,
             state_id = 25,
-            name = "Middlesex County"
+            name = "Middlesex County",
+            cbsa_id = 14460
         )
         new_county.save()
     
@@ -9872,7 +10596,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25019,
             state_id = 25,
-            name = "Nantucket, Town and County of"
+            name = "Nantucket, Town and County of",
+            cbsa_id = 34880
         )
         new_county.save()
     
@@ -9880,7 +10605,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25021,
             state_id = 25,
-            name = "Norfolk County"
+            name = "Norfolk County",
+            cbsa_id = 14460
         )
         new_county.save()
     
@@ -9888,7 +10614,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25023,
             state_id = 25,
-            name = "Plymouth County"
+            name = "Plymouth County",
+            cbsa_id = 14460
         )
         new_county.save()
     
@@ -9896,7 +10623,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25025,
             state_id = 25,
-            name = "Suffolk County"
+            name = "Suffolk County",
+            cbsa_id = 14460
         )
         new_county.save()
     
@@ -9904,7 +10632,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 25027,
             state_id = 25,
-            name = "Worcester County"
+            name = "Worcester County",
+            cbsa_id = 49340
         )
         new_county.save()
     
@@ -9928,7 +10657,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26005,
             state_id = 26,
-            name = "Allegan County"
+            name = "Allegan County",
+            cbsa_id = 26090
         )
         new_county.save()
     
@@ -9936,7 +10666,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26007,
             state_id = 26,
-            name = "Alpena County"
+            name = "Alpena County",
+            cbsa_id = 10980
         )
         new_county.save()
     
@@ -9968,7 +10699,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26015,
             state_id = 26,
-            name = "Barry County"
+            name = "Barry County",
+            cbsa_id = 24340
         )
         new_county.save()
     
@@ -9976,7 +10708,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26017,
             state_id = 26,
-            name = "Bay County"
+            name = "Bay County",
+            cbsa_id = 13020
         )
         new_county.save()
     
@@ -9984,7 +10717,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26019,
             state_id = 26,
-            name = "Benzie County"
+            name = "Benzie County",
+            cbsa_id = 45900
         )
         new_county.save()
     
@@ -9992,7 +10726,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26021,
             state_id = 26,
-            name = "Berrien County"
+            name = "Berrien County",
+            cbsa_id = 35660
         )
         new_county.save()
     
@@ -10000,7 +10735,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26023,
             state_id = 26,
-            name = "Branch County"
+            name = "Branch County",
+            cbsa_id = 17740
         )
         new_county.save()
     
@@ -10008,7 +10744,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26025,
             state_id = 26,
-            name = "Calhoun County"
+            name = "Calhoun County",
+            cbsa_id = 12980
         )
         new_county.save()
     
@@ -10016,7 +10753,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26027,
             state_id = 26,
-            name = "Cass County"
+            name = "Cass County",
+            cbsa_id = 43780
         )
         new_county.save()
     
@@ -10040,7 +10778,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26033,
             state_id = 26,
-            name = "Chippewa County"
+            name = "Chippewa County",
+            cbsa_id = 42300
         )
         new_county.save()
     
@@ -10056,7 +10795,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26037,
             state_id = 26,
-            name = "Clinton County"
+            name = "Clinton County",
+            cbsa_id = 29620
         )
         new_county.save()
     
@@ -10072,7 +10812,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26041,
             state_id = 26,
-            name = "Delta County"
+            name = "Delta County",
+            cbsa_id = 21540
         )
         new_county.save()
     
@@ -10080,7 +10821,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26043,
             state_id = 26,
-            name = "Dickinson County"
+            name = "Dickinson County",
+            cbsa_id = 27020
         )
         new_county.save()
     
@@ -10088,7 +10830,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26045,
             state_id = 26,
-            name = "Eaton County"
+            name = "Eaton County",
+            cbsa_id = 29620
         )
         new_county.save()
     
@@ -10096,7 +10839,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26047,
             state_id = 26,
-            name = "Emmet County"
+            name = "Emmet County",
+            cbsa_id = 37950
         )
         new_county.save()
     
@@ -10104,7 +10848,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26049,
             state_id = 26,
-            name = "Genesee County"
+            name = "Genesee County",
+            cbsa_id = 22420
         )
         new_county.save()
     
@@ -10128,7 +10873,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26055,
             state_id = 26,
-            name = "Grand Traverse County"
+            name = "Grand Traverse County",
+            cbsa_id = 45900
         )
         new_county.save()
     
@@ -10136,7 +10882,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26057,
             state_id = 26,
-            name = "Gratiot County"
+            name = "Gratiot County",
+            cbsa_id = 10940
         )
         new_county.save()
     
@@ -10144,7 +10891,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26059,
             state_id = 26,
-            name = "Hillsdale County"
+            name = "Hillsdale County",
+            cbsa_id = 25880
         )
         new_county.save()
     
@@ -10152,7 +10900,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26061,
             state_id = 26,
-            name = "Houghton County"
+            name = "Houghton County",
+            cbsa_id = 26340
         )
         new_county.save()
     
@@ -10168,7 +10917,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26065,
             state_id = 26,
-            name = "Ingham County"
+            name = "Ingham County",
+            cbsa_id = 29620
         )
         new_county.save()
     
@@ -10176,7 +10926,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26067,
             state_id = 26,
-            name = "Ionia County"
+            name = "Ionia County",
+            cbsa_id = 24340
         )
         new_county.save()
     
@@ -10200,7 +10951,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26073,
             state_id = 26,
-            name = "Isabella County"
+            name = "Isabella County",
+            cbsa_id = 34380
         )
         new_county.save()
     
@@ -10208,7 +10960,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26075,
             state_id = 26,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 27100
         )
         new_county.save()
     
@@ -10216,7 +10969,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26077,
             state_id = 26,
-            name = "Kalamazoo County"
+            name = "Kalamazoo County",
+            cbsa_id = 28020
         )
         new_county.save()
     
@@ -10224,7 +10978,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26079,
             state_id = 26,
-            name = "Kalkaska County"
+            name = "Kalkaska County",
+            cbsa_id = 45900
         )
         new_county.save()
     
@@ -10232,7 +10987,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26081,
             state_id = 26,
-            name = "Kent County"
+            name = "Kent County",
+            cbsa_id = 24340
         )
         new_county.save()
     
@@ -10240,7 +10996,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26083,
             state_id = 26,
-            name = "Keweenaw County"
+            name = "Keweenaw County",
+            cbsa_id = 26340
         )
         new_county.save()
     
@@ -10256,7 +11013,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26087,
             state_id = 26,
-            name = "Lapeer County"
+            name = "Lapeer County",
+            cbsa_id = 19820
         )
         new_county.save()
     
@@ -10264,7 +11022,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26089,
             state_id = 26,
-            name = "Leelanau County"
+            name = "Leelanau County",
+            cbsa_id = 45900
         )
         new_county.save()
     
@@ -10272,7 +11031,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26091,
             state_id = 26,
-            name = "Lenawee County"
+            name = "Lenawee County",
+            cbsa_id = 10300
         )
         new_county.save()
     
@@ -10280,7 +11040,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26093,
             state_id = 26,
-            name = "Livingston County"
+            name = "Livingston County",
+            cbsa_id = 19820
         )
         new_county.save()
     
@@ -10304,7 +11065,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26099,
             state_id = 26,
-            name = "Macomb County"
+            name = "Macomb County",
+            cbsa_id = 19820
         )
         new_county.save()
     
@@ -10320,7 +11082,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26103,
             state_id = 26,
-            name = "Marquette County"
+            name = "Marquette County",
+            cbsa_id = 32100
         )
         new_county.save()
     
@@ -10328,7 +11091,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26105,
             state_id = 26,
-            name = "Mason County"
+            name = "Mason County",
+            cbsa_id = 31220
         )
         new_county.save()
     
@@ -10336,7 +11100,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26107,
             state_id = 26,
-            name = "Mecosta County"
+            name = "Mecosta County",
+            cbsa_id = 13660
         )
         new_county.save()
     
@@ -10344,7 +11109,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26109,
             state_id = 26,
-            name = "Menominee County"
+            name = "Menominee County",
+            cbsa_id = 31940
         )
         new_county.save()
     
@@ -10352,7 +11118,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26111,
             state_id = 26,
-            name = "Midland County"
+            name = "Midland County",
+            cbsa_id = 33220
         )
         new_county.save()
     
@@ -10360,7 +11127,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26113,
             state_id = 26,
-            name = "Missaukee County"
+            name = "Missaukee County",
+            cbsa_id = 15620
         )
         new_county.save()
     
@@ -10368,7 +11136,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26115,
             state_id = 26,
-            name = "Monroe County"
+            name = "Monroe County",
+            cbsa_id = 33780
         )
         new_county.save()
     
@@ -10376,7 +11145,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26117,
             state_id = 26,
-            name = "Montcalm County"
+            name = "Montcalm County",
+            cbsa_id = 24340
         )
         new_county.save()
     
@@ -10392,7 +11162,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26121,
             state_id = 26,
-            name = "Muskegon County"
+            name = "Muskegon County",
+            cbsa_id = 34740
         )
         new_county.save()
     
@@ -10408,7 +11179,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26125,
             state_id = 26,
-            name = "Oakland County"
+            name = "Oakland County",
+            cbsa_id = 19820
         )
         new_county.save()
     
@@ -10464,7 +11236,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26139,
             state_id = 26,
-            name = "Ottawa County"
+            name = "Ottawa County",
+            cbsa_id = 24340
         )
         new_county.save()
     
@@ -10488,7 +11261,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26145,
             state_id = 26,
-            name = "Saginaw County"
+            name = "Saginaw County",
+            cbsa_id = 40980
         )
         new_county.save()
     
@@ -10496,7 +11270,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26147,
             state_id = 26,
-            name = "St. Clair County"
+            name = "St. Clair County",
+            cbsa_id = 19820
         )
         new_county.save()
     
@@ -10504,7 +11279,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26149,
             state_id = 26,
-            name = "St. Joseph County"
+            name = "St. Joseph County",
+            cbsa_id = 44780
         )
         new_county.save()
     
@@ -10528,7 +11304,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26155,
             state_id = 26,
-            name = "Shiawassee County"
+            name = "Shiawassee County",
+            cbsa_id = 37020
         )
         new_county.save()
     
@@ -10552,7 +11329,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26161,
             state_id = 26,
-            name = "Washtenaw County"
+            name = "Washtenaw County",
+            cbsa_id = 11460
         )
         new_county.save()
     
@@ -10560,7 +11338,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26163,
             state_id = 26,
-            name = "Wayne County"
+            name = "Wayne County",
+            cbsa_id = 19820
         )
         new_county.save()
     
@@ -10568,7 +11347,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 26165,
             state_id = 26,
-            name = "Wexford County"
+            name = "Wexford County",
+            cbsa_id = 15620
         )
         new_county.save()
     
@@ -10584,7 +11364,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27003,
             state_id = 27,
-            name = "Anoka County"
+            name = "Anoka County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -10592,7 +11373,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27005,
             state_id = 27,
-            name = "Becker County"
+            name = "Becker County",
+            cbsa_id = 19810
         )
         new_county.save()
     
@@ -10600,7 +11382,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27007,
             state_id = 27,
-            name = "Beltrami County"
+            name = "Beltrami County",
+            cbsa_id = 13420
         )
         new_county.save()
     
@@ -10608,7 +11391,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27009,
             state_id = 27,
-            name = "Benton County"
+            name = "Benton County",
+            cbsa_id = 41060
         )
         new_county.save()
     
@@ -10624,7 +11408,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27013,
             state_id = 27,
-            name = "Blue Earth County"
+            name = "Blue Earth County",
+            cbsa_id = 31860
         )
         new_county.save()
     
@@ -10632,7 +11417,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27015,
             state_id = 27,
-            name = "Brown County"
+            name = "Brown County",
+            cbsa_id = 35580
         )
         new_county.save()
     
@@ -10640,7 +11426,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27017,
             state_id = 27,
-            name = "Carlton County"
+            name = "Carlton County",
+            cbsa_id = 20260
         )
         new_county.save()
     
@@ -10648,7 +11435,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27019,
             state_id = 27,
-            name = "Carver County"
+            name = "Carver County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -10656,7 +11444,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27021,
             state_id = 27,
-            name = "Cass County"
+            name = "Cass County",
+            cbsa_id = 14660
         )
         new_county.save()
     
@@ -10672,7 +11461,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27025,
             state_id = 27,
-            name = "Chisago County"
+            name = "Chisago County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -10680,7 +11470,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27027,
             state_id = 27,
-            name = "Clay County"
+            name = "Clay County",
+            cbsa_id = 22020
         )
         new_county.save()
     
@@ -10712,7 +11503,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27035,
             state_id = 27,
-            name = "Crow Wing County"
+            name = "Crow Wing County",
+            cbsa_id = 14660
         )
         new_county.save()
     
@@ -10720,7 +11512,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27037,
             state_id = 27,
-            name = "Dakota County"
+            name = "Dakota County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -10728,7 +11521,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27039,
             state_id = 27,
-            name = "Dodge County"
+            name = "Dodge County",
+            cbsa_id = 40340
         )
         new_county.save()
     
@@ -10736,7 +11530,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27041,
             state_id = 27,
-            name = "Douglas County"
+            name = "Douglas County",
+            cbsa_id = 10820
         )
         new_county.save()
     
@@ -10752,7 +11547,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27045,
             state_id = 27,
-            name = "Fillmore County"
+            name = "Fillmore County",
+            cbsa_id = 40340
         )
         new_county.save()
     
@@ -10760,7 +11556,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27047,
             state_id = 27,
-            name = "Freeborn County"
+            name = "Freeborn County",
+            cbsa_id = 10660
         )
         new_county.save()
     
@@ -10768,7 +11565,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27049,
             state_id = 27,
-            name = "Goodhue County"
+            name = "Goodhue County",
+            cbsa_id = 39860
         )
         new_county.save()
     
@@ -10784,7 +11582,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27053,
             state_id = 27,
-            name = "Hennepin County"
+            name = "Hennepin County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -10792,7 +11591,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27055,
             state_id = 27,
-            name = "Houston County"
+            name = "Houston County",
+            cbsa_id = 29100
         )
         new_county.save()
     
@@ -10808,7 +11608,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27059,
             state_id = 27,
-            name = "Isanti County"
+            name = "Isanti County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -10816,7 +11617,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27061,
             state_id = 27,
-            name = "Itasca County"
+            name = "Itasca County",
+            cbsa_id = 24330
         )
         new_county.save()
     
@@ -10840,7 +11642,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27067,
             state_id = 27,
-            name = "Kandiyohi County"
+            name = "Kandiyohi County",
+            cbsa_id = 48820
         )
         new_county.save()
     
@@ -10888,7 +11691,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27079,
             state_id = 27,
-            name = "Le Sueur County"
+            name = "Le Sueur County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -10904,7 +11708,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27083,
             state_id = 27,
-            name = "Lyon County"
+            name = "Lyon County",
+            cbsa_id = 32140
         )
         new_county.save()
     
@@ -10912,7 +11717,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27085,
             state_id = 27,
-            name = "McLeod County"
+            name = "McLeod County",
+            cbsa_id = 26780
         )
         new_county.save()
     
@@ -10936,7 +11742,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27091,
             state_id = 27,
-            name = "Martin County"
+            name = "Martin County",
+            cbsa_id = 21860
         )
         new_county.save()
     
@@ -10952,7 +11759,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27095,
             state_id = 27,
-            name = "Mille Lacs County"
+            name = "Mille Lacs County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -10968,7 +11776,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27099,
             state_id = 27,
-            name = "Mower County"
+            name = "Mower County",
+            cbsa_id = 12380
         )
         new_county.save()
     
@@ -10984,7 +11793,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27103,
             state_id = 27,
-            name = "Nicollet County"
+            name = "Nicollet County",
+            cbsa_id = 31860
         )
         new_county.save()
     
@@ -10992,7 +11802,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27105,
             state_id = 27,
-            name = "Nobles County"
+            name = "Nobles County",
+            cbsa_id = 49380
         )
         new_county.save()
     
@@ -11008,7 +11819,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27109,
             state_id = 27,
-            name = "Olmsted County"
+            name = "Olmsted County",
+            cbsa_id = 40340
         )
         new_county.save()
     
@@ -11016,7 +11828,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27111,
             state_id = 27,
-            name = "Otter Tail County"
+            name = "Otter Tail County",
+            cbsa_id = 22260
         )
         new_county.save()
     
@@ -11048,7 +11861,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27119,
             state_id = 27,
-            name = "Polk County"
+            name = "Polk County",
+            cbsa_id = 24220
         )
         new_county.save()
     
@@ -11064,7 +11878,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27123,
             state_id = 27,
-            name = "Ramsey County"
+            name = "Ramsey County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -11096,7 +11911,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27131,
             state_id = 27,
-            name = "Rice County"
+            name = "Rice County",
+            cbsa_id = 22060
         )
         new_county.save()
     
@@ -11104,7 +11920,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27133,
             state_id = 27,
-            name = "Rock County"
+            name = "Rock County",
+            cbsa_id = 43620
         )
         new_county.save()
     
@@ -11120,7 +11937,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27137,
             state_id = 27,
-            name = "St. Louis County"
+            name = "St. Louis County",
+            cbsa_id = 20260
         )
         new_county.save()
     
@@ -11128,7 +11946,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27139,
             state_id = 27,
-            name = "Scott County"
+            name = "Scott County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -11136,7 +11955,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27141,
             state_id = 27,
-            name = "Sherburne County"
+            name = "Sherburne County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -11152,7 +11972,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27145,
             state_id = 27,
-            name = "Stearns County"
+            name = "Stearns County",
+            cbsa_id = 41060
         )
         new_county.save()
     
@@ -11160,7 +11981,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27147,
             state_id = 27,
-            name = "Steele County"
+            name = "Steele County",
+            cbsa_id = 36940
         )
         new_county.save()
     
@@ -11200,7 +12022,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27157,
             state_id = 27,
-            name = "Wabasha County"
+            name = "Wabasha County",
+            cbsa_id = 40340
         )
         new_county.save()
     
@@ -11224,7 +12047,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27163,
             state_id = 27,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -11240,7 +12064,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27167,
             state_id = 27,
-            name = "Wilkin County"
+            name = "Wilkin County",
+            cbsa_id = 47420
         )
         new_county.save()
     
@@ -11248,7 +12073,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27169,
             state_id = 27,
-            name = "Winona County"
+            name = "Winona County",
+            cbsa_id = 49100
         )
         new_county.save()
     
@@ -11256,7 +12082,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 27171,
             state_id = 27,
-            name = "Wright County"
+            name = "Wright County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -11272,7 +12099,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28001,
             state_id = 28,
-            name = "Adams County"
+            name = "Adams County",
+            cbsa_id = 35020
         )
         new_county.save()
     
@@ -11280,7 +12108,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28003,
             state_id = 28,
-            name = "Alcorn County"
+            name = "Alcorn County",
+            cbsa_id = 18420
         )
         new_county.save()
     
@@ -11304,7 +12133,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28009,
             state_id = 28,
-            name = "Benton County"
+            name = "Benton County",
+            cbsa_id = 32820
         )
         new_county.save()
     
@@ -11312,7 +12142,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28011,
             state_id = 28,
-            name = "Bolivar County"
+            name = "Bolivar County",
+            cbsa_id = 17380
         )
         new_county.save()
     
@@ -11328,7 +12159,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28015,
             state_id = 28,
-            name = "Carroll County"
+            name = "Carroll County",
+            cbsa_id = 24900
         )
         new_county.save()
     
@@ -11360,7 +12192,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28023,
             state_id = 28,
-            name = "Clarke County"
+            name = "Clarke County",
+            cbsa_id = 32940
         )
         new_county.save()
     
@@ -11376,7 +12209,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28027,
             state_id = 28,
-            name = "Coahoma County"
+            name = "Coahoma County",
+            cbsa_id = 17260
         )
         new_county.save()
     
@@ -11384,7 +12218,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28029,
             state_id = 28,
-            name = "Copiah County"
+            name = "Copiah County",
+            cbsa_id = 27140
         )
         new_county.save()
     
@@ -11400,7 +12235,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28033,
             state_id = 28,
-            name = "DeSoto County"
+            name = "DeSoto County",
+            cbsa_id = 32820
         )
         new_county.save()
     
@@ -11408,7 +12244,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28035,
             state_id = 28,
-            name = "Forrest County"
+            name = "Forrest County",
+            cbsa_id = 25620
         )
         new_county.save()
     
@@ -11440,7 +12277,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28043,
             state_id = 28,
-            name = "Grenada County"
+            name = "Grenada County",
+            cbsa_id = 24980
         )
         new_county.save()
     
@@ -11448,7 +12286,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28045,
             state_id = 28,
-            name = "Hancock County"
+            name = "Hancock County",
+            cbsa_id = 25060
         )
         new_county.save()
     
@@ -11456,7 +12295,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28047,
             state_id = 28,
-            name = "Harrison County"
+            name = "Harrison County",
+            cbsa_id = 25060
         )
         new_county.save()
     
@@ -11464,7 +12304,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28049,
             state_id = 28,
-            name = "Hinds County"
+            name = "Hinds County",
+            cbsa_id = 27140
         )
         new_county.save()
     
@@ -11472,7 +12313,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28051,
             state_id = 28,
-            name = "Holmes County"
+            name = "Holmes County",
+            cbsa_id = 27140
         )
         new_county.save()
     
@@ -11496,7 +12338,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28057,
             state_id = 28,
-            name = "Itawamba County"
+            name = "Itawamba County",
+            cbsa_id = 46180
         )
         new_county.save()
     
@@ -11504,7 +12347,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28059,
             state_id = 28,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 25060
         )
         new_county.save()
     
@@ -11512,7 +12356,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28061,
             state_id = 28,
-            name = "Jasper County"
+            name = "Jasper County",
+            cbsa_id = 29860
         )
         new_county.save()
     
@@ -11520,7 +12365,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28063,
             state_id = 28,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 35020
         )
         new_county.save()
     
@@ -11536,7 +12382,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28067,
             state_id = 28,
-            name = "Jones County"
+            name = "Jones County",
+            cbsa_id = 29860
         )
         new_county.save()
     
@@ -11552,7 +12399,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28071,
             state_id = 28,
-            name = "Lafayette County"
+            name = "Lafayette County",
+            cbsa_id = 37060
         )
         new_county.save()
     
@@ -11560,7 +12408,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28073,
             state_id = 28,
-            name = "Lamar County"
+            name = "Lamar County",
+            cbsa_id = 25620
         )
         new_county.save()
     
@@ -11568,7 +12417,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28075,
             state_id = 28,
-            name = "Lauderdale County"
+            name = "Lauderdale County",
+            cbsa_id = 32940
         )
         new_county.save()
     
@@ -11592,7 +12442,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28081,
             state_id = 28,
-            name = "Lee County"
+            name = "Lee County",
+            cbsa_id = 46180
         )
         new_county.save()
     
@@ -11600,7 +12451,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28083,
             state_id = 28,
-            name = "Leflore County"
+            name = "Leflore County",
+            cbsa_id = 24900
         )
         new_county.save()
     
@@ -11608,7 +12460,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28085,
             state_id = 28,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 15020
         )
         new_county.save()
     
@@ -11616,7 +12469,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28087,
             state_id = 28,
-            name = "Lowndes County"
+            name = "Lowndes County",
+            cbsa_id = 18060
         )
         new_county.save()
     
@@ -11624,7 +12478,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28089,
             state_id = 28,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 27140
         )
         new_county.save()
     
@@ -11640,7 +12495,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28093,
             state_id = 28,
-            name = "Marshall County"
+            name = "Marshall County",
+            cbsa_id = 32820
         )
         new_county.save()
     
@@ -11656,7 +12512,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28097,
             state_id = 28,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 24980
         )
         new_county.save()
     
@@ -11680,7 +12537,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28103,
             state_id = 28,
-            name = "Noxubee County"
+            name = "Noxubee County",
+            cbsa_id = 18060
         )
         new_county.save()
     
@@ -11688,7 +12546,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28105,
             state_id = 28,
-            name = "Oktibbeha County"
+            name = "Oktibbeha County",
+            cbsa_id = 44260
         )
         new_county.save()
     
@@ -11704,7 +12563,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28109,
             state_id = 28,
-            name = "Pearl River County"
+            name = "Pearl River County",
+            cbsa_id = 38100
         )
         new_county.save()
     
@@ -11712,7 +12572,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28111,
             state_id = 28,
-            name = "Perry County"
+            name = "Perry County",
+            cbsa_id = 25620
         )
         new_county.save()
     
@@ -11720,7 +12581,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28113,
             state_id = 28,
-            name = "Pike County"
+            name = "Pike County",
+            cbsa_id = 32620
         )
         new_county.save()
     
@@ -11736,7 +12598,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28117,
             state_id = 28,
-            name = "Prentiss County"
+            name = "Prentiss County",
+            cbsa_id = 46180
         )
         new_county.save()
     
@@ -11752,7 +12615,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28121,
             state_id = 28,
-            name = "Rankin County"
+            name = "Rankin County",
+            cbsa_id = 27140
         )
         new_county.save()
     
@@ -11760,7 +12624,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28123,
             state_id = 28,
-            name = "Scott County"
+            name = "Scott County",
+            cbsa_id = 27140
         )
         new_county.save()
     
@@ -11776,7 +12641,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28127,
             state_id = 28,
-            name = "Simpson County"
+            name = "Simpson County",
+            cbsa_id = 27140
         )
         new_county.save()
     
@@ -11792,7 +12658,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28131,
             state_id = 28,
-            name = "Stone County"
+            name = "Stone County",
+            cbsa_id = 25060
         )
         new_county.save()
     
@@ -11816,7 +12683,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28137,
             state_id = 28,
-            name = "Tate County"
+            name = "Tate County",
+            cbsa_id = 32820
         )
         new_county.save()
     
@@ -11840,7 +12708,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28143,
             state_id = 28,
-            name = "Tunica County"
+            name = "Tunica County",
+            cbsa_id = 32820
         )
         new_county.save()
     
@@ -11856,7 +12725,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28147,
             state_id = 28,
-            name = "Walthall County"
+            name = "Walthall County",
+            cbsa_id = 32620
         )
         new_county.save()
     
@@ -11864,7 +12734,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28149,
             state_id = 28,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 46980
         )
         new_county.save()
     
@@ -11872,7 +12743,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28151,
             state_id = 28,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 24740
         )
         new_county.save()
     
@@ -11888,7 +12760,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28155,
             state_id = 28,
-            name = "Webster County"
+            name = "Webster County",
+            cbsa_id = 44260
         )
         new_county.save()
     
@@ -11912,7 +12785,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28161,
             state_id = 28,
-            name = "Yalobusha County"
+            name = "Yalobusha County",
+            cbsa_id = 37060
         )
         new_county.save()
     
@@ -11920,7 +12794,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 28163,
             state_id = 28,
-            name = "Yazoo County"
+            name = "Yazoo County",
+            cbsa_id = 27140
         )
         new_county.save()
     
@@ -11928,7 +12803,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29001,
             state_id = 29,
-            name = "Adair County"
+            name = "Adair County",
+            cbsa_id = 28860
         )
         new_county.save()
     
@@ -11936,7 +12812,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29003,
             state_id = 29,
-            name = "Andrew County"
+            name = "Andrew County",
+            cbsa_id = 41140
         )
         new_county.save()
     
@@ -11952,7 +12829,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29007,
             state_id = 29,
-            name = "Audrain County"
+            name = "Audrain County",
+            cbsa_id = 33020
         )
         new_county.save()
     
@@ -11976,7 +12854,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29013,
             state_id = 29,
-            name = "Bates County"
+            name = "Bates County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -11992,7 +12871,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29017,
             state_id = 29,
-            name = "Bollinger County"
+            name = "Bollinger County",
+            cbsa_id = 16020
         )
         new_county.save()
     
@@ -12000,7 +12880,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29019,
             state_id = 29,
-            name = "Boone County"
+            name = "Boone County",
+            cbsa_id = 17860
         )
         new_county.save()
     
@@ -12008,7 +12889,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29021,
             state_id = 29,
-            name = "Buchanan County"
+            name = "Buchanan County",
+            cbsa_id = 41140
         )
         new_county.save()
     
@@ -12016,7 +12898,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29023,
             state_id = 29,
-            name = "Butler County"
+            name = "Butler County",
+            cbsa_id = 38740
         )
         new_county.save()
     
@@ -12024,7 +12907,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29025,
             state_id = 29,
-            name = "Caldwell County"
+            name = "Caldwell County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -12032,7 +12916,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29027,
             state_id = 29,
-            name = "Callaway County"
+            name = "Callaway County",
+            cbsa_id = 27620
         )
         new_county.save()
     
@@ -12048,7 +12933,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29031,
             state_id = 29,
-            name = "Cape Girardeau County"
+            name = "Cape Girardeau County",
+            cbsa_id = 16020
         )
         new_county.save()
     
@@ -12072,7 +12958,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29037,
             state_id = 29,
-            name = "Cass County"
+            name = "Cass County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -12096,7 +12983,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29043,
             state_id = 29,
-            name = "Christian County"
+            name = "Christian County",
+            cbsa_id = 44180
         )
         new_county.save()
     
@@ -12112,7 +13000,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29047,
             state_id = 29,
-            name = "Clay County"
+            name = "Clay County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -12120,7 +13009,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29049,
             state_id = 29,
-            name = "Clinton County"
+            name = "Clinton County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -12128,7 +13018,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29051,
             state_id = 29,
-            name = "Cole County"
+            name = "Cole County",
+            cbsa_id = 27620
         )
         new_county.save()
     
@@ -12136,7 +13027,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29053,
             state_id = 29,
-            name = "Cooper County"
+            name = "Cooper County",
+            cbsa_id = 17860
         )
         new_county.save()
     
@@ -12160,7 +13052,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29059,
             state_id = 29,
-            name = "Dallas County"
+            name = "Dallas County",
+            cbsa_id = 44180
         )
         new_county.save()
     
@@ -12176,7 +13069,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29063,
             state_id = 29,
-            name = "DeKalb County"
+            name = "DeKalb County",
+            cbsa_id = 41140
         )
         new_county.save()
     
@@ -12200,7 +13094,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29069,
             state_id = 29,
-            name = "Dunklin County"
+            name = "Dunklin County",
+            cbsa_id = 28380
         )
         new_county.save()
     
@@ -12208,7 +13103,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29071,
             state_id = 29,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -12232,7 +13128,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29077,
             state_id = 29,
-            name = "Greene County"
+            name = "Greene County",
+            cbsa_id = 44180
         )
         new_county.save()
     
@@ -12280,7 +13177,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29089,
             state_id = 29,
-            name = "Howard County"
+            name = "Howard County",
+            cbsa_id = 17860
         )
         new_county.save()
     
@@ -12288,7 +13186,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29091,
             state_id = 29,
-            name = "Howell County"
+            name = "Howell County",
+            cbsa_id = 48460
         )
         new_county.save()
     
@@ -12304,7 +13203,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29095,
             state_id = 29,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -12312,7 +13212,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29097,
             state_id = 29,
-            name = "Jasper County"
+            name = "Jasper County",
+            cbsa_id = 27900
         )
         new_county.save()
     
@@ -12320,7 +13221,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29099,
             state_id = 29,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -12328,7 +13230,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29101,
             state_id = 29,
-            name = "Johnson County"
+            name = "Johnson County",
+            cbsa_id = 47660
         )
         new_county.save()
     
@@ -12344,7 +13247,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29105,
             state_id = 29,
-            name = "Laclede County"
+            name = "Laclede County",
+            cbsa_id = 30060
         )
         new_county.save()
     
@@ -12352,7 +13256,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29107,
             state_id = 29,
-            name = "Lafayette County"
+            name = "Lafayette County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -12368,7 +13273,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29111,
             state_id = 29,
-            name = "Lewis County"
+            name = "Lewis County",
+            cbsa_id = 39500
         )
         new_county.save()
     
@@ -12376,7 +13282,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29113,
             state_id = 29,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -12432,7 +13339,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29127,
             state_id = 29,
-            name = "Marion County"
+            name = "Marion County",
+            cbsa_id = 25300
         )
         new_county.save()
     
@@ -12456,7 +13364,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29133,
             state_id = 29,
-            name = "Mississippi County"
+            name = "Mississippi County",
+            cbsa_id = 43460
         )
         new_county.save()
     
@@ -12464,7 +13373,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29135,
             state_id = 29,
-            name = "Moniteau County"
+            name = "Moniteau County",
+            cbsa_id = 27620
         )
         new_county.save()
     
@@ -12504,7 +13414,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29145,
             state_id = 29,
-            name = "Newton County"
+            name = "Newton County",
+            cbsa_id = 27900
         )
         new_county.save()
     
@@ -12512,7 +13423,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29147,
             state_id = 29,
-            name = "Nodaway County"
+            name = "Nodaway County",
+            cbsa_id = 32340
         )
         new_county.save()
     
@@ -12528,7 +13440,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29151,
             state_id = 29,
-            name = "Osage County"
+            name = "Osage County",
+            cbsa_id = 27620
         )
         new_county.save()
     
@@ -12560,7 +13473,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29159,
             state_id = 29,
-            name = "Pettis County"
+            name = "Pettis County",
+            cbsa_id = 42740
         )
         new_county.save()
     
@@ -12568,7 +13482,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29161,
             state_id = 29,
-            name = "Phelps County"
+            name = "Phelps County",
+            cbsa_id = 40620
         )
         new_county.save()
     
@@ -12584,7 +13499,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29165,
             state_id = 29,
-            name = "Platte County"
+            name = "Platte County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -12592,7 +13508,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29167,
             state_id = 29,
-            name = "Polk County"
+            name = "Polk County",
+            cbsa_id = 44180
         )
         new_county.save()
     
@@ -12600,7 +13517,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29169,
             state_id = 29,
-            name = "Pulaski County"
+            name = "Pulaski County",
+            cbsa_id = 22780
         )
         new_county.save()
     
@@ -12616,7 +13534,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29173,
             state_id = 29,
-            name = "Ralls County"
+            name = "Ralls County",
+            cbsa_id = 25300
         )
         new_county.save()
     
@@ -12624,7 +13543,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29175,
             state_id = 29,
-            name = "Randolph County"
+            name = "Randolph County",
+            cbsa_id = 33620
         )
         new_county.save()
     
@@ -12632,7 +13552,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29177,
             state_id = 29,
-            name = "Ray County"
+            name = "Ray County",
+            cbsa_id = 28140
         )
         new_county.save()
     
@@ -12656,7 +13577,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29183,
             state_id = 29,
-            name = "St. Charles County"
+            name = "St. Charles County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -12680,7 +13602,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29187,
             state_id = 29,
-            name = "St. Francois County"
+            name = "St. Francois County",
+            cbsa_id = 22100
         )
         new_county.save()
     
@@ -12688,7 +13611,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29189,
             state_id = 29,
-            name = "St. Louis County"
+            name = "St. Louis County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -12696,7 +13620,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29195,
             state_id = 29,
-            name = "Saline County"
+            name = "Saline County",
+            cbsa_id = 32180
         )
         new_county.save()
     
@@ -12704,7 +13629,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29197,
             state_id = 29,
-            name = "Schuyler County"
+            name = "Schuyler County",
+            cbsa_id = 28860
         )
         new_county.save()
     
@@ -12720,7 +13646,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29201,
             state_id = 29,
-            name = "Scott County"
+            name = "Scott County",
+            cbsa_id = 43460
         )
         new_county.save()
     
@@ -12768,7 +13695,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29213,
             state_id = 29,
-            name = "Taney County"
+            name = "Taney County",
+            cbsa_id = 14700
         )
         new_county.save()
     
@@ -12792,7 +13720,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29219,
             state_id = 29,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -12816,7 +13745,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29225,
             state_id = 29,
-            name = "Webster County"
+            name = "Webster County",
+            cbsa_id = 44180
         )
         new_county.save()
     
@@ -12840,7 +13770,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 29510,
             state_id = 29,
-            name = "St. Louis, City of"
+            name = "St. Louis, City of",
+            cbsa_id = 41180
         )
         new_county.save()
     
@@ -12872,7 +13803,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30007,
             state_id = 30,
-            name = "Broadwater County"
+            name = "Broadwater County",
+            cbsa_id = 25740
         )
         new_county.save()
     
@@ -12880,7 +13812,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30009,
             state_id = 30,
-            name = "Carbon County"
+            name = "Carbon County",
+            cbsa_id = 13740
         )
         new_county.save()
     
@@ -12896,7 +13829,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30013,
             state_id = 30,
-            name = "Cascade County"
+            name = "Cascade County",
+            cbsa_id = 24500
         )
         new_county.save()
     
@@ -12960,7 +13894,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30029,
             state_id = 30,
-            name = "Flathead County"
+            name = "Flathead County",
+            cbsa_id = 28060
         )
         new_county.save()
     
@@ -12968,7 +13903,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30031,
             state_id = 30,
-            name = "Gallatin County"
+            name = "Gallatin County",
+            cbsa_id = 14580
         )
         new_county.save()
     
@@ -13016,7 +13952,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30043,
             state_id = 30,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 25740
         )
         new_county.save()
     
@@ -13040,7 +13977,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30049,
             state_id = 30,
-            name = "Lewis and Clark County"
+            name = "Lewis and Clark County",
+            cbsa_id = 25740
         )
         new_county.save()
     
@@ -13088,7 +14026,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30061,
             state_id = 30,
-            name = "Mineral County"
+            name = "Mineral County",
+            cbsa_id = 33540
         )
         new_county.save()
     
@@ -13096,7 +14035,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30063,
             state_id = 30,
-            name = "Missoula County"
+            name = "Missoula County",
+            cbsa_id = 33540
         )
         new_county.save()
     
@@ -13216,7 +14156,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30093,
             state_id = 30,
-            name = "Silver Bow County"
+            name = "Silver Bow County",
+            cbsa_id = 15580
         )
         new_county.save()
     
@@ -13224,7 +14165,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30095,
             state_id = 30,
-            name = "Stillwater County"
+            name = "Stillwater County",
+            cbsa_id = 13740
         )
         new_county.save()
     
@@ -13288,7 +14230,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 30111,
             state_id = 30,
-            name = "Yellowstone County"
+            name = "Yellowstone County",
+            cbsa_id = 13740
         )
         new_county.save()
     
@@ -13296,7 +14239,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31001,
             state_id = 31,
-            name = "Adams County"
+            name = "Adams County",
+            cbsa_id = 25580
         )
         new_county.save()
     
@@ -13320,7 +14264,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31007,
             state_id = 31,
-            name = "Banner County"
+            name = "Banner County",
+            cbsa_id = 42420
         )
         new_county.save()
     
@@ -13368,7 +14313,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31019,
             state_id = 31,
-            name = "Buffalo County"
+            name = "Buffalo County",
+            cbsa_id = 28260
         )
         new_county.save()
     
@@ -13392,7 +14338,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31025,
             state_id = 31,
-            name = "Cass County"
+            name = "Cass County",
+            cbsa_id = 36540
         )
         new_county.save()
     
@@ -13432,7 +14379,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31035,
             state_id = 31,
-            name = "Clay County"
+            name = "Clay County",
+            cbsa_id = 25580
         )
         new_county.save()
     
@@ -13440,7 +14388,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31037,
             state_id = 31,
-            name = "Colfax County"
+            name = "Colfax County",
+            cbsa_id = 18100
         )
         new_county.save()
     
@@ -13464,7 +14413,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31043,
             state_id = 31,
-            name = "Dakota County"
+            name = "Dakota County",
+            cbsa_id = 43580
         )
         new_county.save()
     
@@ -13480,7 +14430,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31047,
             state_id = 31,
-            name = "Dawson County"
+            name = "Dawson County",
+            cbsa_id = 30420
         )
         new_county.save()
     
@@ -13504,7 +14455,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31053,
             state_id = 31,
-            name = "Dodge County"
+            name = "Dodge County",
+            cbsa_id = 23340
         )
         new_county.save()
     
@@ -13512,7 +14464,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31055,
             state_id = 31,
-            name = "Douglas County"
+            name = "Douglas County",
+            cbsa_id = 36540
         )
         new_county.save()
     
@@ -13560,7 +14513,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31067,
             state_id = 31,
-            name = "Gage County"
+            name = "Gage County",
+            cbsa_id = 13100
         )
         new_county.save()
     
@@ -13584,7 +14538,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31073,
             state_id = 31,
-            name = "Gosper County"
+            name = "Gosper County",
+            cbsa_id = 30420
         )
         new_county.save()
     
@@ -13608,7 +14563,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31079,
             state_id = 31,
-            name = "Hall County"
+            name = "Hall County",
+            cbsa_id = 24260
         )
         new_county.save()
     
@@ -13664,7 +14620,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31093,
             state_id = 31,
-            name = "Howard County"
+            name = "Howard County",
+            cbsa_id = 24260
         )
         new_county.save()
     
@@ -13688,7 +14645,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31099,
             state_id = 31,
-            name = "Kearney County"
+            name = "Kearney County",
+            cbsa_id = 28260
         )
         new_county.save()
     
@@ -13728,7 +14686,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31109,
             state_id = 31,
-            name = "Lancaster County"
+            name = "Lancaster County",
+            cbsa_id = 30700
         )
         new_county.save()
     
@@ -13736,7 +14695,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31111,
             state_id = 31,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 35820
         )
         new_county.save()
     
@@ -13744,7 +14704,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31113,
             state_id = 31,
-            name = "Logan County"
+            name = "Logan County",
+            cbsa_id = 35820
         )
         new_county.save()
     
@@ -13768,7 +14729,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31119,
             state_id = 31,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 35740
         )
         new_county.save()
     
@@ -13776,7 +14738,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31121,
             state_id = 31,
-            name = "Merrick County"
+            name = "Merrick County",
+            cbsa_id = 24260
         )
         new_county.save()
     
@@ -13848,7 +14811,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31139,
             state_id = 31,
-            name = "Pierce County"
+            name = "Pierce County",
+            cbsa_id = 35740
         )
         new_county.save()
     
@@ -13856,7 +14820,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31141,
             state_id = 31,
-            name = "Platte County"
+            name = "Platte County",
+            cbsa_id = 18100
         )
         new_county.save()
     
@@ -13904,7 +14869,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31153,
             state_id = 31,
-            name = "Sarpy County"
+            name = "Sarpy County",
+            cbsa_id = 36540
         )
         new_county.save()
     
@@ -13912,7 +14878,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31155,
             state_id = 31,
-            name = "Saunders County"
+            name = "Saunders County",
+            cbsa_id = 36540
         )
         new_county.save()
     
@@ -13920,7 +14887,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31157,
             state_id = 31,
-            name = "Scotts Bluff County"
+            name = "Scotts Bluff County",
+            cbsa_id = 42420
         )
         new_county.save()
     
@@ -13928,7 +14896,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31159,
             state_id = 31,
-            name = "Seward County"
+            name = "Seward County",
+            cbsa_id = 30700
         )
         new_county.save()
     
@@ -13960,7 +14929,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31167,
             state_id = 31,
-            name = "Stanton County"
+            name = "Stanton County",
+            cbsa_id = 35740
         )
         new_county.save()
     
@@ -14000,7 +14970,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31177,
             state_id = 31,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 36540
         )
         new_county.save()
     
@@ -14016,7 +14987,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 31181,
             state_id = 31,
-            name = "Webster County"
+            name = "Webster County",
+            cbsa_id = 25580
         )
         new_county.save()
     
@@ -14040,7 +15012,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32001,
             state_id = 32,
-            name = "Churchill County"
+            name = "Churchill County",
+            cbsa_id = 21980
         )
         new_county.save()
     
@@ -14048,7 +15021,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32003,
             state_id = 32,
-            name = "Clark County"
+            name = "Clark County",
+            cbsa_id = 29820
         )
         new_county.save()
     
@@ -14056,7 +15030,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32005,
             state_id = 32,
-            name = "Douglas County"
+            name = "Douglas County",
+            cbsa_id = 23820
         )
         new_county.save()
     
@@ -14064,7 +15039,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32007,
             state_id = 32,
-            name = "Elko County"
+            name = "Elko County",
+            cbsa_id = 21220
         )
         new_county.save()
     
@@ -14080,7 +15056,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32011,
             state_id = 32,
-            name = "Eureka County"
+            name = "Eureka County",
+            cbsa_id = 21220
         )
         new_county.save()
     
@@ -14088,7 +15065,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32013,
             state_id = 32,
-            name = "Humboldt County"
+            name = "Humboldt County",
+            cbsa_id = 49080
         )
         new_county.save()
     
@@ -14112,7 +15090,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32019,
             state_id = 32,
-            name = "Lyon County"
+            name = "Lyon County",
+            cbsa_id = 39900
         )
         new_county.save()
     
@@ -14128,7 +15107,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32023,
             state_id = 32,
-            name = "Nye County"
+            name = "Nye County",
+            cbsa_id = 37220
         )
         new_county.save()
     
@@ -14144,7 +15124,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32029,
             state_id = 32,
-            name = "Storey County"
+            name = "Storey County",
+            cbsa_id = 39900
         )
         new_county.save()
     
@@ -14152,7 +15133,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32031,
             state_id = 32,
-            name = "Washoe County"
+            name = "Washoe County",
+            cbsa_id = 39900
         )
         new_county.save()
     
@@ -14168,7 +15150,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 32510,
             state_id = 32,
-            name = "Carson City, Consolidated Municipality of"
+            name = "Carson City, Consolidated Municipality of",
+            cbsa_id = 16180
         )
         new_county.save()
     
@@ -14176,7 +15159,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 33001,
             state_id = 33,
-            name = "Belknap County"
+            name = "Belknap County",
+            cbsa_id = 29060
         )
         new_county.save()
     
@@ -14192,7 +15176,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 33005,
             state_id = 33,
-            name = "Cheshire County"
+            name = "Cheshire County",
+            cbsa_id = 28300
         )
         new_county.save()
     
@@ -14208,7 +15193,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 33009,
             state_id = 33,
-            name = "Grafton County"
+            name = "Grafton County",
+            cbsa_id = 30150
         )
         new_county.save()
     
@@ -14216,7 +15202,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 33011,
             state_id = 33,
-            name = "Hillsborough County"
+            name = "Hillsborough County",
+            cbsa_id = 31700
         )
         new_county.save()
     
@@ -14224,7 +15211,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 33013,
             state_id = 33,
-            name = "Merrimack County"
+            name = "Merrimack County",
+            cbsa_id = 18180
         )
         new_county.save()
     
@@ -14232,7 +15220,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 33015,
             state_id = 33,
-            name = "Rockingham County"
+            name = "Rockingham County",
+            cbsa_id = 14460
         )
         new_county.save()
     
@@ -14240,7 +15229,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 33017,
             state_id = 33,
-            name = "Strafford County"
+            name = "Strafford County",
+            cbsa_id = 14460
         )
         new_county.save()
     
@@ -14248,7 +15238,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 33019,
             state_id = 33,
-            name = "Sullivan County"
+            name = "Sullivan County",
+            cbsa_id = 30150
         )
         new_county.save()
     
@@ -14256,7 +15247,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34001,
             state_id = 34,
-            name = "Atlantic County"
+            name = "Atlantic County",
+            cbsa_id = 12100
         )
         new_county.save()
     
@@ -14264,7 +15256,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34003,
             state_id = 34,
-            name = "Bergen County"
+            name = "Bergen County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14272,7 +15265,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34005,
             state_id = 34,
-            name = "Burlington County"
+            name = "Burlington County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -14280,7 +15274,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34007,
             state_id = 34,
-            name = "Camden County"
+            name = "Camden County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -14288,7 +15283,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34009,
             state_id = 34,
-            name = "Cape May County"
+            name = "Cape May County",
+            cbsa_id = 12100
         )
         new_county.save()
     
@@ -14296,7 +15292,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34011,
             state_id = 34,
-            name = "Cumberland County"
+            name = "Cumberland County",
+            cbsa_id = 47220
         )
         new_county.save()
     
@@ -14304,7 +15301,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34013,
             state_id = 34,
-            name = "Essex County"
+            name = "Essex County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14312,7 +15310,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34015,
             state_id = 34,
-            name = "Gloucester County"
+            name = "Gloucester County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -14320,7 +15319,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34017,
             state_id = 34,
-            name = "Hudson County"
+            name = "Hudson County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14328,7 +15328,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34019,
             state_id = 34,
-            name = "Hunterdon County"
+            name = "Hunterdon County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14336,7 +15337,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34021,
             state_id = 34,
-            name = "Mercer County"
+            name = "Mercer County",
+            cbsa_id = 45940
         )
         new_county.save()
     
@@ -14344,7 +15346,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34023,
             state_id = 34,
-            name = "Middlesex County"
+            name = "Middlesex County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14352,7 +15355,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34025,
             state_id = 34,
-            name = "Monmouth County"
+            name = "Monmouth County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14360,7 +15364,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34027,
             state_id = 34,
-            name = "Morris County"
+            name = "Morris County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14368,7 +15373,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34029,
             state_id = 34,
-            name = "Ocean County"
+            name = "Ocean County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14376,7 +15382,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34031,
             state_id = 34,
-            name = "Passaic County"
+            name = "Passaic County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14384,7 +15391,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34033,
             state_id = 34,
-            name = "Salem County"
+            name = "Salem County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -14392,7 +15400,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34035,
             state_id = 34,
-            name = "Somerset County"
+            name = "Somerset County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14400,7 +15409,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34037,
             state_id = 34,
-            name = "Sussex County"
+            name = "Sussex County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14408,7 +15418,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34039,
             state_id = 34,
-            name = "Union County"
+            name = "Union County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14416,7 +15427,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 34041,
             state_id = 34,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 10900
         )
         new_county.save()
     
@@ -14424,7 +15436,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35001,
             state_id = 35,
-            name = "Bernalillo County"
+            name = "Bernalillo County",
+            cbsa_id = 10740
         )
         new_county.save()
     
@@ -14440,7 +15453,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35005,
             state_id = 35,
-            name = "Chaves County"
+            name = "Chaves County",
+            cbsa_id = 40740
         )
         new_county.save()
     
@@ -14464,7 +15478,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35009,
             state_id = 35,
-            name = "Curry County"
+            name = "Curry County",
+            cbsa_id = 17580
         )
         new_county.save()
     
@@ -14480,7 +15495,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35013,
             state_id = 35,
-            name = "Doña Ana County"
+            name = "Doña Ana County",
+            cbsa_id = 29740
         )
         new_county.save()
     
@@ -14488,7 +15504,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35015,
             state_id = 35,
-            name = "Eddy County"
+            name = "Eddy County",
+            cbsa_id = 16100
         )
         new_county.save()
     
@@ -14496,7 +15513,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35017,
             state_id = 35,
-            name = "Grant County"
+            name = "Grant County",
+            cbsa_id = 43500
         )
         new_county.save()
     
@@ -14528,7 +15546,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35025,
             state_id = 35,
-            name = "Lea County"
+            name = "Lea County",
+            cbsa_id = 26020
         )
         new_county.save()
     
@@ -14536,7 +15555,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35027,
             state_id = 35,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 40760
         )
         new_county.save()
     
@@ -14544,7 +15564,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35028,
             state_id = 35,
-            name = "Los Alamos County"
+            name = "Los Alamos County",
+            cbsa_id = 31060
         )
         new_county.save()
     
@@ -14552,7 +15573,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35029,
             state_id = 35,
-            name = "Luna County"
+            name = "Luna County",
+            cbsa_id = 19700
         )
         new_county.save()
     
@@ -14560,7 +15582,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35031,
             state_id = 35,
-            name = "McKinley County"
+            name = "McKinley County",
+            cbsa_id = 23700
         )
         new_county.save()
     
@@ -14568,7 +15591,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35033,
             state_id = 35,
-            name = "Mora County"
+            name = "Mora County",
+            cbsa_id = 29780
         )
         new_county.save()
     
@@ -14576,7 +15600,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35035,
             state_id = 35,
-            name = "Otero County"
+            name = "Otero County",
+            cbsa_id = 10460
         )
         new_county.save()
     
@@ -14592,7 +15617,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35039,
             state_id = 35,
-            name = "Rio Arriba County"
+            name = "Rio Arriba County",
+            cbsa_id = 21580
         )
         new_county.save()
     
@@ -14600,7 +15626,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35041,
             state_id = 35,
-            name = "Roosevelt County"
+            name = "Roosevelt County",
+            cbsa_id = 17580
         )
         new_county.save()
     
@@ -14608,7 +15635,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35043,
             state_id = 35,
-            name = "Sandoval County"
+            name = "Sandoval County",
+            cbsa_id = 10740
         )
         new_county.save()
     
@@ -14616,7 +15644,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35045,
             state_id = 35,
-            name = "San Juan County"
+            name = "San Juan County",
+            cbsa_id = 22140
         )
         new_county.save()
     
@@ -14624,7 +15653,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35047,
             state_id = 35,
-            name = "San Miguel County"
+            name = "San Miguel County",
+            cbsa_id = 29780
         )
         new_county.save()
     
@@ -14632,7 +15662,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35049,
             state_id = 35,
-            name = "Santa Fe County"
+            name = "Santa Fe County",
+            cbsa_id = 42140
         )
         new_county.save()
     
@@ -14656,7 +15687,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35055,
             state_id = 35,
-            name = "Taos County"
+            name = "Taos County",
+            cbsa_id = 45340
         )
         new_county.save()
     
@@ -14664,7 +15696,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35057,
             state_id = 35,
-            name = "Torrance County"
+            name = "Torrance County",
+            cbsa_id = 10740
         )
         new_county.save()
     
@@ -14680,7 +15713,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 35061,
             state_id = 35,
-            name = "Valencia County"
+            name = "Valencia County",
+            cbsa_id = 10740
         )
         new_county.save()
     
@@ -14688,7 +15722,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36001,
             state_id = 36,
-            name = "Albany County"
+            name = "Albany County",
+            cbsa_id = 10580
         )
         new_county.save()
     
@@ -14704,7 +15739,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36005,
             state_id = 36,
-            name = "Bronx County"
+            name = "Bronx County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14712,7 +15748,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36007,
             state_id = 36,
-            name = "Broome County"
+            name = "Broome County",
+            cbsa_id = 13780
         )
         new_county.save()
     
@@ -14720,7 +15757,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36009,
             state_id = 36,
-            name = "Cattaraugus County"
+            name = "Cattaraugus County",
+            cbsa_id = 36460
         )
         new_county.save()
     
@@ -14728,7 +15766,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36011,
             state_id = 36,
-            name = "Cayuga County"
+            name = "Cayuga County",
+            cbsa_id = 12180
         )
         new_county.save()
     
@@ -14736,7 +15775,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36013,
             state_id = 36,
-            name = "Chautauqua County"
+            name = "Chautauqua County",
+            cbsa_id = 27460
         )
         new_county.save()
     
@@ -14744,7 +15784,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36015,
             state_id = 36,
-            name = "Chemung County"
+            name = "Chemung County",
+            cbsa_id = 21300
         )
         new_county.save()
     
@@ -14760,7 +15801,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36019,
             state_id = 36,
-            name = "Clinton County"
+            name = "Clinton County",
+            cbsa_id = 38460
         )
         new_county.save()
     
@@ -14768,7 +15810,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36021,
             state_id = 36,
-            name = "Columbia County"
+            name = "Columbia County",
+            cbsa_id = 26460
         )
         new_county.save()
     
@@ -14776,7 +15819,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36023,
             state_id = 36,
-            name = "Cortland County"
+            name = "Cortland County",
+            cbsa_id = 18660
         )
         new_county.save()
     
@@ -14792,7 +15836,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36027,
             state_id = 36,
-            name = "Dutchess County"
+            name = "Dutchess County",
+            cbsa_id = 28880
         )
         new_county.save()
     
@@ -14800,7 +15845,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36029,
             state_id = 36,
-            name = "Erie County"
+            name = "Erie County",
+            cbsa_id = 15380
         )
         new_county.save()
     
@@ -14824,7 +15870,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36035,
             state_id = 36,
-            name = "Fulton County"
+            name = "Fulton County",
+            cbsa_id = 24100
         )
         new_county.save()
     
@@ -14832,7 +15879,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36037,
             state_id = 36,
-            name = "Genesee County"
+            name = "Genesee County",
+            cbsa_id = 12860
         )
         new_county.save()
     
@@ -14856,7 +15904,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36043,
             state_id = 36,
-            name = "Herkimer County"
+            name = "Herkimer County",
+            cbsa_id = 46540
         )
         new_county.save()
     
@@ -14864,7 +15913,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36045,
             state_id = 36,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 48060
         )
         new_county.save()
     
@@ -14872,7 +15922,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36047,
             state_id = 36,
-            name = "Kings County"
+            name = "Kings County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14888,7 +15939,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36051,
             state_id = 36,
-            name = "Livingston County"
+            name = "Livingston County",
+            cbsa_id = 40380
         )
         new_county.save()
     
@@ -14896,7 +15948,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36053,
             state_id = 36,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 45060
         )
         new_county.save()
     
@@ -14904,7 +15957,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36055,
             state_id = 36,
-            name = "Monroe County"
+            name = "Monroe County",
+            cbsa_id = 40380
         )
         new_county.save()
     
@@ -14912,7 +15966,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36057,
             state_id = 36,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 11220
         )
         new_county.save()
     
@@ -14920,7 +15975,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36059,
             state_id = 36,
-            name = "Nassau County"
+            name = "Nassau County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14928,7 +15984,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36061,
             state_id = 36,
-            name = "New York County"
+            name = "New York County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -14936,7 +15993,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36063,
             state_id = 36,
-            name = "Niagara County"
+            name = "Niagara County",
+            cbsa_id = 15380
         )
         new_county.save()
     
@@ -14944,7 +16002,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36065,
             state_id = 36,
-            name = "Oneida County"
+            name = "Oneida County",
+            cbsa_id = 46540
         )
         new_county.save()
     
@@ -14952,7 +16011,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36067,
             state_id = 36,
-            name = "Onondaga County"
+            name = "Onondaga County",
+            cbsa_id = 45060
         )
         new_county.save()
     
@@ -14960,7 +16020,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36069,
             state_id = 36,
-            name = "Ontario County"
+            name = "Ontario County",
+            cbsa_id = 40380
         )
         new_county.save()
     
@@ -14968,7 +16029,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36071,
             state_id = 36,
-            name = "Orange County"
+            name = "Orange County",
+            cbsa_id = 28880
         )
         new_county.save()
     
@@ -14976,7 +16038,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36073,
             state_id = 36,
-            name = "Orleans County"
+            name = "Orleans County",
+            cbsa_id = 40380
         )
         new_county.save()
     
@@ -14984,7 +16047,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36075,
             state_id = 36,
-            name = "Oswego County"
+            name = "Oswego County",
+            cbsa_id = 45060
         )
         new_county.save()
     
@@ -14992,7 +16056,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36077,
             state_id = 36,
-            name = "Otsego County"
+            name = "Otsego County",
+            cbsa_id = 36580
         )
         new_county.save()
     
@@ -15000,7 +16065,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36079,
             state_id = 36,
-            name = "Putnam County"
+            name = "Putnam County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -15008,7 +16074,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36081,
             state_id = 36,
-            name = "Queens County"
+            name = "Queens County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -15016,7 +16083,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36083,
             state_id = 36,
-            name = "Rensselaer County"
+            name = "Rensselaer County",
+            cbsa_id = 10580
         )
         new_county.save()
     
@@ -15024,7 +16092,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36085,
             state_id = 36,
-            name = "Richmond County"
+            name = "Richmond County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -15032,7 +16101,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36087,
             state_id = 36,
-            name = "Rockland County"
+            name = "Rockland County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -15040,7 +16110,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36089,
             state_id = 36,
-            name = "St. Lawrence County"
+            name = "St. Lawrence County",
+            cbsa_id = 32390
         )
         new_county.save()
     
@@ -15048,7 +16119,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36091,
             state_id = 36,
-            name = "Saratoga County"
+            name = "Saratoga County",
+            cbsa_id = 10580
         )
         new_county.save()
     
@@ -15056,7 +16128,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36093,
             state_id = 36,
-            name = "Schenectady County"
+            name = "Schenectady County",
+            cbsa_id = 10580
         )
         new_county.save()
     
@@ -15064,7 +16137,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36095,
             state_id = 36,
-            name = "Schoharie County"
+            name = "Schoharie County",
+            cbsa_id = 10580
         )
         new_county.save()
     
@@ -15080,7 +16154,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36099,
             state_id = 36,
-            name = "Seneca County"
+            name = "Seneca County",
+            cbsa_id = 42900
         )
         new_county.save()
     
@@ -15088,7 +16163,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36101,
             state_id = 36,
-            name = "Steuben County"
+            name = "Steuben County",
+            cbsa_id = 18500
         )
         new_county.save()
     
@@ -15096,7 +16172,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36103,
             state_id = 36,
-            name = "Suffolk County"
+            name = "Suffolk County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -15104,7 +16181,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36105,
             state_id = 36,
-            name = "Sullivan County"
+            name = "Sullivan County",
+            cbsa_id = 33910
         )
         new_county.save()
     
@@ -15112,7 +16190,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36107,
             state_id = 36,
-            name = "Tioga County"
+            name = "Tioga County",
+            cbsa_id = 13780
         )
         new_county.save()
     
@@ -15120,7 +16199,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36109,
             state_id = 36,
-            name = "Tompkins County"
+            name = "Tompkins County",
+            cbsa_id = 27060
         )
         new_county.save()
     
@@ -15128,7 +16208,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36111,
             state_id = 36,
-            name = "Ulster County"
+            name = "Ulster County",
+            cbsa_id = 28740
         )
         new_county.save()
     
@@ -15136,7 +16217,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36113,
             state_id = 36,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 24020
         )
         new_county.save()
     
@@ -15144,7 +16226,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36115,
             state_id = 36,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 24020
         )
         new_county.save()
     
@@ -15152,7 +16235,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36117,
             state_id = 36,
-            name = "Wayne County"
+            name = "Wayne County",
+            cbsa_id = 40380
         )
         new_county.save()
     
@@ -15160,7 +16244,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 36119,
             state_id = 36,
-            name = "Westchester County"
+            name = "Westchester County",
+            cbsa_id = 35620
         )
         new_county.save()
     
@@ -15184,7 +16269,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37001,
             state_id = 37,
-            name = "Alamance County"
+            name = "Alamance County",
+            cbsa_id = 15500
         )
         new_county.save()
     
@@ -15192,7 +16278,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37003,
             state_id = 37,
-            name = "Alexander County"
+            name = "Alexander County",
+            cbsa_id = 25860
         )
         new_county.save()
     
@@ -15208,7 +16295,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37007,
             state_id = 37,
-            name = "Anson County"
+            name = "Anson County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -15232,7 +16320,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37013,
             state_id = 37,
-            name = "Beaufort County"
+            name = "Beaufort County",
+            cbsa_id = 47820
         )
         new_county.save()
     
@@ -15256,7 +16345,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37019,
             state_id = 37,
-            name = "Brunswick County"
+            name = "Brunswick County",
+            cbsa_id = 48900
         )
         new_county.save()
     
@@ -15264,7 +16354,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37021,
             state_id = 37,
-            name = "Buncombe County"
+            name = "Buncombe County",
+            cbsa_id = 11700
         )
         new_county.save()
     
@@ -15272,7 +16363,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37023,
             state_id = 37,
-            name = "Burke County"
+            name = "Burke County",
+            cbsa_id = 25860
         )
         new_county.save()
     
@@ -15280,7 +16372,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37025,
             state_id = 37,
-            name = "Cabarrus County"
+            name = "Cabarrus County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -15288,7 +16381,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37027,
             state_id = 37,
-            name = "Caldwell County"
+            name = "Caldwell County",
+            cbsa_id = 25860
         )
         new_county.save()
     
@@ -15296,7 +16390,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37029,
             state_id = 37,
-            name = "Camden County"
+            name = "Camden County",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -15304,7 +16399,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37031,
             state_id = 37,
-            name = "Carteret County"
+            name = "Carteret County",
+            cbsa_id = 33980
         )
         new_county.save()
     
@@ -15320,7 +16416,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37035,
             state_id = 37,
-            name = "Catawba County"
+            name = "Catawba County",
+            cbsa_id = 25860
         )
         new_county.save()
     
@@ -15328,7 +16425,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37037,
             state_id = 37,
-            name = "Chatham County"
+            name = "Chatham County",
+            cbsa_id = 20500
         )
         new_county.save()
     
@@ -15360,7 +16458,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37045,
             state_id = 37,
-            name = "Cleveland County"
+            name = "Cleveland County",
+            cbsa_id = 43140
         )
         new_county.save()
     
@@ -15376,7 +16475,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37049,
             state_id = 37,
-            name = "Craven County"
+            name = "Craven County",
+            cbsa_id = 35100
         )
         new_county.save()
     
@@ -15384,7 +16484,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37051,
             state_id = 37,
-            name = "Cumberland County"
+            name = "Cumberland County",
+            cbsa_id = 22180
         )
         new_county.save()
     
@@ -15392,7 +16493,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37053,
             state_id = 37,
-            name = "Currituck County"
+            name = "Currituck County",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -15400,7 +16502,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37055,
             state_id = 37,
-            name = "Dare County"
+            name = "Dare County",
+            cbsa_id = 28620
         )
         new_county.save()
     
@@ -15408,7 +16511,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37057,
             state_id = 37,
-            name = "Davidson County"
+            name = "Davidson County",
+            cbsa_id = 49180
         )
         new_county.save()
     
@@ -15416,7 +16520,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37059,
             state_id = 37,
-            name = "Davie County"
+            name = "Davie County",
+            cbsa_id = 49180
         )
         new_county.save()
     
@@ -15432,7 +16537,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37063,
             state_id = 37,
-            name = "Durham County"
+            name = "Durham County",
+            cbsa_id = 20500
         )
         new_county.save()
     
@@ -15440,7 +16546,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37065,
             state_id = 37,
-            name = "Edgecombe County"
+            name = "Edgecombe County",
+            cbsa_id = 40580
         )
         new_county.save()
     
@@ -15448,7 +16555,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37067,
             state_id = 37,
-            name = "Forsyth County"
+            name = "Forsyth County",
+            cbsa_id = 49180
         )
         new_county.save()
     
@@ -15456,7 +16564,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37069,
             state_id = 37,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 39580
         )
         new_county.save()
     
@@ -15464,7 +16573,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37071,
             state_id = 37,
-            name = "Gaston County"
+            name = "Gaston County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -15472,7 +16582,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37073,
             state_id = 37,
-            name = "Gates County"
+            name = "Gates County",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -15504,7 +16615,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37081,
             state_id = 37,
-            name = "Guilford County"
+            name = "Guilford County",
+            cbsa_id = 24660
         )
         new_county.save()
     
@@ -15512,7 +16624,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37083,
             state_id = 37,
-            name = "Halifax County"
+            name = "Halifax County",
+            cbsa_id = 40260
         )
         new_county.save()
     
@@ -15520,7 +16633,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37085,
             state_id = 37,
-            name = "Harnett County"
+            name = "Harnett County",
+            cbsa_id = 11360
         )
         new_county.save()
     
@@ -15528,7 +16642,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37087,
             state_id = 37,
-            name = "Haywood County"
+            name = "Haywood County",
+            cbsa_id = 48200
         )
         new_county.save()
     
@@ -15536,7 +16651,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37089,
             state_id = 37,
-            name = "Henderson County"
+            name = "Henderson County",
+            cbsa_id = 11700
         )
         new_county.save()
     
@@ -15552,7 +16668,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37093,
             state_id = 37,
-            name = "Hoke County"
+            name = "Hoke County",
+            cbsa_id = 22180
         )
         new_county.save()
     
@@ -15568,7 +16685,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37097,
             state_id = 37,
-            name = "Iredell County"
+            name = "Iredell County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -15584,7 +16702,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37101,
             state_id = 37,
-            name = "Johnston County"
+            name = "Johnston County",
+            cbsa_id = 39580
         )
         new_county.save()
     
@@ -15592,7 +16711,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37103,
             state_id = 37,
-            name = "Jones County"
+            name = "Jones County",
+            cbsa_id = 35100
         )
         new_county.save()
     
@@ -15600,7 +16720,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37105,
             state_id = 37,
-            name = "Lee County"
+            name = "Lee County",
+            cbsa_id = 41820
         )
         new_county.save()
     
@@ -15608,7 +16729,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37107,
             state_id = 37,
-            name = "Lenoir County"
+            name = "Lenoir County",
+            cbsa_id = 28820
         )
         new_county.save()
     
@@ -15616,7 +16738,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37109,
             state_id = 37,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -15624,7 +16747,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37111,
             state_id = 37,
-            name = "McDowell County"
+            name = "McDowell County",
+            cbsa_id = 32000
         )
         new_county.save()
     
@@ -15640,7 +16764,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37115,
             state_id = 37,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 11700
         )
         new_county.save()
     
@@ -15656,7 +16781,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37119,
             state_id = 37,
-            name = "Mecklenburg County"
+            name = "Mecklenburg County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -15680,7 +16806,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37125,
             state_id = 37,
-            name = "Moore County"
+            name = "Moore County",
+            cbsa_id = 38240
         )
         new_county.save()
     
@@ -15688,7 +16815,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37127,
             state_id = 37,
-            name = "Nash County"
+            name = "Nash County",
+            cbsa_id = 40580
         )
         new_county.save()
     
@@ -15696,7 +16824,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37129,
             state_id = 37,
-            name = "New Hanover County"
+            name = "New Hanover County",
+            cbsa_id = 48900
         )
         new_county.save()
     
@@ -15704,7 +16833,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37131,
             state_id = 37,
-            name = "Northampton County"
+            name = "Northampton County",
+            cbsa_id = 40260
         )
         new_county.save()
     
@@ -15712,7 +16842,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37133,
             state_id = 37,
-            name = "Onslow County"
+            name = "Onslow County",
+            cbsa_id = 27340
         )
         new_county.save()
     
@@ -15720,7 +16851,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37135,
             state_id = 37,
-            name = "Orange County"
+            name = "Orange County",
+            cbsa_id = 20500
         )
         new_county.save()
     
@@ -15728,7 +16860,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37137,
             state_id = 37,
-            name = "Pamlico County"
+            name = "Pamlico County",
+            cbsa_id = 35100
         )
         new_county.save()
     
@@ -15736,7 +16869,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37139,
             state_id = 37,
-            name = "Pasquotank County"
+            name = "Pasquotank County",
+            cbsa_id = 21020
         )
         new_county.save()
     
@@ -15744,7 +16878,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37141,
             state_id = 37,
-            name = "Pender County"
+            name = "Pender County",
+            cbsa_id = 48900
         )
         new_county.save()
     
@@ -15760,7 +16895,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37145,
             state_id = 37,
-            name = "Person County"
+            name = "Person County",
+            cbsa_id = 20500
         )
         new_county.save()
     
@@ -15768,7 +16904,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37147,
             state_id = 37,
-            name = "Pitt County"
+            name = "Pitt County",
+            cbsa_id = 24780
         )
         new_county.save()
     
@@ -15784,7 +16921,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37151,
             state_id = 37,
-            name = "Randolph County"
+            name = "Randolph County",
+            cbsa_id = 24660
         )
         new_county.save()
     
@@ -15792,7 +16930,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37153,
             state_id = 37,
-            name = "Richmond County"
+            name = "Richmond County",
+            cbsa_id = 40460
         )
         new_county.save()
     
@@ -15800,7 +16939,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37155,
             state_id = 37,
-            name = "Robeson County"
+            name = "Robeson County",
+            cbsa_id = 31300
         )
         new_county.save()
     
@@ -15808,7 +16948,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37157,
             state_id = 37,
-            name = "Rockingham County"
+            name = "Rockingham County",
+            cbsa_id = 24660
         )
         new_county.save()
     
@@ -15816,7 +16957,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37159,
             state_id = 37,
-            name = "Rowan County"
+            name = "Rowan County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -15824,7 +16966,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37161,
             state_id = 37,
-            name = "Rutherford County"
+            name = "Rutherford County",
+            cbsa_id = 22580
         )
         new_county.save()
     
@@ -15840,7 +16983,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37165,
             state_id = 37,
-            name = "Scotland County"
+            name = "Scotland County",
+            cbsa_id = 29900
         )
         new_county.save()
     
@@ -15848,7 +16992,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37167,
             state_id = 37,
-            name = "Stanly County"
+            name = "Stanly County",
+            cbsa_id = 10620
         )
         new_county.save()
     
@@ -15856,7 +17001,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37169,
             state_id = 37,
-            name = "Stokes County"
+            name = "Stokes County",
+            cbsa_id = 49180
         )
         new_county.save()
     
@@ -15864,7 +17010,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37171,
             state_id = 37,
-            name = "Surry County"
+            name = "Surry County",
+            cbsa_id = 34340
         )
         new_county.save()
     
@@ -15880,7 +17027,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37175,
             state_id = 37,
-            name = "Transylvania County"
+            name = "Transylvania County",
+            cbsa_id = 14820
         )
         new_county.save()
     
@@ -15896,7 +17044,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37179,
             state_id = 37,
-            name = "Union County"
+            name = "Union County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -15904,7 +17053,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37181,
             state_id = 37,
-            name = "Vance County"
+            name = "Vance County",
+            cbsa_id = 25780
         )
         new_county.save()
     
@@ -15912,7 +17062,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37183,
             state_id = 37,
-            name = "Wake County"
+            name = "Wake County",
+            cbsa_id = 39580
         )
         new_county.save()
     
@@ -15936,7 +17087,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37189,
             state_id = 37,
-            name = "Watauga County"
+            name = "Watauga County",
+            cbsa_id = 14380
         )
         new_county.save()
     
@@ -15944,7 +17096,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37191,
             state_id = 37,
-            name = "Wayne County"
+            name = "Wayne County",
+            cbsa_id = 24140
         )
         new_county.save()
     
@@ -15952,7 +17105,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37193,
             state_id = 37,
-            name = "Wilkes County"
+            name = "Wilkes County",
+            cbsa_id = 35900
         )
         new_county.save()
     
@@ -15960,7 +17114,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37195,
             state_id = 37,
-            name = "Wilson County"
+            name = "Wilson County",
+            cbsa_id = 48980
         )
         new_county.save()
     
@@ -15968,7 +17123,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 37197,
             state_id = 37,
-            name = "Yadkin County"
+            name = "Yadkin County",
+            cbsa_id = 49180
         )
         new_county.save()
     
@@ -16008,7 +17164,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38007,
             state_id = 38,
-            name = "Billings County"
+            name = "Billings County",
+            cbsa_id = 19860
         )
         new_county.save()
     
@@ -16040,7 +17197,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38015,
             state_id = 38,
-            name = "Burleigh County"
+            name = "Burleigh County",
+            cbsa_id = 13900
         )
         new_county.save()
     
@@ -16048,7 +17206,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38017,
             state_id = 38,
-            name = "Cass County"
+            name = "Cass County",
+            cbsa_id = 22020
         )
         new_county.save()
     
@@ -16080,7 +17239,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38025,
             state_id = 38,
-            name = "Dunn County"
+            name = "Dunn County",
+            cbsa_id = 19860
         )
         new_county.save()
     
@@ -16120,7 +17280,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38035,
             state_id = 38,
-            name = "Grand Forks County"
+            name = "Grand Forks County",
+            cbsa_id = 24220
         )
         new_county.save()
     
@@ -16176,7 +17337,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38049,
             state_id = 38,
-            name = "McHenry County"
+            name = "McHenry County",
+            cbsa_id = 33500
         )
         new_county.save()
     
@@ -16216,7 +17378,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38059,
             state_id = 38,
-            name = "Morton County"
+            name = "Morton County",
+            cbsa_id = 13900
         )
         new_county.save()
     
@@ -16240,7 +17403,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38065,
             state_id = 38,
-            name = "Oliver County"
+            name = "Oliver County",
+            cbsa_id = 13900
         )
         new_county.save()
     
@@ -16280,7 +17444,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38075,
             state_id = 38,
-            name = "Renville County"
+            name = "Renville County",
+            cbsa_id = 33500
         )
         new_county.save()
     
@@ -16288,7 +17453,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38077,
             state_id = 38,
-            name = "Richland County"
+            name = "Richland County",
+            cbsa_id = 47420
         )
         new_county.save()
     
@@ -16336,7 +17502,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38089,
             state_id = 38,
-            name = "Stark County"
+            name = "Stark County",
+            cbsa_id = 19860
         )
         new_county.save()
     
@@ -16352,7 +17519,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38093,
             state_id = 38,
-            name = "Stutsman County"
+            name = "Stutsman County",
+            cbsa_id = 27420
         )
         new_county.save()
     
@@ -16384,7 +17552,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38101,
             state_id = 38,
-            name = "Ward County"
+            name = "Ward County",
+            cbsa_id = 33500
         )
         new_county.save()
     
@@ -16400,7 +17569,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 38105,
             state_id = 38,
-            name = "Williams County"
+            name = "Williams County",
+            cbsa_id = 48780
         )
         new_county.save()
     
@@ -16448,7 +17618,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39003,
             state_id = 39,
-            name = "Allen County"
+            name = "Allen County",
+            cbsa_id = 30620
         )
         new_county.save()
     
@@ -16456,7 +17627,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39005,
             state_id = 39,
-            name = "Ashland County"
+            name = "Ashland County",
+            cbsa_id = 11740
         )
         new_county.save()
     
@@ -16464,7 +17636,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39007,
             state_id = 39,
-            name = "Ashtabula County"
+            name = "Ashtabula County",
+            cbsa_id = 17410
         )
         new_county.save()
     
@@ -16472,7 +17645,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39009,
             state_id = 39,
-            name = "Athens County"
+            name = "Athens County",
+            cbsa_id = 11900
         )
         new_county.save()
     
@@ -16480,7 +17654,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39011,
             state_id = 39,
-            name = "Auglaize County"
+            name = "Auglaize County",
+            cbsa_id = 47540
         )
         new_county.save()
     
@@ -16488,7 +17663,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39013,
             state_id = 39,
-            name = "Belmont County"
+            name = "Belmont County",
+            cbsa_id = 48540
         )
         new_county.save()
     
@@ -16496,7 +17672,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39015,
             state_id = 39,
-            name = "Brown County"
+            name = "Brown County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -16504,7 +17681,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39017,
             state_id = 39,
-            name = "Butler County"
+            name = "Butler County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -16512,7 +17690,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39019,
             state_id = 39,
-            name = "Carroll County"
+            name = "Carroll County",
+            cbsa_id = 15940
         )
         new_county.save()
     
@@ -16520,7 +17699,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39021,
             state_id = 39,
-            name = "Champaign County"
+            name = "Champaign County",
+            cbsa_id = 46500
         )
         new_county.save()
     
@@ -16528,7 +17708,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39023,
             state_id = 39,
-            name = "Clark County"
+            name = "Clark County",
+            cbsa_id = 44220
         )
         new_county.save()
     
@@ -16536,7 +17717,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39025,
             state_id = 39,
-            name = "Clermont County"
+            name = "Clermont County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -16544,7 +17726,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39027,
             state_id = 39,
-            name = "Clinton County"
+            name = "Clinton County",
+            cbsa_id = 48940
         )
         new_county.save()
     
@@ -16552,7 +17735,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39029,
             state_id = 39,
-            name = "Columbiana County"
+            name = "Columbiana County",
+            cbsa_id = 41400
         )
         new_county.save()
     
@@ -16560,7 +17744,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39031,
             state_id = 39,
-            name = "Coshocton County"
+            name = "Coshocton County",
+            cbsa_id = 18740
         )
         new_county.save()
     
@@ -16568,7 +17753,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39033,
             state_id = 39,
-            name = "Crawford County"
+            name = "Crawford County",
+            cbsa_id = 15340
         )
         new_county.save()
     
@@ -16576,7 +17762,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39035,
             state_id = 39,
-            name = "Cuyahoga County"
+            name = "Cuyahoga County",
+            cbsa_id = 17410
         )
         new_county.save()
     
@@ -16584,7 +17771,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39037,
             state_id = 39,
-            name = "Darke County"
+            name = "Darke County",
+            cbsa_id = 24820
         )
         new_county.save()
     
@@ -16592,7 +17780,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39039,
             state_id = 39,
-            name = "Defiance County"
+            name = "Defiance County",
+            cbsa_id = 19580
         )
         new_county.save()
     
@@ -16600,7 +17789,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39041,
             state_id = 39,
-            name = "Delaware County"
+            name = "Delaware County",
+            cbsa_id = 18140
         )
         new_county.save()
     
@@ -16608,7 +17798,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39043,
             state_id = 39,
-            name = "Erie County"
+            name = "Erie County",
+            cbsa_id = 41780
         )
         new_county.save()
     
@@ -16616,7 +17807,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39045,
             state_id = 39,
-            name = "Fairfield County"
+            name = "Fairfield County",
+            cbsa_id = 18140
         )
         new_county.save()
     
@@ -16624,7 +17816,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39047,
             state_id = 39,
-            name = "Fayette County"
+            name = "Fayette County",
+            cbsa_id = 47920
         )
         new_county.save()
     
@@ -16632,7 +17825,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39049,
             state_id = 39,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 18140
         )
         new_county.save()
     
@@ -16640,7 +17834,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39051,
             state_id = 39,
-            name = "Fulton County"
+            name = "Fulton County",
+            cbsa_id = 45780
         )
         new_county.save()
     
@@ -16648,7 +17843,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39053,
             state_id = 39,
-            name = "Gallia County"
+            name = "Gallia County",
+            cbsa_id = 23680
         )
         new_county.save()
     
@@ -16656,7 +17852,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39055,
             state_id = 39,
-            name = "Geauga County"
+            name = "Geauga County",
+            cbsa_id = 17410
         )
         new_county.save()
     
@@ -16664,7 +17861,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39057,
             state_id = 39,
-            name = "Greene County"
+            name = "Greene County",
+            cbsa_id = 19430
         )
         new_county.save()
     
@@ -16672,7 +17870,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39059,
             state_id = 39,
-            name = "Guernsey County"
+            name = "Guernsey County",
+            cbsa_id = 15740
         )
         new_county.save()
     
@@ -16680,7 +17879,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39061,
             state_id = 39,
-            name = "Hamilton County"
+            name = "Hamilton County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -16688,7 +17888,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39063,
             state_id = 39,
-            name = "Hancock County"
+            name = "Hancock County",
+            cbsa_id = 22300
         )
         new_county.save()
     
@@ -16728,7 +17929,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39073,
             state_id = 39,
-            name = "Hocking County"
+            name = "Hocking County",
+            cbsa_id = 18140
         )
         new_county.save()
     
@@ -16744,7 +17946,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39077,
             state_id = 39,
-            name = "Huron County"
+            name = "Huron County",
+            cbsa_id = 35940
         )
         new_county.save()
     
@@ -16760,7 +17963,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39081,
             state_id = 39,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 48260
         )
         new_county.save()
     
@@ -16768,7 +17972,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39083,
             state_id = 39,
-            name = "Knox County"
+            name = "Knox County",
+            cbsa_id = 34540
         )
         new_county.save()
     
@@ -16776,7 +17981,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39085,
             state_id = 39,
-            name = "Lake County"
+            name = "Lake County",
+            cbsa_id = 17410
         )
         new_county.save()
     
@@ -16784,7 +17990,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39087,
             state_id = 39,
-            name = "Lawrence County"
+            name = "Lawrence County",
+            cbsa_id = 26580
         )
         new_county.save()
     
@@ -16792,7 +17999,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39089,
             state_id = 39,
-            name = "Licking County"
+            name = "Licking County",
+            cbsa_id = 18140
         )
         new_county.save()
     
@@ -16800,7 +18008,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39091,
             state_id = 39,
-            name = "Logan County"
+            name = "Logan County",
+            cbsa_id = 13340
         )
         new_county.save()
     
@@ -16808,7 +18017,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39093,
             state_id = 39,
-            name = "Lorain County"
+            name = "Lorain County",
+            cbsa_id = 17410
         )
         new_county.save()
     
@@ -16816,7 +18026,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39095,
             state_id = 39,
-            name = "Lucas County"
+            name = "Lucas County",
+            cbsa_id = 45780
         )
         new_county.save()
     
@@ -16824,7 +18035,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39097,
             state_id = 39,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 18140
         )
         new_county.save()
     
@@ -16832,7 +18044,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39099,
             state_id = 39,
-            name = "Mahoning County"
+            name = "Mahoning County",
+            cbsa_id = 49660
         )
         new_county.save()
     
@@ -16840,7 +18053,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39101,
             state_id = 39,
-            name = "Marion County"
+            name = "Marion County",
+            cbsa_id = 32020
         )
         new_county.save()
     
@@ -16848,7 +18062,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39103,
             state_id = 39,
-            name = "Medina County"
+            name = "Medina County",
+            cbsa_id = 17410
         )
         new_county.save()
     
@@ -16864,7 +18079,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39107,
             state_id = 39,
-            name = "Mercer County"
+            name = "Mercer County",
+            cbsa_id = 16380
         )
         new_county.save()
     
@@ -16872,7 +18088,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39109,
             state_id = 39,
-            name = "Miami County"
+            name = "Miami County",
+            cbsa_id = 19430
         )
         new_county.save()
     
@@ -16888,7 +18105,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39113,
             state_id = 39,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 19430
         )
         new_county.save()
     
@@ -16904,7 +18122,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39117,
             state_id = 39,
-            name = "Morrow County"
+            name = "Morrow County",
+            cbsa_id = 18140
         )
         new_county.save()
     
@@ -16912,7 +18131,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39119,
             state_id = 39,
-            name = "Muskingum County"
+            name = "Muskingum County",
+            cbsa_id = 49780
         )
         new_county.save()
     
@@ -16928,7 +18148,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39123,
             state_id = 39,
-            name = "Ottawa County"
+            name = "Ottawa County",
+            cbsa_id = 41780
         )
         new_county.save()
     
@@ -16944,7 +18165,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39127,
             state_id = 39,
-            name = "Perry County"
+            name = "Perry County",
+            cbsa_id = 18140
         )
         new_county.save()
     
@@ -16952,7 +18174,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39129,
             state_id = 39,
-            name = "Pickaway County"
+            name = "Pickaway County",
+            cbsa_id = 18140
         )
         new_county.save()
     
@@ -16968,7 +18191,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39133,
             state_id = 39,
-            name = "Portage County"
+            name = "Portage County",
+            cbsa_id = 10420
         )
         new_county.save()
     
@@ -16992,7 +18216,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39139,
             state_id = 39,
-            name = "Richland County"
+            name = "Richland County",
+            cbsa_id = 31900
         )
         new_county.save()
     
@@ -17000,7 +18225,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39141,
             state_id = 39,
-            name = "Ross County"
+            name = "Ross County",
+            cbsa_id = 17060
         )
         new_county.save()
     
@@ -17008,7 +18234,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39143,
             state_id = 39,
-            name = "Sandusky County"
+            name = "Sandusky County",
+            cbsa_id = 23380
         )
         new_county.save()
     
@@ -17016,7 +18243,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39145,
             state_id = 39,
-            name = "Scioto County"
+            name = "Scioto County",
+            cbsa_id = 39020
         )
         new_county.save()
     
@@ -17024,7 +18252,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39147,
             state_id = 39,
-            name = "Seneca County"
+            name = "Seneca County",
+            cbsa_id = 45660
         )
         new_county.save()
     
@@ -17032,7 +18261,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39149,
             state_id = 39,
-            name = "Shelby County"
+            name = "Shelby County",
+            cbsa_id = 43380
         )
         new_county.save()
     
@@ -17040,7 +18270,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39151,
             state_id = 39,
-            name = "Stark County"
+            name = "Stark County",
+            cbsa_id = 15940
         )
         new_county.save()
     
@@ -17048,7 +18279,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39153,
             state_id = 39,
-            name = "Summit County"
+            name = "Summit County",
+            cbsa_id = 10420
         )
         new_county.save()
     
@@ -17056,7 +18288,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39155,
             state_id = 39,
-            name = "Trumbull County"
+            name = "Trumbull County",
+            cbsa_id = 49660
         )
         new_county.save()
     
@@ -17064,7 +18297,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39157,
             state_id = 39,
-            name = "Tuscarawas County"
+            name = "Tuscarawas County",
+            cbsa_id = 35420
         )
         new_county.save()
     
@@ -17072,7 +18306,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39159,
             state_id = 39,
-            name = "Union County"
+            name = "Union County",
+            cbsa_id = 18140
         )
         new_county.save()
     
@@ -17080,7 +18315,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39161,
             state_id = 39,
-            name = "Van Wert County"
+            name = "Van Wert County",
+            cbsa_id = 46780
         )
         new_county.save()
     
@@ -17096,7 +18332,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39165,
             state_id = 39,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 17140
         )
         new_county.save()
     
@@ -17104,7 +18341,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39167,
             state_id = 39,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 31930
         )
         new_county.save()
     
@@ -17112,7 +18350,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39169,
             state_id = 39,
-            name = "Wayne County"
+            name = "Wayne County",
+            cbsa_id = 49300
         )
         new_county.save()
     
@@ -17128,7 +18367,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 39173,
             state_id = 39,
-            name = "Wood County"
+            name = "Wood County",
+            cbsa_id = 45780
         )
         new_county.save()
     
@@ -17176,7 +18416,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40009,
             state_id = 40,
-            name = "Beckham County"
+            name = "Beckham County",
+            cbsa_id = 21120
         )
         new_county.save()
     
@@ -17192,7 +18433,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40013,
             state_id = 40,
-            name = "Bryan County"
+            name = "Bryan County",
+            cbsa_id = 20460
         )
         new_county.save()
     
@@ -17208,7 +18450,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40017,
             state_id = 40,
-            name = "Canadian County"
+            name = "Canadian County",
+            cbsa_id = 36420
         )
         new_county.save()
     
@@ -17216,7 +18459,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40019,
             state_id = 40,
-            name = "Carter County"
+            name = "Carter County",
+            cbsa_id = 11620
         )
         new_county.save()
     
@@ -17224,7 +18468,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40021,
             state_id = 40,
-            name = "Cherokee County"
+            name = "Cherokee County",
+            cbsa_id = 45140
         )
         new_county.save()
     
@@ -17248,7 +18493,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40027,
             state_id = 40,
-            name = "Cleveland County"
+            name = "Cleveland County",
+            cbsa_id = 36420
         )
         new_county.save()
     
@@ -17264,7 +18510,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40031,
             state_id = 40,
-            name = "Comanche County"
+            name = "Comanche County",
+            cbsa_id = 30020
         )
         new_county.save()
     
@@ -17272,7 +18519,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40033,
             state_id = 40,
-            name = "Cotton County"
+            name = "Cotton County",
+            cbsa_id = 30020
         )
         new_county.save()
     
@@ -17288,7 +18536,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40037,
             state_id = 40,
-            name = "Creek County"
+            name = "Creek County",
+            cbsa_id = 46140
         )
         new_county.save()
     
@@ -17296,7 +18545,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40039,
             state_id = 40,
-            name = "Custer County"
+            name = "Custer County",
+            cbsa_id = 48220
         )
         new_county.save()
     
@@ -17328,7 +18578,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40047,
             state_id = 40,
-            name = "Garfield County"
+            name = "Garfield County",
+            cbsa_id = 21420
         )
         new_county.save()
     
@@ -17344,7 +18595,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40051,
             state_id = 40,
-            name = "Grady County"
+            name = "Grady County",
+            cbsa_id = 36420
         )
         new_county.save()
     
@@ -17400,7 +18652,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40065,
             state_id = 40,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 11060
         )
         new_county.save()
     
@@ -17424,7 +18677,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40071,
             state_id = 40,
-            name = "Kay County"
+            name = "Kay County",
+            cbsa_id = 38620
         )
         new_county.save()
     
@@ -17464,7 +18718,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40081,
             state_id = 40,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 36420
         )
         new_county.save()
     
@@ -17472,7 +18727,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40083,
             state_id = 40,
-            name = "Logan County"
+            name = "Logan County",
+            cbsa_id = 36420
         )
         new_county.save()
     
@@ -17488,7 +18744,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40087,
             state_id = 40,
-            name = "McClain County"
+            name = "McClain County",
+            cbsa_id = 36420
         )
         new_county.save()
     
@@ -17544,7 +18801,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40101,
             state_id = 40,
-            name = "Muskogee County"
+            name = "Muskogee County",
+            cbsa_id = 34780
         )
         new_county.save()
     
@@ -17576,7 +18834,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40109,
             state_id = 40,
-            name = "Oklahoma County"
+            name = "Oklahoma County",
+            cbsa_id = 36420
         )
         new_county.save()
     
@@ -17584,7 +18843,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40111,
             state_id = 40,
-            name = "Okmulgee County"
+            name = "Okmulgee County",
+            cbsa_id = 46140
         )
         new_county.save()
     
@@ -17592,7 +18852,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40113,
             state_id = 40,
-            name = "Osage County"
+            name = "Osage County",
+            cbsa_id = 46140
         )
         new_county.save()
     
@@ -17600,7 +18861,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40115,
             state_id = 40,
-            name = "Ottawa County"
+            name = "Ottawa County",
+            cbsa_id = 33060
         )
         new_county.save()
     
@@ -17608,7 +18870,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40117,
             state_id = 40,
-            name = "Pawnee County"
+            name = "Pawnee County",
+            cbsa_id = 46140
         )
         new_county.save()
     
@@ -17616,7 +18879,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40119,
             state_id = 40,
-            name = "Payne County"
+            name = "Payne County",
+            cbsa_id = 44660
         )
         new_county.save()
     
@@ -17624,7 +18888,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40121,
             state_id = 40,
-            name = "Pittsburg County"
+            name = "Pittsburg County",
+            cbsa_id = 32540
         )
         new_county.save()
     
@@ -17632,7 +18897,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40123,
             state_id = 40,
-            name = "Pontotoc County"
+            name = "Pontotoc County",
+            cbsa_id = 10220
         )
         new_county.save()
     
@@ -17640,7 +18906,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40125,
             state_id = 40,
-            name = "Pottawatomie County"
+            name = "Pottawatomie County",
+            cbsa_id = 43060
         )
         new_county.save()
     
@@ -17664,7 +18931,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40131,
             state_id = 40,
-            name = "Rogers County"
+            name = "Rogers County",
+            cbsa_id = 46140
         )
         new_county.save()
     
@@ -17680,7 +18948,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40135,
             state_id = 40,
-            name = "Sequoyah County"
+            name = "Sequoyah County",
+            cbsa_id = 22900
         )
         new_county.save()
     
@@ -17688,7 +18957,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40137,
             state_id = 40,
-            name = "Stephens County"
+            name = "Stephens County",
+            cbsa_id = 20340
         )
         new_county.save()
     
@@ -17696,7 +18966,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40139,
             state_id = 40,
-            name = "Texas County"
+            name = "Texas County",
+            cbsa_id = 25100
         )
         new_county.save()
     
@@ -17712,7 +18983,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40143,
             state_id = 40,
-            name = "Tulsa County"
+            name = "Tulsa County",
+            cbsa_id = 46140
         )
         new_county.save()
     
@@ -17720,7 +18992,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40145,
             state_id = 40,
-            name = "Wagoner County"
+            name = "Wagoner County",
+            cbsa_id = 46140
         )
         new_county.save()
     
@@ -17728,7 +19001,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40147,
             state_id = 40,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 12780
         )
         new_county.save()
     
@@ -17736,7 +19010,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40149,
             state_id = 40,
-            name = "Washita County"
+            name = "Washita County",
+            cbsa_id = 48220
         )
         new_county.save()
     
@@ -17752,7 +19027,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 40153,
             state_id = 40,
-            name = "Woodward County"
+            name = "Woodward County",
+            cbsa_id = 49260
         )
         new_county.save()
     
@@ -17760,7 +19036,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41001,
             state_id = 41,
-            name = "Baker County"
+            name = "Baker County",
+            cbsa_id = 12520
         )
         new_county.save()
     
@@ -17768,7 +19045,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41003,
             state_id = 41,
-            name = "Benton County"
+            name = "Benton County",
+            cbsa_id = 18700
         )
         new_county.save()
     
@@ -17776,7 +19054,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41005,
             state_id = 41,
-            name = "Clackamas County"
+            name = "Clackamas County",
+            cbsa_id = 38900
         )
         new_county.save()
     
@@ -17784,7 +19063,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41007,
             state_id = 41,
-            name = "Clatsop County"
+            name = "Clatsop County",
+            cbsa_id = 11820
         )
         new_county.save()
     
@@ -17792,7 +19072,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41009,
             state_id = 41,
-            name = "Columbia County"
+            name = "Columbia County",
+            cbsa_id = 38900
         )
         new_county.save()
     
@@ -17800,7 +19081,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41011,
             state_id = 41,
-            name = "Coos County"
+            name = "Coos County",
+            cbsa_id = 18300
         )
         new_county.save()
     
@@ -17808,7 +19090,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41013,
             state_id = 41,
-            name = "Crook County"
+            name = "Crook County",
+            cbsa_id = 13460
         )
         new_county.save()
     
@@ -17816,7 +19099,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41015,
             state_id = 41,
-            name = "Curry County"
+            name = "Curry County",
+            cbsa_id = 15060
         )
         new_county.save()
     
@@ -17824,7 +19108,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41017,
             state_id = 41,
-            name = "Deschutes County"
+            name = "Deschutes County",
+            cbsa_id = 13460
         )
         new_county.save()
     
@@ -17832,7 +19117,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41019,
             state_id = 41,
-            name = "Douglas County"
+            name = "Douglas County",
+            cbsa_id = 40700
         )
         new_county.save()
     
@@ -17864,7 +19150,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41027,
             state_id = 41,
-            name = "Hood River County"
+            name = "Hood River County",
+            cbsa_id = 26220
         )
         new_county.save()
     
@@ -17872,7 +19159,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41029,
             state_id = 41,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 32780
         )
         new_county.save()
     
@@ -17880,7 +19168,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41031,
             state_id = 41,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 13460
         )
         new_county.save()
     
@@ -17888,7 +19177,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41033,
             state_id = 41,
-            name = "Josephine County"
+            name = "Josephine County",
+            cbsa_id = 24420
         )
         new_county.save()
     
@@ -17896,7 +19186,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41035,
             state_id = 41,
-            name = "Klamath County"
+            name = "Klamath County",
+            cbsa_id = 28900
         )
         new_county.save()
     
@@ -17912,7 +19203,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41039,
             state_id = 41,
-            name = "Lane County"
+            name = "Lane County",
+            cbsa_id = 21660
         )
         new_county.save()
     
@@ -17920,7 +19212,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41041,
             state_id = 41,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 35440
         )
         new_county.save()
     
@@ -17928,7 +19221,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41043,
             state_id = 41,
-            name = "Linn County"
+            name = "Linn County",
+            cbsa_id = 10540
         )
         new_county.save()
     
@@ -17936,7 +19230,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41045,
             state_id = 41,
-            name = "Malheur County"
+            name = "Malheur County",
+            cbsa_id = 36620
         )
         new_county.save()
     
@@ -17944,7 +19239,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41047,
             state_id = 41,
-            name = "Marion County"
+            name = "Marion County",
+            cbsa_id = 41420
         )
         new_county.save()
     
@@ -17952,7 +19248,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41049,
             state_id = 41,
-            name = "Morrow County"
+            name = "Morrow County",
+            cbsa_id = 25840
         )
         new_county.save()
     
@@ -17960,7 +19257,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41051,
             state_id = 41,
-            name = "Multnomah County"
+            name = "Multnomah County",
+            cbsa_id = 38900
         )
         new_county.save()
     
@@ -17968,7 +19266,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41053,
             state_id = 41,
-            name = "Polk County"
+            name = "Polk County",
+            cbsa_id = 41420
         )
         new_county.save()
     
@@ -17992,7 +19291,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41059,
             state_id = 41,
-            name = "Umatilla County"
+            name = "Umatilla County",
+            cbsa_id = 25840
         )
         new_county.save()
     
@@ -18000,7 +19300,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41061,
             state_id = 41,
-            name = "Union County"
+            name = "Union County",
+            cbsa_id = 29260
         )
         new_county.save()
     
@@ -18016,7 +19317,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41065,
             state_id = 41,
-            name = "Wasco County"
+            name = "Wasco County",
+            cbsa_id = 45520
         )
         new_county.save()
     
@@ -18024,7 +19326,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41067,
             state_id = 41,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 38900
         )
         new_county.save()
     
@@ -18040,7 +19343,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 41071,
             state_id = 41,
-            name = "Yamhill County"
+            name = "Yamhill County",
+            cbsa_id = 38900
         )
         new_county.save()
     
@@ -18048,7 +19352,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42001,
             state_id = 42,
-            name = "Adams County"
+            name = "Adams County",
+            cbsa_id = 23900
         )
         new_county.save()
     
@@ -18056,7 +19361,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42003,
             state_id = 42,
-            name = "Allegheny County"
+            name = "Allegheny County",
+            cbsa_id = 38300
         )
         new_county.save()
     
@@ -18064,7 +19370,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42005,
             state_id = 42,
-            name = "Armstrong County"
+            name = "Armstrong County",
+            cbsa_id = 38300
         )
         new_county.save()
     
@@ -18072,7 +19379,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42007,
             state_id = 42,
-            name = "Beaver County"
+            name = "Beaver County",
+            cbsa_id = 38300
         )
         new_county.save()
     
@@ -18088,7 +19396,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42011,
             state_id = 42,
-            name = "Berks County"
+            name = "Berks County",
+            cbsa_id = 39740
         )
         new_county.save()
     
@@ -18096,7 +19405,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42013,
             state_id = 42,
-            name = "Blair County"
+            name = "Blair County",
+            cbsa_id = 11020
         )
         new_county.save()
     
@@ -18104,7 +19414,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42015,
             state_id = 42,
-            name = "Bradford County"
+            name = "Bradford County",
+            cbsa_id = 42380
         )
         new_county.save()
     
@@ -18112,7 +19423,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42017,
             state_id = 42,
-            name = "Bucks County"
+            name = "Bucks County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -18120,7 +19432,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42019,
             state_id = 42,
-            name = "Butler County"
+            name = "Butler County",
+            cbsa_id = 38300
         )
         new_county.save()
     
@@ -18128,7 +19441,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42021,
             state_id = 42,
-            name = "Cambria County"
+            name = "Cambria County",
+            cbsa_id = 27780
         )
         new_county.save()
     
@@ -18144,7 +19458,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42025,
             state_id = 42,
-            name = "Carbon County"
+            name = "Carbon County",
+            cbsa_id = 10900
         )
         new_county.save()
     
@@ -18152,7 +19467,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42027,
             state_id = 42,
-            name = "Centre County"
+            name = "Centre County",
+            cbsa_id = 44300
         )
         new_county.save()
     
@@ -18160,7 +19476,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42029,
             state_id = 42,
-            name = "Chester County"
+            name = "Chester County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -18176,7 +19493,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42033,
             state_id = 42,
-            name = "Clearfield County"
+            name = "Clearfield County",
+            cbsa_id = 20180
         )
         new_county.save()
     
@@ -18184,7 +19502,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42035,
             state_id = 42,
-            name = "Clinton County"
+            name = "Clinton County",
+            cbsa_id = 30820
         )
         new_county.save()
     
@@ -18192,7 +19511,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42037,
             state_id = 42,
-            name = "Columbia County"
+            name = "Columbia County",
+            cbsa_id = 14100
         )
         new_county.save()
     
@@ -18200,7 +19520,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42039,
             state_id = 42,
-            name = "Crawford County"
+            name = "Crawford County",
+            cbsa_id = 32740
         )
         new_county.save()
     
@@ -18208,7 +19529,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42041,
             state_id = 42,
-            name = "Cumberland County"
+            name = "Cumberland County",
+            cbsa_id = 25420
         )
         new_county.save()
     
@@ -18216,7 +19538,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42043,
             state_id = 42,
-            name = "Dauphin County"
+            name = "Dauphin County",
+            cbsa_id = 25420
         )
         new_county.save()
     
@@ -18224,7 +19547,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42045,
             state_id = 42,
-            name = "Delaware County"
+            name = "Delaware County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -18232,7 +19556,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42047,
             state_id = 42,
-            name = "Elk County"
+            name = "Elk County",
+            cbsa_id = 41260
         )
         new_county.save()
     
@@ -18240,7 +19565,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42049,
             state_id = 42,
-            name = "Erie County"
+            name = "Erie County",
+            cbsa_id = 21500
         )
         new_county.save()
     
@@ -18248,7 +19574,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42051,
             state_id = 42,
-            name = "Fayette County"
+            name = "Fayette County",
+            cbsa_id = 38300
         )
         new_county.save()
     
@@ -18264,7 +19591,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42055,
             state_id = 42,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 16540
         )
         new_county.save()
     
@@ -18288,7 +19616,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42061,
             state_id = 42,
-            name = "Huntingdon County"
+            name = "Huntingdon County",
+            cbsa_id = 26500
         )
         new_county.save()
     
@@ -18296,7 +19625,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42063,
             state_id = 42,
-            name = "Indiana County"
+            name = "Indiana County",
+            cbsa_id = 26860
         )
         new_county.save()
     
@@ -18320,7 +19650,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42069,
             state_id = 42,
-            name = "Lackawanna County"
+            name = "Lackawanna County",
+            cbsa_id = 42540
         )
         new_county.save()
     
@@ -18328,7 +19659,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42071,
             state_id = 42,
-            name = "Lancaster County"
+            name = "Lancaster County",
+            cbsa_id = 29540
         )
         new_county.save()
     
@@ -18336,7 +19668,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42073,
             state_id = 42,
-            name = "Lawrence County"
+            name = "Lawrence County",
+            cbsa_id = 38300
         )
         new_county.save()
     
@@ -18344,7 +19677,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42075,
             state_id = 42,
-            name = "Lebanon County"
+            name = "Lebanon County",
+            cbsa_id = 30140
         )
         new_county.save()
     
@@ -18352,7 +19686,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42077,
             state_id = 42,
-            name = "Lehigh County"
+            name = "Lehigh County",
+            cbsa_id = 10900
         )
         new_county.save()
     
@@ -18360,7 +19695,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42079,
             state_id = 42,
-            name = "Luzerne County"
+            name = "Luzerne County",
+            cbsa_id = 42540
         )
         new_county.save()
     
@@ -18368,7 +19704,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42081,
             state_id = 42,
-            name = "Lycoming County"
+            name = "Lycoming County",
+            cbsa_id = 48700
         )
         new_county.save()
     
@@ -18376,7 +19713,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42083,
             state_id = 42,
-            name = "McKean County"
+            name = "McKean County",
+            cbsa_id = 14620
         )
         new_county.save()
     
@@ -18384,7 +19722,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42085,
             state_id = 42,
-            name = "Mercer County"
+            name = "Mercer County",
+            cbsa_id = 25850
         )
         new_county.save()
     
@@ -18392,7 +19731,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42087,
             state_id = 42,
-            name = "Mifflin County"
+            name = "Mifflin County",
+            cbsa_id = 30380
         )
         new_county.save()
     
@@ -18400,7 +19740,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42089,
             state_id = 42,
-            name = "Monroe County"
+            name = "Monroe County",
+            cbsa_id = 20700
         )
         new_county.save()
     
@@ -18408,7 +19749,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42091,
             state_id = 42,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -18416,7 +19758,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42093,
             state_id = 42,
-            name = "Montour County"
+            name = "Montour County",
+            cbsa_id = 44980
         )
         new_county.save()
     
@@ -18424,7 +19767,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42095,
             state_id = 42,
-            name = "Northampton County"
+            name = "Northampton County",
+            cbsa_id = 10900
         )
         new_county.save()
     
@@ -18432,7 +19776,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42097,
             state_id = 42,
-            name = "Northumberland County"
+            name = "Northumberland County",
+            cbsa_id = 44980
         )
         new_county.save()
     
@@ -18440,7 +19785,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42099,
             state_id = 42,
-            name = "Perry County"
+            name = "Perry County",
+            cbsa_id = 25420
         )
         new_county.save()
     
@@ -18448,7 +19794,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42101,
             state_id = 42,
-            name = "Philadelphia County"
+            name = "Philadelphia County",
+            cbsa_id = 37980
         )
         new_county.save()
     
@@ -18456,7 +19803,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42103,
             state_id = 42,
-            name = "Pike County"
+            name = "Pike County",
+            cbsa_id = 25770
         )
         new_county.save()
     
@@ -18472,7 +19820,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42107,
             state_id = 42,
-            name = "Schuylkill County"
+            name = "Schuylkill County",
+            cbsa_id = 39060
         )
         new_county.save()
     
@@ -18480,7 +19829,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42109,
             state_id = 42,
-            name = "Snyder County"
+            name = "Snyder County",
+            cbsa_id = 42780
         )
         new_county.save()
     
@@ -18488,7 +19838,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42111,
             state_id = 42,
-            name = "Somerset County"
+            name = "Somerset County",
+            cbsa_id = 43740
         )
         new_county.save()
     
@@ -18520,7 +19871,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42119,
             state_id = 42,
-            name = "Union County"
+            name = "Union County",
+            cbsa_id = 30260
         )
         new_county.save()
     
@@ -18528,7 +19880,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42121,
             state_id = 42,
-            name = "Venango County"
+            name = "Venango County",
+            cbsa_id = 36340
         )
         new_county.save()
     
@@ -18536,7 +19889,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42123,
             state_id = 42,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 47620
         )
         new_county.save()
     
@@ -18544,7 +19898,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42125,
             state_id = 42,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 38300
         )
         new_county.save()
     
@@ -18560,7 +19915,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42129,
             state_id = 42,
-            name = "Westmoreland County"
+            name = "Westmoreland County",
+            cbsa_id = 38300
         )
         new_county.save()
     
@@ -18568,7 +19924,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42131,
             state_id = 42,
-            name = "Wyoming County"
+            name = "Wyoming County",
+            cbsa_id = 42540
         )
         new_county.save()
     
@@ -18576,7 +19933,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 42133,
             state_id = 42,
-            name = "York County"
+            name = "York County",
+            cbsa_id = 49620
         )
         new_county.save()
     
@@ -18592,7 +19950,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72003,
             state_id = 72,
-            name = "Aguada Municipality"
+            name = "Aguada Municipality",
+            cbsa_id = 10380
         )
         new_county.save()
     
@@ -18600,7 +19959,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72005,
             state_id = 72,
-            name = "Aguadilla Municipality"
+            name = "Aguadilla Municipality",
+            cbsa_id = 10380
         )
         new_county.save()
     
@@ -18608,7 +19968,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72007,
             state_id = 72,
-            name = "Aguas Buenas Municipality"
+            name = "Aguas Buenas Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18616,7 +19977,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72009,
             state_id = 72,
-            name = "Aibonito Municipality"
+            name = "Aibonito Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18624,7 +19986,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72011,
             state_id = 72,
-            name = "Añasco Municipality"
+            name = "Añasco Municipality",
+            cbsa_id = 10380
         )
         new_county.save()
     
@@ -18632,7 +19995,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72013,
             state_id = 72,
-            name = "Arecibo Municipality"
+            name = "Arecibo Municipality",
+            cbsa_id = 11640
         )
         new_county.save()
     
@@ -18640,7 +20004,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72015,
             state_id = 72,
-            name = "Arroyo Municipality"
+            name = "Arroyo Municipality",
+            cbsa_id = 25020
         )
         new_county.save()
     
@@ -18648,7 +20013,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72017,
             state_id = 72,
-            name = "Barceloneta Municipality"
+            name = "Barceloneta Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18656,7 +20022,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72019,
             state_id = 72,
-            name = "Barranquitas Municipality"
+            name = "Barranquitas Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18664,7 +20031,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72021,
             state_id = 72,
-            name = "Bayamón Municipality"
+            name = "Bayamón Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18672,7 +20040,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72023,
             state_id = 72,
-            name = "Cabo Rojo Municipality"
+            name = "Cabo Rojo Municipality",
+            cbsa_id = 32420
         )
         new_county.save()
     
@@ -18680,7 +20049,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72025,
             state_id = 72,
-            name = "Caguas Municipality"
+            name = "Caguas Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18688,7 +20058,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72027,
             state_id = 72,
-            name = "Camuy Municipality"
+            name = "Camuy Municipality",
+            cbsa_id = 11640
         )
         new_county.save()
     
@@ -18696,7 +20067,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72029,
             state_id = 72,
-            name = "Canóvanas Municipality"
+            name = "Canóvanas Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18704,7 +20076,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72031,
             state_id = 72,
-            name = "Carolina Municipality"
+            name = "Carolina Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18712,7 +20085,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72033,
             state_id = 72,
-            name = "Cataño Municipality"
+            name = "Cataño Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18720,7 +20094,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72035,
             state_id = 72,
-            name = "Cayey Municipality"
+            name = "Cayey Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18728,7 +20103,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72037,
             state_id = 72,
-            name = "Ceiba Municipality"
+            name = "Ceiba Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18736,7 +20112,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72039,
             state_id = 72,
-            name = "Ciales Municipality"
+            name = "Ciales Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18744,7 +20121,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72041,
             state_id = 72,
-            name = "Cidra Municipality"
+            name = "Cidra Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18752,7 +20130,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72043,
             state_id = 72,
-            name = "Coamo Municipality"
+            name = "Coamo Municipality",
+            cbsa_id = 17620
         )
         new_county.save()
     
@@ -18760,7 +20139,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72045,
             state_id = 72,
-            name = "Comerío Municipality"
+            name = "Comerío Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18768,7 +20148,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72047,
             state_id = 72,
-            name = "Corozal Municipality"
+            name = "Corozal Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18784,7 +20165,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72051,
             state_id = 72,
-            name = "Dorado Municipality"
+            name = "Dorado Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18792,7 +20174,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72053,
             state_id = 72,
-            name = "Fajardo Municipality"
+            name = "Fajardo Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18800,7 +20183,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72054,
             state_id = 72,
-            name = "Florida Municipality"
+            name = "Florida Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18816,7 +20200,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72057,
             state_id = 72,
-            name = "Guayama Municipality"
+            name = "Guayama Municipality",
+            cbsa_id = 25020
         )
         new_county.save()
     
@@ -18824,7 +20209,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72059,
             state_id = 72,
-            name = "Guayanilla Municipality"
+            name = "Guayanilla Municipality",
+            cbsa_id = 38660
         )
         new_county.save()
     
@@ -18832,7 +20218,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72061,
             state_id = 72,
-            name = "Guaynabo Municipality"
+            name = "Guaynabo Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18840,7 +20227,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72063,
             state_id = 72,
-            name = "Gurabo Municipality"
+            name = "Gurabo Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18848,7 +20236,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72065,
             state_id = 72,
-            name = "Hatillo Municipality"
+            name = "Hatillo Municipality",
+            cbsa_id = 11640
         )
         new_county.save()
     
@@ -18856,7 +20245,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72067,
             state_id = 72,
-            name = "Hormigueros Municipality"
+            name = "Hormigueros Municipality",
+            cbsa_id = 32420
         )
         new_county.save()
     
@@ -18864,7 +20254,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72069,
             state_id = 72,
-            name = "Humacao Municipality"
+            name = "Humacao Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18872,7 +20263,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72071,
             state_id = 72,
-            name = "Isabela Municipality"
+            name = "Isabela Municipality",
+            cbsa_id = 10380
         )
         new_county.save()
     
@@ -18888,7 +20280,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72075,
             state_id = 72,
-            name = "Juana Díaz Municipality"
+            name = "Juana Díaz Municipality",
+            cbsa_id = 38660
         )
         new_county.save()
     
@@ -18896,7 +20289,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72077,
             state_id = 72,
-            name = "Juncos Municipality"
+            name = "Juncos Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18904,7 +20298,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72079,
             state_id = 72,
-            name = "Lajas Municipality"
+            name = "Lajas Municipality",
+            cbsa_id = 32420
         )
         new_county.save()
     
@@ -18912,7 +20307,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72081,
             state_id = 72,
-            name = "Lares Municipality"
+            name = "Lares Municipality",
+            cbsa_id = 29720
         )
         new_county.save()
     
@@ -18928,7 +20324,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72085,
             state_id = 72,
-            name = "Las Piedras Municipality"
+            name = "Las Piedras Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18936,7 +20333,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72087,
             state_id = 72,
-            name = "Loíza Municipality"
+            name = "Loíza Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18944,7 +20342,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72089,
             state_id = 72,
-            name = "Luquillo Municipality"
+            name = "Luquillo Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18952,7 +20351,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72091,
             state_id = 72,
-            name = "Manatí Municipality"
+            name = "Manatí Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18968,7 +20368,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72095,
             state_id = 72,
-            name = "Maunabo Municipality"
+            name = "Maunabo Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -18976,7 +20377,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72097,
             state_id = 72,
-            name = "Mayagüez Municipality"
+            name = "Mayagüez Municipality",
+            cbsa_id = 32420
         )
         new_county.save()
     
@@ -18984,7 +20386,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72099,
             state_id = 72,
-            name = "Moca Municipality"
+            name = "Moca Municipality",
+            cbsa_id = 10380
         )
         new_county.save()
     
@@ -18992,7 +20395,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72101,
             state_id = 72,
-            name = "Morovis Municipality"
+            name = "Morovis Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19000,7 +20404,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72103,
             state_id = 72,
-            name = "Naguabo Municipality"
+            name = "Naguabo Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19008,7 +20413,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72105,
             state_id = 72,
-            name = "Naranjito Municipality"
+            name = "Naranjito Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19016,7 +20422,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72107,
             state_id = 72,
-            name = "Orocovis Municipality"
+            name = "Orocovis Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19024,7 +20431,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72109,
             state_id = 72,
-            name = "Patillas Municipality"
+            name = "Patillas Municipality",
+            cbsa_id = 25020
         )
         new_county.save()
     
@@ -19032,7 +20440,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72111,
             state_id = 72,
-            name = "Peñuelas Municipality"
+            name = "Peñuelas Municipality",
+            cbsa_id = 38660
         )
         new_county.save()
     
@@ -19040,7 +20449,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72113,
             state_id = 72,
-            name = "Ponce Municipality"
+            name = "Ponce Municipality",
+            cbsa_id = 38660
         )
         new_county.save()
     
@@ -19048,7 +20458,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72115,
             state_id = 72,
-            name = "Quebradillas Municipality"
+            name = "Quebradillas Municipality",
+            cbsa_id = 11640
         )
         new_county.save()
     
@@ -19056,7 +20467,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72117,
             state_id = 72,
-            name = "Rincón Municipality"
+            name = "Rincón Municipality",
+            cbsa_id = 10380
         )
         new_county.save()
     
@@ -19064,7 +20476,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72119,
             state_id = 72,
-            name = "Río Grande Municipality"
+            name = "Río Grande Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19072,7 +20485,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72121,
             state_id = 72,
-            name = "Sabana Grande Municipality"
+            name = "Sabana Grande Municipality",
+            cbsa_id = 32420
         )
         new_county.save()
     
@@ -19080,7 +20494,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72123,
             state_id = 72,
-            name = "Salinas Municipality"
+            name = "Salinas Municipality",
+            cbsa_id = 17640
         )
         new_county.save()
     
@@ -19088,7 +20503,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72125,
             state_id = 72,
-            name = "San Germán Municipality"
+            name = "San Germán Municipality",
+            cbsa_id = 32420
         )
         new_county.save()
     
@@ -19096,7 +20512,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72127,
             state_id = 72,
-            name = "San Juan Municipality"
+            name = "San Juan Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19104,7 +20521,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72129,
             state_id = 72,
-            name = "San Lorenzo Municipality"
+            name = "San Lorenzo Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19112,7 +20530,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72131,
             state_id = 72,
-            name = "San Sebastián Municipality"
+            name = "San Sebastián Municipality",
+            cbsa_id = 10380
         )
         new_county.save()
     
@@ -19120,7 +20539,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72133,
             state_id = 72,
-            name = "Santa Isabel Municipality"
+            name = "Santa Isabel Municipality",
+            cbsa_id = 17620
         )
         new_county.save()
     
@@ -19128,7 +20548,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72135,
             state_id = 72,
-            name = "Toa Alta Municipality"
+            name = "Toa Alta Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19136,7 +20557,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72137,
             state_id = 72,
-            name = "Toa Baja Municipality"
+            name = "Toa Baja Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19144,7 +20566,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72139,
             state_id = 72,
-            name = "Trujillo Alto Municipality"
+            name = "Trujillo Alto Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19152,7 +20575,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72141,
             state_id = 72,
-            name = "Utuado Municipality"
+            name = "Utuado Municipality",
+            cbsa_id = 46580
         )
         new_county.save()
     
@@ -19160,7 +20584,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72143,
             state_id = 72,
-            name = "Vega Alta Municipality"
+            name = "Vega Alta Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19168,7 +20593,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72145,
             state_id = 72,
-            name = "Vega Baja Municipality"
+            name = "Vega Baja Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19184,7 +20610,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72149,
             state_id = 72,
-            name = "Villalba Municipality"
+            name = "Villalba Municipality",
+            cbsa_id = 38660
         )
         new_county.save()
     
@@ -19192,7 +20619,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72151,
             state_id = 72,
-            name = "Yabucoa Municipality"
+            name = "Yabucoa Municipality",
+            cbsa_id = 41980
         )
         new_county.save()
     
@@ -19200,7 +20628,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 72153,
             state_id = 72,
-            name = "Yauco Municipality"
+            name = "Yauco Municipality",
+            cbsa_id = 38660
         )
         new_county.save()
     
@@ -19208,7 +20637,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 44001,
             state_id = 44,
-            name = "Bristol County"
+            name = "Bristol County",
+            cbsa_id = 39300
         )
         new_county.save()
     
@@ -19216,7 +20646,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 44003,
             state_id = 44,
-            name = "Kent County"
+            name = "Kent County",
+            cbsa_id = 39300
         )
         new_county.save()
     
@@ -19224,7 +20655,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 44005,
             state_id = 44,
-            name = "Newport County"
+            name = "Newport County",
+            cbsa_id = 39300
         )
         new_county.save()
     
@@ -19232,7 +20664,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 44007,
             state_id = 44,
-            name = "Providence County"
+            name = "Providence County",
+            cbsa_id = 39300
         )
         new_county.save()
     
@@ -19240,7 +20673,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 44009,
             state_id = 44,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 39300
         )
         new_county.save()
     
@@ -19248,7 +20682,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45001,
             state_id = 45,
-            name = "Abbeville County"
+            name = "Abbeville County",
+            cbsa_id = 24940
         )
         new_county.save()
     
@@ -19256,7 +20691,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45003,
             state_id = 45,
-            name = "Aiken County"
+            name = "Aiken County",
+            cbsa_id = 12260
         )
         new_county.save()
     
@@ -19272,7 +20708,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45007,
             state_id = 45,
-            name = "Anderson County"
+            name = "Anderson County",
+            cbsa_id = 24860
         )
         new_county.save()
     
@@ -19296,7 +20733,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45013,
             state_id = 45,
-            name = "Beaufort County"
+            name = "Beaufort County",
+            cbsa_id = 25940
         )
         new_county.save()
     
@@ -19304,7 +20742,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45015,
             state_id = 45,
-            name = "Berkeley County"
+            name = "Berkeley County",
+            cbsa_id = 16700
         )
         new_county.save()
     
@@ -19312,7 +20751,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45017,
             state_id = 45,
-            name = "Calhoun County"
+            name = "Calhoun County",
+            cbsa_id = 17900
         )
         new_county.save()
     
@@ -19320,7 +20760,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45019,
             state_id = 45,
-            name = "Charleston County"
+            name = "Charleston County",
+            cbsa_id = 16700
         )
         new_county.save()
     
@@ -19328,7 +20769,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45021,
             state_id = 45,
-            name = "Cherokee County"
+            name = "Cherokee County",
+            cbsa_id = 23500
         )
         new_county.save()
     
@@ -19336,7 +20778,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45023,
             state_id = 45,
-            name = "Chester County"
+            name = "Chester County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -19368,7 +20811,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45031,
             state_id = 45,
-            name = "Darlington County"
+            name = "Darlington County",
+            cbsa_id = 22500
         )
         new_county.save()
     
@@ -19384,7 +20828,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45035,
             state_id = 45,
-            name = "Dorchester County"
+            name = "Dorchester County",
+            cbsa_id = 16700
         )
         new_county.save()
     
@@ -19392,7 +20837,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45037,
             state_id = 45,
-            name = "Edgefield County"
+            name = "Edgefield County",
+            cbsa_id = 12260
         )
         new_county.save()
     
@@ -19400,7 +20846,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45039,
             state_id = 45,
-            name = "Fairfield County"
+            name = "Fairfield County",
+            cbsa_id = 17900
         )
         new_county.save()
     
@@ -19408,7 +20855,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45041,
             state_id = 45,
-            name = "Florence County"
+            name = "Florence County",
+            cbsa_id = 22500
         )
         new_county.save()
     
@@ -19416,7 +20864,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45043,
             state_id = 45,
-            name = "Georgetown County"
+            name = "Georgetown County",
+            cbsa_id = 34680
         )
         new_county.save()
     
@@ -19424,7 +20873,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45045,
             state_id = 45,
-            name = "Greenville County"
+            name = "Greenville County",
+            cbsa_id = 24860
         )
         new_county.save()
     
@@ -19432,7 +20882,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45047,
             state_id = 45,
-            name = "Greenwood County"
+            name = "Greenwood County",
+            cbsa_id = 24940
         )
         new_county.save()
     
@@ -19448,7 +20899,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45051,
             state_id = 45,
-            name = "Horry County"
+            name = "Horry County",
+            cbsa_id = 34820
         )
         new_county.save()
     
@@ -19456,7 +20908,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45053,
             state_id = 45,
-            name = "Jasper County"
+            name = "Jasper County",
+            cbsa_id = 25940
         )
         new_county.save()
     
@@ -19464,7 +20917,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45055,
             state_id = 45,
-            name = "Kershaw County"
+            name = "Kershaw County",
+            cbsa_id = 17900
         )
         new_county.save()
     
@@ -19472,7 +20926,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45057,
             state_id = 45,
-            name = "Lancaster County"
+            name = "Lancaster County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -19480,7 +20935,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45059,
             state_id = 45,
-            name = "Laurens County"
+            name = "Laurens County",
+            cbsa_id = 24860
         )
         new_county.save()
     
@@ -19496,7 +20952,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45063,
             state_id = 45,
-            name = "Lexington County"
+            name = "Lexington County",
+            cbsa_id = 17900
         )
         new_county.save()
     
@@ -19528,7 +20985,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45071,
             state_id = 45,
-            name = "Newberry County"
+            name = "Newberry County",
+            cbsa_id = 35140
         )
         new_county.save()
     
@@ -19536,7 +20994,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45073,
             state_id = 45,
-            name = "Oconee County"
+            name = "Oconee County",
+            cbsa_id = 42860
         )
         new_county.save()
     
@@ -19544,7 +21003,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45075,
             state_id = 45,
-            name = "Orangeburg County"
+            name = "Orangeburg County",
+            cbsa_id = 36700
         )
         new_county.save()
     
@@ -19552,7 +21012,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45077,
             state_id = 45,
-            name = "Pickens County"
+            name = "Pickens County",
+            cbsa_id = 24860
         )
         new_county.save()
     
@@ -19560,7 +21021,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45079,
             state_id = 45,
-            name = "Richland County"
+            name = "Richland County",
+            cbsa_id = 17900
         )
         new_county.save()
     
@@ -19568,7 +21030,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45081,
             state_id = 45,
-            name = "Saluda County"
+            name = "Saluda County",
+            cbsa_id = 17900
         )
         new_county.save()
     
@@ -19576,7 +21039,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45083,
             state_id = 45,
-            name = "Spartanburg County"
+            name = "Spartanburg County",
+            cbsa_id = 43900
         )
         new_county.save()
     
@@ -19584,7 +21048,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45085,
             state_id = 45,
-            name = "Sumter County"
+            name = "Sumter County",
+            cbsa_id = 44940
         )
         new_county.save()
     
@@ -19592,7 +21057,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45087,
             state_id = 45,
-            name = "Union County"
+            name = "Union County",
+            cbsa_id = 43900
         )
         new_county.save()
     
@@ -19608,7 +21074,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 45091,
             state_id = 45,
-            name = "York County"
+            name = "York County",
+            cbsa_id = 16740
         )
         new_county.save()
     
@@ -19624,7 +21091,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46005,
             state_id = 46,
-            name = "Beadle County"
+            name = "Beadle County",
+            cbsa_id = 26700
         )
         new_county.save()
     
@@ -19648,7 +21116,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46011,
             state_id = 46,
-            name = "Brookings County"
+            name = "Brookings County",
+            cbsa_id = 15100
         )
         new_county.save()
     
@@ -19656,7 +21125,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46013,
             state_id = 46,
-            name = "Brown County"
+            name = "Brown County",
+            cbsa_id = 10100
         )
         new_county.save()
     
@@ -19712,7 +21182,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46027,
             state_id = 46,
-            name = "Clay County"
+            name = "Clay County",
+            cbsa_id = 46820
         )
         new_county.save()
     
@@ -19720,7 +21191,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46029,
             state_id = 46,
-            name = "Codington County"
+            name = "Codington County",
+            cbsa_id = 47980
         )
         new_county.save()
     
@@ -19736,7 +21208,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46033,
             state_id = 46,
-            name = "Custer County"
+            name = "Custer County",
+            cbsa_id = 39660
         )
         new_county.save()
     
@@ -19744,7 +21217,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46035,
             state_id = 46,
-            name = "Davison County"
+            name = "Davison County",
+            cbsa_id = 33580
         )
         new_county.save()
     
@@ -19784,7 +21258,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46045,
             state_id = 46,
-            name = "Edmunds County"
+            name = "Edmunds County",
+            cbsa_id = 10100
         )
         new_county.save()
     
@@ -19848,7 +21323,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46061,
             state_id = 46,
-            name = "Hanson County"
+            name = "Hanson County",
+            cbsa_id = 33580
         )
         new_county.save()
     
@@ -19864,7 +21340,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46065,
             state_id = 46,
-            name = "Hughes County"
+            name = "Hughes County",
+            cbsa_id = 38180
         )
         new_county.save()
     
@@ -19928,7 +21405,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46081,
             state_id = 46,
-            name = "Lawrence County"
+            name = "Lawrence County",
+            cbsa_id = 43940
         )
         new_county.save()
     
@@ -19936,7 +21414,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46083,
             state_id = 46,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 43620
         )
         new_county.save()
     
@@ -19952,7 +21431,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46087,
             state_id = 46,
-            name = "McCook County"
+            name = "McCook County",
+            cbsa_id = 43620
         )
         new_county.save()
     
@@ -19976,7 +21456,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46093,
             state_id = 46,
-            name = "Meade County"
+            name = "Meade County",
+            cbsa_id = 39660
         )
         new_county.save()
     
@@ -20000,7 +21481,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46099,
             state_id = 46,
-            name = "Minnehaha County"
+            name = "Minnehaha County",
+            cbsa_id = 43620
         )
         new_county.save()
     
@@ -20024,7 +21506,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46103,
             state_id = 46,
-            name = "Pennington County"
+            name = "Pennington County",
+            cbsa_id = 39660
         )
         new_county.save()
     
@@ -20056,7 +21539,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46111,
             state_id = 46,
-            name = "Sanborn County"
+            name = "Sanborn County",
+            cbsa_id = 33580
         )
         new_county.save()
     
@@ -20072,7 +21556,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46117,
             state_id = 46,
-            name = "Stanley County"
+            name = "Stanley County",
+            cbsa_id = 38180
         )
         new_county.save()
     
@@ -20104,7 +21589,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46125,
             state_id = 46,
-            name = "Turner County"
+            name = "Turner County",
+            cbsa_id = 43620
         )
         new_county.save()
     
@@ -20112,7 +21598,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46127,
             state_id = 46,
-            name = "Union County"
+            name = "Union County",
+            cbsa_id = 43580
         )
         new_county.save()
     
@@ -20128,7 +21615,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 46135,
             state_id = 46,
-            name = "Yankton County"
+            name = "Yankton County",
+            cbsa_id = 49460
         )
         new_county.save()
     
@@ -20144,7 +21632,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47001,
             state_id = 47,
-            name = "Anderson County"
+            name = "Anderson County",
+            cbsa_id = 28940
         )
         new_county.save()
     
@@ -20152,7 +21641,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47003,
             state_id = 47,
-            name = "Bedford County"
+            name = "Bedford County",
+            cbsa_id = 43180
         )
         new_county.save()
     
@@ -20176,7 +21666,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47009,
             state_id = 47,
-            name = "Blount County"
+            name = "Blount County",
+            cbsa_id = 28940
         )
         new_county.save()
     
@@ -20184,7 +21675,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47011,
             state_id = 47,
-            name = "Bradley County"
+            name = "Bradley County",
+            cbsa_id = 17420
         )
         new_county.save()
     
@@ -20192,7 +21684,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47013,
             state_id = 47,
-            name = "Campbell County"
+            name = "Campbell County",
+            cbsa_id = 28940
         )
         new_county.save()
     
@@ -20200,7 +21693,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47015,
             state_id = 47,
-            name = "Cannon County"
+            name = "Cannon County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20216,7 +21710,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47019,
             state_id = 47,
-            name = "Carter County"
+            name = "Carter County",
+            cbsa_id = 27740
         )
         new_county.save()
     
@@ -20224,7 +21719,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47021,
             state_id = 47,
-            name = "Cheatham County"
+            name = "Cheatham County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20232,7 +21728,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47023,
             state_id = 47,
-            name = "Chester County"
+            name = "Chester County",
+            cbsa_id = 27180
         )
         new_county.save()
     
@@ -20256,7 +21753,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47029,
             state_id = 47,
-            name = "Cocke County"
+            name = "Cocke County",
+            cbsa_id = 35460
         )
         new_county.save()
     
@@ -20264,7 +21762,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47031,
             state_id = 47,
-            name = "Coffee County"
+            name = "Coffee County",
+            cbsa_id = 46100
         )
         new_county.save()
     
@@ -20272,7 +21771,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47033,
             state_id = 47,
-            name = "Crockett County"
+            name = "Crockett County",
+            cbsa_id = 27180
         )
         new_county.save()
     
@@ -20280,7 +21780,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47035,
             state_id = 47,
-            name = "Cumberland County"
+            name = "Cumberland County",
+            cbsa_id = 18900
         )
         new_county.save()
     
@@ -20288,7 +21789,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47037,
             state_id = 47,
-            name = "Davidson County"
+            name = "Davidson County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20312,7 +21814,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47043,
             state_id = 47,
-            name = "Dickson County"
+            name = "Dickson County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20320,7 +21823,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47045,
             state_id = 47,
-            name = "Dyer County"
+            name = "Dyer County",
+            cbsa_id = 20540
         )
         new_county.save()
     
@@ -20328,7 +21832,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47047,
             state_id = 47,
-            name = "Fayette County"
+            name = "Fayette County",
+            cbsa_id = 32820
         )
         new_county.save()
     
@@ -20344,7 +21849,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47051,
             state_id = 47,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 49010
         )
         new_county.save()
     
@@ -20352,7 +21858,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47053,
             state_id = 47,
-            name = "Gibson County"
+            name = "Gibson County",
+            cbsa_id = 27180
         )
         new_county.save()
     
@@ -20368,7 +21875,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47057,
             state_id = 47,
-            name = "Grainger County"
+            name = "Grainger County",
+            cbsa_id = 28940
         )
         new_county.save()
     
@@ -20376,7 +21884,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47059,
             state_id = 47,
-            name = "Greene County"
+            name = "Greene County",
+            cbsa_id = 24620
         )
         new_county.save()
     
@@ -20392,7 +21901,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47063,
             state_id = 47,
-            name = "Hamblen County"
+            name = "Hamblen County",
+            cbsa_id = 34100
         )
         new_county.save()
     
@@ -20400,7 +21910,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47065,
             state_id = 47,
-            name = "Hamilton County"
+            name = "Hamilton County",
+            cbsa_id = 16860
         )
         new_county.save()
     
@@ -20432,7 +21943,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47073,
             state_id = 47,
-            name = "Hawkins County"
+            name = "Hawkins County",
+            cbsa_id = 28700
         )
         new_county.save()
     
@@ -20456,7 +21968,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47079,
             state_id = 47,
-            name = "Henry County"
+            name = "Henry County",
+            cbsa_id = 37540
         )
         new_county.save()
     
@@ -20464,7 +21977,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47081,
             state_id = 47,
-            name = "Hickman County"
+            name = "Hickman County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20488,7 +22002,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47087,
             state_id = 47,
-            name = "Jackson County"
+            name = "Jackson County",
+            cbsa_id = 18260
         )
         new_county.save()
     
@@ -20496,7 +22011,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47089,
             state_id = 47,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 34100
         )
         new_county.save()
     
@@ -20512,7 +22028,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47093,
             state_id = 47,
-            name = "Knox County"
+            name = "Knox County",
+            cbsa_id = 28940
         )
         new_county.save()
     
@@ -20536,7 +22053,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47099,
             state_id = 47,
-            name = "Lawrence County"
+            name = "Lawrence County",
+            cbsa_id = 29980
         )
         new_county.save()
     
@@ -20552,7 +22070,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47103,
             state_id = 47,
-            name = "Lincoln County"
+            name = "Lincoln County",
+            cbsa_id = 22190
         )
         new_county.save()
     
@@ -20560,7 +22079,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47105,
             state_id = 47,
-            name = "Loudon County"
+            name = "Loudon County",
+            cbsa_id = 28940
         )
         new_county.save()
     
@@ -20568,7 +22088,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47107,
             state_id = 47,
-            name = "McMinn County"
+            name = "McMinn County",
+            cbsa_id = 11940
         )
         new_county.save()
     
@@ -20584,7 +22105,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47111,
             state_id = 47,
-            name = "Macon County"
+            name = "Macon County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20592,7 +22114,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47113,
             state_id = 47,
-            name = "Madison County"
+            name = "Madison County",
+            cbsa_id = 27180
         )
         new_county.save()
     
@@ -20600,7 +22123,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47115,
             state_id = 47,
-            name = "Marion County"
+            name = "Marion County",
+            cbsa_id = 16860
         )
         new_county.save()
     
@@ -20608,7 +22132,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47117,
             state_id = 47,
-            name = "Marshall County"
+            name = "Marshall County",
+            cbsa_id = 30280
         )
         new_county.save()
     
@@ -20616,7 +22141,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47119,
             state_id = 47,
-            name = "Maury County"
+            name = "Maury County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20624,7 +22150,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47121,
             state_id = 47,
-            name = "Meigs County"
+            name = "Meigs County",
+            cbsa_id = 11940
         )
         new_county.save()
     
@@ -20640,7 +22167,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47125,
             state_id = 47,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 17300
         )
         new_county.save()
     
@@ -20648,7 +22176,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47127,
             state_id = 47,
-            name = "Moore County"
+            name = "Moore County",
+            cbsa_id = 46100
         )
         new_county.save()
     
@@ -20656,7 +22185,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47129,
             state_id = 47,
-            name = "Morgan County"
+            name = "Morgan County",
+            cbsa_id = 28940
         )
         new_county.save()
     
@@ -20664,7 +22194,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47131,
             state_id = 47,
-            name = "Obion County"
+            name = "Obion County",
+            cbsa_id = 46460
         )
         new_county.save()
     
@@ -20672,7 +22203,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47133,
             state_id = 47,
-            name = "Overton County"
+            name = "Overton County",
+            cbsa_id = 18260
         )
         new_county.save()
     
@@ -20696,7 +22228,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47139,
             state_id = 47,
-            name = "Polk County"
+            name = "Polk County",
+            cbsa_id = 17420
         )
         new_county.save()
     
@@ -20704,7 +22237,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47141,
             state_id = 47,
-            name = "Putnam County"
+            name = "Putnam County",
+            cbsa_id = 18260
         )
         new_county.save()
     
@@ -20720,7 +22254,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47145,
             state_id = 47,
-            name = "Roane County"
+            name = "Roane County",
+            cbsa_id = 28940
         )
         new_county.save()
     
@@ -20728,7 +22263,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47147,
             state_id = 47,
-            name = "Robertson County"
+            name = "Robertson County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20736,7 +22272,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47149,
             state_id = 47,
-            name = "Rutherford County"
+            name = "Rutherford County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20752,7 +22289,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47153,
             state_id = 47,
-            name = "Sequatchie County"
+            name = "Sequatchie County",
+            cbsa_id = 16860
         )
         new_county.save()
     
@@ -20760,7 +22298,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47155,
             state_id = 47,
-            name = "Sevier County"
+            name = "Sevier County",
+            cbsa_id = 42940
         )
         new_county.save()
     
@@ -20768,7 +22307,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47157,
             state_id = 47,
-            name = "Shelby County"
+            name = "Shelby County",
+            cbsa_id = 32820
         )
         new_county.save()
     
@@ -20776,7 +22316,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47159,
             state_id = 47,
-            name = "Smith County"
+            name = "Smith County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20784,7 +22325,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47161,
             state_id = 47,
-            name = "Stewart County"
+            name = "Stewart County",
+            cbsa_id = 17300
         )
         new_county.save()
     
@@ -20792,7 +22334,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47163,
             state_id = 47,
-            name = "Sullivan County"
+            name = "Sullivan County",
+            cbsa_id = 28700
         )
         new_county.save()
     
@@ -20800,7 +22343,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47165,
             state_id = 47,
-            name = "Sumner County"
+            name = "Sumner County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20808,7 +22352,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47167,
             state_id = 47,
-            name = "Tipton County"
+            name = "Tipton County",
+            cbsa_id = 32820
         )
         new_county.save()
     
@@ -20816,7 +22361,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47169,
             state_id = 47,
-            name = "Trousdale County"
+            name = "Trousdale County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20824,7 +22370,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47171,
             state_id = 47,
-            name = "Unicoi County"
+            name = "Unicoi County",
+            cbsa_id = 27740
         )
         new_county.save()
     
@@ -20832,7 +22379,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47173,
             state_id = 47,
-            name = "Union County"
+            name = "Union County",
+            cbsa_id = 28940
         )
         new_county.save()
     
@@ -20848,7 +22396,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47177,
             state_id = 47,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 32660
         )
         new_county.save()
     
@@ -20856,7 +22405,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47179,
             state_id = 47,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 27740
         )
         new_county.save()
     
@@ -20872,7 +22422,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47183,
             state_id = 47,
-            name = "Weakley County"
+            name = "Weakley County",
+            cbsa_id = 32280
         )
         new_county.save()
     
@@ -20880,7 +22431,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47185,
             state_id = 47,
-            name = "White County"
+            name = "White County",
+            cbsa_id = 18260
         )
         new_county.save()
     
@@ -20888,7 +22440,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47187,
             state_id = 47,
-            name = "Williamson County"
+            name = "Williamson County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20896,7 +22449,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 47189,
             state_id = 47,
-            name = "Wilson County"
+            name = "Wilson County",
+            cbsa_id = 34980
         )
         new_county.save()
     
@@ -20904,7 +22458,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48001,
             state_id = 48,
-            name = "Anderson County"
+            name = "Anderson County",
+            cbsa_id = 37300
         )
         new_county.save()
     
@@ -20912,7 +22467,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48003,
             state_id = 48,
-            name = "Andrews County"
+            name = "Andrews County",
+            cbsa_id = 11380
         )
         new_county.save()
     
@@ -20920,7 +22476,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48005,
             state_id = 48,
-            name = "Angelina County"
+            name = "Angelina County",
+            cbsa_id = 31260
         )
         new_county.save()
     
@@ -20928,7 +22485,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48007,
             state_id = 48,
-            name = "Aransas County"
+            name = "Aransas County",
+            cbsa_id = 18580
         )
         new_county.save()
     
@@ -20936,7 +22494,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48009,
             state_id = 48,
-            name = "Archer County"
+            name = "Archer County",
+            cbsa_id = 48660
         )
         new_county.save()
     
@@ -20944,7 +22503,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48011,
             state_id = 48,
-            name = "Armstrong County"
+            name = "Armstrong County",
+            cbsa_id = 11100
         )
         new_county.save()
     
@@ -20952,7 +22512,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48013,
             state_id = 48,
-            name = "Atascosa County"
+            name = "Atascosa County",
+            cbsa_id = 41700
         )
         new_county.save()
     
@@ -20960,7 +22521,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48015,
             state_id = 48,
-            name = "Austin County"
+            name = "Austin County",
+            cbsa_id = 26420
         )
         new_county.save()
     
@@ -20976,7 +22538,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48019,
             state_id = 48,
-            name = "Bandera County"
+            name = "Bandera County",
+            cbsa_id = 41700
         )
         new_county.save()
     
@@ -20984,7 +22547,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48021,
             state_id = 48,
-            name = "Bastrop County"
+            name = "Bastrop County",
+            cbsa_id = 12420
         )
         new_county.save()
     
@@ -21000,7 +22564,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48025,
             state_id = 48,
-            name = "Bee County"
+            name = "Bee County",
+            cbsa_id = 13300
         )
         new_county.save()
     
@@ -21008,7 +22573,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48027,
             state_id = 48,
-            name = "Bell County"
+            name = "Bell County",
+            cbsa_id = 28660
         )
         new_county.save()
     
@@ -21016,7 +22582,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48029,
             state_id = 48,
-            name = "Bexar County"
+            name = "Bexar County",
+            cbsa_id = 41700
         )
         new_county.save()
     
@@ -21040,7 +22607,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48035,
             state_id = 48,
-            name = "Bosque County"
+            name = "Bosque County",
+            cbsa_id = 47380
         )
         new_county.save()
     
@@ -21048,7 +22616,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48037,
             state_id = 48,
-            name = "Bowie County"
+            name = "Bowie County",
+            cbsa_id = 45500
         )
         new_county.save()
     
@@ -21056,7 +22625,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48039,
             state_id = 48,
-            name = "Brazoria County"
+            name = "Brazoria County",
+            cbsa_id = 26420
         )
         new_county.save()
     
@@ -21064,7 +22634,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48041,
             state_id = 48,
-            name = "Brazos County"
+            name = "Brazos County",
+            cbsa_id = 17780
         )
         new_county.save()
     
@@ -21088,7 +22659,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48047,
             state_id = 48,
-            name = "Brooks County"
+            name = "Brooks County",
+            cbsa_id = 10860
         )
         new_county.save()
     
@@ -21096,7 +22668,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48049,
             state_id = 48,
-            name = "Brown County"
+            name = "Brown County",
+            cbsa_id = 15220
         )
         new_county.save()
     
@@ -21104,7 +22677,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48051,
             state_id = 48,
-            name = "Burleson County"
+            name = "Burleson County",
+            cbsa_id = 17780
         )
         new_county.save()
     
@@ -21120,7 +22694,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48055,
             state_id = 48,
-            name = "Caldwell County"
+            name = "Caldwell County",
+            cbsa_id = 12420
         )
         new_county.save()
     
@@ -21128,7 +22703,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48057,
             state_id = 48,
-            name = "Calhoun County"
+            name = "Calhoun County",
+            cbsa_id = 38920
         )
         new_county.save()
     
@@ -21136,7 +22712,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48059,
             state_id = 48,
-            name = "Callahan County"
+            name = "Callahan County",
+            cbsa_id = 10180
         )
         new_county.save()
     
@@ -21144,7 +22721,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48061,
             state_id = 48,
-            name = "Cameron County"
+            name = "Cameron County",
+            cbsa_id = 15180
         )
         new_county.save()
     
@@ -21152,7 +22730,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48063,
             state_id = 48,
-            name = "Camp County"
+            name = "Camp County",
+            cbsa_id = 34420
         )
         new_county.save()
     
@@ -21160,7 +22739,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48065,
             state_id = 48,
-            name = "Carson County"
+            name = "Carson County",
+            cbsa_id = 11100
         )
         new_county.save()
     
@@ -21184,7 +22764,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48071,
             state_id = 48,
-            name = "Chambers County"
+            name = "Chambers County",
+            cbsa_id = 26420
         )
         new_county.save()
     
@@ -21192,7 +22773,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48073,
             state_id = 48,
-            name = "Cherokee County"
+            name = "Cherokee County",
+            cbsa_id = 27380
         )
         new_county.save()
     
@@ -21208,7 +22790,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48077,
             state_id = 48,
-            name = "Clay County"
+            name = "Clay County",
+            cbsa_id = 48660
         )
         new_county.save()
     
@@ -21216,7 +22799,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48079,
             state_id = 48,
-            name = "Cochran County"
+            name = "Cochran County",
+            cbsa_id = 31180
         )
         new_county.save()
     
@@ -21240,7 +22824,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48085,
             state_id = 48,
-            name = "Collin County"
+            name = "Collin County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -21264,7 +22849,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48091,
             state_id = 48,
-            name = "Comal County"
+            name = "Comal County",
+            cbsa_id = 41700
         )
         new_county.save()
     
@@ -21288,7 +22874,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48097,
             state_id = 48,
-            name = "Cooke County"
+            name = "Cooke County",
+            cbsa_id = 23620
         )
         new_county.save()
     
@@ -21296,7 +22883,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48099,
             state_id = 48,
-            name = "Coryell County"
+            name = "Coryell County",
+            cbsa_id = 28660
         )
         new_county.save()
     
@@ -21328,7 +22916,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48107,
             state_id = 48,
-            name = "Crosby County"
+            name = "Crosby County",
+            cbsa_id = 31180
         )
         new_county.save()
     
@@ -21352,7 +22941,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48113,
             state_id = 48,
-            name = "Dallas County"
+            name = "Dallas County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -21368,7 +22958,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48117,
             state_id = 48,
-            name = "Deaf Smith County"
+            name = "Deaf Smith County",
+            cbsa_id = 25820
         )
         new_county.save()
     
@@ -21384,7 +22975,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48121,
             state_id = 48,
-            name = "Denton County"
+            name = "Denton County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -21440,7 +23032,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48135,
             state_id = 48,
-            name = "Ector County"
+            name = "Ector County",
+            cbsa_id = 36220
         )
         new_county.save()
     
@@ -21456,7 +23049,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48139,
             state_id = 48,
-            name = "Ellis County"
+            name = "Ellis County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -21464,7 +23058,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48141,
             state_id = 48,
-            name = "El Paso County"
+            name = "El Paso County",
+            cbsa_id = 21340
         )
         new_county.save()
     
@@ -21472,7 +23067,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48143,
             state_id = 48,
-            name = "Erath County"
+            name = "Erath County",
+            cbsa_id = 44500
         )
         new_county.save()
     
@@ -21480,7 +23076,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48145,
             state_id = 48,
-            name = "Falls County"
+            name = "Falls County",
+            cbsa_id = 47380
         )
         new_county.save()
     
@@ -21488,7 +23085,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48147,
             state_id = 48,
-            name = "Fannin County"
+            name = "Fannin County",
+            cbsa_id = 14300
         )
         new_county.save()
     
@@ -21512,7 +23110,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48153,
             state_id = 48,
-            name = "Floyd County"
+            name = "Floyd County",
+            cbsa_id = 38380
         )
         new_county.save()
     
@@ -21528,7 +23127,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48157,
             state_id = 48,
-            name = "Fort Bend County"
+            name = "Fort Bend County",
+            cbsa_id = 26420
         )
         new_county.save()
     
@@ -21568,7 +23168,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48167,
             state_id = 48,
-            name = "Galveston County"
+            name = "Galveston County",
+            cbsa_id = 26420
         )
         new_county.save()
     
@@ -21576,7 +23177,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48169,
             state_id = 48,
-            name = "Garza County"
+            name = "Garza County",
+            cbsa_id = 31180
         )
         new_county.save()
     
@@ -21584,7 +23186,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48171,
             state_id = 48,
-            name = "Gillespie County"
+            name = "Gillespie County",
+            cbsa_id = 23240
         )
         new_county.save()
     
@@ -21600,7 +23203,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48175,
             state_id = 48,
-            name = "Goliad County"
+            name = "Goliad County",
+            cbsa_id = 47020
         )
         new_county.save()
     
@@ -21616,7 +23220,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48179,
             state_id = 48,
-            name = "Gray County"
+            name = "Gray County",
+            cbsa_id = 37420
         )
         new_county.save()
     
@@ -21624,7 +23229,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48181,
             state_id = 48,
-            name = "Grayson County"
+            name = "Grayson County",
+            cbsa_id = 43300
         )
         new_county.save()
     
@@ -21632,7 +23238,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48183,
             state_id = 48,
-            name = "Gregg County"
+            name = "Gregg County",
+            cbsa_id = 30980
         )
         new_county.save()
     
@@ -21648,7 +23255,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48187,
             state_id = 48,
-            name = "Guadalupe County"
+            name = "Guadalupe County",
+            cbsa_id = 41700
         )
         new_county.save()
     
@@ -21656,7 +23264,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48189,
             state_id = 48,
-            name = "Hale County"
+            name = "Hale County",
+            cbsa_id = 38380
         )
         new_county.save()
     
@@ -21696,7 +23305,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48199,
             state_id = 48,
-            name = "Hardin County"
+            name = "Hardin County",
+            cbsa_id = 13140
         )
         new_county.save()
     
@@ -21704,7 +23314,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48201,
             state_id = 48,
-            name = "Harris County"
+            name = "Harris County",
+            cbsa_id = 26420
         )
         new_county.save()
     
@@ -21712,7 +23323,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48203,
             state_id = 48,
-            name = "Harrison County"
+            name = "Harrison County",
+            cbsa_id = 30980
         )
         new_county.save()
     
@@ -21736,7 +23348,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48209,
             state_id = 48,
-            name = "Hays County"
+            name = "Hays County",
+            cbsa_id = 12420
         )
         new_county.save()
     
@@ -21752,7 +23365,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48213,
             state_id = 48,
-            name = "Henderson County"
+            name = "Henderson County",
+            cbsa_id = 11980
         )
         new_county.save()
     
@@ -21760,7 +23374,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48215,
             state_id = 48,
-            name = "Hidalgo County"
+            name = "Hidalgo County",
+            cbsa_id = 32580
         )
         new_county.save()
     
@@ -21776,7 +23391,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48219,
             state_id = 48,
-            name = "Hockley County"
+            name = "Hockley County",
+            cbsa_id = 31180
         )
         new_county.save()
     
@@ -21784,7 +23400,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48221,
             state_id = 48,
-            name = "Hood County"
+            name = "Hood County",
+            cbsa_id = 24180
         )
         new_county.save()
     
@@ -21792,7 +23409,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48223,
             state_id = 48,
-            name = "Hopkins County"
+            name = "Hopkins County",
+            cbsa_id = 44860
         )
         new_county.save()
     
@@ -21808,7 +23426,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48227,
             state_id = 48,
-            name = "Howard County"
+            name = "Howard County",
+            cbsa_id = 13700
         )
         new_county.save()
     
@@ -21816,7 +23435,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48229,
             state_id = 48,
-            name = "Hudspeth County"
+            name = "Hudspeth County",
+            cbsa_id = 21340
         )
         new_county.save()
     
@@ -21824,7 +23444,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48231,
             state_id = 48,
-            name = "Hunt County"
+            name = "Hunt County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -21832,7 +23453,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48233,
             state_id = 48,
-            name = "Hutchinson County"
+            name = "Hutchinson County",
+            cbsa_id = 14420
         )
         new_county.save()
     
@@ -21840,7 +23462,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48235,
             state_id = 48,
-            name = "Irion County"
+            name = "Irion County",
+            cbsa_id = 41660
         )
         new_county.save()
     
@@ -21880,7 +23503,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48245,
             state_id = 48,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 13140
         )
         new_county.save()
     
@@ -21896,7 +23520,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48249,
             state_id = 48,
-            name = "Jim Wells County"
+            name = "Jim Wells County",
+            cbsa_id = 10860
         )
         new_county.save()
     
@@ -21904,7 +23529,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48251,
             state_id = 48,
-            name = "Johnson County"
+            name = "Johnson County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -21912,7 +23538,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48253,
             state_id = 48,
-            name = "Jones County"
+            name = "Jones County",
+            cbsa_id = 10180
         )
         new_county.save()
     
@@ -21928,7 +23555,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48257,
             state_id = 48,
-            name = "Kaufman County"
+            name = "Kaufman County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -21936,7 +23564,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48259,
             state_id = 48,
-            name = "Kendall County"
+            name = "Kendall County",
+            cbsa_id = 41700
         )
         new_county.save()
     
@@ -21960,7 +23589,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48265,
             state_id = 48,
-            name = "Kerr County"
+            name = "Kerr County",
+            cbsa_id = 28500
         )
         new_county.save()
     
@@ -21992,7 +23622,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48273,
             state_id = 48,
-            name = "Kleberg County"
+            name = "Kleberg County",
+            cbsa_id = 28780
         )
         new_county.save()
     
@@ -22008,7 +23639,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48277,
             state_id = 48,
-            name = "Lamar County"
+            name = "Lamar County",
+            cbsa_id = 37580
         )
         new_county.save()
     
@@ -22024,7 +23656,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48281,
             state_id = 48,
-            name = "Lampasas County"
+            name = "Lampasas County",
+            cbsa_id = 28660
         )
         new_county.save()
     
@@ -22064,7 +23697,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48291,
             state_id = 48,
-            name = "Liberty County"
+            name = "Liberty County",
+            cbsa_id = 26420
         )
         new_county.save()
     
@@ -22112,7 +23746,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48303,
             state_id = 48,
-            name = "Lubbock County"
+            name = "Lubbock County",
+            cbsa_id = 31180
         )
         new_county.save()
     
@@ -22120,7 +23755,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48305,
             state_id = 48,
-            name = "Lynn County"
+            name = "Lynn County",
+            cbsa_id = 31180
         )
         new_county.save()
     
@@ -22136,7 +23772,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48309,
             state_id = 48,
-            name = "McLennan County"
+            name = "McLennan County",
+            cbsa_id = 47380
         )
         new_county.save()
     
@@ -22168,7 +23805,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48317,
             state_id = 48,
-            name = "Martin County"
+            name = "Martin County",
+            cbsa_id = 33260
         )
         new_county.save()
     
@@ -22184,7 +23822,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48321,
             state_id = 48,
-            name = "Matagorda County"
+            name = "Matagorda County",
+            cbsa_id = 13060
         )
         new_county.save()
     
@@ -22192,7 +23831,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48323,
             state_id = 48,
-            name = "Maverick County"
+            name = "Maverick County",
+            cbsa_id = 20580
         )
         new_county.save()
     
@@ -22200,7 +23840,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48325,
             state_id = 48,
-            name = "Medina County"
+            name = "Medina County",
+            cbsa_id = 41700
         )
         new_county.save()
     
@@ -22216,7 +23857,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48329,
             state_id = 48,
-            name = "Midland County"
+            name = "Midland County",
+            cbsa_id = 33260
         )
         new_county.save()
     
@@ -22256,7 +23898,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48339,
             state_id = 48,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 26420
         )
         new_county.save()
     
@@ -22264,7 +23907,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48341,
             state_id = 48,
-            name = "Moore County"
+            name = "Moore County",
+            cbsa_id = 20300
         )
         new_county.save()
     
@@ -22272,7 +23916,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48343,
             state_id = 48,
-            name = "Morris County"
+            name = "Morris County",
+            cbsa_id = 34420
         )
         new_county.save()
     
@@ -22288,7 +23933,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48347,
             state_id = 48,
-            name = "Nacogdoches County"
+            name = "Nacogdoches County",
+            cbsa_id = 34860
         )
         new_county.save()
     
@@ -22296,7 +23942,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48349,
             state_id = 48,
-            name = "Navarro County"
+            name = "Navarro County",
+            cbsa_id = 18620
         )
         new_county.save()
     
@@ -22312,7 +23959,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48353,
             state_id = 48,
-            name = "Nolan County"
+            name = "Nolan County",
+            cbsa_id = 45020
         )
         new_county.save()
     
@@ -22320,7 +23968,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48355,
             state_id = 48,
-            name = "Nueces County"
+            name = "Nueces County",
+            cbsa_id = 18580
         )
         new_county.save()
     
@@ -22336,7 +23985,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48359,
             state_id = 48,
-            name = "Oldham County"
+            name = "Oldham County",
+            cbsa_id = 11100
         )
         new_county.save()
     
@@ -22344,7 +23994,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48361,
             state_id = 48,
-            name = "Orange County"
+            name = "Orange County",
+            cbsa_id = 13140
         )
         new_county.save()
     
@@ -22352,7 +24003,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48363,
             state_id = 48,
-            name = "Palo Pinto County"
+            name = "Palo Pinto County",
+            cbsa_id = 33420
         )
         new_county.save()
     
@@ -22368,7 +24020,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48367,
             state_id = 48,
-            name = "Parker County"
+            name = "Parker County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -22400,7 +24053,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48375,
             state_id = 48,
-            name = "Potter County"
+            name = "Potter County",
+            cbsa_id = 11100
         )
         new_county.save()
     
@@ -22424,7 +24078,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48381,
             state_id = 48,
-            name = "Randall County"
+            name = "Randall County",
+            cbsa_id = 11100
         )
         new_county.save()
     
@@ -22448,7 +24103,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48387,
             state_id = 48,
-            name = "Red River County"
+            name = "Red River County",
+            cbsa_id = 37580
         )
         new_county.save()
     
@@ -22456,7 +24112,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48389,
             state_id = 48,
-            name = "Reeves County"
+            name = "Reeves County",
+            cbsa_id = 45880
         )
         new_county.save()
     
@@ -22472,7 +24129,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48393,
             state_id = 48,
-            name = "Roberts County"
+            name = "Roberts County",
+            cbsa_id = 37420
         )
         new_county.save()
     
@@ -22480,7 +24138,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48395,
             state_id = 48,
-            name = "Robertson County"
+            name = "Robertson County",
+            cbsa_id = 17780
         )
         new_county.save()
     
@@ -22488,7 +24147,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48397,
             state_id = 48,
-            name = "Rockwall County"
+            name = "Rockwall County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -22504,7 +24164,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48401,
             state_id = 48,
-            name = "Rusk County"
+            name = "Rusk County",
+            cbsa_id = 30980
         )
         new_county.save()
     
@@ -22528,7 +24189,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48407,
             state_id = 48,
-            name = "San Jacinto County"
+            name = "San Jacinto County",
+            cbsa_id = 26420
         )
         new_county.save()
     
@@ -22536,7 +24198,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48409,
             state_id = 48,
-            name = "San Patricio County"
+            name = "San Patricio County",
+            cbsa_id = 18580
         )
         new_county.save()
     
@@ -22560,7 +24223,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48415,
             state_id = 48,
-            name = "Scurry County"
+            name = "Scurry County",
+            cbsa_id = 43660
         )
         new_county.save()
     
@@ -22592,7 +24256,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48423,
             state_id = 48,
-            name = "Smith County"
+            name = "Smith County",
+            cbsa_id = 46340
         )
         new_county.save()
     
@@ -22608,7 +24273,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48427,
             state_id = 48,
-            name = "Starr County"
+            name = "Starr County",
+            cbsa_id = 40100
         )
         new_county.save()
     
@@ -22656,7 +24322,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48439,
             state_id = 48,
-            name = "Tarrant County"
+            name = "Tarrant County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -22664,7 +24331,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48441,
             state_id = 48,
-            name = "Taylor County"
+            name = "Taylor County",
+            cbsa_id = 10180
         )
         new_county.save()
     
@@ -22696,7 +24364,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48449,
             state_id = 48,
-            name = "Titus County"
+            name = "Titus County",
+            cbsa_id = 34420
         )
         new_county.save()
     
@@ -22704,7 +24373,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48451,
             state_id = 48,
-            name = "Tom Green County"
+            name = "Tom Green County",
+            cbsa_id = 41660
         )
         new_county.save()
     
@@ -22712,7 +24382,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48453,
             state_id = 48,
-            name = "Travis County"
+            name = "Travis County",
+            cbsa_id = 12420
         )
         new_county.save()
     
@@ -22736,7 +24407,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48459,
             state_id = 48,
-            name = "Upshur County"
+            name = "Upshur County",
+            cbsa_id = 30980
         )
         new_county.save()
     
@@ -22752,7 +24424,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48463,
             state_id = 48,
-            name = "Uvalde County"
+            name = "Uvalde County",
+            cbsa_id = 46620
         )
         new_county.save()
     
@@ -22760,7 +24433,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48465,
             state_id = 48,
-            name = "Val Verde County"
+            name = "Val Verde County",
+            cbsa_id = 19620
         )
         new_county.save()
     
@@ -22776,7 +24450,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48469,
             state_id = 48,
-            name = "Victoria County"
+            name = "Victoria County",
+            cbsa_id = 47020
         )
         new_county.save()
     
@@ -22784,7 +24459,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48471,
             state_id = 48,
-            name = "Walker County"
+            name = "Walker County",
+            cbsa_id = 26660
         )
         new_county.save()
     
@@ -22792,7 +24468,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48473,
             state_id = 48,
-            name = "Waller County"
+            name = "Waller County",
+            cbsa_id = 26420
         )
         new_county.save()
     
@@ -22808,7 +24485,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48477,
             state_id = 48,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 14780
         )
         new_county.save()
     
@@ -22816,7 +24494,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48479,
             state_id = 48,
-            name = "Webb County"
+            name = "Webb County",
+            cbsa_id = 29700
         )
         new_county.save()
     
@@ -22824,7 +24503,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48481,
             state_id = 48,
-            name = "Wharton County"
+            name = "Wharton County",
+            cbsa_id = 20900
         )
         new_county.save()
     
@@ -22840,7 +24520,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48485,
             state_id = 48,
-            name = "Wichita County"
+            name = "Wichita County",
+            cbsa_id = 48660
         )
         new_county.save()
     
@@ -22848,7 +24529,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48487,
             state_id = 48,
-            name = "Wilbarger County"
+            name = "Wilbarger County",
+            cbsa_id = 46900
         )
         new_county.save()
     
@@ -22856,7 +24538,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48489,
             state_id = 48,
-            name = "Willacy County"
+            name = "Willacy County",
+            cbsa_id = 39700
         )
         new_county.save()
     
@@ -22864,7 +24547,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48491,
             state_id = 48,
-            name = "Williamson County"
+            name = "Williamson County",
+            cbsa_id = 12420
         )
         new_county.save()
     
@@ -22872,7 +24556,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48493,
             state_id = 48,
-            name = "Wilson County"
+            name = "Wilson County",
+            cbsa_id = 41700
         )
         new_county.save()
     
@@ -22888,7 +24573,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48497,
             state_id = 48,
-            name = "Wise County"
+            name = "Wise County",
+            cbsa_id = 19100
         )
         new_county.save()
     
@@ -22920,7 +24606,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 48505,
             state_id = 48,
-            name = "Zapata County"
+            name = "Zapata County",
+            cbsa_id = 49820
         )
         new_county.save()
     
@@ -23016,7 +24703,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49003,
             state_id = 49,
-            name = "Box Elder County"
+            name = "Box Elder County",
+            cbsa_id = 14940
         )
         new_county.save()
     
@@ -23024,7 +24712,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49005,
             state_id = 49,
-            name = "Cache County"
+            name = "Cache County",
+            cbsa_id = 30860
         )
         new_county.save()
     
@@ -23032,7 +24721,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49007,
             state_id = 49,
-            name = "Carbon County"
+            name = "Carbon County",
+            cbsa_id = 39220
         )
         new_county.save()
     
@@ -23048,7 +24738,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49011,
             state_id = 49,
-            name = "Davis County"
+            name = "Davis County",
+            cbsa_id = 36260
         )
         new_county.save()
     
@@ -23088,7 +24779,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49021,
             state_id = 49,
-            name = "Iron County"
+            name = "Iron County",
+            cbsa_id = 16260
         )
         new_county.save()
     
@@ -23096,7 +24788,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49023,
             state_id = 49,
-            name = "Juab County"
+            name = "Juab County",
+            cbsa_id = 39340
         )
         new_county.save()
     
@@ -23120,7 +24813,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49029,
             state_id = 49,
-            name = "Morgan County"
+            name = "Morgan County",
+            cbsa_id = 36260
         )
         new_county.save()
     
@@ -23136,7 +24830,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49033,
             state_id = 49,
-            name = "Rich County"
+            name = "Rich County",
+            cbsa_id = 21740
         )
         new_county.save()
     
@@ -23144,7 +24839,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49035,
             state_id = 49,
-            name = "Salt Lake County"
+            name = "Salt Lake County",
+            cbsa_id = 41620
         )
         new_county.save()
     
@@ -23176,7 +24872,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49043,
             state_id = 49,
-            name = "Summit County"
+            name = "Summit County",
+            cbsa_id = 25720
         )
         new_county.save()
     
@@ -23184,7 +24881,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49045,
             state_id = 49,
-            name = "Tooele County"
+            name = "Tooele County",
+            cbsa_id = 41620
         )
         new_county.save()
     
@@ -23192,7 +24890,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49047,
             state_id = 49,
-            name = "Uintah County"
+            name = "Uintah County",
+            cbsa_id = 46860
         )
         new_county.save()
     
@@ -23200,7 +24899,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49049,
             state_id = 49,
-            name = "Utah County"
+            name = "Utah County",
+            cbsa_id = 39340
         )
         new_county.save()
     
@@ -23208,7 +24908,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49051,
             state_id = 49,
-            name = "Wasatch County"
+            name = "Wasatch County",
+            cbsa_id = 25720
         )
         new_county.save()
     
@@ -23216,7 +24917,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49053,
             state_id = 49,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 41100
         )
         new_county.save()
     
@@ -23232,7 +24934,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 49057,
             state_id = 49,
-            name = "Weber County"
+            name = "Weber County",
+            cbsa_id = 36260
         )
         new_county.save()
     
@@ -23248,7 +24951,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 50003,
             state_id = 50,
-            name = "Bennington County"
+            name = "Bennington County",
+            cbsa_id = 13540
         )
         new_county.save()
     
@@ -23264,7 +24968,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 50007,
             state_id = 50,
-            name = "Chittenden County"
+            name = "Chittenden County",
+            cbsa_id = 15540
         )
         new_county.save()
     
@@ -23280,7 +24985,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 50011,
             state_id = 50,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 15540
         )
         new_county.save()
     
@@ -23288,7 +24994,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 50013,
             state_id = 50,
-            name = "Grand Isle County"
+            name = "Grand Isle County",
+            cbsa_id = 15540
         )
         new_county.save()
     
@@ -23304,7 +25011,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 50017,
             state_id = 50,
-            name = "Orange County"
+            name = "Orange County",
+            cbsa_id = 30150
         )
         new_county.save()
     
@@ -23320,7 +25028,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 50021,
             state_id = 50,
-            name = "Rutland County"
+            name = "Rutland County",
+            cbsa_id = 40860
         )
         new_county.save()
     
@@ -23328,7 +25037,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 50023,
             state_id = 50,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 12740
         )
         new_county.save()
     
@@ -23336,7 +25046,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 50025,
             state_id = 50,
-            name = "Windham County"
+            name = "Windham County",
+            cbsa_id = 14710
         )
         new_county.save()
     
@@ -23344,7 +25055,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 50027,
             state_id = 50,
-            name = "Windsor County"
+            name = "Windsor County",
+            cbsa_id = 30150
         )
         new_county.save()
     
@@ -23384,7 +25096,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51003,
             state_id = 51,
-            name = "Albemarle County"
+            name = "Albemarle County",
+            cbsa_id = 16820
         )
         new_county.save()
     
@@ -23400,7 +25113,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51007,
             state_id = 51,
-            name = "Amelia County"
+            name = "Amelia County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23408,7 +25122,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51009,
             state_id = 51,
-            name = "Amherst County"
+            name = "Amherst County",
+            cbsa_id = 31340
         )
         new_county.save()
     
@@ -23416,7 +25131,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51011,
             state_id = 51,
-            name = "Appomattox County"
+            name = "Appomattox County",
+            cbsa_id = 31340
         )
         new_county.save()
     
@@ -23424,7 +25140,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51013,
             state_id = 51,
-            name = "Arlington County"
+            name = "Arlington County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -23432,7 +25149,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51015,
             state_id = 51,
-            name = "Augusta County"
+            name = "Augusta County",
+            cbsa_id = 44420
         )
         new_county.save()
     
@@ -23448,7 +25166,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51019,
             state_id = 51,
-            name = "Bedford County"
+            name = "Bedford County",
+            cbsa_id = 31340
         )
         new_county.save()
     
@@ -23464,7 +25183,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51023,
             state_id = 51,
-            name = "Botetourt County"
+            name = "Botetourt County",
+            cbsa_id = 40220
         )
         new_county.save()
     
@@ -23496,7 +25216,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51031,
             state_id = 51,
-            name = "Campbell County"
+            name = "Campbell County",
+            cbsa_id = 31340
         )
         new_county.save()
     
@@ -23520,7 +25241,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51036,
             state_id = 51,
-            name = "Charles City County"
+            name = "Charles City County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23536,7 +25258,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51041,
             state_id = 51,
-            name = "Chesterfield County"
+            name = "Chesterfield County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23544,7 +25267,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51043,
             state_id = 51,
-            name = "Clarke County"
+            name = "Clarke County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -23552,7 +25276,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51045,
             state_id = 51,
-            name = "Craig County"
+            name = "Craig County",
+            cbsa_id = 40220
         )
         new_county.save()
     
@@ -23560,7 +25285,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51047,
             state_id = 51,
-            name = "Culpeper County"
+            name = "Culpeper County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -23584,7 +25310,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51053,
             state_id = 51,
-            name = "Dinwiddie County"
+            name = "Dinwiddie County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23600,7 +25327,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51059,
             state_id = 51,
-            name = "Fairfax County"
+            name = "Fairfax County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -23608,7 +25336,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51061,
             state_id = 51,
-            name = "Fauquier County"
+            name = "Fauquier County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -23616,7 +25345,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51063,
             state_id = 51,
-            name = "Floyd County"
+            name = "Floyd County",
+            cbsa_id = 13980
         )
         new_county.save()
     
@@ -23624,7 +25354,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51065,
             state_id = 51,
-            name = "Fluvanna County"
+            name = "Fluvanna County",
+            cbsa_id = 16820
         )
         new_county.save()
     
@@ -23632,7 +25363,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51067,
             state_id = 51,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 40220
         )
         new_county.save()
     
@@ -23640,7 +25372,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51069,
             state_id = 51,
-            name = "Frederick County"
+            name = "Frederick County",
+            cbsa_id = 49020
         )
         new_county.save()
     
@@ -23648,7 +25381,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51071,
             state_id = 51,
-            name = "Giles County"
+            name = "Giles County",
+            cbsa_id = 13980
         )
         new_county.save()
     
@@ -23656,7 +25390,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51073,
             state_id = 51,
-            name = "Gloucester County"
+            name = "Gloucester County",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -23664,7 +25399,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51075,
             state_id = 51,
-            name = "Goochland County"
+            name = "Goochland County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23680,7 +25416,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51079,
             state_id = 51,
-            name = "Greene County"
+            name = "Greene County",
+            cbsa_id = 16820
         )
         new_county.save()
     
@@ -23704,7 +25441,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51085,
             state_id = 51,
-            name = "Hanover County"
+            name = "Hanover County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23712,7 +25450,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51087,
             state_id = 51,
-            name = "Henrico County"
+            name = "Henrico County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23720,7 +25459,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51089,
             state_id = 51,
-            name = "Henry County"
+            name = "Henry County",
+            cbsa_id = 32300
         )
         new_county.save()
     
@@ -23736,7 +25476,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51093,
             state_id = 51,
-            name = "Isle of Wight County"
+            name = "Isle of Wight County",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -23744,7 +25485,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51095,
             state_id = 51,
-            name = "James City County"
+            name = "James City County",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -23752,7 +25494,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51097,
             state_id = 51,
-            name = "King and Queen County"
+            name = "King and Queen County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23768,7 +25511,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51101,
             state_id = 51,
-            name = "King William County"
+            name = "King William County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23792,7 +25536,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51107,
             state_id = 51,
-            name = "Loudoun County"
+            name = "Loudoun County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -23824,7 +25569,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51115,
             state_id = 51,
-            name = "Mathews County"
+            name = "Mathews County",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -23848,7 +25594,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51121,
             state_id = 51,
-            name = "Montgomery County"
+            name = "Montgomery County",
+            cbsa_id = 13980
         )
         new_county.save()
     
@@ -23856,7 +25603,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51125,
             state_id = 51,
-            name = "Nelson County"
+            name = "Nelson County",
+            cbsa_id = 16820
         )
         new_county.save()
     
@@ -23864,7 +25612,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51127,
             state_id = 51,
-            name = "New Kent County"
+            name = "New Kent County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23896,7 +25645,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51137,
             state_id = 51,
-            name = "Orange County"
+            name = "Orange County",
+            cbsa_id = 29470
         )
         new_county.save()
     
@@ -23920,7 +25670,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51143,
             state_id = 51,
-            name = "Pittsylvania County"
+            name = "Pittsylvania County",
+            cbsa_id = 19260
         )
         new_county.save()
     
@@ -23928,7 +25679,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51145,
             state_id = 51,
-            name = "Powhatan County"
+            name = "Powhatan County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23944,7 +25696,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51149,
             state_id = 51,
-            name = "Prince George County"
+            name = "Prince George County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -23952,7 +25705,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51153,
             state_id = 51,
-            name = "Prince William County"
+            name = "Prince William County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -23960,7 +25714,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51155,
             state_id = 51,
-            name = "Pulaski County"
+            name = "Pulaski County",
+            cbsa_id = 13980
         )
         new_county.save()
     
@@ -23968,7 +25723,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51157,
             state_id = 51,
-            name = "Rappahannock County"
+            name = "Rappahannock County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -23984,7 +25740,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51161,
             state_id = 51,
-            name = "Roanoke County"
+            name = "Roanoke County",
+            cbsa_id = 40220
         )
         new_county.save()
     
@@ -24000,7 +25757,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51165,
             state_id = 51,
-            name = "Rockingham County"
+            name = "Rockingham County",
+            cbsa_id = 25500
         )
         new_county.save()
     
@@ -24016,7 +25774,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51169,
             state_id = 51,
-            name = "Scott County"
+            name = "Scott County",
+            cbsa_id = 28700
         )
         new_county.save()
     
@@ -24048,7 +25807,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51177,
             state_id = 51,
-            name = "Spotsylvania County"
+            name = "Spotsylvania County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -24056,7 +25816,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51179,
             state_id = 51,
-            name = "Stafford County"
+            name = "Stafford County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -24064,7 +25825,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51181,
             state_id = 51,
-            name = "Surry County"
+            name = "Surry County",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24072,7 +25834,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51183,
             state_id = 51,
-            name = "Sussex County"
+            name = "Sussex County",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -24080,7 +25843,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51185,
             state_id = 51,
-            name = "Tazewell County"
+            name = "Tazewell County",
+            cbsa_id = 14140
         )
         new_county.save()
     
@@ -24088,7 +25852,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51187,
             state_id = 51,
-            name = "Warren County"
+            name = "Warren County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -24096,7 +25861,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51191,
             state_id = 51,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 28700
         )
         new_county.save()
     
@@ -24128,7 +25894,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51199,
             state_id = 51,
-            name = "York County"
+            name = "York County",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24136,7 +25903,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51510,
             state_id = 51,
-            name = "Alexandria, City of"
+            name = "Alexandria, City of",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -24144,7 +25912,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51520,
             state_id = 51,
-            name = "Bristol, City of"
+            name = "Bristol, City of",
+            cbsa_id = 28700
         )
         new_county.save()
     
@@ -24160,7 +25929,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51540,
             state_id = 51,
-            name = "Charlottesville, City of"
+            name = "Charlottesville, City of",
+            cbsa_id = 16820
         )
         new_county.save()
     
@@ -24168,7 +25938,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51550,
             state_id = 51,
-            name = "Chesapeake, City of"
+            name = "Chesapeake, City of",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24176,7 +25947,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51570,
             state_id = 51,
-            name = "Colonial Heights, City of"
+            name = "Colonial Heights, City of",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -24192,7 +25964,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51590,
             state_id = 51,
-            name = "Danville, City of"
+            name = "Danville, City of",
+            cbsa_id = 19260
         )
         new_county.save()
     
@@ -24208,7 +25981,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51600,
             state_id = 51,
-            name = "Fairfax, City of"
+            name = "Fairfax, City of",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -24216,7 +25990,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51610,
             state_id = 51,
-            name = "Falls Church, City of"
+            name = "Falls Church, City of",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -24232,7 +26007,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51630,
             state_id = 51,
-            name = "Fredericksburg, City of"
+            name = "Fredericksburg, City of",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -24248,7 +26024,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51650,
             state_id = 51,
-            name = "Hampton, City of"
+            name = "Hampton, City of",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24256,7 +26033,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51660,
             state_id = 51,
-            name = "Harrisonburg, City of"
+            name = "Harrisonburg, City of",
+            cbsa_id = 25500
         )
         new_county.save()
     
@@ -24264,7 +26042,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51670,
             state_id = 51,
-            name = "Hopewell, City of"
+            name = "Hopewell, City of",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -24280,7 +26059,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51680,
             state_id = 51,
-            name = "Lynchburg, City of"
+            name = "Lynchburg, City of",
+            cbsa_id = 31340
         )
         new_county.save()
     
@@ -24288,7 +26068,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51683,
             state_id = 51,
-            name = "Manassas, City of"
+            name = "Manassas, City of",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -24296,7 +26077,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51685,
             state_id = 51,
-            name = "Manassas Park, City of"
+            name = "Manassas Park, City of",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -24304,7 +26086,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51690,
             state_id = 51,
-            name = "Martinsville, City of"
+            name = "Martinsville, City of",
+            cbsa_id = 32300
         )
         new_county.save()
     
@@ -24312,7 +26095,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51700,
             state_id = 51,
-            name = "Newport News, City of"
+            name = "Newport News, City of",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24320,7 +26104,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51710,
             state_id = 51,
-            name = "Norfolk, City of"
+            name = "Norfolk, City of",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24336,7 +26121,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51730,
             state_id = 51,
-            name = "Petersburg, City of"
+            name = "Petersburg, City of",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -24344,7 +26130,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51735,
             state_id = 51,
-            name = "Poquoson, City of"
+            name = "Poquoson, City of",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24352,7 +26139,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51740,
             state_id = 51,
-            name = "Portsmouth, City of"
+            name = "Portsmouth, City of",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24360,7 +26148,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51750,
             state_id = 51,
-            name = "Radford, City of"
+            name = "Radford, City of",
+            cbsa_id = 13980
         )
         new_county.save()
     
@@ -24368,7 +26157,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51760,
             state_id = 51,
-            name = "Richmond, City of"
+            name = "Richmond, City of",
+            cbsa_id = 40060
         )
         new_county.save()
     
@@ -24376,7 +26166,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51770,
             state_id = 51,
-            name = "Roanoke, City of"
+            name = "Roanoke, City of",
+            cbsa_id = 40220
         )
         new_county.save()
     
@@ -24384,7 +26175,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51775,
             state_id = 51,
-            name = "Salem, City of"
+            name = "Salem, City of",
+            cbsa_id = 40220
         )
         new_county.save()
     
@@ -24392,7 +26184,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51790,
             state_id = 51,
-            name = "Staunton, City of"
+            name = "Staunton, City of",
+            cbsa_id = 44420
         )
         new_county.save()
     
@@ -24400,7 +26193,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51800,
             state_id = 51,
-            name = "Suffolk, City of"
+            name = "Suffolk, City of",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24408,7 +26202,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51810,
             state_id = 51,
-            name = "Virginia Beach, City of"
+            name = "Virginia Beach, City of",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24416,7 +26211,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51820,
             state_id = 51,
-            name = "Waynesboro, City of"
+            name = "Waynesboro, City of",
+            cbsa_id = 44420
         )
         new_county.save()
     
@@ -24424,7 +26220,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51830,
             state_id = 51,
-            name = "Williamsburg, City of"
+            name = "Williamsburg, City of",
+            cbsa_id = 47260
         )
         new_county.save()
     
@@ -24432,7 +26229,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 51840,
             state_id = 51,
-            name = "Winchester, City of"
+            name = "Winchester, City of",
+            cbsa_id = 49020
         )
         new_county.save()
     
@@ -24440,7 +26238,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53001,
             state_id = 53,
-            name = "Adams County"
+            name = "Adams County",
+            cbsa_id = 36830
         )
         new_county.save()
     
@@ -24448,7 +26247,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53003,
             state_id = 53,
-            name = "Asotin County"
+            name = "Asotin County",
+            cbsa_id = 30300
         )
         new_county.save()
     
@@ -24456,7 +26256,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53005,
             state_id = 53,
-            name = "Benton County"
+            name = "Benton County",
+            cbsa_id = 28420
         )
         new_county.save()
     
@@ -24464,7 +26265,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53007,
             state_id = 53,
-            name = "Chelan County"
+            name = "Chelan County",
+            cbsa_id = 48300
         )
         new_county.save()
     
@@ -24472,7 +26274,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53009,
             state_id = 53,
-            name = "Clallam County"
+            name = "Clallam County",
+            cbsa_id = 38820
         )
         new_county.save()
     
@@ -24480,7 +26283,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53011,
             state_id = 53,
-            name = "Clark County"
+            name = "Clark County",
+            cbsa_id = 38900
         )
         new_county.save()
     
@@ -24496,7 +26300,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53015,
             state_id = 53,
-            name = "Cowlitz County"
+            name = "Cowlitz County",
+            cbsa_id = 31020
         )
         new_county.save()
     
@@ -24504,7 +26309,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53017,
             state_id = 53,
-            name = "Douglas County"
+            name = "Douglas County",
+            cbsa_id = 48300
         )
         new_county.save()
     
@@ -24520,7 +26326,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53021,
             state_id = 53,
-            name = "Franklin County"
+            name = "Franklin County",
+            cbsa_id = 28420
         )
         new_county.save()
     
@@ -24536,7 +26343,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53025,
             state_id = 53,
-            name = "Grant County"
+            name = "Grant County",
+            cbsa_id = 34180
         )
         new_county.save()
     
@@ -24544,7 +26352,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53027,
             state_id = 53,
-            name = "Grays Harbor County"
+            name = "Grays Harbor County",
+            cbsa_id = 10140
         )
         new_county.save()
     
@@ -24552,7 +26361,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53029,
             state_id = 53,
-            name = "Island County"
+            name = "Island County",
+            cbsa_id = 36020
         )
         new_county.save()
     
@@ -24560,7 +26370,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53031,
             state_id = 53,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 39040
         )
         new_county.save()
     
@@ -24568,7 +26379,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53033,
             state_id = 53,
-            name = "King County"
+            name = "King County",
+            cbsa_id = 42660
         )
         new_county.save()
     
@@ -24576,7 +26388,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53035,
             state_id = 53,
-            name = "Kitsap County"
+            name = "Kitsap County",
+            cbsa_id = 14740
         )
         new_county.save()
     
@@ -24584,7 +26397,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53037,
             state_id = 53,
-            name = "Kittitas County"
+            name = "Kittitas County",
+            cbsa_id = 21260
         )
         new_county.save()
     
@@ -24600,7 +26414,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53041,
             state_id = 53,
-            name = "Lewis County"
+            name = "Lewis County",
+            cbsa_id = 16500
         )
         new_county.save()
     
@@ -24616,7 +26431,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53045,
             state_id = 53,
-            name = "Mason County"
+            name = "Mason County",
+            cbsa_id = 43220
         )
         new_county.save()
     
@@ -24648,7 +26464,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53053,
             state_id = 53,
-            name = "Pierce County"
+            name = "Pierce County",
+            cbsa_id = 42660
         )
         new_county.save()
     
@@ -24664,7 +26481,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53057,
             state_id = 53,
-            name = "Skagit County"
+            name = "Skagit County",
+            cbsa_id = 34580
         )
         new_county.save()
     
@@ -24672,7 +26490,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53059,
             state_id = 53,
-            name = "Skamania County"
+            name = "Skamania County",
+            cbsa_id = 38900
         )
         new_county.save()
     
@@ -24680,7 +26499,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53061,
             state_id = 53,
-            name = "Snohomish County"
+            name = "Snohomish County",
+            cbsa_id = 42660
         )
         new_county.save()
     
@@ -24688,7 +26508,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53063,
             state_id = 53,
-            name = "Spokane County"
+            name = "Spokane County",
+            cbsa_id = 44060
         )
         new_county.save()
     
@@ -24696,7 +26517,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53065,
             state_id = 53,
-            name = "Stevens County"
+            name = "Stevens County",
+            cbsa_id = 44060
         )
         new_county.save()
     
@@ -24704,7 +26526,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53067,
             state_id = 53,
-            name = "Thurston County"
+            name = "Thurston County",
+            cbsa_id = 36500
         )
         new_county.save()
     
@@ -24720,7 +26543,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53071,
             state_id = 53,
-            name = "Walla Walla County"
+            name = "Walla Walla County",
+            cbsa_id = 47460
         )
         new_county.save()
     
@@ -24728,7 +26552,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53073,
             state_id = 53,
-            name = "Whatcom County"
+            name = "Whatcom County",
+            cbsa_id = 13380
         )
         new_county.save()
     
@@ -24736,7 +26561,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53075,
             state_id = 53,
-            name = "Whitman County"
+            name = "Whitman County",
+            cbsa_id = 39420
         )
         new_county.save()
     
@@ -24744,7 +26570,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 53077,
             state_id = 53,
-            name = "Yakima County"
+            name = "Yakima County",
+            cbsa_id = 49420
         )
         new_county.save()
     
@@ -24760,7 +26587,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54003,
             state_id = 54,
-            name = "Berkeley County"
+            name = "Berkeley County",
+            cbsa_id = 25180
         )
         new_county.save()
     
@@ -24768,7 +26596,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54005,
             state_id = 54,
-            name = "Boone County"
+            name = "Boone County",
+            cbsa_id = 16620
         )
         new_county.save()
     
@@ -24784,7 +26613,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54009,
             state_id = 54,
-            name = "Brooke County"
+            name = "Brooke County",
+            cbsa_id = 48260
         )
         new_county.save()
     
@@ -24792,7 +26622,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54011,
             state_id = 54,
-            name = "Cabell County"
+            name = "Cabell County",
+            cbsa_id = 26580
         )
         new_county.save()
     
@@ -24808,7 +26639,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54015,
             state_id = 54,
-            name = "Clay County"
+            name = "Clay County",
+            cbsa_id = 16620
         )
         new_county.save()
     
@@ -24816,7 +26648,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54017,
             state_id = 54,
-            name = "Doddridge County"
+            name = "Doddridge County",
+            cbsa_id = 17220
         )
         new_county.save()
     
@@ -24824,7 +26657,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54019,
             state_id = 54,
-            name = "Fayette County"
+            name = "Fayette County",
+            cbsa_id = 13220
         )
         new_county.save()
     
@@ -24856,7 +26690,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54027,
             state_id = 54,
-            name = "Hampshire County"
+            name = "Hampshire County",
+            cbsa_id = 49020
         )
         new_county.save()
     
@@ -24864,7 +26699,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54029,
             state_id = 54,
-            name = "Hancock County"
+            name = "Hancock County",
+            cbsa_id = 48260
         )
         new_county.save()
     
@@ -24880,7 +26716,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54033,
             state_id = 54,
-            name = "Harrison County"
+            name = "Harrison County",
+            cbsa_id = 17220
         )
         new_county.save()
     
@@ -24896,7 +26733,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54037,
             state_id = 54,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 47900
         )
         new_county.save()
     
@@ -24904,7 +26742,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54039,
             state_id = 54,
-            name = "Kanawha County"
+            name = "Kanawha County",
+            cbsa_id = 16620
         )
         new_county.save()
     
@@ -24944,7 +26783,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54049,
             state_id = 54,
-            name = "Marion County"
+            name = "Marion County",
+            cbsa_id = 21900
         )
         new_county.save()
     
@@ -24952,7 +26792,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54051,
             state_id = 54,
-            name = "Marshall County"
+            name = "Marshall County",
+            cbsa_id = 48540
         )
         new_county.save()
     
@@ -24968,7 +26809,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54055,
             state_id = 54,
-            name = "Mercer County"
+            name = "Mercer County",
+            cbsa_id = 14140
         )
         new_county.save()
     
@@ -24976,7 +26818,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54057,
             state_id = 54,
-            name = "Mineral County"
+            name = "Mineral County",
+            cbsa_id = 19060
         )
         new_county.save()
     
@@ -24992,7 +26835,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54061,
             state_id = 54,
-            name = "Monongalia County"
+            name = "Monongalia County",
+            cbsa_id = 34060
         )
         new_county.save()
     
@@ -25008,7 +26852,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54065,
             state_id = 54,
-            name = "Morgan County"
+            name = "Morgan County",
+            cbsa_id = 25180
         )
         new_county.save()
     
@@ -25024,7 +26869,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54069,
             state_id = 54,
-            name = "Ohio County"
+            name = "Ohio County",
+            cbsa_id = 48540
         )
         new_county.save()
     
@@ -25056,7 +26902,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54077,
             state_id = 54,
-            name = "Preston County"
+            name = "Preston County",
+            cbsa_id = 34060
         )
         new_county.save()
     
@@ -25064,7 +26911,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54079,
             state_id = 54,
-            name = "Putnam County"
+            name = "Putnam County",
+            cbsa_id = 26580
         )
         new_county.save()
     
@@ -25072,7 +26920,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54081,
             state_id = 54,
-            name = "Raleigh County"
+            name = "Raleigh County",
+            cbsa_id = 13220
         )
         new_county.save()
     
@@ -25080,7 +26929,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54083,
             state_id = 54,
-            name = "Randolph County"
+            name = "Randolph County",
+            cbsa_id = 21180
         )
         new_county.save()
     
@@ -25112,7 +26962,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54091,
             state_id = 54,
-            name = "Taylor County"
+            name = "Taylor County",
+            cbsa_id = 17220
         )
         new_county.save()
     
@@ -25144,7 +26995,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54099,
             state_id = 54,
-            name = "Wayne County"
+            name = "Wayne County",
+            cbsa_id = 26580
         )
         new_county.save()
     
@@ -25168,7 +27020,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54105,
             state_id = 54,
-            name = "Wirt County"
+            name = "Wirt County",
+            cbsa_id = 37620
         )
         new_county.save()
     
@@ -25176,7 +27029,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 54107,
             state_id = 54,
-            name = "Wood County"
+            name = "Wood County",
+            cbsa_id = 37620
         )
         new_county.save()
     
@@ -25208,7 +27062,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55005,
             state_id = 55,
-            name = "Barron County"
+            name = "Barron County",
+            cbsa_id = 39960
         )
         new_county.save()
     
@@ -25224,7 +27079,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55009,
             state_id = 55,
-            name = "Brown County"
+            name = "Brown County",
+            cbsa_id = 24580
         )
         new_county.save()
     
@@ -25248,7 +27104,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55015,
             state_id = 55,
-            name = "Calumet County"
+            name = "Calumet County",
+            cbsa_id = 11540
         )
         new_county.save()
     
@@ -25256,7 +27113,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55017,
             state_id = 55,
-            name = "Chippewa County"
+            name = "Chippewa County",
+            cbsa_id = 20740
         )
         new_county.save()
     
@@ -25272,7 +27130,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55021,
             state_id = 55,
-            name = "Columbia County"
+            name = "Columbia County",
+            cbsa_id = 31540
         )
         new_county.save()
     
@@ -25288,7 +27147,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55025,
             state_id = 55,
-            name = "Dane County"
+            name = "Dane County",
+            cbsa_id = 31540
         )
         new_county.save()
     
@@ -25296,7 +27156,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55027,
             state_id = 55,
-            name = "Dodge County"
+            name = "Dodge County",
+            cbsa_id = 13180
         )
         new_county.save()
     
@@ -25312,7 +27173,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55031,
             state_id = 55,
-            name = "Douglas County"
+            name = "Douglas County",
+            cbsa_id = 20260
         )
         new_county.save()
     
@@ -25320,7 +27182,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55033,
             state_id = 55,
-            name = "Dunn County"
+            name = "Dunn County",
+            cbsa_id = 32860
         )
         new_county.save()
     
@@ -25328,7 +27191,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55035,
             state_id = 55,
-            name = "Eau Claire County"
+            name = "Eau Claire County",
+            cbsa_id = 20740
         )
         new_county.save()
     
@@ -25336,7 +27200,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55037,
             state_id = 55,
-            name = "Florence County"
+            name = "Florence County",
+            cbsa_id = 27020
         )
         new_county.save()
     
@@ -25344,7 +27209,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55039,
             state_id = 55,
-            name = "Fond du Lac County"
+            name = "Fond du Lac County",
+            cbsa_id = 22540
         )
         new_county.save()
     
@@ -25360,7 +27226,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55043,
             state_id = 55,
-            name = "Grant County"
+            name = "Grant County",
+            cbsa_id = 38420
         )
         new_county.save()
     
@@ -25368,7 +27235,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55045,
             state_id = 55,
-            name = "Green County"
+            name = "Green County",
+            cbsa_id = 31540
         )
         new_county.save()
     
@@ -25384,7 +27252,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55049,
             state_id = 55,
-            name = "Iowa County"
+            name = "Iowa County",
+            cbsa_id = 31540
         )
         new_county.save()
     
@@ -25408,7 +27277,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55055,
             state_id = 55,
-            name = "Jefferson County"
+            name = "Jefferson County",
+            cbsa_id = 48020
         )
         new_county.save()
     
@@ -25424,7 +27294,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55059,
             state_id = 55,
-            name = "Kenosha County"
+            name = "Kenosha County",
+            cbsa_id = 28450
         )
         new_county.save()
     
@@ -25432,7 +27303,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55061,
             state_id = 55,
-            name = "Kewaunee County"
+            name = "Kewaunee County",
+            cbsa_id = 24580
         )
         new_county.save()
     
@@ -25440,7 +27312,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55063,
             state_id = 55,
-            name = "La Crosse County"
+            name = "La Crosse County",
+            cbsa_id = 29100
         )
         new_county.save()
     
@@ -25472,7 +27345,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55071,
             state_id = 55,
-            name = "Manitowoc County"
+            name = "Manitowoc County",
+            cbsa_id = 31820
         )
         new_county.save()
     
@@ -25480,7 +27354,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55073,
             state_id = 55,
-            name = "Marathon County"
+            name = "Marathon County",
+            cbsa_id = 48140
         )
         new_county.save()
     
@@ -25488,7 +27363,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55075,
             state_id = 55,
-            name = "Marinette County"
+            name = "Marinette County",
+            cbsa_id = 31940
         )
         new_county.save()
     
@@ -25504,7 +27380,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55078,
             state_id = 55,
-            name = "Menominee County"
+            name = "Menominee County",
+            cbsa_id = 43020
         )
         new_county.save()
     
@@ -25512,7 +27389,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55079,
             state_id = 55,
-            name = "Milwaukee County"
+            name = "Milwaukee County",
+            cbsa_id = 33340
         )
         new_county.save()
     
@@ -25520,7 +27398,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55081,
             state_id = 55,
-            name = "Monroe County"
+            name = "Monroe County",
+            cbsa_id = 43890
         )
         new_county.save()
     
@@ -25528,7 +27407,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55083,
             state_id = 55,
-            name = "Oconto County"
+            name = "Oconto County",
+            cbsa_id = 24580
         )
         new_county.save()
     
@@ -25544,7 +27424,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55087,
             state_id = 55,
-            name = "Outagamie County"
+            name = "Outagamie County",
+            cbsa_id = 11540
         )
         new_county.save()
     
@@ -25552,7 +27433,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55089,
             state_id = 55,
-            name = "Ozaukee County"
+            name = "Ozaukee County",
+            cbsa_id = 33340
         )
         new_county.save()
     
@@ -25568,7 +27450,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55093,
             state_id = 55,
-            name = "Pierce County"
+            name = "Pierce County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -25584,7 +27467,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55097,
             state_id = 55,
-            name = "Portage County"
+            name = "Portage County",
+            cbsa_id = 44620
         )
         new_county.save()
     
@@ -25600,7 +27484,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55101,
             state_id = 55,
-            name = "Racine County"
+            name = "Racine County",
+            cbsa_id = 39540
         )
         new_county.save()
     
@@ -25616,7 +27501,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55105,
             state_id = 55,
-            name = "Rock County"
+            name = "Rock County",
+            cbsa_id = 27500
         )
         new_county.save()
     
@@ -25632,7 +27518,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55109,
             state_id = 55,
-            name = "St. Croix County"
+            name = "St. Croix County",
+            cbsa_id = 33460
         )
         new_county.save()
     
@@ -25640,7 +27527,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55111,
             state_id = 55,
-            name = "Sauk County"
+            name = "Sauk County",
+            cbsa_id = 12660
         )
         new_county.save()
     
@@ -25656,7 +27544,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55115,
             state_id = 55,
-            name = "Shawano County"
+            name = "Shawano County",
+            cbsa_id = 43020
         )
         new_county.save()
     
@@ -25664,7 +27553,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55117,
             state_id = 55,
-            name = "Sheboygan County"
+            name = "Sheboygan County",
+            cbsa_id = 43100
         )
         new_county.save()
     
@@ -25688,7 +27578,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55123,
             state_id = 55,
-            name = "Vernon County"
+            name = "Vernon County",
+            cbsa_id = 29100
         )
         new_county.save()
     
@@ -25704,7 +27595,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55127,
             state_id = 55,
-            name = "Walworth County"
+            name = "Walworth County",
+            cbsa_id = 48580
         )
         new_county.save()
     
@@ -25720,7 +27612,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55131,
             state_id = 55,
-            name = "Washington County"
+            name = "Washington County",
+            cbsa_id = 33340
         )
         new_county.save()
     
@@ -25728,7 +27621,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55133,
             state_id = 55,
-            name = "Waukesha County"
+            name = "Waukesha County",
+            cbsa_id = 33340
         )
         new_county.save()
     
@@ -25752,7 +27646,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55139,
             state_id = 55,
-            name = "Winnebago County"
+            name = "Winnebago County",
+            cbsa_id = 36780
         )
         new_county.save()
     
@@ -25760,7 +27655,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 55141,
             state_id = 55,
-            name = "Wood County"
+            name = "Wood County",
+            cbsa_id = 49220
         )
         new_county.save()
     
@@ -25768,7 +27664,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 56001,
             state_id = 56,
-            name = "Albany County"
+            name = "Albany County",
+            cbsa_id = 29660
         )
         new_county.save()
     
@@ -25784,7 +27681,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 56005,
             state_id = 56,
-            name = "Campbell County"
+            name = "Campbell County",
+            cbsa_id = 23940
         )
         new_county.save()
     
@@ -25816,7 +27714,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 56013,
             state_id = 56,
-            name = "Fremont County"
+            name = "Fremont County",
+            cbsa_id = 40180
         )
         new_county.save()
     
@@ -25848,7 +27747,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 56021,
             state_id = 56,
-            name = "Laramie County"
+            name = "Laramie County",
+            cbsa_id = 16940
         )
         new_county.save()
     
@@ -25864,7 +27764,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 56025,
             state_id = 56,
-            name = "Natrona County"
+            name = "Natrona County",
+            cbsa_id = 16220
         )
         new_county.save()
     
@@ -25880,7 +27781,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 56029,
             state_id = 56,
-            name = "Park County"
+            name = "Park County",
+            cbsa_id = 17650
         )
         new_county.save()
     
@@ -25896,7 +27798,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 56033,
             state_id = 56,
-            name = "Sheridan County"
+            name = "Sheridan County",
+            cbsa_id = 43260
         )
         new_county.save()
     
@@ -25912,7 +27815,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 56037,
             state_id = 56,
-            name = "Sweetwater County"
+            name = "Sweetwater County",
+            cbsa_id = 40540
         )
         new_county.save()
     
@@ -25920,7 +27824,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 56039,
             state_id = 56,
-            name = "Teton County"
+            name = "Teton County",
+            cbsa_id = 27220
         )
         new_county.save()
     
@@ -25928,7 +27833,8 @@ class Command(BaseCommand):
         new_county = County(
             id = 56041,
             state_id = 56,
-            name = "Uinta County"
+            name = "Uinta County",
+            cbsa_id = 21740
         )
         new_county.save()
     
