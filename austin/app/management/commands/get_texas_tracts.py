@@ -8,45 +8,24 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         Tract.objects.all().delete()
         ds = DataSource("/home/tonydeals/app/maps/shapefiles/tl_2022_48_tract.shp")
-        print(ds)
         lyr = ds[0]
-        print(lyr)
-        print(lyr.srs)
-        print(lyr.fields)
         state_id = 48
         for feat in lyr:
-            print(feat.geom)
-            print(feat.fields)
-            print(feat.get("NAMELSAD"))
             state_id = int(feat.get("STATEFP"))
-            print(f"state: {state_id}")
             county_id = int(feat.get("COUNTYFP")) + 48000
-            county = County.objects.get(fips=county_id)
-            county_id = county.id
-            print(f"county: {county_id}")
-            # print(f"county: {feat.get('COUNTYFP')}")
             tract_id = int(feat.get('TRACTCE'))
-            print(f"tract_id: {feat.get('TRACTCE')}")
             name = feat.get("NAME")
-            print(f"NAME: {feat.get('NAME')}")
             name_lsad = feat.get("NAMELSAD")
-            print(f"NAMELSAD: {feat.get('NAMELSAD')}")
             mtfcc = feat.get("MTFCC")
-            print(f"MTFCC: {feat.get('MTFCC')}")
             funcstat = feat.get("FUNCSTAT")
-            print(f"FUNCSTAT: {feat.get('FUNCSTAT')}")
             aland = feat.get("ALAND")
-            print(f"ALAND: {feat.get('ALAND')}")
             awater = feat.get("AWATER")
-            print(f"AWATER: {feat.get('AWATER')}")
             intptlat = feat.get("INTPTLAT")
-            print(f"INTPTLAT: {feat.get('INTPTLAT')}")
             intptlon = feat.get("INTPTLON")
-            print(f"INTPTLON: {feat.get('INTPTLON')}")
             new_census_tract = Tract(
+                id=tract_id,
                 state_id=48,
                 county_id=county_id,
-                tract_id=tract_id,
                 name=name,
                 name_lsad=name_lsad,
                 mtfcc=mtfcc,
