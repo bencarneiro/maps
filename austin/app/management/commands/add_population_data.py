@@ -20,13 +20,13 @@ class Command(BaseCommand):
             "population"
         ]
         # df = pd.DataFrame(columns=columns, data=[])
-        acs_code = ACSVariable.objects.get(acs_code="B01001_001E")
+        # acs_code = ACSVariable.objects.get(acs_code="")
         year = 2022
         
         for row in pop[1:]:
             tract = Tract.objects.get(county_id__in=ids, tract_id=int(row[4]))
             new_value = ACS5ValueByTract(
-                acs_variable=acs_code,
+                acs_variable_id="B01001_001E",
                 year=year,
                 value = int(row[1]),
                 tract=tract

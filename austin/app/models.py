@@ -3,7 +3,6 @@ from django.db import models
 # Create your models here.
 
 from django.contrib.gis.db import models as gismodels
-from django.core import serializers
 
 
 
@@ -26,6 +25,41 @@ class County(models.Model):
         managed=True
 
 
+class CombinedStatisticalArea(models.Model):
+
+    id = models.PositiveIntegerField(primary_key=True)
+    name = models.CharField(max_length=512)
+
+    class Meta:
+        db_table="csa"
+        managed=True
+
+
+class CoreBasedStatisticalArea(models.Model):
+
+    id = models.PositiveIntegerField(primary_key=True)
+    name = models.CharField(max_length=512)
+
+    class Meta:
+        db_table="cbsa"
+        managed=True
+
+class CBSAToCSA(models.Model):
+    cbsa = models.ForeignKey(CoreBasedStatisticalArea, on_delete=models.DO_NOTHING)
+    csa = models.ForeignKey(CombinedStatisticalArea, on_delete=models.DO_NOTHING)
+
+    class Meta:
+        db_table="cbsa_to_csa"
+        managed=True
+
+class CountyToCBSA(models.Model):
+
+    cbsa = models.ForeignKey(CoreBasedStatisticalArea, on_delete=models.DO_NOTHING)
+    county = models.ForeignKey(County, on_delete=models.DO_NOTHING)
+
+    class Meta:
+        db_table="county_to_cbsa"
+        managed=True
 
 
 class Tract(gismodels.Model):
@@ -53,7 +87,7 @@ class Tract(gismodels.Model):
 
 class ACSVariable(models.Model):
 
-    acs_code = models.CharField(max_length=64, primary_key=True)
+    id = models.CharField(max_length=64, primary_key=True)
     label = models.CharField(max_length = 1024)
     concept = models.CharField(max_length = 1024)
     group = models.CharField(max_length = 64)
@@ -97,8 +131,3 @@ class ACS5ValueByTract(models.Model):
         db_table = "acs5_value_by_tract"
         managed=True
 
-
-# class CodeInfoSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = ACS5ValueByTract
-#         fields = '__all__'
