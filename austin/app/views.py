@@ -173,7 +173,7 @@ def home(request):
 
 def map_page(request):
     context = {}
-    return render(request, "map.html", context)
+    return render(request, "state.html", context)
 
 
 
@@ -186,7 +186,13 @@ def population_density_geojson(request):
     census_variable = ACSVariable.objects.get(acs_code="B01001_001E")
 
 
-    tract_values = ACS5ValueByTract.objects.filter(acs_variable=census_variable, tract_id__county_id__in=ids)
+    tract_values = ACS5ValueByTract.objects.filter(acs_variable_id=census_variable, tract_id__county_id__in=ids)
     geojson = geojsonify(tract_values)
 
+    return JsonResponse(json.loads(geojson), safe=False)
+
+def get_tracts_by_state(request):
+    if "state" in request.GET and request.GET['state']:
+        state = request.GET['state']
+        geojson = serialize("geojson", Tract.objects.filter(state_id=state))
     return JsonResponse(json.loads(geojson), safe=False)

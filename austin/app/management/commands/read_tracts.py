@@ -6,11 +6,9 @@ from app.models import Tract, State
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
-        Tract.objects.all().delete()
-        states = State.objects.all()
+        # Tract.objects.all().delete()
+        states = State.objects.filter(id=56)
         for s in states:
-            print(s.id)
-            print(s.name)
             stringified_state_fips_code = str(s.id)
             if len(stringified_state_fips_code) == 1:
                 stringified_state_fips_code = "0" + stringified_state_fips_code
@@ -23,15 +21,16 @@ class Command(BaseCommand):
                 for feat in lyr:
                     state_id_str = feat.get("STATEFP")
                     state_id = int(state_id_str)
-                    # print(f"state: {state_id_str}")
-                    # print(feat.get("COUNTYFP"))
-                    # print(feat.get("NAMELSAD"))
+                    print(f"state: {state_id_str}")
+                    print(feat.get("COUNTYFP"))
+                    print(feat.get("NAMELSAD"))
                     county_id = int(feat.get("COUNTYFP")) + (s.id * 1000)
                     county_id_str = str(county_id)
                     if len(county_id_str) == 4:
                         county_id_str = "0" + county_id_str
-                    # print(f"county: {county_id_str}")
+                    print(f"county: {county_id_str}")
                     tract_id = int(feat.get('TRACTCE'))
+                    print(f"tract: {tract_id}")
                     tract_id_str = str(tract_id)
 
                     if len(tract_id_str) == 3:
@@ -54,21 +53,7 @@ class Command(BaseCommand):
                     awater = feat.get("AWATER")
                     intptlat = feat.get("INTPTLAT")
                     intptlon = feat.get("INTPTLON")
-                    new_census_tract = Tract(
-                        id=int(full_tract_fips),
-                        state_id=state_id,
-                        county_id=county_id,
-                        name=name,
-                        name_lsad=name_lsad,
-                        mtfcc=mtfcc,
-                        funcstat=funcstat,
-                        aland=aland,
-                        awater=awater,
-                        intptlat=intptlat,
-                        intptlon=intptlon,
-                        shape = feat.geom.wkt
-                    )
-                    new_census_tract.save()
+                
             except Exception as e:
                 print(f"FAILURE FAILURE FAILURE on {s.name}")
                 print(e)

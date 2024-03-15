@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <!-- deck.gl standalone bundle -->
+  <script src="https://unpkg.com/deck.gl@^8.8.0/dist.min.js"></script>
+
+  <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
+
+  <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+<head>
+  <meta charset="utf-8">
+  <title>deck.gl Example</title>
+  <style type="text/css">
+    body {margin: 0; padding: 0;}
+    #container {width: 100vw; height: 100vh;}
+  </style>
+</head>  
+<body>
+  <div id="container"></div>
+</body>
+<script type="text/javascript">
+
+  // source: Natural Earth http://www.naturalearthdata.com/ via geojson.xyz
+  const AUSTIN = "/get_tracts.json?state=56"
+  const COUNTRIES =
+    'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_admin_0_scale_rank.geojson'; //eslint-disable-line
+  const AIR_PORTS =
+    'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_airports.geojson';
+    
+  function getColor(density) {return [0,255,0,255]}
+
+  function getTooltip({object}) {
+    return object && `${object.properties.name_lsad}`;
+  }
+
+  const deckgl = new deck.DeckGL({
+    container: 'container',
+    mapStyle: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
+    initialViewState: {
+      latitude: 30.277914, 
+      longitude: -97.739747,
+      zoom: 10,
+      bearing: 0,
+      pitch: 30
+    },
+    controller: true,
+    getTooltip: getTooltip,
+  
+    layers: [
+      new deck.GeoJsonLayer({
+        id: 'Austin',
+        data: AUSTIN,
+        // Styles
+        filled: true,
+        // pointRadiusMinPixels: 2,
+        // pointRadiusScale: 2000,
+        // getPointRadius: f => (11 - f.properties.scalerank),
+        getFillColor: [0,255,0,255],
+        // Interactive props
+        pickable: true,
+        autoHighlight: true,
+        // extruded: true, 
+        // wireframe: true,
+        // getElevation: f => (f.properties.population_density),
+        // onClick: info => info.object && alert(`${info.object.properties.name} (${info.object.properties.abbrev})`)
+      }),
+    ]
+  });
+    </script>
+</html>
