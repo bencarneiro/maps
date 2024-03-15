@@ -2694,70 +2694,6 @@ class Command(BaseCommand):
     
 
         new_county = County(
-            id = 9001,
-            state_id = 9,
-            name = "Fairfield County"
-        )
-        new_county.save()
-    
-
-        new_county = County(
-            id = 9003,
-            state_id = 9,
-            name = "Hartford County"
-        )
-        new_county.save()
-    
-
-        new_county = County(
-            id = 9005,
-            state_id = 9,
-            name = "Litchfield County"
-        )
-        new_county.save()
-    
-
-        new_county = County(
-            id = 9007,
-            state_id = 9,
-            name = "Middlesex County"
-        )
-        new_county.save()
-    
-
-        new_county = County(
-            id = 9009,
-            state_id = 9,
-            name = "New Haven County"
-        )
-        new_county.save()
-    
-
-        new_county = County(
-            id = 9011,
-            state_id = 9,
-            name = "New London County"
-        )
-        new_county.save()
-    
-
-        new_county = County(
-            id = 9013,
-            state_id = 9,
-            name = "Tolland County"
-        )
-        new_county.save()
-    
-
-        new_county = County(
-            id = 9015,
-            state_id = 9,
-            name = "Windham County"
-        )
-        new_county.save()
-    
-
-        new_county = County(
             id = 10001,
             state_id = 10,
             name = "Kent County",
@@ -27851,5 +27787,86 @@ class Command(BaseCommand):
             id = 56045,
             state_id = 56,
             name = "Weston County"
+        )
+        new_county.save()
+    
+
+        new_county = County(
+            id = 9110,
+            state_id = 9,
+            name = "Capitol Planning Region",
+            cbsa_id = 25540
+        )
+        new_county.save()
+    
+
+        new_county = County(
+            id = 9120,
+            state_id = 9,
+            name = "Greater Bridgeport Planning Region",
+            cbsa_id = 14860
+        )
+        new_county.save()
+    
+
+        new_county = County(
+            id = 9130,
+            state_id = 9,
+            name = "Lower Connecticut River Valley Planning Region",
+            cbsa_id = 25540
+        )
+        new_county.save()
+    
+
+        new_county = County(
+            id = 9140,
+            state_id = 9,
+            name = "Naugatuck Valley Planning Region",
+            cbsa_id = 47930
+        )
+        new_county.save()
+    
+
+        new_county = County(
+            id = 9150,
+            state_id = 9,
+            name = "Northeastern Connecticut Planning Region",
+            cbsa_id = 39480
+        )
+        new_county.save()
+    
+
+        new_county = County(
+            id = 9160,
+            state_id = 9,
+            name = "Northwest Hills Planning Region",
+            cbsa_id = 45860
+        )
+        new_county.save()
+    
+
+        new_county = County(
+            id = 9170,
+            state_id = 9,
+            name = "South Central Connecticut Planning Region",
+            cbsa_id = 35300
+        )
+        new_county.save()
+    
+
+        new_county = County(
+            id = 9180,
+            state_id = 9,
+            name = "Southeastern Connecticut Planning Region",
+            cbsa_id = 35980
+        )
+        new_county.save()
+    
+
+        new_county = County(
+            id = 9190,
+            state_id = 9,
+            name = "Western Connecticut Planning Region",
+            cbsa_id = 14860
         )
         new_county.save()
