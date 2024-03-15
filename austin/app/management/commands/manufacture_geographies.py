@@ -26,6 +26,27 @@ for x in metros.index:
         
 df = pd.read_html("https://en.wikipedia.org/wiki/List_of_United_States_FIPS_codes_by_county")[1]
 
+#fix connecticut ffs
+df = df.drop(df.index[314:322])
+add_row = {'FIPS': 9110, 'County or equivalent': "Capitol Planning Region", 'State or equivalent': "Connecticut"}
+df = df.append(add_row, ignore_index = True)
+add_row = {'FIPS': 9120, 'County or equivalent': "Greater Bridgeport Planning Region", 'State or equivalent': "Connecticut"}
+df = df.append(add_row, ignore_index = True)
+add_row = {'FIPS': 9130, 'County or equivalent': "Lower Connecticut River Valley Planning Region", 'State or equivalent': "Connecticut"}
+df = df.append(add_row, ignore_index = True)
+add_row = {'FIPS': 9140, 'County or equivalent': "Naugatuck Valley Planning Region", 'State or equivalent': "Connecticut"}
+df = df.append(add_row, ignore_index = True)
+add_row = {'FIPS': 9150, 'County or equivalent': "Northeastern Connecticut Planning Region", 'State or equivalent': "Connecticut"}
+df = df.append(add_row, ignore_index = True)
+add_row = {'FIPS': 9160, 'County or equivalent': "Northwest Hills Planning Region", 'State or equivalent': "Connecticut"}
+df = df.append(add_row, ignore_index = True)
+add_row = {'FIPS': 9170, 'County or equivalent': "South Central Connecticut Planning Region", 'State or equivalent': "Connecticut"}
+df = df.append(add_row, ignore_index = True)
+add_row = {'FIPS': 9180, 'County or equivalent': "Southeastern Connecticut Planning Region", 'State or equivalent': "Connecticut"}
+df = df.append(add_row, ignore_index = True)
+add_row = {'FIPS': 9190, 'County or equivalent': "Western Connecticut Planning Region", 'State or equivalent': "Connecticut"}
+df = df.append(add_row, ignore_index = True)
+
 state_dict = {} 
 county_dict = {}
 for x in df.index:
@@ -46,61 +67,61 @@ for x in df.index:
         cbsa = None
     county_dict[stringified_county_code] = {"state": state_fips, "name": clean_name, "cbsa": cbsa}
     
-for key in state_dict:
-    print(f"""
-        new_state = State(
-            id = {key},
-            name = "{state_dict[key]}"
-        )
-        new_state.save()
-    """)
+# for key in state_dict:
+#     print(f"""
+#         new_state = State(
+#             id = {key},
+#             name = "{state_dict[key]}"
+#         )
+#         new_state.save()
+#     """)
 
     
-for key in csa_dict:
-    print(f"""
-        new_csa = CombinedStatisticalArea(
-            id = {key},
-            name = "{csa_dict[key]}"
-        )
-        new_csa.save()
-    """)
+# for key in csa_dict:
+#     print(f"""
+#         new_csa = CombinedStatisticalArea(
+#             id = {key},
+#             name = "{csa_dict[key]}"
+#         )
+#         new_csa.save()
+#     """)
 
-for key in cbsa_dict:
-    if key in cbsa_to_csa_link:
-        print(f"""
-            new_cbsa = CoreBaseStatisticalArea(
-                id = {key},
-                name = "{cbsa_dict[key]}",
-                csa_id = {cbsa_to_csa_link[key]}
-            )
-            new_cbsa.save()
-        """)
-    else:
-        print(f"""
-            new_cbsa = CoreBaseStatisticalArea(
-                id = {key},
-                name = "{cbsa_dict[key]}"
-            )
-            new_cbsa.save()
-        """)
+# for key in cbsa_dict:
+#     if key in cbsa_to_csa_link:
+#         print(f"""
+#             new_cbsa = CoreBaseStatisticalArea(
+#                 id = {key},
+#                 name = "{cbsa_dict[key]}",
+#                 csa_id = {cbsa_to_csa_link[key]}
+#             )
+#             new_cbsa.save()
+#         """)
+#     else:
+#         print(f"""
+#             new_cbsa = CoreBaseStatisticalArea(
+#                 id = {key},
+#                 name = "{cbsa_dict[key]}"
+#             )
+#             new_cbsa.save()
+#         """)
 
-for key in county_dict:
-    if key in county_to_cbsa_link:
-        print(f"""
-            new_county = County(
-                id = {int(key)},
-                state_id = {county_dict[key]['state']},
-                name = "{county_dict[key]['name']}",
-                cbsa_id = {county_to_cbsa_link[key]}
-            )
-            new_county.save()
-        """)
-    else:
-        print(f"""
-            new_county = County(
-                id = {int(key)},
-                state_id = {county_dict[key]['state']},
-                name = "{county_dict[key]['name']}"
-            )
-            new_county.save()
-        """)
+# for key in county_dict:
+#     if key in county_to_cbsa_link:
+#         print(f"""
+#             new_county = County(
+#                 id = {int(key)},
+#                 state_id = {county_dict[key]['state']},
+#                 name = "{county_dict[key]['name']}",
+#                 cbsa_id = {county_to_cbsa_link[key]}
+#             )
+#             new_county.save()
+#         """)
+#     else:
+#         print(f"""
+#             new_county = County(
+#                 id = {int(key)},
+#                 state_id = {county_dict[key]['state']},
+#                 name = "{county_dict[key]['name']}"
+#             )
+#             new_county.save()
+#         """)
