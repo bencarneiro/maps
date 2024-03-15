@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 import folium
-from app.models import Tract, County, ACS5ValueByTract, ACSVariable
+from app.models import Tract, County, ACS5ValueByTract, ACSVariable, CoreBaseStatisticalArea
 import pandas as pd
 import geopandas as gpd
 import requests
@@ -9,37 +9,42 @@ from django.core.serializers import serialize
 import json
 from django.http import JsonResponse
 from keplergl import KeplerGl
+from app.serializers import geojsonify
+from app.pipeline import get_census_data
 
 
+def map_page(request):
+    context = {}
+    return render(request, "map.html", context)
 
-def geojsonify(values):
-    json_str = '{"type": "FeatureCollection", "crs": {"type": "name", "properties": {"name": "EPSG:4326"}}, "features": ['
-    for tv in values:
-        feature_str = '{"type": "Feature", "properties": {'
-        try:
-            pop_dens = str(round(float(tv.value) / (float(tv.tract.aland) * (0.000000386102))))
-        except:
-            pop_dens = "0"
-        feature_str += f'"tract_id": {tv.tract.tract_id}, '
-        feature_str += f'"acs_code": "{tv.acs_variable.acs_code}", '
-        feature_str += f'"label": "{tv.acs_variable.label}", '
-        feature_str += f'"concept": "{tv.acs_variable.concept}", '
-        feature_str += f'"population": {tv.value}, '
-        feature_str += f'"population_density": {pop_dens}, '
-        feature_str += f'"year": {tv.year}, '
-        feature_str += f'"county": "{tv.tract.county.name}", '
-        feature_str += f'"name_lsad": "{tv.tract.name_lsad}", '
-        feature_str += f'"land_area": {tv.tract.aland}'
-        feature_str += '}, "geometry": '
-        feature_str += tv.tract.shape.geojson
 
-        feature_str += '}, '
-        json_str += feature_str
-    json_str = json_str[:-2]
-    json_str += ']}'
-    # print(json_str)
-    return json_str
+def get_tracts_by_state(request):
+    if "state" in request.GET and request.GET['state']:
+        state = request.GET['state']
+        geojson = serialize("geojson", Tract.objects.filter(state_id=state))
+    return JsonResponse(json.loads(geojson), safe=False)
 
+
+def get_demographic_data_by_metro(request):
+    csa, cbsa = None, None
+    if "csa" in request.GET and request.GET['csa']:
+        csa = int(request.GET['csa'])
+    if "cbsa" in request.GET and request.GET['cbsa']:
+        cbsa = int(request.GET['cbsa'])
+    if not csa and not cbsa:
+        return JsonResponse({"error": "you didn't send a metro"}, safe=False)
+    cbsas = []
+    if csa:
+        cbsa_qs = CoreBaseStatisticalArea.objects.filter(csa_id=csa)
+        for c in cbsa_qs:
+            cbsas += [c.id]
+    else:
+        cbsas += [cbsa]
+    # tract_names = list(Tract.objects.filter(county_id__cbsa_id__in=cbsas).values("name_lsad", "county_id__name"))
+    # print(tract_names)
+    data = get_census_data("B01001_001E", cbsas)
+    print(data)
+    return JsonResponse(json.loads(data), safe=False)
 
 
 def efficient_home(request):
@@ -86,27 +91,6 @@ def home(request):
     tract_shapes = geojsonify(tract_values)
     gdf = gpd.read_file(tract_shapes)
     print(tract_shapes[:1000])
-    # census_data_to_df = []
-    # for tv in tract_values:
-    #     try:
-    #         pop_dens = float(tv.value) / (float(tv.tract.aland) * (0.000000386102))
-    #     except:
-    #         pop_dens = 0
-    #     census_data_to_df += [{
-    #         "acs_code": tv.acs_variable.acs_code,
-    #         "label": tv.acs_variable.label,
-    #         "concept": tv.acs_variable.concept,
-    #         "population": tv.value,
-    #         "pop_dens": pop_dens,
-    #         "year": tv.year,
-    #         "tract_id": tv.tract.tract_id,
-    #         "county": tv.tract.county.name,
-    #         "land_area": tv.tract.aland
-    #     }]
-    # df = pd.DataFrame(census_data_to_df)
-    # print(len(df))
-    # print(df.columns)
-    # print(df.to_string())
     m = folium.Map(location=(30.269122995392824, -97.74242563746505))
 
     tooltip = folium.GeoJsonTooltip(
@@ -159,21 +143,9 @@ def home(request):
     m.add_child(NIL)
     m.keep_in_front(NIL)
     folium.LayerControl().add_to(m)
-    # tooltip.add_to
-
-    # folium.GeoJsonTooltip(['name', 'unemployment']).add_to(cp.geojson)
-    # for t in tracts:
-    #     html = f"<h1>{t.name_lsad}</h1>\n"
-        # tip = folium.GeoJson(t.shape.geojson, tooltip=html).add_to(m)
-
-        # folium.GeoJsonTooltip(['name']).add_to(cp.geojson)
     m = m._repr_html_()
     context = {"map": m}
     return render(request, "home.html", context)
-
-def map_page(request):
-    context = {}
-    return render(request, "state.html", context)
 
 
 
@@ -189,10 +161,4 @@ def population_density_geojson(request):
     tract_values = ACS5ValueByTract.objects.filter(acs_variable_id=census_variable, tract_id__county_id__in=ids)
     geojson = geojsonify(tract_values)
 
-    return JsonResponse(json.loads(geojson), safe=False)
-
-def get_tracts_by_state(request):
-    if "state" in request.GET and request.GET['state']:
-        state = request.GET['state']
-        geojson = serialize("geojson", Tract.objects.filter(state_id=state))
     return JsonResponse(json.loads(geojson), safe=False)

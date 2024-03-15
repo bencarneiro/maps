@@ -7,6 +7,7 @@ from app.models import ACSVariable
 class Command(BaseCommand):
     
     def handle(self, *args, **options):
+        ACSVariable.objects.all().delete()
         df = pd.read_html("https://api.census.gov/data/2022/acs/acs5/variables.html")
         data = df[0]
         for x in data.index:
@@ -16,7 +17,7 @@ class Command(BaseCommand):
                 else:
                     required = True
                 new_acs_variable = ACSVariable(
-                    acs_code=data['Name'][x],
+                    id=data['Name'][x],
                     concept=data['Concept'][x],
                     label=data['Label'][x],
                     group=data['Group'][x],
@@ -24,7 +25,7 @@ class Command(BaseCommand):
                     predicate_type=data['Predicate Type'][x]
                 )
                 new_acs_variable.save()
-                print(f"var {new_acs_variable.acs_code} is saved successfully")
+                print(f"var {new_acs_variable.id} is saved successfully")
 
 
 # class ACSVariable(models.Model):
