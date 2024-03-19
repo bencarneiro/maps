@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 import folium
-from app.models import Tract, County, ACS5ValueByTract, ACSVariable, CoreBaseStatisticalArea
+from app.models import Tract, County, ACS5ValueByTract, ACSVariable, CoreBaseStatisticalArea, CombinedStatisticalArea
 import pandas as pd
 import geopandas as gpd
 import requests
@@ -162,3 +162,18 @@ def population_density_geojson(request):
     geojson = geojsonify(tract_values)
 
     return JsonResponse(json.loads(geojson), safe=False)
+
+
+def list_msas(request):
+    if "search" in request.GET and request.GET['search']:
+        q = request.GET['search']
+        csas = CombinedStatisticalArea.objects.filter(name__icontains=q).values("name")
+    else:
+        csas = CombinedStatisticalArea.objects.all().values("name")
+    
+    context = {"csas": csas}
+    
+    return render(request, "msa_table.html", context)
+
+def msa_search(request):
+    return render(request, "msa_search.html")

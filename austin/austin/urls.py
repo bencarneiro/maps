@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import home, efficient_home, population_density_geojson, map_page, get_tracts_by_state, get_demographic_data_by_metro
+from app.views import home, efficient_home, population_density_geojson, map_page, get_tracts_by_state, get_demographic_data_by_metro, list_msas, msa_search
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -26,5 +26,7 @@ urlpatterns = [
     path("population_density_geojson.json", population_density_geojson, name="population_density_geojson"),
     path("map/", map_page, name="map"),
     path("get_tracts.json", get_tracts_by_state, name="get_tracts"),
-    path("get_demographic_data_by_metro.json", get_demographic_data_by_metro, name="get_demographic_data_by_metro")
+    path("get_demographic_data_by_metro.json", get_demographic_data_by_metro, name="get_demographic_data_by_metro"),
+    path("list_msas", list_msas, name="list_msas"),
+    path("msa_search", msa_search, name="msa_search")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
