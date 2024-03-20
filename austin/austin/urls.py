@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import home, efficient_home, population_density_geojson, map_page, get_tracts_by_state, acs_concept_by_id, get_demographic_data_by_metro, list_msas, msa_search, list_acs_variables
+from app.views import home, get_map, efficient_home, population_density_geojson, map_page, get_tracts_by_state, acs_concept_by_id, get_demographic_data_by_metro, list_msas, msa_search, list_acs_variables
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -30,5 +30,6 @@ urlpatterns = [
     path("list_msas", list_msas, name="list_msas"),
     path("msa_search", msa_search, name="msa_search"),
     path("list_acs_variables", list_acs_variables, name="list_acs_variables"),
-    path("acs_concept_by_id", acs_concept_by_id, name="acs_concept_by_id")
+    path("acs_concept_by_id", acs_concept_by_id, name="acs_concept_by_id"),
+    path("get_map/", get_map, name="get_map")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
