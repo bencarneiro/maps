@@ -1,6 +1,7 @@
+
 <table>
     <tr><th>Statistical Area Name</th></tr>
 {% for city in csas %}
-<tr><td>{{ city.name }}</td></tr>
+<tr onclick="selectPlace('{{ city.id }}', '{{ city.name }}')"><td>{{ city.name }}</td></tr>
 {% endfor %}
 </table>

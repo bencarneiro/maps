@@ -12,6 +12,7 @@ from keplergl import KeplerGl
 from app.serializers import geojsonify
 from app.pipeline import get_census_data
 
+from django.db.models import Q
 
 def map_page(request):
     context = {}
@@ -167,13 +168,38 @@ def population_density_geojson(request):
 def list_msas(request):
     if "search" in request.GET and request.GET['search']:
         q = request.GET['search']
-        csas = CombinedStatisticalArea.objects.filter(name__icontains=q).values("name")
+        csas = CoreBaseStatisticalArea.objects.filter(name__icontains=q)
     else:
-        csas = CombinedStatisticalArea.objects.all().values("name")
+        csas = CoreBaseStatisticalArea.objects.all()
     
     context = {"csas": csas}
     
     return render(request, "msa_table.html", context)
+
+# Item.objects.filter(Q(creator=owner) | Q(moderated=False))
+def list_acs_variables(request):
+    if "search" in request.GET and request.GET['search']:
+        q = request.GET['search']
+        variables = ACSVariable.objects.filter(Q(label__icontains=q) | Q(concept__icontains=q)).values("concept", "group").distinct()[:200]
+    else:
+        variables = ACSVariable.objects.values("concept", "group").distinct().order_by()
+    
+    context = {"variables": variables}
+    
+    return render(request, "concepts_table.html", context)
+
+def acs_concept_by_id(request):
+    if "search" in request.GET and request.GET['search']:
+        q = request.GET['search']
+        variables = ACSVariable.objects.filter(group=q)
+    else:
+        variables = ACSVariable.objects.all()[:3]
+    
+    context = {"variables": variables}
+    
+    return render(request, "variables_table.html", context)
+
+
 
 def msa_search(request):
     return render(request, "msa_search.html")

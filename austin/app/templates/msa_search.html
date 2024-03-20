@@ -1,17 +1,118 @@
 
 <script src="https://unpkg.com/htmx.org@1.1.0"></script>
-<h3> 
-    Search Contacts 
-    <span class="htmx-indicator"> 
-      <img src="/img/bars.svg"/> Searching... 
-     </span> 
-  </h3>
-  <input class="form-control" type="search" 
-         name="search" placeholder="Begin Typing To Search Users..." 
-         hx-get="/list_msas" 
-         hx-trigger="input changed delay:500ms, search" 
-         hx-target="#search-results" 
-         hx-indicator=".htmx-indicator">
-  
-  <table id = "search-results">
-  </table>
+<script>
+       function validatePage() {
+
+              if ((document.getElementById("place-selected-id").innerHTML !== "") && (document.getElementById("variable-selected-id").innerHTML !== "")){
+                     console.log("THIS BITCH READY")
+                     console.log("get_map/?cbsa=".concat(document.getElementById("place-selected-id").innerHTML, "&variable=", document.getElementById("variable-selected-id").innerHTML))
+                     makeMap = document.getElementById("make-map")
+                     makeMap.setAttribute("href", "get_map/?cbsa=".concat(document.getElementById("place-selected-id").innerHTML, "&variable=", document.getElementById("variable-selected-id").innerHTML))
+              }
+       }
+
+       function selectPlace(id, name) {
+         console.log(id)
+         console.log(name)
+         document.getElementById("place-selected-id").innerHTML = id;
+       //   document.getElementById("").innerHTML = "{{ id }}";
+         document.getElementById("place-selected-name").innerHTML = name;
+         validatePage()
+       }
+       </script>
+
+<script>
+       function selectVariable(id, name) {
+         console.log(id)
+         console.log(name)
+         document.getElementById("variable-selected-id").innerHTML = id;
+       //   document.getElementById("").innerHTML = "{{ id }}";
+         document.getElementById("variable-selected-name").innerHTML = name;
+         validatePage()
+       }
+       </script>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  flex: 33%;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<h1><a target="_blank" id="make-map">Make me a goddamn map</a></h1>
+<div class="row">
+  <div class="column">
+       <h2>SELECT A PLACE</h2>
+       <div>SELECTED PLACE</div>
+       <div id="place-selected-id"></div>
+       <div id="place-selected-name"></div>
+       <br>
+            <input class="form-control" type="search" 
+                   name="search" placeholder="Begin Typing To Search Users..." 
+                   hx-get="/list_msas" 
+                   hx-trigger="input changed delay:500ms, search" 
+                   hx-target="#search-results" 
+                   hx-indicator=".htmx-indicator">
+                   <br>
+            
+            <table id = "search-results"></table>
+  </div>
+  <div class="column">
+    
+       
+<h2>SELECT A STUDY</h2>
+       <input class="form-control" type="search" 
+              name="search" placeholder="Begin Typing To Search Users..." 
+              hx-get="/list_acs_variables" 
+              hx-trigger="input changed delay:500ms, search" 
+              hx-target="#concepts-results" 
+              hx-indicator=".htmx-indicator">
+       
+       <table id = "concepts-results"></table>
+  </div>
+  <div class="column">
+    
+       
+<h2>SELECT A VARIABLE</h2>
+       <div>SELECTED VARIABLE</div>
+       <div id="variable-selected-id"></div>
+       <div id="variable-selected-name"></div>
+       <table id = "variables-results"></table>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+

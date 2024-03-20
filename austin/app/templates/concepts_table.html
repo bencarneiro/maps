@@ -1,0 +1,11 @@
+
+<table>
+    <tr><th>Statistical Area Name</th></tr>
+{% for var in variables %}
+<tr
+hx-get="/acs_concept_by_id?search={{var.group}}" 
+hx-trigger="click" 
+hx-target="#variables-results" 
+hx-indicator=".htmx-indicator"><td>{{ var.concept }}</td><td>{{ var.group }}</td></tr>
+{% endfor %}
+</table>

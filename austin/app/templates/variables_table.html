@@ -1,0 +1,6 @@
+<table>
+    <tr><th>Statistical Area Name</th></tr>
+{% for var in variables %}
+<tr onclick="selectVariable('{{ var.id }}', '{{ var.label }}')"><td>{{ var.label }}</td><td>{{ var.id }}</td></tr>
+{% endfor %}
+</table>
