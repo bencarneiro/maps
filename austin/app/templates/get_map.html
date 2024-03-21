@@ -20,7 +20,7 @@
 <script type="text/javascript">
 
   // source: Natural Earth http://www.naturalearthdata.com/ via geojson.xyz
-  const AUSTIN = "/jsonify.json?cbsa=42660&variable=C02003_004E"
+  const AUSTIN = "{{ url|safe }}"
   const COUNTRIES =
     'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_admin_0_scale_rank.geojson'; //eslint-disable-line
   const AIR_PORTS =
@@ -55,17 +55,6 @@
     getTooltip: getTooltip,
   
     layers: [
-      // new deck.GeoJsonLayer({
-      //   id: 'base-map',
-      //   data: COUNTRIES,
-      //   // Styles
-      //   stroked: true,
-      //   filled: true,
-      //   lineWidthMinPixels: 2,
-      //   opacity: 0.4,
-      //   getLineColor: [60, 60, 60],
-      //   getFillColor: [200, 200, 200]
-      // }),
       new deck.GeoJsonLayer({
         id: 'Austin',
         data: AUSTIN,
@@ -83,31 +72,6 @@
         getElevation: f => (f.properties.population_density),
         // onClick: info => info.object && alert(`${info.object.properties.name} (${info.object.properties.abbrev})`)
       }),
-      // new deck.GeoJsonLayer({
-      //   id: 'airports',
-      //   data: AIR_PORTS,
-      //   // Styles
-      //   filled: true,
-      //   pointRadiusMinPixels: 2,
-      //   pointRadiusScale: 2000,
-      //   getPointRadius: f => (11 - f.properties.scalerank),
-      //   getFillColor: [200, 0, 80, 180],
-      //   // Interactive props
-      //   pickable: true,
-      //   autoHighlight: true,
-      //   onClick: info => info.object && alert(`${info.object.properties.name} (${info.object.properties.abbrev})`)
-      // }),
-      // new deck.ArcLayer({
-      //   id: 'arcs',
-      //   data: AIR_PORTS,
-      //   dataTransform: d => d.features.filter(f => f.properties.scalerank < 4),
-      //   // Styles
-      //   getSourcePosition: f => [-0.4531566,51.4709959], // London
-      //   getTargetPosition: f => f.geometry.coordinates,
-      //   getSourceColor: [0, 128, 200],
-      //   getTargetColor: [200, 0, 80],
-      //   getWidth: 1
-      // })
     ]
   });
     </script>

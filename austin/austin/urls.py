@@ -15,14 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import home, get_map, efficient_home, population_density_geojson, map_page, get_tracts_by_state, acs_concept_by_id, get_demographic_data_by_metro, list_msas, msa_search, list_acs_variables
+from app.views import get_geojson_by_cbsa, population_density_geojson, map_page, get_tracts_by_state, acs_concept_by_id, get_demographic_data_by_metro, list_msas, msa_search, list_acs_variables, get_map
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", home, name="home"),
-    path("hi", efficient_home, name="efficient_home"),
     path("population_density_geojson.json", population_density_geojson, name="population_density_geojson"),
     path("map/", map_page, name="map"),
     path("get_tracts.json", get_tracts_by_state, name="get_tracts"),
@@ -31,5 +29,6 @@ urlpatterns = [
     path("msa_search", msa_search, name="msa_search"),
     path("list_acs_variables", list_acs_variables, name="list_acs_variables"),
     path("acs_concept_by_id", acs_concept_by_id, name="acs_concept_by_id"),
+    path("jsonify.json", get_geojson_by_cbsa, name="get_geojson_by_cbsa"),
     path("get_map/", get_map, name="get_map")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
