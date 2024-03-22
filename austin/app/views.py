@@ -6,7 +6,7 @@ from django.core.serializers import serialize
 import json
 from django.http import JsonResponse
 from app.serializers import geojsonify
-from app.pipeline import get_census_data, download_data_for_a_single_county
+from app.pipeline import get_census_data, download_data_for_a_single_county, download_data_for_cbsa
 
 from django.db.models import Q
 
@@ -111,23 +111,15 @@ def get_geojson_by_cbsa(request):
     else:
         return JsonResponse({}, safe=False)
     counties = County.objects.filter(cbsa=int(cbsa))
-    for county in counties:
-        print(county.name)
-        county_results = ACS5ValueByTract.objects.filter(acs_variable_id=variable, tract__county_id=county.id, year=2022)
-        # print(variable)
-        # print(county.id)
-        # print(county_results)
-        if len(county_results) == 0:
-            print("NEED TO MAKE REQUEST")
-            download_data_for_a_single_county(county, variable)
-        else:
-            print("DON'T NEED TO MAKE REQUEST")
+
+    found_results = ACS5ValueByTract.objects.filter(acs_variable_id=variable, tract_id__county_id__cbsa_id=int(cbsa)).count()
+    if not found_results:
+        download_data_for_cbsa(counties, variable)
+    else:
+        print("NOT DOWNLOADING SHIT NOT DOWNLOADING SHIT NOT DOWNLOADING SHIT NOT DOWNLOADING SHIT")
     
     tract_values = ACS5ValueByTract.objects.filter(acs_variable_id=variable, tract_id__county_id__cbsa_id=int(cbsa))
-    # print(len(tract_values))
-    # print(tract_values)
     geojson = geojsonify(tract_values)
-    # print(geojson)
 
     return JsonResponse(json.loads(geojson), safe=False)
     
