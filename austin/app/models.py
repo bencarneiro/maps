@@ -4,6 +4,7 @@ from django.db import models
 
 from django.contrib.gis.db import models as gismodels
 
+from django.contrib.gis.db.models.functions import Centroid
 
 
 
@@ -34,6 +35,20 @@ class CoreBaseStatisticalArea(models.Model):
     class Meta:
         db_table="cbsa"
         managed=True
+
+    @property
+    def longitude(self):
+        for point in Tract.objects.filter(county_id__cbsa_id=self.id)[0].shape[0]:
+            return point[0]
+    
+    @property
+    def latitude(self):
+        for point in Tract.objects.filter(county_id__cbsa_id=self.id)[0].shape[0]:
+            return point[1]
+        
+    # @property
+    # def latitude(self):
+    #     return Tract.objects.filter(county_id__cbsa_id=self.id).annotate(test=Centroid("shape"))[0].test[1]
 
 
 class County(models.Model):

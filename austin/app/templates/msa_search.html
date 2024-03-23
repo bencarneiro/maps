@@ -11,12 +11,15 @@
               }
        }
 
-       function selectPlace(id, name) {
+       function selectPlace(id, name, latitude, longitude) {
          console.log(id)
          console.log(name)
          document.getElementById("place-selected-id").innerHTML = id;
        //   document.getElementById("").innerHTML = "{{ id }}";
          document.getElementById("place-selected-name").innerHTML = name;
+         document.getElementById("place-selected-latitude").innerHTML = latitude;
+       //   document.getElementById("").innerHTML = "{{ id }}";
+         document.getElementById("place-selected-longitude").innerHTML = longitude;
          validatePage()
        }
        </script>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <!-- deck.gl standalone bundle -->
+  <script src="https://unpkg.com/deck.gl@^8.8.0/dist.min.js"></script>
+
+  <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
+
+  <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+<head>
+  <meta charset="utf-8">
+  <title>deck.gl Example</title>
+  <style type="text/css">
+    body {margin: 0; padding: 0;}
+    #container {width: 100vw; height: 100vh;}
+  </style>
+</head>  
+<body>
+    <input type="checkbox" id="visible" name="visible" checked /> 
+  <div id="container"></div>
+</body>
+<script type="text/javascript">
+checkbox = document.getElementById('visible');
+
+checkbox.addEventListener('change', e => {
+
+    if(e.target.checked){
+        console.log("checked")
+        const hexagonLayer = new deck.GeoJsonLayer({
+            id: 'Austin',
+            data: AUSTIN,
+            // Styles
+            filled: true,
+            opacity: .5,
+            pointRadiusMinPixels: 2,
+            pointRadiusScale: 2000,
+            // getPointRadius: f => (11 - f.properties.scalerank),
+            getFillColor: f => getColor(f.properties.population_density),
+            // Interactive props
+            pickable: true,
+            autoHighlight: true,
+            extruded: true, 
+            wireframe: true,
+            getElevation: f => (f.properties.population_density),
+            // onClick: info => info.object && alert(`${info.object.properties.name} (${info.object.properties.abbrev})`)
+        })
+
+        deckgl.setProps({
+            layers: [hexagonLayer]
+        });
+
+    } else {
+        console.log("Not")
+        const hexagonLayer = new deck.GeoJsonLayer({
+            id: 'Austin',
+            data: AUSTIN,
+            // Styles
+            filled: true,
+            opacity: .5,
+            visible: false,
+            pointRadiusMinPixels: 2,
+            pointRadiusScale: 2000,
+            // getPointRadius: f => (11 - f.properties.scalerank),
+            getFillColor: f => getColor(f.properties.population_density),
+            // Interactive props
+            pickable: true,
+            autoHighlight: true,
+            extruded: true, 
+            wireframe: true,
+            getElevation: f => (f.properties.population_density),
+            // onClick: info => info.object && alert(`${info.object.properties.name} (${info.object.properties.abbrev})`)
+        })
+
+        deckgl.setProps({
+            layers: [hexagonLayer]
+        });
+    }
+
+});
+  // source: Natural Earth http://www.naturalearthdata.com/ via geojson.xyz
+  const AUSTIN = "{{ url|safe }}"
+  const COUNTRIES =
+    'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_admin_0_scale_rank.geojson'; //eslint-disable-line
+  const AIR_PORTS =
+    'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_airports.geojson';
+    
+  function getColor(density) {
+    if (density > 12750) {
+      return [0,255,0,255]
+    } else {
+      var z = density / 50 
+      var y = 255-z
+      return [y,z,0,255]
+    }
+  }
+
+  function getTooltip({object}) {
+    return object && `${object.properties.concept} --- ${object.properties.label}
+      ${object.properties.population_density} People / Square Mile`;
+  }
+
+  const deckgl = new deck.DeckGL({
+    container: 'container',
+    mapStyle: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
+    initialViewState: {
+      latitude: {{ start_latitude }}, 
+      longitude: {{ start_longitude }},
+      zoom: 10,
+      bearing: 0,
+      pitch: 30
+    },
+    controller: true,
+    getTooltip: getTooltip,
+  
+    layers: [
+      new deck.GeoJsonLayer({
+        id: 'Austin',
+        data: AUSTIN,
+        // Styles
+        filled: true,
+        opacity: .5,
+        pointRadiusMinPixels: 2,
+        pointRadiusScale: 2000,
+        getPointRadius: f => (11 - f.properties.scalerank),
+        getFillColor: f => getColor(f.properties.population_density),
+        // Interactive props
+        pickable: true,
+        autoHighlight: true,
+        extruded: true, 
+        wireframe: true,
+        getElevation: f => (f.properties.population_density),
+        // onClick: info => info.object && alert(`${info.object.properties.name} (${info.object.properties.abbrev})`)
+      }),
+    ]
+  });
+    </script>
+</html>

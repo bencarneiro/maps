@@ -126,19 +126,29 @@ def get_geojson_by_cbsa(request):
 def get_map(request):
     if "cbsa" in request.GET and request.GET['cbsa']:
         cbsa = request.GET['cbsa']
+        cbsa_obj = CoreBaseStatisticalArea.objects.get(id=int(cbsa))
     else:
         return JsonResponse({}, safe=False)
     if "variable" in request.GET and request.GET['variable']:
         variable = request.GET['variable']
     else:
         return JsonResponse({}, safe=False)
+    first_tract = Tract.objects.filter(county_id__cbsa_id=int(cbsa))[0]
+    # if "lat" in request.GET and request.GET['lat']:
+    #     lat = request.GET['lat']
+    # else:
+    #     lat = 30.277914
+    # if "lon" in request.GET and request.GET['lon']:
+    #     lon = request.GET['lon']
+    # else:
+    #     lon = -97.739747
     url = f"/jsonify.json?cbsa={cbsa}&variable={variable}"
     print("URL URL URL URL")
     print(url)
     context = {
-        "start_longitude": -97.739747,
-        "start_latitude": 30.277914,
+        "start_longitude": cbsa_obj.longitude,
+        "start_latitude": cbsa_obj.latitude,
         "url": url,
         
     }
-    return render(request, "get_map.html", context)
+    return render(request, "cbsa_map.html", context)

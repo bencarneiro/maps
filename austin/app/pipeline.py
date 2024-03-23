@@ -74,11 +74,15 @@ def download_data_for_cbsa(counties, variable):
         year = 2022
         
         for row in pop[1:]:
+            if not row[1]:
+                value = 0
+            else:
+                value = int(row[1])
             # tract = Tract.objects.get(county_id__in=ids, tract_id=int(row[4]))
             new_value = ACS5ValueByTract(
                 acs_variable_id=variable,
                 year=year,
-                value = int(row[1]),
+                value = value,
                 tract_id=int(row[2] + row[3] + row[4])
             )
             new_value.save()
