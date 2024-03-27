@@ -5,8 +5,8 @@ from app.models import Tract, County, ACS5ValueByTract, ACSVariable, CoreBaseSta
 from django.core.serializers import serialize
 import json
 from django.http import JsonResponse
-from app.serializers import geojsonify
-from app.pipeline import get_census_data, download_data_for_a_single_county, download_data_for_cbsa
+from app.serializers import geojsonify, get_group_geojson
+from app.pipeline import get_census_data, download_data_for_a_single_county, download_data_for_cbsa, download_group_data_for_cbsa
 
 from django.db.models import Q
 
@@ -58,6 +58,7 @@ def population_density_geojson(request):
     geojson = geojsonify(tract_values)
 
     return JsonResponse(json.loads(geojson), safe=False)
+
 
 
 def list_msas(request):
@@ -122,7 +123,44 @@ def get_geojson_by_cbsa(request):
     geojson = geojsonify(tract_values)
 
     return JsonResponse(json.loads(geojson), safe=False)
+
+
+
+def get_group_geojson_by_cbsa(request):
+
+    if "cbsa" in request.GET and request.GET['cbsa']:
+        cbsa = request.GET['cbsa']
+    else:
+        return JsonResponse({}, safe=False)
+    if "group" in request.GET and request.GET['group']:
+        group = request.GET['group']
+    else:
+        return JsonResponse({}, safe=False)
+    counties = County.objects.filter(cbsa=int(cbsa))
+    variables = ACSVariable.objects.filter(group=group)
+    variables_to_be_downloaded = []
+    for v in variables:
+        print(v)
+        print(v.id)
+        print(v.label)
+        found_results = ACS5ValueByTract.objects.filter(acs_variable_id=v.id, tract_id__county_id__cbsa_id=int(cbsa)).count()
+        if not found_results:
+            variables_to_be_downloaded += [v]
+            
+    if variables_to_be_downloaded:
+        download_group_data_for_cbsa(counties, variables_to_be_downloaded)
+
+    geojson = get_group_geojson(group, cbsa)
+    return JsonResponse(json.loads(geojson), safe=False)
+
+    return JsonResponse({}, safe=False)
+    # found_results = ACS5ValueByTract.objects.filter(acs_variable_id=variable, tract_id__county_id__cbsa_id=int(cbsa)).count()
+    # if not found_results:
+    #     download_data_for_cbsa(counties, variable)
+    # else:
+    #     print("NOT DOWNLOADING SHIT NOT DOWNLOADING SHIT NOT DOWNLOADING SHIT NOT DOWNLOADING SHIT")
     
+
 def get_map(request):
     if "cbsa" in request.GET and request.GET['cbsa']:
         cbsa = request.GET['cbsa']
