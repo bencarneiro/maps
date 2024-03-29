@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <!-- deck.gl standalone bundle -->
+  <script src="https://unpkg.com/deck.gl@^8.8.0/dist.min.js"></script>
+
+  <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
+
+  <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+<head>
+  <meta charset="utf-8">
+  <title>deck.gl Example</title>
+  <style type="text/css">
+    body {margin: 0; padding: 0;}
+    #container {width: 100vw; height: 100vh;}
+  </style>
+</head>  
+<body>
+    <div id="menu">
+    {% for var in variables %}
+      {% if var.id == first_variable %}
+      <input type="checkbox" id="{{ var.id }}" name="{{ var.id }}" checked/> {{ var.label }} <br>
+      {% else %}
+      <input type="checkbox" id="{{ var.id }}" name="{{ var.id }}" /> {{ var.label }} <br>
+      {% endif %}
+    {% endfor %}</div>
+  <div id="container"></div>
+</body>
+<script type="text/javascript">
+
+function colorScale(density) {
+  // console.log(density)
+  // return [0,0,0,0]
+  if (density > 12750) {
+    return [0,255,0,255]
+  } else {
+    var z = density / 50 
+    var y = 255-z
+    return [y,z,0,255]
+  }
+}
+document.querySelector('#menu').onclick = function(ev) {
+  
+  if(ev.target.value) {
+
+    console.log(ev.target.checked, ev.target.name);
+    {% for x in variables %}
+    // console.log("{{ x.id }}")
+    if (ev.target.name !== "{{ x.id }}") {
+      document.getElementById("{{ x.id }}").checked = false;
+    }
+    {% endfor %}
+    const id_str = `${ev.target.name}`
+    const hexagonLayers = [
+      new deck.GeoJsonLayer({
+        id: ev.target.name,
+        data: AUSTIN,
+        // Styles
+        filled: true,
+        opacity: .5,
+        pointRadiusMinPixels: 2,
+        pointRadiusScale: 2000,
+        // getPointRadius: f => (11 - f.properties.scalerank),
+        getFillColor: f => colorScale(f.properties.data[ev.target.name].density),
+    
+        // Interactive props
+        pickable: true,
+        autoHighlight: true,
+        extruded: true, 
+        wireframe: true,
+        getElevation: f => (f.properties.data[ev.target.name].density),
+        // onClick: info => info.object && alert(`${info.object.properties.name} (${info.object.properties.abbrev})`)
+      }),
+    ]
+
+    console.log("makenewlater")
+    
+    function getTooltip({object}) {
+      var tooltip = ev.target.name
+      if (typeof object === 'undefined') {
+        return "hi"
+      }
+      return `${object.properties.data[ev.target.name].label} \n ${object.properties.data[ev.target.name].density} People / Square Mile \n ${object.properties.data[ev.target.name].population} Total Population`
+      // for (const property in object.properties.data) {
+      //     console.log(property)
+      //     tooltip = tooltip.concat(object.properties.data[property].label, ": ", object.properties.data[property].population, " total people \n")
+      // }
+      // return object.properties.data[ev.target.name].id
+    }
+    // hexagonLayer.setProps({getElevation: f => (f.properties.data[`${ev.target.name}`].density),})
+    deckgl.setProps({
+        layers: hexagonLayers
+    })
+    deckgl.setProps({
+        getTooltip: getTooltip
+    });
+
+
+  }
+}
+  // source: Natural Earth http://www.naturalearthdata.com/ via geojson.xyz
+  const AUSTIN = "{{ url|safe }}"
+  const COUNTRIES =
+    'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_admin_0_scale_rank.geojson'; //eslint-disable-line
+  const AIR_PORTS =
+    'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_airports.geojson';
+    
+  function getColor(density) {
+    console.log(density)
+    if (density > 12750) {
+      return [0,255,0,255]
+    } else {
+      var z = density / 50 
+      var y = 255-z
+      return [y,z,0,255]
+    }
+  }
+
+  function getTooltip({object}) {
+    var tooltip = "Henlo"
+    // for (const property in object.properties.data) {
+    //     console.log(property)
+    //     tooltip = tooltip.concat(object.properties.data[property].label, ": ", object.properties.data[property].population, " total people \n")
+    // }
+    return tooltip
+  }
+  console.log("INITIAL MAP INSTANTIATION")
+  const deckgl = new deck.DeckGL({
+    container: 'container',
+    mapStyle: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
+    initialViewState: {
+      latitude: {{ start_latitude }}, 
+      longitude: {{ start_longitude }},
+      zoom: 10,
+      bearing: 0,
+      pitch: 30
+    },
+    controller: true,
+    getTooltip: getTooltip,
+  
+    layers: [
+      new deck.GeoJsonLayer({
+        id: 'Austin',
+        data: AUSTIN,
+        // Styles
+        filled: true,
+        opacity: .5,
+        pointRadiusMinPixels: 2,
+        pointRadiusScale: 2000,
+        // getPointRadius: f => (11 - f.properties.scalerank),
+        getFillColor: f => getColor(f.properties.data["{{ first_variable }}"].density),
+        // Interactive props
+        pickable: true,
+        autoHighlight: true,
+        extruded: true, 
+        wireframe: true,
+        getElevation: f => (f.properties.data["{{ first_variable }}"].density),
+        // onClick: info => info.object && alert(`${info.object.properties.name} (${info.object.properties.abbrev})`)
+      }),
+    ]
+  });
+    </script>
+</html>

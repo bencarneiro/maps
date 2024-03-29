@@ -44,6 +44,8 @@ def get_group_geojson(group_id, cbsa_id):
         feature_str += f'"county": "{tract.county.name}", '
         feature_str += f'"name_lsad": "{tract.name_lsad}", '
         feature_str += f'"land_area": {tract.aland}, '
+        feature_str += f'"data": {{'
+        
         # concept
         for value in values:
             
@@ -59,6 +61,7 @@ def get_group_geojson(group_id, cbsa_id):
             feature_str += f'"{value.acs_variable.id}": {{"id": "{value.acs_variable.id}","label": "{value.acs_variable.label}", "population": {value.value}, "density": {pop_dens}, "percentage": "{percentage}"}}, '
 
         feature_str = feature_str[:-2]
+        feature_str += '}'
         feature_str += '}, "geometry": '
         feature_str += tract.shape.geojson
 

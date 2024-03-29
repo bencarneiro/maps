@@ -171,7 +171,7 @@ def get_map(request):
         variable = request.GET['variable']
     else:
         return JsonResponse({}, safe=False)
-    first_tract = Tract.objects.filter(county_id__cbsa_id=int(cbsa))[0]
+    # first_tract = Tract.objects.filter(county_id__cbsa_id=int(cbsa))[0]
     # if "lat" in request.GET and request.GET['lat']:
     #     lat = request.GET['lat']
     # else:
@@ -190,3 +190,37 @@ def get_map(request):
         
     }
     return render(request, "cbsa_map.html", context)
+
+
+def get_group_map(request):
+    if "cbsa" in request.GET and request.GET['cbsa']:
+        cbsa = request.GET['cbsa']
+        cbsa_obj = CoreBaseStatisticalArea.objects.get(id=int(cbsa))
+    else:
+        return JsonResponse({}, safe=False)
+    if "group" in request.GET and request.GET['group']:
+        group = request.GET['group']
+    else:
+        return JsonResponse({}, safe=False)
+    # first_tract = Tract.objects.filter(county_id__cbsa_id=int(cbsa))[0]
+    # if "lat" in request.GET and request.GET['lat']:
+    #     lat = request.GET['lat']
+    # else:
+    #     lat = 30.277914
+    # if "lon" in request.GET and request.GET['lon']:
+    #     lon = request.GET['lon']
+    # else:
+    #     lon = -97.739747
+    url = f"/group.json?cbsa={cbsa}&group={group}"
+    variables = ACSVariable.objects.filter(group=group)
+    print("URL URL URL URL")
+    print(url)
+    context = {
+        "start_longitude": cbsa_obj.longitude,
+        "start_latitude": cbsa_obj.latitude,
+        "url": url,
+        "variables": variables,
+        "first_variable": variables[0].id
+        
+    }
+    return render(request, "group_map.html", context)
