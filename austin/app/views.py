@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.views.decorators.cache import cache_page
 
 import folium
 from app.models import Tract, County, ACS5ValueByTract, ACSVariable, CoreBaseStatisticalArea, CombinedStatisticalArea
@@ -47,7 +48,7 @@ def get_demographic_data_by_metro(request):
     return JsonResponse(json.loads(data), safe=False)
 
 
-
+@cache_page(60 * 60 * 24 * 30)
 def population_density_geojson(request):
     # Austin Metro Counties
     counties = County.objects.filter(fips__in=[48453, 48055, 48209, 48491, 48021])
@@ -104,6 +105,7 @@ def msa_search(request):
     return render(request, "msa_search.html")
 
 # need to make this a post request
+@cache_page(60 * 60 * 24 * 30)
 def get_geojson_by_cbsa(request):
 
     if "cbsa" in request.GET and request.GET['cbsa']:
@@ -128,7 +130,7 @@ def get_geojson_by_cbsa(request):
     return JsonResponse(json.loads(geojson), safe=False)
 
 
-
+@cache_page(60 * 60 * 24 * 30)
 def get_group_geojson_by_cbsa(request):
 
     if "cbsa" in request.GET and request.GET['cbsa']:

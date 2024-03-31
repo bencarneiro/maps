@@ -27,6 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["censusmaps.org", "127.0.0.1", "127.0.0.1:8000", "localhost"]
 
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.db.DatabaseCache",
+        "LOCATION": "my_cache_table",
+    }
+}
 
 # Application definition
 
