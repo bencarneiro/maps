@@ -7,7 +7,9 @@
                      console.log("THIS BITCH READY")
                      console.log("get_map/?cbsa=".concat(document.getElementById("place-selected-id").innerHTML, "&variable=", document.getElementById("variable-selected-id").innerHTML))
                      makeMap = document.getElementById("variable-map-button")
+                     mapJson = document.getElementById("variable-map-button-json")
                      makeMap.setAttribute("href", "get_map/?cbsa=".concat(document.getElementById("place-selected-id").innerHTML, "&variable=", document.getElementById("variable-selected-id").innerHTML))
+                     mapJson.setAttribute("href", "jsonify.json?cbsa=".concat(document.getElementById("place-selected-id").innerHTML, "&variable=", document.getElementById("variable-selected-id").innerHTML))
               }
               console.log(document.getElementById("place-selected-id").innerHTML)
               console.log(document.getElementById("group-selected-id").innerHTML)
@@ -15,8 +17,10 @@
                      console.log("ENABLE BUTTON")
                      console.log("get_group_map/?cbsa=".concat(document.getElementById("place-selected-id").innerHTML, "&group=", document.getElementById("group-selected-id").innerHTML))
                      groupMap = document.getElementById("group-map-button")
+                     groupJson = document.getElementById("group-map-button-json")
                     //  groupMap.setAttribute("disabled", false)
                      groupMap.setAttribute("href", "get_group_map/?cbsa=".concat(document.getElementById("place-selected-id").innerHTML, "&group=", document.getElementById("group-selected-id").innerHTML))
+                     groupJson.setAttribute("href", "group.json?cbsa=".concat(document.getElementById("place-selected-id").innerHTML, "&group=", document.getElementById("group-selected-id").innerHTML))
               }
        }
 
@@ -34,7 +38,7 @@
     console.log(id)
     console.log(name)
     document.getElementById("group-selected-id").innerHTML = id;
-    document.getElementById("group-map-button").innerHTML = `Map all variables in group ${id} \n \n \n ${name}`;
+    document.getElementById("group-map-button").innerHTML = `Create A Map Of All Variables in Group ${id} <br> ${name}`;
   //   document.getElementById("").innerHTML = "{{ id }}";
     document.getElementById("group-selected-name").innerHTML = name;
     validatePage()
@@ -47,7 +51,7 @@
          document.getElementById("variable-selected-id").innerHTML = id;
        //   document.getElementById("").innerHTML = "{{ id }}";
          document.getElementById("variable-selected-name").innerHTML = name;
-    document.getElementById("variable-map-button").innerHTML = `Map Selected Variable - ${id} \n\n ${name}`;
+    document.getElementById("variable-map-button").innerHTML = `Create A Map Of Selected Variable ${id} <br> ${name}`;
          validatePage()
        }
        </script>
@@ -118,7 +122,8 @@ tr:nth-child(even) {
 <h1>Select A Topic</h1>
       <div id="group-selected-id"></div>
       <div id="group-selected-name"></div>
-      <h3><a title="Warning! This is Hella Slow" id="group-map-button" target="_blank">Map All Variables in Group</a></h3> 
+      <h3><a title="Warning! This is Hella Slow" id="group-map-button" target="_blank">Create A Map Of All Variables in Group</a></h3> 
+      <h5><a title="Warning! This is Hella Slow" id="group-map-button-json" target="_blank">Download GeoJSON Instead</a></h5> 
       <br>
        <input class="form-control" type="search" 
               name="search" placeholder="Seach Census Topics" 
@@ -136,7 +141,8 @@ tr:nth-child(even) {
        <div id="variable-selected-id"></div>
        <div id="variable-selected-name"></div>
 
-      <h3><a id="variable-map-button" target="_blank">Map Selected Variable</a></h3> 
+      <h3><a id="variable-map-button" target="_blank">Create A Map of Selected Variable</a></h3> 
+      <h5><a id="variable-map-button-json" target="_blank">Download GeoJSON Instead</a></h5> 
       <br>
        <table id = "variables-results"></table>
   </div>
