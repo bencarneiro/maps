@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-$36aec_b43na@d12h8)41bsh!zl6&211d@&9rn)iww1jw46ivc"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (bool(int(os.environ.get('DEBUG',1))))
+
 
 ALLOWED_HOSTS = ["www.censusmaps.org", "censusmaps.org", "127.0.0.1", "127.0.0.1:8000", "localhost", "45.33.113.137"]
 
