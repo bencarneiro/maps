@@ -151,6 +151,7 @@ def get_group_geojson_by_cbsa(request):
         download_group_data_for_cbsa(counties, variables_to_be_downloaded)
 
     geojson = get_group_geojson(group, cbsa)
+    print(geojson)
     return JsonResponse(json.loads(geojson), safe=False)
 
     return JsonResponse({}, safe=False)
