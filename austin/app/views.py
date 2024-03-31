@@ -48,7 +48,6 @@ def get_demographic_data_by_metro(request):
     print(data)
     return JsonResponse(json.loads(data), safe=False)
 
-@csrf_exempt
 @cache_page(60 * 60 * 24 * 30)
 def population_density_geojson(request):
     # Austin Metro Counties
@@ -106,7 +105,6 @@ def msa_search(request):
     return render(request, "msa_search.html")
 
 # need to make this a post request
-@csrf_exempt
 @cache_page(60 * 60 * 24 * 30)
 def get_geojson_by_cbsa(request):
 
@@ -131,7 +129,6 @@ def get_geojson_by_cbsa(request):
 
     return JsonResponse(json.loads(geojson), safe=False)
 
-@csrf_exempt
 @cache_page(60 * 60 * 24 * 30)
 def get_group_geojson_by_cbsa(request):
 
