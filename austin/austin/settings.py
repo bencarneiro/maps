@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-$36aec_b43na@d12h8)41bsh!zl6&211d@&9rn)iww1jw46ivc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["censusmaps.org", "127.0.0.1", "127.0.0.1:8000", "localhost", "45.33.113.137"]
+ALLOWED_HOSTS = ["www.censusmaps.org", "censusmaps.org", "127.0.0.1", "127.0.0.1:8000", "localhost", "45.33.113.137"]
 
 CACHES = {
     "default": {
