@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 import folium
 from app.models import Tract, County, ACS5ValueByTract, ACSVariable, CoreBaseStatisticalArea, CombinedStatisticalArea
@@ -9,6 +9,9 @@ from app.serializers import geojsonify, get_group_geojson
 from app.pipeline import get_census_data, download_data_for_a_single_county, download_data_for_cbsa, download_group_data_for_cbsa
 
 from django.db.models import Q
+
+def homepage(request):
+    return redirect("msa_search")
 
 def map_page(request):
     context = {}
