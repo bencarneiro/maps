@@ -11,33 +11,40 @@
   <title>deck.gl Example</title>
   <style type="text/css">
     body {margin: 0; padding: 0;}
-    #container {width: 100vw; height: 100vh;}
+    #container {width: 100%; height: 75vh; position: "absolute"; top: 0px}
+    #left-column {width:25%;  position: "absolute"; top: 0px; text-align: "right"}
+    #right-column {width:75%; position: "absolute"; top: 0px}
+    #row {display: "flex"}
   </style>
 </head>  
 <body>
-    <div id="menu">
-    {% for var in variables %}
-      {% if var.id == first_variable %}
-      <input type="checkbox" id="{{ var.id }}" name="{{ var.id }}" checked/> {{ var.label }} <br>
-      {% else %}
-      <input type="checkbox" id="{{ var.id }}" name="{{ var.id }}" /> {{ var.label }} <br>
-      {% endif %}
-    {% endfor %}</div>
-  <div id="container"></div>
+  <div id="row">
+    <div id="container"></div>
+    <div id="left-column">
+      <div id="menu">
+        {% for var in variables %}
+          {% if var.id == first_variable %}
+          <input type="checkbox" id="{{ var.id }}" name="{{ var.id }}" checked/> {{ var.label }} <br>
+          {% else %}
+          <input type="checkbox" id="{{ var.id }}" name="{{ var.id }}" /> {{ var.label }} <br>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </body>
 <script type="text/javascript">
 
 function colorScale(density) {
-  // console.log(density)
-  // return [0,0,0,0]
-  if (density > 12750) {
-    return [0,255,0,255]
-  } else {
-    var z = density / 50 
-    var y = 255-z
-    return [y,z,0,255]
+    console.log(density)
+    if (density > 6375) {
+      return [0,255,0,255]
+    } else {
+      var z = density / 25 
+      var y = 255-z
+      return [y,z,0,255]
+    }
   }
-}
 document.querySelector('#menu').onclick = function(ev) {
   
   if(ev.target.value) {
@@ -79,14 +86,8 @@ document.querySelector('#menu').onclick = function(ev) {
       if (typeof object === 'undefined') {
         return "hi"
       }
-      return `${object.properties.data[ev.target.name].label} \n ${object.properties.data[ev.target.name].density} People / Square Mile \n ${object.properties.data[ev.target.name].population} Total Population`
-      // for (const property in object.properties.data) {
-      //     console.log(property)
-      //     tooltip = tooltip.concat(object.properties.data[property].label, ": ", object.properties.data[property].population, " total people \n")
-      // }
-      // return object.properties.data[ev.target.name].id
+      return `${object.properties.name_lsad} \n ${object.properties.data[ev.target.name].label} \n ${object.properties.data[ev.target.name].density} People / Square Mile \n ${object.properties.data[ev.target.name].population} Total Population`
     }
-    // hexagonLayer.setProps({getElevation: f => (f.properties.data[`${ev.target.name}`].density),})
     deckgl.setProps({
         layers: hexagonLayers
     })
@@ -99,30 +100,23 @@ document.querySelector('#menu').onclick = function(ev) {
 }
   // source: Natural Earth http://www.naturalearthdata.com/ via geojson.xyz
   const AUSTIN = "{{ url|safe }}"
-  const COUNTRIES =
-    'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_admin_0_scale_rank.geojson'; //eslint-disable-line
-  const AIR_PORTS =
-    'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_airports.geojson';
-    
   function getColor(density) {
     console.log(density)
-    if (density > 12750) {
+    if (density > 6375) {
       return [0,255,0,255]
     } else {
-      var z = density / 50 
+      var z = density / 25 
       var y = 255-z
       return [y,z,0,255]
     }
   }
 
   function getTooltip({object}) {
-    var tooltip = "Henlo"
-    // for (const property in object.properties.data) {
-    //     console.log(property)
-    //     tooltip = tooltip.concat(object.properties.data[property].label, ": ", object.properties.data[property].population, " total people \n")
-    // }
-    return tooltip
-  }
+      if (typeof object === 'undefined') {
+        return "hi"
+      }
+      return `${object.properties.name_lsad} \n ${object.properties.data["{{ first_variable }}"].label} \n ${object.properties.data["{{ first_variable }}"].density} People / Square Mile \n ${object.properties.data["{{ first_variable }}"].population} Total Population`
+    }
   console.log("INITIAL MAP INSTANTIATION")
   const deckgl = new deck.DeckGL({
     container: 'container',

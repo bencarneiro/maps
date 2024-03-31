@@ -76,7 +76,7 @@ def list_msas(request):
 def list_acs_variables(request):
     if "search" in request.GET and request.GET['search']:
         q = request.GET['search']
-        variables = ACSVariable.objects.filter(Q(label__icontains=q) | Q(concept__icontains=q)).values("concept", "group").distinct()[:200]
+        variables = ACSVariable.objects.filter(Q(concept__icontains=q) & Q(predicate_type="int") & ~Q(concept__icontains="median")).values("concept", "group").order_by("group").distinct()[:200]
     else:
         variables = ACSVariable.objects.values("concept", "group").distinct().order_by()
     

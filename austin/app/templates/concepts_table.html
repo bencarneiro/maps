@@ -2,7 +2,7 @@
 <table>
     <tr><th>Statistical Area Name</th></tr>
 {% for var in variables %}
-<tr
+<tr  onclick="selectGroup('{{ var.group }}', '{{ var.concept }}')"
 hx-get="/acs_concept_by_id?search={{var.group}}" 
 hx-trigger="click" 
 hx-target="#variables-results" 

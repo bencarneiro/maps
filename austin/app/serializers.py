@@ -4,7 +4,7 @@ def geojsonify(values):
     for tv in values:
         feature_str = '{"type": "Feature", "properties": {'
         try:
-            pop_dens = str(round(float(tv.value) / (float(tv.tract.aland) * (0.000000386102))))
+            pop_dens = str(round(float(tv.value) / ((float(tv.tract.aland) + float(tv.tract.awater)) * (0.000000386102))))
         except:
             pop_dens = "0"
         feature_str += f'"tract_id": {tv.tract.id}, '
@@ -51,7 +51,7 @@ def get_group_geojson(group_id, cbsa_id):
             
             # print(percentage)
             try:
-                pop_dens = str(round(float(value.value) / (float(value.tract.aland) * (0.000000386102))))
+                pop_dens = str(round(float(value.value) / ((float(value.tract.aland) + float(value.tract.awater)) * (0.000000386102))))
                 percentage = str(round(float(value.value) / float(total_pop_for_tract) * 100, 1)) + "%"
                 
             except:

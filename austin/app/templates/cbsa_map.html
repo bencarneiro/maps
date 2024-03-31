@@ -11,12 +11,12 @@
   <title>deck.gl Example</title>
   <style type="text/css">
     body {margin: 0; padding: 0;}
-    #container {width: 100vw; height: 100vh;}
+    #container {width: 100vw; height: 95vh;}
   </style>
 </head>  
 <body>
-    <input type="checkbox" id="visible" name="visible" checked /> 
   <div id="container"></div>
+  <input type="checkbox" id="visible" name="visible" checked /> Display Map
 </body>
 <script type="text/javascript">
 checkbox = document.getElementById('visible');
@@ -84,10 +84,11 @@ checkbox.addEventListener('change', e => {
     'https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_airports.geojson';
     
   function getColor(density) {
-    if (density > 12750) {
+    console.log(density)
+    if (density > 6375) {
       return [0,255,0,255]
     } else {
-      var z = density / 50 
+      var z = density / 25 
       var y = 255-z
       return [y,z,0,255]
     }
