@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import homepage, get_group_map, get_geojson_by_cbsa, get_group_geojson_by_cbsa, population_density_geojson, map_page, get_tracts_by_state, acs_concept_by_id, get_demographic_data_by_metro, list_msas, msa_search, list_acs_variables, get_map
+from app.views import benny_boy_resume, homepage, get_group_map, get_geojson_by_cbsa, get_group_geojson_by_cbsa, population_density_geojson, map_page, get_tracts_by_state, acs_concept_by_id, get_demographic_data_by_metro, list_msas, msa_search, list_acs_variables, get_map
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path("", homepage, name="homepage"),
+    path("resume", benny_boy_resume, name="resume"),
     path("admin/", admin.site.urls),
     path("population_density_geojson.json", population_density_geojson, name="population_density_geojson"),
     path("map/", map_page, name="map"),

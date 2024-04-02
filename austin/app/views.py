@@ -229,3 +229,6 @@ def get_group_map(request):
         
     }
     return render(request, "group_map.html", context)
+
+def benny_boy_resume(request):
+    return render(request, "resume.html")
