@@ -13,7 +13,7 @@ from app.pipeline import get_census_data, download_data_for_a_single_county, dow
 from django.db.models import Q
 
 def homepage(request):
-    return redirect("msa_search")
+    return redirect("landing_page")
 
 def map_page(request):
     context = {}
@@ -232,3 +232,6 @@ def get_group_map(request):
 
 def benny_boy_resume(request):
     return render(request, "resume.html")
+
+def landing_page(request):
+    return render(request, "landing_page.html")
