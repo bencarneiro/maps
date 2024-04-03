@@ -130,6 +130,7 @@ STATIC_URL = "static/"
 
 STATICFILES_DIRS = [
     "/home/tonydeals/app/maps/austin/app/templates/static",
+    "/root/maps/austin/app/templates/static",
     "/var/www/static/",
 ]
 
