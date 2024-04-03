@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.views.decorators.cache import cache_page
 from django.views.decorators.csrf import csrf_exempt
 
+from django.views.generic.base import RedirectView
+
 import folium
 from app.models import Tract, County, ACS5ValueByTract, ACSVariable, CoreBaseStatisticalArea, CombinedStatisticalArea
 from django.core.serializers import serialize
@@ -237,3 +239,6 @@ def benny_boy_resume(request):
 
 def landing_page(request):
     return render(request, "landing_page.html")
+
+
+favicon_view = RedirectView.as_view(url='/static/favicon.ico', permanent=True)

@@ -14,8 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from app.views import landing_page, benny_boy_resume, homepage, get_group_map, get_geojson_by_cbsa, get_group_geojson_by_cbsa, population_density_geojson, map_page, get_tracts_by_state, acs_concept_by_id, get_demographic_data_by_metro, list_msas, msa_search, list_acs_variables, get_map
+from django.urls import path, re_path
+from app.views import landing_page, benny_boy_resume, homepage, get_group_map, get_geojson_by_cbsa, get_group_geojson_by_cbsa, population_density_geojson, map_page, get_tracts_by_state, acs_concept_by_id, get_demographic_data_by_metro, list_msas, msa_search, list_acs_variables, get_map, favicon_view
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -35,5 +35,6 @@ urlpatterns = [
     path("group.json", get_group_geojson_by_cbsa, name="get_group_geojson_by_cbsa"),
     path("get_map/", get_map, name="get_map"),
     path("get_group_map/", get_group_map, name="get_group_map"),
-    path("landing_page", landing_page, name="landing_page")
+    path("landing_page", landing_page, name="landing_page"),
+    re_path(r'^favicon\.ico$', favicon_view),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
