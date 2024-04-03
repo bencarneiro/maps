@@ -122,7 +122,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_ROOT = "/root/maps/austin/app/templates/static/"
+STATIC_ROOT = "/var/www/static"
 
 
 # Static files (CSS, JavaScript, Images)
@@ -132,7 +132,7 @@ STATIC_URL = "static/"
 
 STATICFILES_DIRS = [
     "/home/tonydeals/app/maps/austin/app/templates/static",
-    "/var/www/static/",
+#     "/var/www/static/",
 ]
 
 # Default primary key field type
