@@ -189,6 +189,7 @@ def get_map(request):
     print("URL URL URL URL")
     print(url)
     context = {
+        "cbsa": cbsa_obj.name,
         "start_longitude": cbsa_obj.longitude,
         "start_latitude": cbsa_obj.latitude,
         "url": url,
@@ -221,6 +222,7 @@ def get_group_map(request):
     print("URL URL URL URL")
     print(url)
     context = {
+        "cbsa": cbsa_obj.name,
         "start_longitude": cbsa_obj.longitude,
         "start_latitude": cbsa_obj.latitude,
         "url": url,

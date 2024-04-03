@@ -38,7 +38,7 @@
     console.log(id)
     console.log(name)
     document.getElementById("group-selected-id").innerHTML = id;
-    document.getElementById("group-map-button").innerHTML = `Create A Map Of All Variables in Group ${id} <br> ${name}`;
+    document.getElementById("group-map-button").innerHTML = `Create A Map Of All Variables in Group ${id}`;
   //   document.getElementById("").innerHTML = "{{ id }}";
     document.getElementById("group-selected-name").innerHTML = name;
     validatePage()
@@ -51,7 +51,7 @@
          document.getElementById("variable-selected-id").innerHTML = id;
        //   document.getElementById("").innerHTML = "{{ id }}";
          document.getElementById("variable-selected-name").innerHTML = name;
-    document.getElementById("variable-map-button").innerHTML = `Create A Map Of Selected Variable ${id} <br> ${name}`;
+    document.getElementById("variable-map-button").innerHTML = `Create A Map Of Selected Variable ${id}`;
          validatePage()
        }
        </script>
@@ -73,26 +73,54 @@
 .column {
   flex: 33%;
   padding: 5px;
+  border: 7px solid black; text-align: center; ;
 }
-
+.border-box{
+  border: 5px dashed black; text-align: center; padding: 10px; width: 95%; margin:auto; display: block;
+}
+.button-box{
+  border: 5px solid grey; text-align: center; padding: 10px;  width: 95%; margin:auto; display: block;
+}
+body {background-color: antiquewhite;}
 table {
+  text-align: left;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
   border: 1px solid #ddd;
 }
-h1{ text-align: left; font-size:40px}
-input {align-self: center; size:large;}
+h1{ text-align: center; font-size:50px}
+input {text-align: center; align-self: center; size:large; width: 100%; height: 50px; font-size:24px;
+  margin: auto; width: 95%; 
+  display: block;}
 th, td {
-  text-align: left;
+  text-align: center;
   padding: 16px;
 }
-#place-selected-id{ font-size:30px }
-#place-selected-name{ font-size:30px }
-#group-selected-id{ font-size:30px }
-#group-selected-name{ font-size:30px }
-#variable-selected-id{ font-size:30px }
-#variable-selected-name{ font-size:30px }
+#place-selected-id{ 
+  text-align: center;font-size:30px }
+#place-selected-name{
+  text-align: center; font-size:30px }
+#group-selected-id{ 
+  text-align: center;font-size:30px }
+#group-selected-name{ 
+  text-align: center;font-size:30px }
+#variable-selected-id{ 
+  text-align: center;font-size:30px }
+#variable-selected-name{ 
+  text-align: center;font-size:30px }
+  #variable-map-button{
+    font-size: 30px;
+  }
+  #variable-map-button-json{
+    font-size: 24px;
+  }
+  #group-map-button{
+    font-size: 30px;
+  }
+  #group-map-button-json{
+    font-size: 24px;
+  }
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
@@ -104,46 +132,61 @@ tr:nth-child(even) {
 <div class="row">
   <div class="column">
        <h1>Select A City</h1>
+       <input class="form-control" type="search" 
+              name="search" placeholder="Seach Cities / Metros" 
+              hx-get="/list_msas" 
+              hx-trigger="input changed delay:500ms, search" 
+              hx-target="#search-results" 
+              hx-indicator=".htmx-indicator">
+              <br>
+      <div class="border-box">
        <div id="place-selected-id"></div>
-       <div id="place-selected-name"></div>
+       <div id="place-selected-name">No City Selected</div>
+      </div>
        <br>
-            <input class="form-control" type="search" 
-                   name="search" placeholder="Seach Cities / Metros" 
-                   hx-get="/list_msas" 
-                   hx-trigger="input changed delay:500ms, search" 
-                   hx-target="#search-results" 
-                   hx-indicator=".htmx-indicator">
-                   <br>
             
             <table id = "search-results"></table>
   </div>
+
+
   <div class="column">
     
        
 <h1>Select A Topic</h1>
+<input class="form-control" type="search" 
+       name="search" placeholder="Seach Census Topics" 
+       hx-get="/list_acs_variables" 
+       hx-trigger="input changed delay:500ms, search" 
+       hx-target="#concepts-results" 
+       hx-indicator=".htmx-indicator">
+       <br>
+       <div class="border-box">
       <div id="group-selected-id"></div>
-      <div id="group-selected-name"></div>
+      <div id="group-selected-name">No Topic Selected</div></div>
+      <br>
+
+      <div class="button-box">
       <h3><a title="Warning! This is Hella Slow" id="group-map-button" target="_blank">Create A Map Of All Variables in Group</a></h3> 
       <h5><a title="Warning! This is Hella Slow" id="group-map-button-json" target="_blank">Download GeoJSON Instead</a></h5> 
+    </div>
       <br>
-       <input class="form-control" type="search" 
-              name="search" placeholder="Seach Census Topics" 
-              hx-get="/list_acs_variables" 
-              hx-trigger="input changed delay:500ms, search" 
-              hx-target="#concepts-results" 
-              hx-indicator=".htmx-indicator">
        
        <table id = "concepts-results"></table>
   </div>
   <div class="column">
     
        
-<h1>Select A Detailed Demographic</h1>
-       <div id="variable-selected-id"></div>
-       <div id="variable-selected-name"></div>
+<h1>Select A Detail</h1><div style="height:50px;"></div><br>
 
+<div class="border-box">
+       <div id="variable-selected-id"></div>
+       <div id="variable-selected-name">No Detail Selected</div>
+       </div>
+<br>
+<div class="button-box">
       <h3><a id="variable-map-button" target="_blank">Create A Map of Selected Variable</a></h3> 
       <h5><a id="variable-map-button-json" target="_blank">Download GeoJSON Instead</a></h5> 
+      </div>
       <br>
        <table id = "variables-results"></table>
   </div>
