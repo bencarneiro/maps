@@ -162,7 +162,7 @@ def download_group_data_for_cbsa(counties, variables):
         variables = variables[:49]
     
 
-    if len(variables2) > 49:
+    if variables2 and len(variables2) > 49:
         variables3 = variables3[50:]
         variables2 = variables2[:49]
 
