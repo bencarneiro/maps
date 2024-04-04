@@ -82,7 +82,7 @@ def list_msas(request):
 def list_acs_variables(request):
     if "search" in request.GET and request.GET['search']:
         q = request.GET['search']
-        variables = ACSVariable.objects.filter(Q(concept__icontains=q) & Q(predicate_type="int") & ~Q(concept__icontains="median")).values("concept", "group").order_by("group").distinct()[:200]
+        variables = ACSVariable.objects.filter((Q(concept__icontains=q) | Q(id__icontains=q)) & Q(predicate_type="int")).values("concept", "group").order_by("group").distinct()[:200]
     else:
         variables = ACSVariable.objects.values("concept", "group").distinct().order_by()
     
@@ -143,7 +143,7 @@ def get_group_geojson_by_cbsa(request):
     else:
         return JsonResponse({}, safe=False)
     counties = County.objects.filter(cbsa=int(cbsa))
-    variables = ACSVariable.objects.filter(group=group)
+    variables = ACSVariable.objects.filter(group=group).order_by("id")
     variables_to_be_downloaded = []
     for v in variables:
         print(v)

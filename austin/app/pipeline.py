@@ -92,30 +92,22 @@ def download_data_for_cbsa(counties, variable):
     print(requests_by_state_dict)
 
 
-def download_group_data_for_cbsa(counties, variables):
-    print(counties)
-    print(variables)
-    census_api_key="db87451d2114e8ee87f1fc8d516119219cae4699"
-    stringified_list_of_county_ids=""
-    requests_by_state_dict={}
+def batch_download_variables(variables, requests_by_state_dict, census_api_key):
+
     stringified_list_of_variables = ""
     for idx in range(len(variables)):
         stringified_list_of_variables += variables[idx].id
         stringified_list_of_variables += ","
     if stringified_list_of_variables:
         stringified_list_of_variables = stringified_list_of_variables[:-1]
-    for c in counties:
-        if c.state.id in requests_by_state_dict:
-            requests_by_state_dict[c.state.id] += str(c.id)[-3:]
-            requests_by_state_dict[c.state.id] += ","
-        else:
-            requests_by_state_dict[c.state.id] = str(c.id)[-3:]
-            requests_by_state_dict[c.state.id] += ","
+
+
     for state in requests_by_state_dict:
         stringified_list_of_county_ids = requests_by_state_dict[state][:-1]
         stringified_state_id = str(state)
         if len(stringified_state_id) == 1:
             stringified_state_id = "0" + stringified_state_id
+
         url = f"https://api.census.gov/data/2022/acs/acs5?get=NAME,{stringified_list_of_variables}&for=tract:*&in=state:{stringified_state_id}&in=county:{stringified_list_of_county_ids}&key={census_api_key}"
         print(url)
         r = requests.get(url)
@@ -147,6 +139,41 @@ def download_group_data_for_cbsa(counties, variables):
 
 
     print(requests_by_state_dict)
+
+def download_group_data_for_cbsa(counties, variables):
+    print(counties)
+    print(variables)
+    census_api_key="db87451d2114e8ee87f1fc8d516119219cae4699"
+    stringified_list_of_county_ids=""
+    requests_by_state_dict={}
+
+    for c in counties:
+        if c.state.id in requests_by_state_dict:
+            requests_by_state_dict[c.state.id] += str(c.id)[-3:]
+            requests_by_state_dict[c.state.id] += ","
+        else:
+            requests_by_state_dict[c.state.id] = str(c.id)[-3:]
+            requests_by_state_dict[c.state.id] += ","
+
+    variables2, variables3 = None, None
+
+    if len(variables) > 49:
+        variables2 = variables[50:]
+        variables = variables[:49]
+    
+
+    if len(variables2) > 49:
+        variables3 = variables3[50:]
+        variables2 = variables2[:49]
+
+    batch_download_variables(variables, requests_by_state_dict, census_api_key)
+
+    if variables2:
+        batch_download_variables(variables2, requests_by_state_dict, census_api_key)
+
+    if variables3:
+        batch_download_variables(variables3, requests_by_state_dict, census_api_key)
+
 
     # url = f"https://api.census.gov/data/2022/acs/acs5?get=NAME,{variable}&for=tract:*&in=state:{stringified_state_id}&in=county:{stringified_county_id}&key={census_api_key}"
     # r = requests.get(url)
