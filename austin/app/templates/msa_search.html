@@ -132,7 +132,7 @@ tr:nth-child(even) {
 <div class="row">
   <div class="column">
        <h1>Select A City</h1>
-       <input class="form-control" type="search" 
+       <input class="form-control" type="search"  autocomplete="off"
               name="search" placeholder="Search Cities / Metros" 
               hx-get="/list_msas" 
               hx-trigger="input changed delay:500ms, search" 
@@ -153,7 +153,7 @@ tr:nth-child(even) {
     
        
 <h1>Select A Topic</h1>
-<input class="form-control" type="search" 
+<input class="form-control" type="search" autocomplete="off"
        name="search" placeholder="Search Census Topics" 
        hx-get="/list_acs_variables" 
        hx-trigger="input changed delay:500ms, search" 
