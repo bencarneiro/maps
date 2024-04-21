@@ -91,9 +91,9 @@ document.querySelector('#menu').onclick = function(ev) {
     function getTooltip({object}) {
       var tooltip = ev.target.name
       if (typeof object === 'undefined') {
-        return "No Data Here!"
+        return "Data is Loading!"
       }
-      return `${object.properties.name_lsad} \n ${object.properties.data[ev.target.name].label} \n ${object.properties.data[ev.target.name].density} People / Square Mile \n ${object.properties.data[ev.target.name].population} Total Population`
+      return `${object.properties.name_lsad} \n ${object.properties.concept} --- ${object.properties.data[ev.target.name].label} \n ${object.properties.data[ev.target.name].density} People / Square Mile \n ${object.properties.data[ev.target.name].population} Total Population`
     }
     deckgl.setProps({
         layers: hexagonLayers
@@ -120,9 +120,10 @@ document.querySelector('#menu').onclick = function(ev) {
 
   function getTooltip({object}) {
       if (typeof object === 'undefined') {
-        return "No Data Here!"
+        return "Data is Loading!"
       }
-      return `${object.properties.name_lsad} \n ${object.properties.data["{{ first_variable }}"].label} \n ${object.properties.data["{{ first_variable }}"].density} People / Square Mile \n ${object.properties.data["{{ first_variable }}"].population} Total Population`
+      console.log(object.properties)
+      return `${object.properties.name_lsad} \n  ${object.properties.concept} --- ${object.properties.data["{{ first_variable }}"].label} \n ${object.properties.data["{{ first_variable }}"].density} People / Square Mile \n ${object.properties.data["{{ first_variable }}"].population} Total Population`
     }
   console.log("INITIAL MAP INSTANTIATION")
   const deckgl = new deck.DeckGL({

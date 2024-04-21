@@ -25,7 +25,7 @@ def get_group_geojson(group_id, cbsa_id):
         total_pop_for_tract = values[0].value
 
 
-        geojson_list += ['{"type": "Feature", "properties": {"tract_id": ', str(tract.id), ', "county": "', tract.county.name, '", "name_lsad": "', tract.name_lsad, '", "land_area": ', str(tract.aland), ', "water_area": ', str(tract.awater), ', "data": {']
+        geojson_list += ['{"type": "Feature", "properties": {"tract_id": ', str(tract.id), ', "county": "', tract.county.name, '", "name_lsad": "', tract.name_lsad, '", "land_area": ', str(tract.aland), ', "water_area": ', str(tract.awater), ', "concept": "', values[0].acs_variable.concept, '", "data": {']
 
         # feature_str = '{"type": "Feature", "properties": {'
 

@@ -97,7 +97,7 @@ checkbox.addEventListener('change', e => {
 
   function getTooltip({object}) {
     return object && `${object.properties.concept} --- ${object.properties.label}
-      ${object.properties.population_density} People / Square Mile`;
+      ${object.properties.population_density} People / Square Mile \n ${object.properties.population} Total Population`;
   }
 
   const deckgl = new deck.DeckGL({
