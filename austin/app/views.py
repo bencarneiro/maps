@@ -21,6 +21,10 @@ def map_page(request):
     context = {}
     return render(request, "map.html", context)
 
+def examples(request):
+    context = {}
+    return render(request, "examples.html", context)
+
 
 def get_tracts_by_state(request):
     if "state" in request.GET and request.GET['state']:
