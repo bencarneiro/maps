@@ -18,7 +18,7 @@ class Command(BaseCommand):
             print(s.name)
             print(stringified_state_fips_code)
             try:
-                ds = DataSource(f"/home/tonydeals/app/maps/shapefiles/{stringified_state_fips_code}/tl_2022_{stringified_state_fips_code}_tract/tl_2022_{stringified_state_fips_code}_tract.shp")
+                ds = DataSource(f"/home/tonydeals/app/maps/shapefiles/2023/{stringified_state_fips_code}/tl_2023_{stringified_state_fips_code}_tract.shp")
                 lyr = ds[0]
                 for feat in lyr:
                     state_id_str = feat.get("STATEFP")
