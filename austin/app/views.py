@@ -17,6 +17,9 @@ from django.db.models import Q
 def homepage(request):
     return redirect("landing_page")
 
+def index(request):
+    return render(request, "index.html", {})
+
 def map_page(request):
     context = {}
     return render(request, "map.html", context)

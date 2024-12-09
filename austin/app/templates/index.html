@@ -1,0 +1,707 @@
+<!-- <html>
+    <style>
+        body {background-image: url("https://getwallpapers.com/wallpaper/full/6/0/3/1502084-black-and-white-ballet-wallpaper-1920x1080-for-meizu.jpg");}
+        h1 {color: white}
+    </style>
+    <body>
+        <h1>Let's</h1>
+        <h1>Dance</h1>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>620 Dance Centre</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/static/bwleaper.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/static/bwlittle.jpg");
+  min-height: 800px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/static/bwlittle.jpg");
+  min-height: 800px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
+  background-image: url("/static/banner.jpg");
+  min-height: 800px;
+}
+/* Fifth image (Contact) */
+.bgimg-5 {
+  background-image: url("/static/banner.jpg");
+  min-height: 800px;
+}
+/* sixth image (Contact) */
+.bgimg-6 {
+  background-image: url("/static/moody.jpg");
+  min-height: 800px;
+}
+/* sevent image (Contact) */
+.bgimg-7 {
+  background-image: url("/static/moody.jpg");
+  min-height: 800px;
+}
+/* eighth image (Contact) */
+.bgimg-8 {
+  background-image: url("/static/perfect.jpg");
+  min-height: 800px;
+}
+/* ninth image (Contact) */
+.bgimg-9 {
+  background-image: url("/static/perfect.jpg");
+  min-height: 800px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+#classes button {
+    width: 100%
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> ABOUT</a>
+    <a href="#classes" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book"></i> CLASSES</a>
+    <a href="#calendar" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-calendar"></i> SCHEDULE</a>
+    <a href="#team" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> DANCE TEAM</a>
+    <a href="#faq" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-question"></i> FAQ</a>
+    <a href="#tuition" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-credit-card"></i> TUITION</a>
+    <a href="#dresscode" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-gavel"></i> DRESS CODE</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="https://app.jackrabbitclass.com/portal/ppLogin.asp?id=495429" target="_blank" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> LOG IN</a>
+    <a href="https://app.jackrabbitclass.com/regv2.asp?id=495429&hc=2,6" target="_blank" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user-plus"></i> SIGN UP</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#classes" class="w3-bar-item w3-button" onclick="toggleFunction()">CLASSES</a>
+    <a href="#calendar" class="w3-bar-item w3-button" onclick="toggleFunction()">SCHEDULE</a>
+    <a href="#team" class="w3-bar-item w3-button" onclick="toggleFunction()">DANCE TEAM</a>
+    <a href="#faq" class="w3-bar-item w3-button" onclick="toggleFunction()">FAQ</a>
+    <a href="#tuition" class="w3-bar-item w3-button" onclick="toggleFunction()">TUITION</a>
+    <a href="#dresscode" class="w3-bar-item w3-button" onclick="toggleFunction()">DRESS CODE</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="https://app.jackrabbitclass.com/portal/ppLogin.asp?id=495429" class="w3-bar-item w3-button" onclick="toggleFunction()">LOG IN</a>
+    <a href="https://app.jackrabbitclass.com/regv2.asp?id=495429&hc=2,6" class="w3-bar-item w3-button" onclick="toggleFunction()">SIGN UP</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-bottomleft w3-padding-64" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-jumbo w3-wide w3-animate-opacity">620 DANCE <span class="w3-hide-small">CENTRE</span> </span>
+    <!-- <span class="w3-center w3-padding-large w3-black w3-jumbo w3-wide w3-animate-opacity">620</span> -->
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+  <!-- <p class="w3-center"><em>Let's Dance!</em></p> -->
+  <p>Since 1985, we have been committed to fostering creativity, self-discipline, and confidence in every student. </p><p>Our goal is to cultivate a supportive environment where individuals can grow both artistically and personally, building a strong foundation for lifelong learning and self-expression through the art of dance.</p>
+  
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-black w3-padding-large w3-text-white w3-wide">TESTIMONY</span>
+    </div>
+  </div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="testimony">
+  <p>"I cannot think of a more positive or encouraging environment to expose my daughter to!  The staff at 620 Dance Centre has helped my daughter grow as a dancer and as a person."</p>
+  <p>"I cannot thank you enough for this year of dance. Seeing both of my girls on stage full of confidence was priceless, and you gave them this wonderful opportunity. They both enjoyed it so much."</p>
+  <p>"Our family loves 620 Dance Center. From the first time  we visited five years ago, we feel like we are part of a big happy family. Our daughter feels comfortable and safe at the studio, and she loves all her dance teachers."</p>
+  <div class="w3-row">
+  </div>
+</div>
+
+
+<!-- THIRD Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-black w3-padding-large w3-text-white w3-wide">CLASSES</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="classes">
+  <!-- <h3 class="w3-center">OUR CLASSES</h3> -->
+
+  <p class="w3-center"><button onclick="document.getElementById('combo').style.display='block'" class="w3-button w3-black w3-xxlarge">Combo</button></p>
+  <p class="w3-center"><button onclick="document.getElementById('ballet').style.display='block'" class="w3-button w3-black w3-xxlarge">Ballet</button></p>
+  <p class="w3-center"><button onclick="document.getElementById('pointe').style.display='block'" class="w3-button w3-black w3-xxlarge">Pointe</button></p>
+  <p class="w3-center"><button onclick="document.getElementById('contemporary').style.display='block'" class="w3-button w3-black w3-xxlarge">Contemporary</button></p>
+  <p class="w3-center"><button onclick="document.getElementById('drill').style.display='block'" class="w3-button w3-black w3-xxlarge">Drill Team</button></p>
+  <p class="w3-center"><button onclick="document.getElementById('hiphop').style.display='block'" class="w3-button w3-black w3-xxlarge">Hip Hop</button></p>
+</div>
+
+
+<!-- FOURTH Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-white w3-black w3-padding-large w3-wide">SCHEDULE</span>
+    </div>
+  </div>
+  
+  <!-- Container (CALENDAR Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="calendar">
+      <!-- <h3 class="w3-center">CALENDAR</h3> -->
+      <!-- <p class="w3-center"><em>Let's Dance!</em></p> -->
+      <img width=100% src="static/schedule.png"/>
+      <div class="w3-row">
+      </div>
+    </div>
+
+<!-- FIFTH Parallax Image with Portfolio Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-white w3-black w3-padding-large w3-wide" style="white-space:nowrap;">DANCE TEAM</span>
+    </div>
+  </div>
+  
+  <!-- Container (TEAM Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="team">
+    <h3 class="w3-center">What is Debut Performance Company?</h3>
+    <p>Debut Performance Company is the 620 Dance Centre's <b>non-competitive</b> performance company. </p>
+    <p>Debut is designed for the dancer who is interested in building performance skills and improving technique. Students do not audition for a position on this team and are required to take a minimum of 2 different genres of dance in addition to weekly rehearsal.</p>
+    <p>Debut's goal is to provide dancers with a well-rounded professional program placing emphasis on developing the dancers's love for performance while building a strong foundation of technique. </p>
+    <p>Dancers participate in public performances in the local community and surrounding areas throughout the year.  Dancers are also eligible to attend dance convention and workshop experiences with some of the most talented and sought after teachers in the United States.  In doing so, dancers develop a strong technical background and grow to be confident performers.</p>
+    
+    <p>Team members range in age from 7-18.</p>
+    <p>For more information, call our office at (512) 266-8888 -- we love to share about our wonderful dance team opportunity!</p>  
+    <div class="w3-row">
+      </div>
+    </div>
+    
+
+  
+
+<!-- SIXTH Parallax Image with Portfolio Text -->
+<div class="bgimg-6 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-white w3-black w3-padding-large w3-wide">FAQ</span>
+    </div>
+  </div>
+
+
+<!-- Container (FAQ Section) -->
+<div class="w3-content w3-container w3-padding-64" id="faq">
+    <!-- <p class="w3-center"><em>Let's Dance!</em></p> -->
+    <p>
+        <ul>
+            <li>
+                <b>What is the youngest age dancer you accept?</b>
+            </li>
+            <ul style="padding-bottom:1rem">
+                <li>
+                    We accept dancers ages 3 and up into "Combo," a class that includes ballet and tap. Click to see our <a href="#classes">classes</a> 
+                </li>
+            </ul>
+
+            <li>
+                <b>How do I register for dance classes?</b>
+            </li>
+            <ul style="padding-bottom:1rem">
+                <li>
+                    Just click <a href="https://app.jackrabbitclass.com/regv2.asp?id=495429&hc=2,6" target="_blank">here!</a> Note: it is a good idea to check our <a href="#calendar">schedule</a> first to find the <a href="#classes">classes</a> that work for your dancer.
+                </li>
+            </ul>
+
+            <li>
+                <b>What fees are due upon registration?</b>
+            </li>
+            <ul style="padding-bottom:1rem">
+                <li>
+                    Upon Registration, each dancer/family is responsible for the payment of a registration fee & pre-payment of May tuition. Click <a href="#tuition">here</a> to see all our Dance Tuition & Fees. .
+                </li>
+            </ul>
+
+            <li>
+                <b>Can my child try a dance class before enrolling?</b>
+            </li>
+            <ul style="padding-bottom:1rem">
+                <li>
+                    Absolutely! We always encourage new students to participate in a trial class.  All trial classes are free!  These classes help all of us find the appropriate class level as well as the dancer’s comfort zone. Give us a call at (512) 266-2888 or email us admin@620dancecentre.com to set up your trial class today!
+                </li>
+            </ul>
+
+            <li>
+                <b>Can your studio be considered conservative?</b>
+            </li>
+            <ul style="padding-bottom:1rem">
+                <li>
+                    We believe that all classes, music, choreography and costumes should be age appropriate and family friendly. We have been serving Austin, TX for 40 years and are proud to have kept our high standards from the very beginning!
+                </li>
+            </ul>
+
+            <li>
+                <b>What can I expect from the spring concert?</b>
+            </li>
+            <ul style="padding-bottom:1rem">
+                <li>
+                    A wonderful memory of your child's year of dance! Performance Fees are $75 per student or $100 per family.  Costume fees charged per class as follows: $70 for Pre-School and Combo classes; $80 for Advanced Combo; $85 for Beginner-Advanced Beginner level classes; $95 for Intermediate-Advanced  & Teen level classes. (Our Spring Concert Performance & Costume Fees are due November 1st.) 
+                </li>
+            </ul>
+
+
+            <li>
+                <b>How many days does your spring concert and dress rehearsal last?</b>
+            </li>
+            <ul style="padding-bottom:1rem">
+                <li>
+                    Our Dress Rehearsal is held on the day before the Spring Concert!   Dress Rehearsal runs 1pm-9pm.  Students are scheduled to a specific rehearsal time and are allowed to leave after all choreography has been completed.  Spring Concert begins 2pm on Saturday.  All events are held at the LTHS Performing Arts Center & Concert Hall or a like venue.
+                </li>
+            </ul>
+
+            <li>
+                <b>Do you have a dance team?</b>
+            </li>
+            <ul style="padding-bottom:1rem">
+                <li>
+                    Yes we do! 620 Dance Centre has a non-competitive performance dance team, Debut Performance Company.  Debut Performance Company members range in age from 7-18.  No audition is required for membership to the performance team.  This is a great start for any dancer considering competitive dance in the future or the dancer who loves to performance without the pressure of competition.For more information, call our office at (512) 266-8888 -- we love to share about our wonderful dance team opportunity!
+                </li>
+            </ul>
+
+
+            <li>
+                <b>What is the time commitment for your dance team?</b>
+            </li>
+            <ul style="padding-bottom:1rem">
+                <li>
+                    Debut Performance Company requires every member to be enrolled in 2 different genres of dance per week in addition to their weekly team rehearsal on Wednesday.  We fully support area public school dance programs and do our best to coordinate schedules for performance and competition to allow our members to participate in multiple activities.
+                </li>
+            </ul>
+
+            
+            
+            
+
+        </ul>
+    </p>
+    <div class="w3-row">
+    </div>
+  </div>
+
+<!-- SEVENTH Parallax Image with Portfolio Text -->
+<div class="bgimg-7 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-white w3-black w3-padding-large w3-wide">TUITION</span>
+    </div>
+  </div>
+
+  
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="tuition">
+  <table style="margin-bottom: 2rem" class="w3-table-all w3-centered">
+    <tr>
+      <th>Hours Per Week</th>
+      <th>Monthly Tuition</th>
+    </tr>
+    <tr>
+      <td>1 or less</td>
+      <td>$90</td>
+    </tr>
+    <tr>
+      <td>1.5</td>
+      <td>$135</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>$155</td>
+    </tr>
+    <tr>
+      <td>2.5</td>
+      <td>$175</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>$195</td>
+    </tr>
+    <tr>
+      <td>3.5</td>
+      <td>$215</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>$235</td>
+    </tr>
+    <tr>
+      <td>4.5</td>
+      <td>$255</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>$275</td>
+    </tr>
+    <tr>
+      <td>5.5</td>
+      <td>$295</td>
+    </tr>
+    <tr>
+      <td>6+ (Unlimited)</td>
+      <td>$315</td>
+    </tr>
+  </table>
+    <ul>
+        <li>
+            Tuition is based annually and divided into 9 equal monthly payments due the first of each month.    
+        </li>
+        <li>
+            We strongly urge all participants to enroll in the Electronic Fund Transfer (EFT) program.  If you choose not to enroll in the EFT program, you will be charged a non-refundable administrative fee in the amount of $50, to be paid with registration. 
+        </li>
+        <li>A monthly statement will not be mailed. </li>
+        <li>A $25.00 late fee will be posted to all unpaid accounts after the 10th of the month. </li>
+        <li>All fees (dancewear, performance, etc.) are subject to the stated late fee if not paid by the stipulated due dates.  This rule is strictly enforced.</li>
+        <li>Late fees will not be waived.</li>
+        <li>All fees and tuition payments are non-refundable.</li>
+        <li>A $35.00 service charge will be imposed on all returned checks. </li>
+        <li>Tuition is the same for all months, regardless of the number of lessons in that month.  There are no refunds or adjustments for absences, cancelled classes, or vacation.</li>
+        <li>Students are considered enrolled until the office has been notified, in writing, otherwise.  Tuition is due for the entire month in which the drop occurs.</li>
+        <li>Monthly tuition is determined by the number of class hours taken each week.</li>
+    </ul>
+    <div class="w3-row">
+    </div>
+  </div>
+
+
+<!-- EIGTH Parallax Image with Portfolio Text -->
+<div class="bgimg-8 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span style="white-space:nowrap;" class="w3-xxlarge w3-text-white w3-black w3-padding-large w3-wide">DRESS CODE</span>
+    </div>
+  </div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="dresscode">
+
+    <h3 class="w3-center">Dress Code</h3>
+    <ul>
+        
+        <li>Proper dance attire is extremely important.  A large percentage of dance is based on correct body placement.</li>
+        <li>Teachers need to be able to see a student’s body in order to give necessary corrections.</li>
+        <li>Accessories (t-shirts, shorts, sweats) are not acceptable for class attire.  The teacher may ask at any time for these accessories to be removed.</li>
+
+        <li>Hair must be pulled back in a ponytail or a bun for class.  If your child's hair is too short, please pull back with clips or a headband.</li>
+
+        <li>We have a list of some of our favorite local suppliers of dance supplies! Click here to see our entire list!</li>
+    </ul>
+    </p>
+        <h3 class="w3-center">Dance Wear</h3>
+        
+        <p>
+            <ul>
+                <li>Toddlers Dance Classes - Combination Classes: Black or theatrical pink leotard and theatrical pink tights. Dancers may wear a ballet skirt or tutu of their choice.</li>
+                <li>Ballet: Black leotard and theatrical pink tights are required. Hair must be in a bun. Dancers may wear a ballet skirt of their choice.</li>
+                <li>Jazz, Tap, Contemporary, Turns & Technique: Solid black leotard and / or black camisole and solid black jazz pants, leggings or dance shorts.</li>
+                <li>Drill Team: Solid black leotard and black jazz pants or leggings.</li>
+                <li>Hip Hop: Dance appropriate t-shirt and pants. No jeans or shorts</li>
+
+            </ul>
+        </p>
+        <h3 class="w3-center">Dance Shoes</h3>
+        <p>
+            <ul>
+                <li>
+                    Tap: Combo Classes-Black patent children's shoe; Tap 1-Adv. Tap-Full sole tap oxford
+                </li>
+                <li>
+                    Ballet: Combo Classes-Pink leather ballet shoe; Ballet 1-Adv. Ballet-Pink canvas split sole
+                </li>
+                <li>
+                    Jazz, Drill Team, Turns & Technique: Tan leather pull-on jazz boot
+                </li>
+                <li>        
+                    Hip Hop: Dance sneakers, combat boots or tennis shoes designated for studio use only
+                </li>
+                <li>
+                    Contemporary: You will dance without shoes unless specified by the teacher.
+                </li>
+            </ul>
+        </p>
+    
+</div>
+
+
+
+<!-- NINTH Parallax Image with Portfolio Text -->
+<div class="bgimg-9 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-white w3-black w3-padding-large w3-wide">CONTACT</span>
+    </div>
+  </div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>15500 Stroup Circle • Lakeway, TX 78734<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 512 266-8888<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> admin@620dancecentre.com<br>
+        </div>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-third">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-third">
+              <input class="w3-input w3-border" type="text" placeholder="Phone" required name="Phone">
+            </div>
+            <div class="w3-third">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+<!-- Modal -->
+
+<div id="combo" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('combo').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Children's Combo</h1>
+    </div>
+      <div class="w3-container w3-display-container">
+        <p>A dance class designed to introduce young dancers to multiple forms of dance. Students will participate in age-appropriate ballet, tap and tumbling as they develop a love of dance.
+            <ul>
+                <li>
+                    Preschool Combo: A dance class of tap, ballet and tumbling for ages 3-4 with little or no dance experience. This class is focused on building developmental skills and balanced coordination for the youngest students while inspiring the love of dance. 
+                </li>
+                <li>
+                    Combo: A dance class of tap, ballet and tumbling for ages 4-5 with little or now dance experience. This class is focused on building strong skills and balanced coordination for elementary aged students while inspiring the love of dance. 
+                </li>
+                <li>
+                    Advanced Combo: A dance class of tap, ballet and pre-jazz for ages 6-7 with at least 2 years dance experience. This class is focused on continued skill building in both tap and ballet while offering an introduction to jazz. This class is appropriate for students moving up from Combo class. 
+                </li>
+            </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+<div id="ballet" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('ballet').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Ballet</h1>
+    </div>
+      <div class="w3-container w3-display-container">
+        <p>A classical dance form characterized by grace and precision of movement and by elaborate formal gestures, steps, and poses. 
+            <ul>
+            <li>
+            Ballet Beginner 1-A: ballet class for student age 7 and up with little or no prior dance experience. This class offers an introduction to ballet including barre and center work for young ballerinas. This class is appropriate for students moving up from Advanced Combo class or with teacher approval.
+            </li> <li>
+            Ballet Beginner 2-A: ballet class for student age 8 and up with at least 1-2 years of ballet experience. This class is appropriate for students moving up from Beginner 1 or with teacher approval. 
+        </li> <li>
+            Ballet Advanced Beginner 1-A: ballet class for students ages 9 and up with at least 2 years of ballet training. This class is appropriate for students moving up from Beginner 2 or with teacher approval. 
+        </li> <li>
+            Ballet Intermediate 1-A: ballet class for students ages 11 and up with at least 4 years of ballet training. This class is appropriate for students moving up from Advanced Beginner 2 or with teacher approval. 
+        </li> <li>
+            Ballet Intermediate 2-A: ballet class for students ages 11 and up with at least 4-5 years of ballet training. This class is appropriate for students moving up from Advanced Intermediate or with teacher approval. 
+        </li> <li>
+            Ballet Advanced Intermediate 1-A: ballet class for students ages 12 and up with at least 6 years of ballet training. This class is appropriate for students moving up from Intermediate 2 or with teacher recommendation 
+        </li> <li>
+            Ballet Advanced Intermediate 2-A: ballet class for students ages 14 and up with 7-8 years of ballet training. This class is appropriate for students moving up from Advanced Intermediate 1 or with teacher recommendation. 
+        </li> <li>
+            Ballet Technique Intermediate/Advanced: This is a technique only class designed for Intermediate to Advanced ballet dancers who wish to gain strength and technical skill. Students must have a minimum of 6 years ballet training or instructor approval to attend this class. This class will not participate in the Spring Concert. 
+        </li> <li>
+            Ballet Teen Beginner: a ballet class specifically created for dancers ages 11 and up with prior experience as a young child or public school instruction. Class begins with basic barre work and terminology and progresses quickly into more advanced stages of ballet. 
+        </li> <li>
+            A ballet class specifically created for dancers ages 12 and up with prior studio experience or some public school instruction. Class begins with intermediate ballet techinques and terminology and progresses quickly into more advanced stages of technique and choreography. This call is recommended for students moving up from Ballet Teen Beginner. 
+        </ul></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="pointe" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('pointe').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Pointe</h1>
+    </div>
+      <div class="w3-container w3-display-container">
+        <p>
+            An extension of Ballet class for the Intermediate to Advanced student 
+            <ul>
+                <li>
+                    Pre-Pointe: A preparatory pointe class designed to prepare the experienced ballet student for work in specially fitted pointe shoes. Dancers must be enrolled in an Advanced Intermediate Ballet class and have teacher recommendation. 
+                </li>
+                <li>
+                    Pointe 1-4: A pointe class designed to further a dancer’s ballet experience with level appropriate instruction, building both strength & technique. Dancers must be enrolled in upper level ballet classe and have teacher recommendation. 
+                </li>
+            </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="contemporary" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('contemporary').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Contemporary</h1>
+    </div>
+      <div class="w3-container w3-display-container">
+        <p>
+            A dance form consisting of jazz, ballet & modern movements. Improvisation and musicality are explored through movement. 
+            <ul>
+                <li>
+                    Contemporary Advanced Beginner-A dance class for students ages 9 and up. This class introduces dancers to the techniques of modern and contemporary dance with warm-up and center work. It is recommended that students have at least 2 years of ballet and jazz training. This is appropriate for students moving up from Beginner 2 and Advanced Beginner levels of Ballet & Jazz. 
+                </li>
+                <li>Contemporary Intermediate-A dance class for students ages 10 and up. This class consists of warm up and center work focused on modern and contemporary techniques. It is recommended that students have at least 4 years of ballet and jazz training (or teacher approval). This is appropriate for students moving up from Advanced Beginner or Intermediate levels of Ballet & Jazz. 
+                </li>
+                <li>Contemporary Teen- a dance class for students ages 11 and up. This class consists of warm up and center work focused on modern and contemporary techniques. It is recommended that students have at least 3 years of ballet and jazz training (or teacher approval). This is appropriate for students moving up from Modern 1, Advanced Beginner 2 and Intermediate levels of Ballet & Jazz.
+                </li>
+                <li>Contemporary Advanced Intermediate-A dance class for students ages 13 and up. This class consists of warm up and center work focused on modern and contemporary techniques. It is recommended that students have at least 5 years of ballet and jazz training (or teacher approval). This is appropriate for students moving up from Intermediate levels of Ballet & Jazz. 
+                </li>
+            </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="drill" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('drill').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Drill Team</h1>
+    </div>
+      <div class="w3-container w3-display-container">
+        <p>
+            Elements needed to participate in a public school dance team, pom squad, cheer team. 
+            <ul>
+                <li>
+                    Drill Team Skills: This class is designed for students 6th grade and up who are interested in building skills in preparation for Middle School or High School dance team tryouts. Students will work on mastering required turns, leaps and kicks, as well as various dance styles, necessary for dance, drill & pom tryouts in area schools. 
+                </li>
+            </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="hiphop" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('hiphop').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Hip Hop</h1>
+    </div>
+      <div class="w3-container w3-display-container">
+        <p>
+            A contemporary style of urban street dance. Hip Hop Dancers typically wear tennis shoes or sneakers and jeans,  shorts or pants that are easy to move in. This is the newest form of dance and a super popular choice for kids, teens and adults!
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
