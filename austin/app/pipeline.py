@@ -19,7 +19,7 @@ def download_data_for_a_single_county(county, variable):
         stringified_state_id = "0" + stringified_state_id
     stringified_county_id = str(county.id)[-3:]
 
-    url = f"https://api.census.gov/data/2022/acs/acs5?get=NAME,{variable}&for=tract:*&in=state:{stringified_state_id}&in=county:{stringified_county_id}&key={census_api_key}"
+    url = f"https://api.census.gov/data/2023/acs/acs5?get=NAME,{variable}&for=tract:*&in=state:{stringified_state_id}&in=county:{stringified_county_id}&key={census_api_key}"
     r = requests.get(url)
     # print(url)
     # print(r.text)
@@ -31,7 +31,7 @@ def download_data_for_a_single_county(county, variable):
     ]
     # df = pd.DataFrame(columns=columns, data=[])
     # acs_code = ACSVariable.objects.get(acs_code="")
-    year = 2022
+    year = 2023
     
     for row in pop[1:]:
         # tract = Tract.objects.get(county_id__in=ids, tract_id=int(row[4]))
@@ -62,7 +62,7 @@ def download_data_for_cbsa(counties, variable):
         stringified_state_id = str(state)
         if len(stringified_state_id) == 1:
             stringified_state_id = "0" + stringified_state_id
-        url = f"https://api.census.gov/data/2022/acs/acs5?get=NAME,{variable}&for=tract:*&in=state:{stringified_state_id}&in=county:{stringified_list_of_county_ids}&key={census_api_key}"
+        url = f"https://api.census.gov/data/2023/acs/acs5?get=NAME,{variable}&for=tract:*&in=state:{stringified_state_id}&in=county:{stringified_list_of_county_ids}&key={census_api_key}"
         print(url)
         r = requests.get(url)
         pop = r.json()
@@ -71,7 +71,7 @@ def download_data_for_cbsa(counties, variable):
             "tract_id",
             "population"
         ]
-        year = 2022
+        year = 2023
         
         for row in pop[1:]:
             if not row[1]:
@@ -108,7 +108,7 @@ def batch_download_variables(variables, requests_by_state_dict, census_api_key):
         if len(stringified_state_id) == 1:
             stringified_state_id = "0" + stringified_state_id
 
-        url = f"https://api.census.gov/data/2022/acs/acs5?get=NAME,{stringified_list_of_variables}&for=tract:*&in=state:{stringified_state_id}&in=county:{stringified_list_of_county_ids}&key={census_api_key}"
+        url = f"https://api.census.gov/data/2023/acs/acs5?get=NAME,{stringified_list_of_variables}&for=tract:*&in=state:{stringified_state_id}&in=county:{stringified_list_of_county_ids}&key={census_api_key}"
         print(url)
         r = requests.get(url)
         pop = r.json()
@@ -117,7 +117,7 @@ def batch_download_variables(variables, requests_by_state_dict, census_api_key):
             "tract_id",
             "population"
         ]
-        year = 2022
+        year = 2023
         
         for row in pop[1:]:
             print(row)
