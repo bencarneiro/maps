@@ -244,6 +244,9 @@ def get_group_map(request):
 def benny_boy_resume(request):
     return render(request, "resume.html")
 
+def new_resume(request):
+    return render(request, "new_resume.html")
+
 def landing_page(request):
     return render(request, "landing_page.html")
 
