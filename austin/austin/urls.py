@@ -22,7 +22,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path("", homepage, name="homepage"),
     path("examples", examples, name="examples"),
-    path("resume", benny_boy_resume, name="resume"),
+    path("resume", new_resume, name="resume"),
+    path("new_resume", new_resume, name="new_resume"),
     path("admin/", admin.site.urls),
     path("population_density_geojson.json", population_density_geojson, name="population_density_geojson"),
     path("map/", map_page, name="map"),
@@ -38,6 +39,6 @@ urlpatterns = [
     path("get_group_map/", get_group_map, name="get_group_map"),
     path("landing_page", landing_page, name="landing_page"),
     path("index.html", index, name="index"),
-    path("new_resume", new_resume, name="new_resume"),
+    path("old_resume", benny_boy_resume, name="old_resume"),
     re_path(r'^favicon\.ico$', favicon_view),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
