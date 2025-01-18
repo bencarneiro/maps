@@ -13,7 +13,7 @@ body, html {
   height: 100%;
   color: black;
   line-height: 1.8;
-  background-color: #6f0000;
+  background-color: #eeeeee;
   background-blend-mode: lighten;
 }
 
@@ -51,7 +51,7 @@ body, html {
 
 /* fifth image (Contact) */
 .bgimg-5 {
-  background-image: url("/static/la.png");
+  background-image: url("/static/phoenixx.jpg");
   min-height: 100%;
 }
 
@@ -70,7 +70,7 @@ body, html {
 }
 
 body {
-  background-color: #474e5d;
+  background-color: #6f0000;
   font-family: Helvetica, sans-serif;
 }
 
@@ -234,8 +234,9 @@ body {
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container" id="home">
+  <span class="w3-center w3-display-middle w3-padding-large w3-black w3-xlarge w3-hide-large w3-wide w3-animate-opacity">DATA FOR THE PEOPLE</span>
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PUBLIC DATA</span>
+    <span class="w3-center w3-padding-large w3-black w3-jumbo w3-hide-small w3-hide-medium w3-wide w3-animate-opacity">DATA FOR THE PEOPLE</span>
   </div>
 </div>
 
@@ -247,7 +248,7 @@ body {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
         
-    <h3 id="contact" class="w3-center w3-xxlarge">Contact Me</h3>
+    <!-- <h3 id="contact" class="w3-center w3-xxlarge">Contact</h3> -->
     <h3 class="w3-center w3-xlarge"><a href="mailto:ben@roadway.report">ben@roadway.report</a></h3>
     <h3 class="w3-center w3-xlarge">512 632 2715</h3>
       <img src="/static/selfie.jpg" class="w3-round w3-image" alt="Photo of Me">
@@ -256,18 +257,19 @@ body {
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-padding-large">
-        <p>Ben specializes in </p>
+        <!-- <p>Ben specializes in </p> -->
       <ul>
         <li>Web Application Development</li>
         <li>Database Architecture</li>
         <li>Data Modeling</li>
         <li>Data Engineering</li>
-        <li>Systems Administration</li>
+        <li>Systems Administration (Linux)</li>
         <li>Deployment / Testing</li>
         <li>Information Security</li>
         <li>Programming Languages
             <ul>
                 <li>Python</li>
+                <li>Go</li>
                 <li>Java</li>
                 <li>Javascript / CSS / HTML</li>
             </ul>
@@ -275,8 +277,10 @@ body {
         <li>Frameworks
             <ul>
                 <li>Django</li>
+                <li>django-ninja</li>
                 <li>GeoDjango</li>
                 <li>Flask</li>
+                <li>FastAPI</li>
                 <li>ReactJS</li>
                 <li>HTMX</li>
             </ul>
@@ -284,10 +288,12 @@ body {
         <li>Databases
             <ul>
                 <li>PostGIS</li>
-                <li>PostgreSQL</li>
                 <li>MySQL</li>
+                <li>PostgreSQL</li>
                 <li>Sqlite</li>
                 <li>T-SQL</li>
+                <li>Nnowflake</li>
+                <li>Databricks</li>
             </ul>
         </li>
         <li>GIS Tech
@@ -295,9 +301,9 @@ body {
                 <li>PostGIS, GeoDjango, GeoPandas, shapely, ArcGIS, QGIS, Maplibre, Mabox, tippecanoe, pmtiles, Leaflet, Folium</li>
             </ul>
         </li>
-        <li>Analytics
+        <li>Data & Analytics
             <ul>
-                <li>Pandas, matplotlib, Metabase, Tableau, ArcGIS, QGIS, sklearn, recharts, chartJS, google sheets, microsoft excel</li>
+                <li>Pandas, matplotlib, Metabase, Tableau, ArcGIS, QGIS, sklearn, recharts, chartJS, google sheets, pyspark, apache spark, databricks, dbt, kafka, kinesis</li>
             </ul>
         </li>
       </ul>
@@ -305,17 +311,21 @@ body {
   </div>
 </div>
 
+
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container">
+<div class="bgimg-2 w3-display-container" onclick="window.location.href='https://roadway.report'">
     <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Projects</span>
+        <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">WORK</span>
       </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio" style="background-color: white;">
-  <h3 class="w3-center w3-xxlarge"><a href="https://roadway.report" target="_blank">roadway.report</a></h3>
-  <h4 class="w3-center"><em>The Nationwide Vision-Zero Map<br>An Interactive Map of Every Roadway Death in the USA</em></h4><br>
+
+  <h3 class="w3-center w3-xxlarge w3-hide-medium w3-hide-large"><a href="https://roadway.report" target="_blank">roadway.report</a></h3>
+  <h3 class="w3-center w3-jumbo w3-hide-small"><a href="https://roadway.report" target="_blank">roadway.report</a></h3>
+
+  <h4 class="w3-center w3-padding-16"><em>"The Nationwide Vision-Zero Map"</em></h4>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
@@ -336,13 +346,13 @@ body {
     </div>
   </div>
 
-  <div class="w3-row-padding w3-center w3-section">
+  <div class="w3-row-padding w3-center w3-section w3-hide-small">
     <div class="w3-col m3">
-      <img src="/static/pedestrian.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      <img src="/static/pedestrian.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A chart of pedestrian fatalities (They're going up)">
     </div>
 
     <div class="w3-col m3">
-      <img src="/static/bike.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <img src="/static/bike.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A Chart of bicycle fatalities (they're going up)">
     </div>
 
     <div class="w3-col m3">
@@ -354,6 +364,7 @@ body {
     </div>
     <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
   </div>
+  <div style="padding:50px"></div>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -366,20 +377,21 @@ body {
 </div> -->
 
 <!-- third Parallax Image with Portfolio Text -->
-<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-3 w3-display-container w3-opacity-min" onclick="window.location.href='https://censusmaps.org'">
     <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">censusmaps.org</span>
+        <!-- <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">censusmaps.org</span> -->
       </div>
-  </div> -->
+  </div>
 
   <!-- Container (Portfolio Section) -->
   <div class="w3-content w3-container w3-padding-64" id="portfolio" style="background-color: white;">
-    <h3 class="w3-center w3-xxlarge"><a href="https://censusmaps.org" target="_blank">censusmaps.org</a></h3>
-    <h4 class="w3-center"><em>Make Demographic Maps of Any US City or Metro</em></h4><br>
+    <h3 class="w3-center w3-xxlarge  w3-hide-medium w3-hide-large"><a href="https://censusmaps.org" target="_blank">censusmaps.org</a></h3>
+    <h3 class="w3-center w3-jumbo w3-hide-small"><a href="https://censusmaps.org" target="_blank">censusmaps.org</a></h3>
+    <h4 class="w3-center  w3-padding-16"><em>Make Demographic Maps of Any US City</em></h4><br>
   
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
-      <div class="w3-col m3">
+      <div class="w3-col m3 ">
         <img src="/static/black_la.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Los Angeles">
       </div>
   
@@ -396,7 +408,7 @@ body {
       </div>
     </div>
   
-    <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-row-padding w3-center w3-section  w3-hide-small">
       <div class="w3-col m3">
         <img src="/static/phoenixgood.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Phoenix">
       </div>
@@ -414,21 +426,24 @@ body {
       </div>
       <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
     </div>
+
+  <div style="padding:50px"></div>
   </div>
 
 
 <!-- fourth Parallax Image with Portfolio Text -->
-<!-- <div class="bgimg-4 w3-display-container w3-opacity-min">
+<div class="bgimg-4 w3-display-container w3-opacity-min"  onclick="window.location.href='https://transit.observer'">
     <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">transit.observer</span>
+        <!-- <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">transit.observer</span> -->
       </div>
-</div> -->
+</div>
 
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio" style="background-color: white;">
-    <h3 class="w3-center w3-xxlarge"><a href="https://transit.observer" target="_blank">transit.observer</a></h3>
-    <h4 class="w3-center"><em>Search public transit data for any agency in the USA<br>Explore spending and performance 1991-2023</em></h4><br>
+    <h3 class="w3-center w3-xxlarge w3-hide-medium w3-hide-large"><a href="https://transit.observer" target="_blank">transit.observer</a></h3>
+    <h3 class="w3-center w3-jumbo w3-hide-small"><a href="https://transit.observer" target="_blank">transit.observer</a></h3>
+    <h4 class="w3-center  w3-padding-16"><em>Search public transit data for any agency in the USA</em></h4><br>
   
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
@@ -449,7 +464,7 @@ body {
       </div>
     </div>
   
-    <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-row-padding w3-center w3-section  w3-hide-small">
         <div class="w3-col m3">
           <img src="/static/uptpervrh.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
         </div>
@@ -467,15 +482,17 @@ body {
         </div>
         <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
       </div>
-      <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
+      <div style="padding:50px"></div>
     </div>
+
   </div>
 
 
 <!-- fifth Parallax Image with Portfolio Text -->
 <div class="bgimg-5 w3-display-container">
     <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EXPERIENCE</span>
+        <span class="w3-center w3-padding-large w3-black w3-hide-small w3-xxlarge w3-wide w3-animate-opacity">EXPERIENCE</span>
+        <span class="w3-center w3-padding-large w3-black w3-hide-medium w3-hide-large w3-xlarge w3-wide w3-animate-opacity">EXPERIENCE</span>
       </div>
 </div>
 
@@ -631,7 +648,8 @@ body {
       <h3>Bullshit Jobs</h3>
       <img style="width:100%" src="/static/worker.jpg"/>
       <ul>
-          <li>Yes Karen, the dressing is on the side</li>
+          <li>I served something in the neighborhood of half a million people</li>
+          <li>Yes, the dressing is on the side</li>
         </ul>
     </div>
   </div>
@@ -646,7 +664,9 @@ body {
       <h3>Radio-Television-Film @ University of Texas</h3>
       <img style="width:100%" src="/static/chill.jpg"/>
       <ul>
-          <li>I learned all about A/V Technology and Media Production</li>
+          <li>Digital Media Production</li>
+          <li>Focus on Audio and Post-Production</li>
+          <li>Dabbled in radio</li>
           <li>I made a LOT of really weird art about clowns</li>
         </ul>
     </div>
@@ -656,39 +676,6 @@ body {
 
 </div>
 
-<!-- Container (Contact Section) -->
-<!-- <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-</div> -->
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
