@@ -169,11 +169,11 @@ map.on('load', () => {
                 'fill-extrusion-color': [
                       'interpolate',
                       ['linear'],
-                      ['get', 'ppsm'], 0, 'lightgray', 5000, 'royalblue', 10000, 'lightblue'
+                      ['get', 'ppsm'], 0, 'lightgray', 2000, 'royalblue', 5000, 'lightblue'
                   ],
 
                 // Get fill-extrusion-height from the source 'height' property.
-                'fill-extrusion-height': ['get', 'gppsm'],
+                'fill-extrusion-height': ['get', 'ppsm'],
 
                 // // Get fill-extrusion-base from the source 'base_height' property.
                 // 'fill-extrusion-base': ['get', 'base_height'],
