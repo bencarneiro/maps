@@ -166,7 +166,11 @@ map.on('load', () => {
         'paint': {
                 // See the MapLibre Style Specification for details on data expressions.
                 // https://maplibre.org/maplibre-style-spec/expressions/
-                "fill-color": "red",
+                'fill-extrusion-color': [
+                      'interpolate',
+                      ['linear'],
+                      ['get', 'ppsm'], 0, 'lightgray', 5000, 'royalblue', 10000, 'lightblue'
+                  ],
 
                 // Get fill-extrusion-height from the source 'height' property.
                 'fill-extrusion-height': ['get', 'gppsm'],
