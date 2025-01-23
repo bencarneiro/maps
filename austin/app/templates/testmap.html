@@ -166,18 +166,10 @@ map.on('load', () => {
         'paint': {
                 // See the MapLibre Style Specification for details on data expressions.
                 // https://maplibre.org/maplibre-style-spec/expressions/
-                "circle-color": [
-                    "rgb",
-                    // red is higher when feature.properties.temperature is higher
-                    ["get", "ppsm"],
-                    // green is always zero
-                    0,
-                    // blue is higher when feature.properties.temperature is lower
-                    ["-", 100, ["get", "temperature"]]
-                ],
+                "fill-color": "red",
 
                 // Get fill-extrusion-height from the source 'height' property.
-                'fill-extrusion-height': ['ppsm', 'height'],
+                'fill-extrusion-height': ['get', 'gppsm'],
 
                 // // Get fill-extrusion-base from the source 'base_height' property.
                 // 'fill-extrusion-base': ['get', 'base_height'],
