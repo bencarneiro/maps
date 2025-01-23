@@ -252,3 +252,6 @@ def landing_page(request):
 
 
 favicon_view = RedirectView.as_view(url='/static/favicon.ico', permanent=True)
+
+def testmap(request):
+    return render(request, "testmap.html", {})
