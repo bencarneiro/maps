@@ -104,8 +104,9 @@ box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);
 </style>
 <head>
 
-    <title>USA Population Density (2023)</title>
+    <title>USA Median Income (2023)</title>
 </head>
+
 <script>
     function toggleLayerVisibility(layerId, isVisible) {
         map.setLayoutProperty(layerId, 'visibility', 
@@ -116,20 +117,18 @@ box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);
     // Example usage:
 
     function toggleOn() {    
-    toggleLayerVisibility('test', true);  // Show the layer
+    toggleLayerVisibility('income', true);  // Show the layer
     }
     function toggleOff() {    
-    toggleLayerVisibility('test', false); // Hide the layer
+    toggleLayerVisibility('income', false); // Hide the layer
     }
 </script>
-
-
 <body>
 
     <div id="map"></div>
     <div class="map-overlay top">
         <div class="map-overlay-inner">
-            <h3>USA Population Density (2023)</h3>
+            <h3>USA Median Income (2023)</h3>
         </div>
         <button onclick=toggleOn()>Display Data</button>
         <button onclick=toggleOff()>Hide Data</button>
@@ -175,10 +174,10 @@ map.on('load', () => {
 
 
     map.addLayer({
-        id: "test",
+        id: "income",
         type: "fill-extrusion",
         source: {
-            url: "pmtiles://static/tiles/test.pmtiles",
+            url: "pmtiles://http://127.0.0.1:8080/income.pmtiles",
             type: "vector"
         },
         "source-layer": "test",
@@ -188,7 +187,7 @@ map.on('load', () => {
                 'fill-extrusion-color': [
                       'interpolate',
                       ['linear'],
-                      ['get', 'ppsm'], 0, 'lightgray', 1000, 'orange', 15000, "green"
+                      ['get', 'B19013_001E'],  0, "lightgray", 1000, 'red', 75000, 'yellow', 150000, "green"
                   ],
 
                 // Get fill-extrusion-height from the source 'height' property.
@@ -211,12 +210,18 @@ map.on('load', () => {
         console.log(e)
         console.log(features)
         if (features.length == 0) return;
-        let table = "<table><thead><tr><th>Tract</th><th>Population</th><th>People Per Square Mile</th></tr></thead>";
+        let table = "<table><thead><tr><th>Tract</th><th>Median Household Income</th><th>People Per Square Mile</th></tr></thead>";
         let total = 0;
         features.forEach((f, i) => {
             table += "<tr>";
             table += `<tr><td>${f.properties.NAME_y}</td>`;
-            table += `<td>${f.properties.B02001_001E}</td>`;
+            if (f.properties.B19013_001E < 0) {
+                table += "<td>No Income</td>"
+            }
+            else {
+
+                table += `<td>$${Math.round(f.properties.B19013_001E / 1000)}K</td>`;
+            }
             table += `<td>${f.properties.ppsm}</td>`;
             table += "</tr>";
         })

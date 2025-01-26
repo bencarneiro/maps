@@ -255,3 +255,6 @@ favicon_view = RedirectView.as_view(url='/static/favicon.ico', permanent=True)
 
 def testmap(request):
     return render(request, "testmap.html", {})
+
+def median_income(request):
+    return render(request, "median_income.html", {})

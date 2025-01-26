@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path
-from app.views import landing_page, benny_boy_resume, homepage, examples, testmap, get_group_map, get_geojson_by_cbsa, get_group_geojson_by_cbsa, population_density_geojson, map_page, get_tracts_by_state, acs_concept_by_id, get_demographic_data_by_metro, list_msas, msa_search, list_acs_variables, get_map, index, new_resume, favicon_view
+from app.views import landing_page, benny_boy_resume, homepage, examples, median_income, testmap, get_group_map, get_geojson_by_cbsa, get_group_geojson_by_cbsa, population_density_geojson, map_page, get_tracts_by_state, acs_concept_by_id, get_demographic_data_by_metro, list_msas, msa_search, list_acs_variables, get_map, index, new_resume, favicon_view
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -41,5 +41,6 @@ urlpatterns = [
     path("index.html", index, name="index"),
     path("old_resume", benny_boy_resume, name="old_resume"),
     path('testmap', testmap, name='testmap'),
+    path("median_income", median_income, name="median_income"),
     re_path(r'^favicon\.ico$', favicon_view),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
