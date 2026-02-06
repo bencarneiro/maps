@@ -8,7 +8,7 @@ class Command(BaseCommand):
     
     def handle(self, *args, **options):
         ACSVariable.objects.all().delete()
-        df = pd.read_html("https://api.census.gov/data/2023/acs/acs5/variables.html")
+        df = pd.read_html("https://api.census.gov/data/2024/acs/acs5/variables.html")
         data = df[0]
         for x in data.index:
             if type(data['Concept'][x]) is str:
