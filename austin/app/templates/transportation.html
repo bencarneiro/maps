@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>USA Means of Transportation to Work - Census ACS5 2024</title>
+
+    <link rel="stylesheet" href="static/css/maplibre-gl.css">
+    <script src="static/js/maplibre-gl.js"></script>
+    <script src="static/js/pmtiles.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .popup .maplibregl-popup-content {
+            max-height: 50vh;
+            overflow-y: auto;
+        }
+
+        /* ------------------------------------------------------------- */
+        /* COMPACT MENU CONTAINER                                        */
+        /* ------------------------------------------------------------- */
+        .map-overlay {
+            position: absolute;
+            width: 190px;
+            top: 12px;
+            left: 12px;
+            z-index: 10;
+        }
+
+        /* Floating Toggle Pill (When Menu is Hidden) */
+        .toggle-btn-pill {
+            display: none;
+            background: #ffffff;
+            color: #111827;
+            border: 1px solid #d1d5db;
+            border-radius: 20px;
+            padding: 6px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .map-overlay-inner {
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+            border-radius: 8px;
+            padding: 10px;
+            max-height: calc(100vh - 24px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Row with Close Button */
+        .menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .menu-header h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #111827;
+            margin: 0;
+            text-align: center
+        }
+        .close-btn {
+            background: none;
+            border: none;
+            color: #6b7280;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 2px 4px;
+            border-radius: 4px;
+            line-height: 1;
+        }
+        .close-btn:hover {
+            background-color: #f3f4f6;
+            color: #111827;
+        }
+
+        /* Action Buttons */
+        .button-group {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+        .btn {
+            flex: 1;
+            padding: 4px 8px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #374151;
+            background-color: #f3f4f6;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+
+        .divider {
+            border: 0;
+            border-top: 1px solid #e5e7eb;
+            margin: 4px 0 8px 0;
+        }
+
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .mode-list {
+            max-height: 35vh;
+            overflow-y: auto;
+            padding-right: 2px;
+        }
+
+        .mode-item {
+            display: flex;
+            align-items: center;
+            padding: 3px 0;
+            font-size: 11px;
+            color: #4b5563;
+            cursor: pointer;
+            user-select: none;
+        }
+        .mode-item:hover {
+            color: #111827;
+        }
+        .mode-item input[type="checkbox"] {
+            margin-right: 6px;
+            width: 13px;
+            height: 13px;
+            accent-color: #2563eb;
+            cursor: pointer;
+        }
+
+        /* ------------------------------------------------------------- */
+        /* MOBILE OVERRIDES (Default Collapsed)                          */
+        /* ------------------------------------------------------------- */
+        @media screen and (max-width: 768px) {
+            .map-overlay {
+                width: auto !important;
+                top: 10px !important;
+                left: 10px !important;
+            }
+            .map-overlay-inner {
+                width: 175px !important;
+                padding: 8px !important;
+            }
+            .mode-list {
+                max-height: 30vh !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    
+    <div class="map-overlay">
+        <!-- Floating Toggle Pill (Shows when menu is closed) -->
+        <button id="toggle-pill" class="toggle-btn-pill" onclick="toggleMenu(true)">
+            <span>⚙️</span> Controls
+        </button>
+
+        <!-- Main Collapsible Menu Panel -->
+        <div id="menu-card" class="map-overlay-inner">
+            <div class="menu-header">
+                <h3>Means of Transportation to Work</h3>
+                <button class="close-btn" onclick="toggleMenu(false)">✕</button>
+            </div>
+
+            <div class="button-group">
+                <button class="btn" onclick="toggleOn()">Show</button>
+                <button class="btn" onclick="toggleOff()">Hide</button>
+            </div>
+            
+            <hr class="divider" />
+            <span class="section-label">Color Scheme:</span>
+            
+            <div class="mode-list">
+                <label class="mode-item">
+                    <input type="checkbox" name="transit-mode" value="Percent Drove Alone" onclick="applyModeColor(this)"> Drove Alone
+                </label>
+                <label class="mode-item">
+                    <input type="checkbox" name="transit-mode" value="Percent Carpooled" onclick="applyModeColor(this)"> Carpooled
+                </label>
+                <label class="mode-item">
+                    <input type="checkbox" name="transit-mode" value="Percent Public Transit" onclick="applyModeColor(this)"> Public Transit
+                </label>
+                <label class="mode-item">
+                    <input type="checkbox" name="transit-mode" value="Percent Taxicab" onclick="applyModeColor(this)"> Taxicab
+                </label>
+                <label class="mode-item">
+                    <input type="checkbox" name="transit-mode" value="Percent Motorcycle" onclick="applyModeColor(this)"> Motorcycle
+                </label>
+                <label class="mode-item">
+                    <input type="checkbox" name="transit-mode" value="Percent Bicycle" onclick="applyModeColor(this)"> Bicycle
+                </label>
+                <label class="mode-item">
+                    <input type="checkbox" name="transit-mode" value="Percent Walked" onclick="applyModeColor(this)"> Walked
+                </label>
+                <label class="mode-item">
+                    <input type="checkbox" name="transit-mode" value="Percent Other" onclick="applyModeColor(this)"> Other
+                </label>
+                <label class="mode-item">
+                    <input type="checkbox" name="transit-mode" value="Percent Working From Home" onclick="applyModeColor(this)"> Work From Home
+                </label>
+                <label class="mode-item">
+                    <input type="checkbox" name="transit-mode" value="Car Free" onclick="applyModeColor(this)"> Car Free Commuters (Not WFH)
+                </label>
+            </div>
+        </div>
+    </div>
+
+<script>
+// Menu Hide/Show Logic
+function toggleMenu(show) {
+    const card = document.getElementById('menu-card');
+    const pill = document.getElementById('toggle-pill');
+    if (show) {
+        card.style.display = 'flex';
+        pill.style.display = 'none';
+    } else {
+        card.style.display = 'none';
+        pill.style.display = 'flex';
+    }
+}
+
+function toggleLayerVisibility(layerId, isVisible) {
+    map.setLayoutProperty(layerId, 'visibility', 
+        isVisible ? 'visible' : 'none'
+    );
+}
+
+function toggleOn() {    
+    toggleLayerVisibility('transportation', true);
+}
+function toggleOff() {    
+    toggleLayerVisibility('transportation', false);
+}
+
+let protocol = new pmtiles.Protocol();
+maplibregl.addProtocol("pmtiles", protocol.tile);
+
+const defaultColorStyle = [
+    'case',
+    ['>=', ['get', 'Percent Drove Alone'], ['max', ['get', 'Percent Carpooled'], ['get', 'Percent Public Transit'], ['get', 'Percent Working From Home'], ['get', 'Percent Walked'], ['get', 'Percent Bicycle']]], '#3b82f6',
+    ['>=', ['get', 'Percent Public Transit'], ['max', ['get', 'Percent Drove Alone'], ['get', 'Percent Carpooled'], ['get', 'Percent Working From Home'], ['get', 'Percent Walked'], ['get', 'Percent Bicycle']]], '#ef4444',
+    ['>=', ['get', 'Percent Working From Home'], ['max', ['get', 'Percent Drove Alone'], ['get', 'Percent Carpooled'], ['get', 'Percent Public Transit'], ['get', 'Percent Walked'], ['get', 'Percent Bicycle']]], '#10b981',
+    ['>=', ['get', 'Percent Carpooled'], ['max', ['get', 'Percent Drove Alone'], ['get', 'Percent Public Transit'], ['get', 'Percent Working From Home'], ['get', 'Percent Walked'], ['get', 'Percent Bicycle']]], '#f59e0b',
+    ['>=', ['get', 'Percent Walked'], ['max', ['get', 'Percent Drove Alone'], ['get', 'Percent Carpooled'], ['get', 'Percent Public Transit'], ['get', 'Percent Working From Home'], ['get', 'Percent Bicycle']]], '#8b5cf6',
+    ['>=', ['get', 'Percent Bicycle'], ['max', ['get', 'Percent Drove Alone'], ['get', 'Percent Carpooled'], ['get', 'Percent Public Transit'], ['get', 'Percent Working From Home'], ['get', 'Percent Walked']]], '#ec4899',
+    '#9ca3af'
+];
+
+const modeColorSchemes = {
+    'Percent Drove Alone':        ['interpolate', ['linear'], ['get', 'Percent Drove Alone'], 0, 'lightgray', 100, '#3b82f6'],
+    'Percent Carpooled':          ['interpolate', ['linear'], ['get', 'Percent Carpooled'], 0, 'lightgray', 50, '#f59e0b'],
+    'Percent Public Transit':     ['interpolate', ['linear'], ['get', 'Percent Public Transit'], 0, 'lightgray', 50, '#ef4444'],
+    'Percent Taxicab':            ['interpolate', ['linear'], ['get', 'Percent Taxicab'], 0, 'lightgray', 10, '#14b8a6'],
+    'Percent Motorcycle':         ['interpolate', ['linear'], ['get', 'Percent Motorcycle'], 0, 'lightgray', 10, '#6366f1'],
+    'Percent Bicycle':            ['interpolate', ['linear'], ['get', 'Percent Bicycle'], 0, 'lightgray', 20, '#ec4899'],
+    'Percent Walked':             ['interpolate', ['linear'], ['get', 'Percent Walked'], 0, 'lightgray', 30, '#8b5cf6'],
+    'Percent Other':              ['interpolate', ['linear'], ['get', 'Percent Other'], 0, 'lightgray', 20, '#64748b'],
+    'Percent Working From Home': ['interpolate', ['linear'], ['get', 'Percent Working From Home'], 0, 'lightgray', 50, '#10b981'],
+    'Car Free': ['interpolate', ['linear'], ['get', 'Car Free Commuters'], 0, 'lightgray', 50, 'green']
+};
+
+function applyModeColor(checkbox) {
+    const checkboxes = document.querySelectorAll('input[name="transit-mode"]');
+    
+    checkboxes.forEach((cb) => {
+        if (cb !== checkbox) cb.checked = false;
+    });
+
+    if (checkbox.checked) {
+        const propertyName = checkbox.value;
+        const colorStyle = modeColorSchemes[propertyName];
+        map.setPaintProperty('transportation', 'fill-extrusion-color', colorStyle);
+    } else {
+        map.setPaintProperty('transportation', 'fill-extrusion-color', defaultColorStyle);
+    }
+}
+
+var map = new maplibregl.Map({
+    container: 'map',
+    style: {
+        version: 8,
+        sources: {
+            "base-raster": {
+                type: "raster",
+                tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+                tileSize: 256,
+                attribution: "© <a href='https://www.openstreetmap.org/copyright' target='_blank'>OpenStreetMap contributors</a> | US Census ACS5 2019-2024"
+            }
+        },
+        layers: [
+            {
+                id: "base-raster",
+                type: "raster",
+                source: "base-raster",
+                paint: {
+                    "raster-saturation": -1,
+                }
+            }
+        ]
+    },
+    center: [-100, 32],
+    zoom: 5.5
+});
+
+map.on('load', () => {
+    const tooltip = new maplibregl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
+
+    map.addLayer({
+        id: "transportation",
+        type: "fill-extrusion",
+        source: {
+            url: "pmtiles://static/tiles/transportation/nationwide.pmtiles",
+            type: "vector"
+        },
+        "source-layer": "counties",
+        'paint': {
+            'fill-extrusion-color': defaultColorStyle,
+            'fill-extrusion-height': 0,
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 0.8
+        }
+    });
+
+    map.on('mousemove', 'transportation', (e) => {
+        map.getCanvas().style.cursor = 'pointer';
+
+        if (!e.features.length) return;
+
+        const props = e.features[0].properties;
+        const totalWorkers = Number(props['Total Workers']) || 0;
+
+        const categories = [
+            { name: 'Drove Alone', value: Number(props['Percent Drove Alone']) || 0 },
+            { name: 'Carpooled', value: Number(props['Percent Carpooled']) || 0 },
+            { name: 'Public Transit', value: Number(props['Percent Public Transit']) || 0 },
+            { name: 'Taxicab', value: Number(props['Percent Taxicab']) || 0 },
+            { name: 'Motorcycle', value: Number(props['Percent Motorcycle']) || 0 },
+            { name: 'Bicycle', value: Number(props['Percent Bicycle']) || 0 },
+            { name: 'Walked', value: Number(props['Percent Walked']) || 0 },
+            { name: 'Other', value: Number(props['Percent Other']) || 0 },
+            { name: 'Working From Home', value: Number(props['Percent Working From Home']) || 0 }
+        ];
+
+        const filteredCategories = categories
+            .sort((a, b) => b.value - a.value)
+            .filter(cat => cat.value >= 0.5);
+
+        const rowsHtml = filteredCategories.length > 0 ? filteredCategories
+            .map(cat => `
+                <div style="display: flex; justify-content: space-between; gap: 12px; margin-bottom: 2px;">
+                    <span style="color: #4b5563;">${cat.name}:</span>
+                    <strong style="color: #111827;">${cat.value.toFixed(2)}%</strong>
+                </div>
+            `).join('') : '<div style="color: #6b7280; font-style: italic;">No modes >= 0.5%</div>';
+
+        const tooltipContent = `
+            <div style="font-family: sans-serif; font-size: 11px; padding: 2px;">
+                <div style="font-weight: bold; border-bottom: 1px solid #e5e7eb; padding-bottom: 3px; margin-bottom: 5px; color: #111827;">
+                    Means of Transportation
+                </div>
+                ${rowsHtml}
+                <div style="display: flex; justify-content: space-between; gap: 12px; margin-top: 5px; padding-top: 3px; border-top: 1px solid #e5e7eb;">
+                    <span style="color: #4b5563; font-weight: bold;">Total Workers:</span>
+                    <strong style="color: #111827;">${totalWorkers.toLocaleString()}</strong>
+                </div>
+            </div>
+        `;
+
+        tooltip
+            .setLngLat(e.lngLat)
+            .setHTML(tooltipContent)
+            .addTo(map);
+    });
+
+    map.on('mouseleave', 'transportation', () => {
+        map.getCanvas().style.cursor = '';
+        tooltip.remove();
+    });
+});
+</script>
+</body>
+</html>
