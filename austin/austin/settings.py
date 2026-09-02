@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-$36aec_b43na@d12h8)41bsh!zl6&211d@&9rn)iww1jw46ivc
 DEBUG = (bool(int(os.environ.get('DEBUG',1))))
 
 
-ALLOWED_HOSTS = ["www.censusmaps.org", "censusmaps.org", "127.0.0.1", "127.0.0.1:8000", "localhost", "45.33.113.137"]
+ALLOWED_HOSTS = ["www.censusmaps.org", "censusmaps.org", "127.0.0.1", "127.0.0.1:8000","127.0.0.1:8080", "localhost", "45.33.113.137"]
 
 CACHES = {
     "default": {
@@ -134,10 +134,12 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [
     "/home/tonydeals/app/maps/austin/app/templates/static",
     "/root/maps/austin/app/templates/static",
-#     "/var/www/static/",
+    "/Users/root1/apps/maps/austin/app/templates/static"
 ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+CORS_ALLOW_ALL_ORIGINS = True
+
