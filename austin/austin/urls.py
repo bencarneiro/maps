@@ -41,7 +41,7 @@ urlpatterns = [
     path("index.html", index, name="index"),
     path("old_resume", benny_boy_resume, name="old_resume"),
     path('testmap', testmap, name='testmap'),
-    path("median_income", median_income, name="median_income"),
+    path("income", median_income, name="median_income"),
     path("transportation", transportation, name="transportation"),
     re_path(r'^favicon\.ico$', favicon_view),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

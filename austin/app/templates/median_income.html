@@ -1,145 +1,283 @@
-
-
-<link rel="stylesheet" href="static/css/maplibre-gl.css">
-<script src="static/js/maplibre-gl.js"></script>
-<script src="static/js/pmtiles.js"></script>
-<style>
-    body {
-        margin: 0;
-    }
-    html, body, #map {
-        height:100%; width:100%;
-    }
-    .popup .maplibregl-popup-content {
-        max-height: 50vh;
-        overflow-y: auto;
-    }
-    h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 4rem;
-    }
-    h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    }
-    h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 1.2rem;
-    }
-    .table{
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto
-    }
-    td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
-    width: 50%;
-    text-align: center;
-    align-items: center;
-    position: center;
-    }
-    .dt {
-        width:20%;
-        text-wrap: wrap;
-        word-break: break-word;
-    }
-.map-overlay {
-font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-position: absolute;
-width: 200px;
-top: 0;
-left: 0;
-padding: 10px;
-}
-
-.map-overlay .map-overlay-inner {
-background-color: #fff;
-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-border-radius: 3px;
-padding: 10px;
-margin-bottom: 10px;
-}
-
-.map-overlay-inner fieldset {
-border: none;
-padding: 0;
-margin: 0 0 10px;
-}
-
-.map-overlay-inner fieldset:last-child {
-margin: 0;
-}
-
-.map-overlay-inner select {
-width: 100%;
-}
-
-.map-overlay-inner label {
-display: block;
-font-weight: bold;
-margin: 0 0 5px;
-}
-
-.map-overlay-inner button {
-display: inline-block;
-width: 36px;
-height: 20px;
-border: none;
-cursor: pointer;
-}
-
-.map-overlay-inner button:focus {
-outline: none;
-}
-
-.map-overlay-inner button:hover {
-box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.1);
-}
-
-</style>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>USA Median Income Map - Census ACS5 2024</title>
 
-    <title>USA Median Income (2023)</title>
+    <link rel="stylesheet" href="static/css/maplibre-gl.css">
+    <script src="static/js/maplibre-gl.js"></script>
+    <script src="static/js/pmtiles.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .popup .maplibregl-popup-content {
+            max-height: 50vh;
+            overflow-y: auto;
+        }
+
+        /* ------------------------------------------------------------- */
+        /* COMPACT MENU CONTAINER                                        */
+        /* ------------------------------------------------------------- */
+        .map-overlay {
+            position: absolute;
+            width: 210px;
+            top: 12px;
+            left: 12px;
+            z-index: 10;
+        }
+
+        /* Floating Toggle Pill (When Menu is Hidden) */
+        .toggle-btn-pill {
+            display: none;
+            background: #ffffff;
+            color: #111827;
+            border: 1px solid #d1d5db;
+            border-radius: 20px;
+            padding: 6px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .map-overlay-inner {
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+            border-radius: 8px;
+            padding: 10px;
+            max-height: calc(100vh - 24px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Row with Close Button */
+        .menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .menu-header h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #111827;
+            margin: 0;
+            text-align: center;
+        }
+        .close-btn {
+            background: none;
+            border: none;
+            color: #6b7280;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 2px 4px;
+            border-radius: 4px;
+            line-height: 1;
+        }
+        .close-btn:hover {
+            background-color: #f3f4f6;
+            color: #111827;
+        }
+
+        /* Action Buttons */
+        .button-group {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+        .btn {
+            flex: 1;
+            padding: 4px 2px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #374151;
+            background-color: #f3f4f6;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+
+        .divider {
+            border: 0;
+            border-top: 1px solid #e5e7eb;
+            margin: 4px 0 8px 0;
+        }
+
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .mode-list {
+            max-height: 35vh;
+            overflow-y: auto;
+            padding-right: 2px;
+        }
+
+        .mode-item {
+            display: flex;
+            align-items: center;
+            padding: 3px 0;
+            font-size: 11px;
+            color: #4b5563;
+            cursor: pointer;
+            user-select: none;
+        }
+        .mode-item:hover {
+            color: #111827;
+        }
+        .mode-item input[type="checkbox"] {
+            margin-right: 6px;
+            width: 13px;
+            height: 13px;
+            accent-color: #2563eb;
+            cursor: pointer;
+        }
+
+        /* ------------------------------------------------------------- */
+        /* MOBILE OVERRIDES (Default Collapsed)                          */
+        /* ------------------------------------------------------------- */
+        @media screen and (max-width: 768px) {
+            .map-overlay {
+                width: auto !important;
+                top: 10px !important;
+                left: 10px !important;
+            }
+            .map-overlay-inner {
+                width: 175px !important;
+                padding: 8px !important;
+            }
+            .mode-list {
+                max-height: 30vh !important;
+            }
+        }
+    </style>
 </head>
 
-<script>
-    function toggleLayerVisibility(layerId, isVisible) {
-        map.setLayoutProperty(layerId, 'visibility', 
-            isVisible ? 'visible' : 'none'
-        );
-    }
-
-    // Example usage:
-
-    function toggleOn() {    
-    toggleLayerVisibility('income', true);  // Show the layer
-    }
-    function toggleOff() {    
-    toggleLayerVisibility('income', false); // Hide the layer
-    }
-</script>
 <body>
-
     <div id="map"></div>
-    <div class="map-overlay top">
-        <div class="map-overlay-inner">
-            <h3>USA Median Income (2023)</h3>
+    
+    <div class="map-overlay">
+        <button id="toggle-pill" class="toggle-btn-pill" onclick="toggleMenu(true)">
+            <span>⚙️</span> Controls
+        </button>
+
+        <div id="menu-card" class="map-overlay-inner">
+            <div class="menu-header">
+                <h3>USA Median Income 2024</h3>
+                <button class="close-btn" onclick="toggleMenu(false)">✕</button>
+            </div>
+
+            <div class="button-group">
+                <button class="btn" onclick="setMode('2d')">2D</button>
+                <button class="btn" onclick="setMode('3d')">3D (Population Density)</button>
+                <button class="btn" onclick="setMode('hide')">Hide Data</button>
+            </div>
+            
+            <hr class="divider" />
+            <span class="section-label">Color Scheme:</span>
+            
+            <div class="mode-list">
+                <label class="mode-item">
+                    <input type="checkbox" name="income-mode" value="Median Individual Income" onclick="applyModeColor(this)"> Median Individual Income
+                </label>
+                <label class="mode-item">
+                    <input type="checkbox" name="income-mode" value="Median Household Income" onclick="applyModeColor(this)"> Median Household Income
+                </label>
+            </div>
         </div>
-        <button onclick=toggleOn()>Display Data</button>
-        <button onclick=toggleOff()>Hide Data</button>
     </div>
-</body>
 
 <script>
+// Menu Hide/Show Logic
+function toggleMenu(show) {
+    const card = document.getElementById('menu-card');
+    const pill = document.getElementById('toggle-pill');
+    if (show) {
+        card.style.display = 'flex';
+        pill.style.display = 'none';
+    } else {
+        card.style.display = 'none';
+        pill.style.display = 'flex';
+    }
+}
 
+function setMode(mode) {
+    const layers = ['income', 'income2'];
+    
+    if (mode === 'hide') {
+        layers.forEach(id => map.setLayoutProperty(id, 'visibility', 'none'));
+    } else if (mode === '2d') {
+        layers.forEach(id => {
+            map.setLayoutProperty(id, 'visibility', 'visible');
+            map.setPaintProperty(id, 'fill-extrusion-height', 0);
+        });
+    } else if (mode === '3d') {
+        layers.forEach(id => {
+            map.setLayoutProperty(id, 'visibility', 'visible');
+            map.setPaintProperty(id, 'fill-extrusion-height', ['get', 'People per Sq. Mile']);
+        });
+    }
+}
 
 let protocol = new pmtiles.Protocol();
 maplibregl.addProtocol("pmtiles", protocol.tile);
+
+// Color scales: Red = Poverty line (~$15,060 ind / ~$31,200 household), White = Median (~$45,000 ind / ~$75,000 household), Green = 2x Median (~$90,000 ind / ~$150,000 household)
+const modeColorSchemes = {
+    'Median Individual Income': ['interpolate', ['linear'], ['get', 'Median Individual Income'], 15060, '#ef4444', 45000, '#ffffff', 90000, '#22c55e'],
+    'Median Household Income':  ['interpolate', ['linear'], ['get', 'Median Household Income'], 31200, '#ef4444', 75000, '#ffffff', 150000, '#22c55e']
+};
+
+const defaultColorStyle = modeColorSchemes['Median Household Income'];
+
+function applyModeColor(checkbox) {
+    const checkboxes = document.querySelectorAll('input[name="income-mode"]');
+    
+    checkboxes.forEach((cb) => {
+        if (cb !== checkbox) cb.checked = false;
+    });
+
+    if (checkbox.checked) {
+        const propertyName = checkbox.value;
+        const colorStyle = modeColorSchemes[propertyName];
+        map.setPaintProperty('income', 'fill-extrusion-color', colorStyle);
+        map.setPaintProperty('income2', 'fill-extrusion-color', colorStyle);
+    } else {
+        map.setPaintProperty('income', 'fill-extrusion-color', defaultColorStyle);
+        map.setPaintProperty('income2', 'fill-extrusion-color', defaultColorStyle);
+    }
+}
+
 var map = new maplibregl.Map({
     container: 'map',
     style: {
@@ -149,8 +287,7 @@ var map = new maplibregl.Map({
                 type: "raster",
                 tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
                 tileSize: 256,
-                attribution: "© <a href='https://www.openstreetmap.org/copyright' target='_blank'>OpenStreetMap contributors</a>"
-            
+                attribution: "© <a href='https://www.openstreetmap.org/copyright' target='_blank'>OpenStreetMap contributors</a> | US Census ACS5 2019-2024"
             }
         },
         layers: [
@@ -164,73 +301,101 @@ var map = new maplibregl.Map({
             }
         ]
     },
-
-    // these are the loading coordinates
-    center: [-100,32],
+    center: [-100, 32],
     zoom: 5.5
 });
 
 map.on('load', () => {
-
+    const tooltip = new maplibregl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    });
 
     map.addLayer({
         id: "income",
         type: "fill-extrusion",
         source: {
-            url: "pmtiles://static/tiles/income.pmtiles",
+            url: "pmtiles://static/tiles/income/nationwide.pmtiles",
             type: "vector"
         },
-        "source-layer": "test",
+        "source-layer": "counties",
         'paint': {
-                // See the MapLibre Style Specification for details on data expressions.
-                // https://maplibre.org/maplibre-style-spec/expressions/
-                'fill-extrusion-color': [
-                      'interpolate',
-                      ['linear'],
-                      ['get', 'B19013_001E'],  0, "lightgray", 1000, 'red', 75000, 'yellow', 150000, "green"
-                  ],
-
-                // Get fill-extrusion-height from the source 'height' property.
-                'fill-extrusion-height': ['get', 'ppsm'],
-
-                // // Get fill-extrusion-base from the source 'base_height' property.
-                // 'fill-extrusion-base': ['get', 'base_height'],
-
-                // // Make extrusions slightly opaque for see through indoor walls.
-                'fill-extrusion-opacity': 0.8
-            }
-    })
-
-
-    map.on('mouseenter', `fatalities`, () => {map.getCanvas().style.cursor = 'pointer'});
-    map.on('mouseleave', `fatalities`, () => {map.getCanvas().style.cursor = ''});
-
-    map.on('click', (e) => {
-        const features = map.queryRenderedFeatures(e.point);
-        console.log(e)
-        console.log(features)
-        if (features.length == 0) return;
-        let table = "<table><thead><tr><th>Tract</th><th>Median Household Income</th><th>People Per Square Mile</th></tr></thead>";
-        let total = 0;
-        features.forEach((f, i) => {
-            table += "<tr>";
-            table += `<tr><td>${f.properties.NAME_y}</td>`;
-            if (f.properties.B19013_001E < 0) {
-                table += "<td>No Income</td>"
-            }
-            else {
-
-                table += `<td>$${Math.round(f.properties.B19013_001E / 1000)}K</td>`;
-            }
-            table += `<td>${f.properties.ppsm}</td>`;
-            table += "</tr>";
-        })
-        table += "</table>";
-        new maplibregl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(table)
-            .addTo(map)
-            .addClassName("popup");
+            'fill-extrusion-color': defaultColorStyle,
+            'fill-extrusion-height': 0,
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 0.8
+        }
     });
-})
+
+    map.addLayer({
+        id: "income2",
+        type: "fill-extrusion",
+        source: {
+            url: "pmtiles://static/tiles/income/nationwide2.pmtiles",
+            type: "vector"
+        },
+        "source-layer": "counties",
+        'paint': {
+            'fill-extrusion-color': defaultColorStyle,
+            'fill-extrusion-height': 0,
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 0.8
+        }
+    });
+
+    function handleFeatureHover(e) {
+        map.getCanvas().style.cursor = 'pointer';
+
+        if (!e.features.length) return;
+
+        const props = e.features[0].properties;
+        const individualIncome = Number(props['Median Individual Income']) || 0;
+        const householdIncome = Number(props['Median Household Income']) || 0;
+        const totalPopulation = Number(props['Total Population']) || 0;
+        const density = Number(props['People per Sq. Mile']) || 0;
+
+        const tooltipContent = `
+            <div style="font-family: sans-serif; font-size: 11px; padding: 2px;">
+                <div style="font-weight: bold; border-bottom: 1px solid #e5e7eb; padding-bottom: 3px; margin-bottom: 5px; color: #111827;">
+                    Income & Demographics
+                </div>
+                <div style="display: flex; justify-content: space-between; gap: 12px; margin-bottom: 3px;">
+                    <span style="color: #4b5563;">Median Individual Income:</span>
+                    <strong style="color: #111827;">$${individualIncome.toLocaleString()}</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; gap: 12px; margin-bottom: 3px;">
+                    <span style="color: #4b5563;">Median Household Income:</span>
+                    <strong style="color: #111827;">$${householdIncome.toLocaleString()}</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; gap: 12px; margin-bottom: 3px;">
+                    <span style="color: #4b5563;">Total Population:</span>
+                    <strong style="color: #111827;">${totalPopulation.toLocaleString()}</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; gap: 12px;">
+                    <span style="color: #4b5563;">People per Sq. Mile:</span>
+                    <strong style="color: #111827;">${density.toLocaleString(undefined, { maximumFractionDigits: 1 })}</strong>
+                </div>
+            </div>
+        `;
+
+        tooltip
+            .setLngLat(e.lngLat)
+            .setHTML(tooltipContent)
+            .addTo(map);
+    }
+
+    map.on('mousemove', 'income', handleFeatureHover);
+    map.on('mouseleave', 'income', () => {
+        map.getCanvas().style.cursor = '';
+        tooltip.remove();
+    });
+
+    map.on('mousemove', 'income2', handleFeatureHover);
+    map.on('mouseleave', 'income2', () => {
+        map.getCanvas().style.cursor = '';
+        tooltip.remove();
+    });
+});
 </script>
+</body>
+</html>
