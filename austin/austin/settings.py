@@ -123,7 +123,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-# STATIC_ROOT = "/var/www/static"
+STATIC_ROOT = "/var/www/static"
 
 
 # Static files (CSS, JavaScript, Images)
