@@ -264,9 +264,11 @@ function toggleLayerVisibility(layerId, isVisible) {
 
 function toggleOn() {    
     toggleLayerVisibility('transportation', true);
+    toggleLayerVisibility('transportation2', true);
 }
 function toggleOff() {    
     toggleLayerVisibility('transportation', false);
+    toggleLayerVisibility('transportation2', false);
 }
 
 let protocol = new pmtiles.Protocol();
@@ -307,8 +309,10 @@ function applyModeColor(checkbox) {
         const propertyName = checkbox.value;
         const colorStyle = modeColorSchemes[propertyName];
         map.setPaintProperty('transportation', 'fill-extrusion-color', colorStyle);
+        map.setPaintProperty('transportation2', 'fill-extrusion-color', colorStyle);
     } else {
         map.setPaintProperty('transportation', 'fill-extrusion-color', defaultColorStyle);
+        map.setPaintProperty('transportation2', 'fill-extrusion-color', defaultColorStyle);
     }
 }
 
@@ -350,6 +354,24 @@ map.on('load', () => {
         type: "fill-extrusion",
         source: {
             url: "pmtiles://static/tiles/transportation/nationwide.pmtiles",
+            type: "vector"
+        },
+        "source-layer": "counties",
+        'paint': {
+            'fill-extrusion-color': defaultColorStyle,
+            'fill-extrusion-height': 0,
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 0.8
+        }
+    });
+    
+
+
+    map.addLayer({
+        id: "transportation2",
+        type: "fill-extrusion",
+        source: {
+            url: "pmtiles://static/tiles/transportation/nationwide2.pmtiles",
             type: "vector"
         },
         "source-layer": "counties",
@@ -413,6 +435,63 @@ map.on('load', () => {
     });
 
     map.on('mouseleave', 'transportation', () => {
+        map.getCanvas().style.cursor = '';
+        tooltip.remove();
+    });
+
+
+    map.on('mousemove', 'transportation2', (e) => {
+        map.getCanvas().style.cursor = 'pointer';
+
+        if (!e.features.length) return;
+
+        const props = e.features[0].properties;
+        const totalWorkers = Number(props['Total Workers']) || 0;
+
+        const categories = [
+            { name: 'Drove Alone', value: Number(props['Percent Drove Alone']) || 0 },
+            { name: 'Carpooled', value: Number(props['Percent Carpooled']) || 0 },
+            { name: 'Public Transit', value: Number(props['Percent Public Transit']) || 0 },
+            { name: 'Taxicab', value: Number(props['Percent Taxicab']) || 0 },
+            { name: 'Motorcycle', value: Number(props['Percent Motorcycle']) || 0 },
+            { name: 'Bicycle', value: Number(props['Percent Bicycle']) || 0 },
+            { name: 'Walked', value: Number(props['Percent Walked']) || 0 },
+            { name: 'Other', value: Number(props['Percent Other']) || 0 },
+            { name: 'Working From Home', value: Number(props['Percent Working From Home']) || 0 }
+        ];
+
+        const filteredCategories = categories
+            .sort((a, b) => b.value - a.value)
+            .filter(cat => cat.value >= 0.5);
+
+        const rowsHtml = filteredCategories.length > 0 ? filteredCategories
+            .map(cat => `
+                <div style="display: flex; justify-content: space-between; gap: 12px; margin-bottom: 2px;">
+                    <span style="color: #4b5563;">${cat.name}:</span>
+                    <strong style="color: #111827;">${cat.value.toFixed(2)}%</strong>
+                </div>
+            `).join('') : '<div style="color: #6b7280; font-style: italic;">No modes >= 0.5%</div>';
+
+        const tooltipContent = `
+            <div style="font-family: sans-serif; font-size: 11px; padding: 2px;">
+                <div style="font-weight: bold; border-bottom: 1px solid #e5e7eb; padding-bottom: 3px; margin-bottom: 5px; color: #111827;">
+                    Means of Transportation
+                </div>
+                ${rowsHtml}
+                <div style="display: flex; justify-content: space-between; gap: 12px; margin-top: 5px; padding-top: 3px; border-top: 1px solid #e5e7eb;">
+                    <span style="color: #4b5563; font-weight: bold;">Total Workers:</span>
+                    <strong style="color: #111827;">${totalWorkers.toLocaleString()}</strong>
+                </div>
+            </div>
+        `;
+
+        tooltip
+            .setLngLat(e.lngLat)
+            .setHTML(tooltipContent)
+            .addTo(map);
+    });
+
+    map.on('mouseleave', 'transportation2', () => {
         map.getCanvas().style.cursor = '';
         tooltip.remove();
     });

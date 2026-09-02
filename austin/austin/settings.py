@@ -28,12 +28,12 @@ DEBUG = (bool(int(os.environ.get('DEBUG',1))))
 
 ALLOWED_HOSTS = ["www.censusmaps.org", "censusmaps.org", "127.0.0.1", "127.0.0.1:8000","127.0.0.1:8080", "localhost", "45.33.113.137"]
 
-CACHES = {
-    "default": {
-        "BACKEND": "django.core.cache.backends.db.DatabaseCache",
-        "LOCATION": "my_cache_table",
-    }
-}
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django.core.cache.backends.db.DatabaseCache",
+#         "LOCATION": "my_cache_table",
+#     }
+# }
 
 # Application definition
 
@@ -123,7 +123,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_ROOT = "/var/www/static"
+# STATIC_ROOT = "/var/www/static"
 
 
 # Static files (CSS, JavaScript, Images)
@@ -141,3 +141,5 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+CORS_ALLOW_ALL_ORIGINS = True
+
